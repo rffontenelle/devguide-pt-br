@@ -24,10 +24,9 @@ msgstr ""
 
 #: ../../internals/exploring.rst:7
 msgid ""
-"This is a quick guide for people who are interested in learning more "
-"about CPython's internals. It provides a summary of the source code "
-"structure and contains references to resources providing a more in-depth "
-"view."
+"This is a quick guide for people who are interested in learning more about "
+"CPython's internals. It provides a summary of the source code structure and "
+"contains references to resources providing a more in-depth view."
 msgstr ""
 
 #: ../../internals/exploring.rst:13
@@ -308,4 +307,3 @@ msgstr ""
 #: ../../internals/exploring.rst:1
 msgid "2.7.8"
 msgstr ""
-

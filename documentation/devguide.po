@@ -24,18 +24,18 @@ msgstr ""
 
 #: ../../documentation/devguide.rst:9
 msgid ""
-"The Developer's Guide (what you're reading now) uses the same process as "
-"the main Python documentation, except for some small differences.  The "
-"source lives in a `separate repository`_ and bug reports should be "
-"submitted to the `devguide GitHub tracker`_."
+"The Developer's Guide (what you're reading now) uses the same process as the "
+"main Python documentation, except for some small differences.  The source "
+"lives in a `separate repository`_ and bug reports should be submitted to the "
+"`devguide GitHub tracker`_."
 msgstr ""
 
 #: ../../documentation/devguide.rst:14
 msgid ""
-"Our devguide workflow uses continuous integration and deployment so "
-"changes to the devguide are normally published when the pull request is "
-"merged. Changes to CPython documentation follow the workflow of a CPython"
-" release and are published in the release."
+"Our devguide workflow uses continuous integration and deployment so changes "
+"to the devguide are normally published when the pull request is merged. "
+"Changes to CPython documentation follow the workflow of a CPython release "
+"and are published in the release."
 msgstr ""
 
 #: ../../documentation/devguide.rst:21
@@ -44,14 +44,14 @@ msgstr ""
 
 #: ../../documentation/devguide.rst:23
 msgid ""
-"To submit a :ref:`pull request <pullrequest>`, you can fork the `devguide"
-" repo`_ to your GitHub account and clone it using::"
+"To submit a :ref:`pull request <pullrequest>`, you can fork the `devguide "
+"repo`_ to your GitHub account and clone it using::"
 msgstr ""
 
 #: ../../documentation/devguide.rst:28
 msgid ""
-"For your PR to be accepted, you will also need to sign the "
-":ref:`contributor agreement <cla>`."
+"For your PR to be accepted, you will also need to sign the :ref:`contributor "
+"agreement <cla>`."
 msgstr ""
 
 #: ../../documentation/devguide.rst:31
@@ -69,10 +69,9 @@ msgstr ""
 
 #: ../../documentation/devguide.rst:45
 msgid ""
-"You will find the generated files in ``_build/html`` or, if you use "
-"``make htmlview``, the docs will be opened in a browser once the build "
-"completes.  Note that ``make check`` runs automatically when you submit a"
-" :ref:`pull request <pullrequest>`.  You may wish to run ``make check`` "
-"and ``make linkcheck`` to make sure that it runs without errors."
+"You will find the generated files in ``_build/html`` or, if you use ``make "
+"htmlview``, the docs will be opened in a browser once the build completes.  "
+"Note that ``make check`` runs automatically when you submit a :ref:`pull "
+"request <pullrequest>`.  You may wish to run ``make check`` and ``make "
+"linkcheck`` to make sure that it runs without errors."
 msgstr ""
-

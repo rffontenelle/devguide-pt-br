@@ -21,4 +21,3 @@ msgstr ""
 #: ../../triage/index.rst:3
 msgid "Issues and Triaging"
 msgstr ""
-

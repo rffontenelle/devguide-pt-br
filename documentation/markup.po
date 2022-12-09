@@ -178,16 +178,16 @@ msgstr ""
 
 #: ../../documentation/markup.rst:42
 msgid ""
-"This section is a brief introduction to reStructuredText (reST) concepts "
-"and syntax, intended to provide authors with enough information to author"
-" documents productively.  Since reST was designed to be a simple, "
-"unobtrusive markup language, this will not take too long."
+"This section is a brief introduction to reStructuredText (reST) concepts and "
+"syntax, intended to provide authors with enough information to author "
+"documents productively.  Since reST was designed to be a simple, unobtrusive "
+"markup language, this will not take too long."
 msgstr ""
 
 #: ../../documentation/markup.rst:49
 msgid ""
-"The authoritative `reStructuredText User Documentation "
-"<https://docutils.sourceforge.io/rst.html>`_."
+"The authoritative `reStructuredText User Documentation <https://docutils."
+"sourceforge.io/rst.html>`_."
 msgstr ""
 
 #: ../../documentation/markup.rst:54
@@ -196,10 +196,10 @@ msgstr ""
 
 #: ../../documentation/markup.rst:56
 msgid ""
-"The paragraph is the most basic block in a reST document.  Paragraphs are"
-" simply chunks of text separated by one or more blank lines.  As in "
-"Python, indentation is significant in reST, so all lines of the same "
-"paragraph must be left-aligned to the same level of indentation."
+"The paragraph is the most basic block in a reST document.  Paragraphs are "
+"simply chunks of text separated by one or more blank lines.  As in Python, "
+"indentation is significant in reST, so all lines of the same paragraph must "
+"be left-aligned to the same level of indentation."
 msgstr ""
 
 #: ../../documentation/markup.rst:64
@@ -224,8 +224,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:72
 msgid ""
-"If asterisks or backquotes appear in running text and could be confused "
-"with inline markup delimiters, they have to be escaped with a backslash."
+"If asterisks or backquotes appear in running text and could be confused with "
+"inline markup delimiters, they have to be escaped with a backslash."
 msgstr ""
 
 #: ../../documentation/markup.rst:75
@@ -242,8 +242,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:79
 msgid ""
-"it must be separated from surrounding text by non-word characters.  Use a"
-" backslash escaped space to work around that: ``thisis\\ *one*\\ word``."
+"it must be separated from surrounding text by non-word characters.  Use a "
+"backslash escaped space to work around that: ``thisis\\ *one*\\ word``."
 msgstr ""
 
 #: ../../documentation/markup.rst:82
@@ -252,11 +252,11 @@ msgstr ""
 
 #: ../../documentation/markup.rst:84
 msgid ""
-"reST also allows for custom \"interpreted text roles\"', which signify "
-"that the enclosed text should be interpreted in a specific way.  Sphinx "
-"uses this to provide semantic markup and cross-referencing of "
-"identifiers, as described in the appropriate section.  The general syntax"
-" is ``:rolename:`content```."
+"reST also allows for custom \"interpreted text roles\"', which signify that "
+"the enclosed text should be interpreted in a specific way.  Sphinx uses this "
+"to provide semantic markup and cross-referencing of identifiers, as "
+"described in the appropriate section.  The general syntax is ``:rolename:"
+"`content```."
 msgstr ""
 
 #: ../../documentation/markup.rst:91
@@ -265,15 +265,15 @@ msgstr ""
 
 #: ../../documentation/markup.rst:93
 msgid ""
-"List markup is natural: just place an asterisk at the start of a "
-"paragraph and indent properly.  The same goes for numbered lists; they "
-"can also be automatically numbered using a ``#`` sign::"
+"List markup is natural: just place an asterisk at the start of a paragraph "
+"and indent properly.  The same goes for numbered lists; they can also be "
+"automatically numbered using a ``#`` sign::"
 msgstr ""
 
 #: ../../documentation/markup.rst:108
 msgid ""
-"Nested lists are possible, but be aware that they must be separated from "
-"the parent list items by blank lines::"
+"Nested lists are possible, but be aware that they must be separated from the "
+"parent list items by blank lines::"
 msgstr ""
 
 #: ../../documentation/markup.rst:119
@@ -292,8 +292,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:137
 msgid ""
-"Literal code blocks are introduced by ending a paragraph with the special"
-" marker ``::``.  The literal block must be indented::"
+"Literal code blocks are introduced by ending a paragraph with the special "
+"marker ``::``.  The literal block must be indented::"
 msgstr ""
 
 #: ../../documentation/markup.rst:149
@@ -302,8 +302,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:151
 msgid ""
-"If it occurs as a paragraph of its own, that paragraph is completely left"
-" out of the document."
+"If it occurs as a paragraph of its own, that paragraph is completely left "
+"out of the document."
 msgstr ""
 
 #: ../../documentation/markup.rst:153
@@ -318,8 +318,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:157
 msgid ""
-"That way, the second sentence in the above example's first paragraph "
-"would be rendered as \"The next paragraph is a code sample:\"."
+"That way, the second sentence in the above example's first paragraph would "
+"be rendered as \"The next paragraph is a code sample:\"."
 msgstr ""
 
 #: ../../documentation/markup.rst:163
@@ -332,9 +332,9 @@ msgstr ""
 
 #: ../../documentation/markup.rst:168
 msgid ""
-"Use ```Link text <http://target>`_`` for inline web links.  If the link "
-"text should be the web address, you don't need special markup at all, the"
-" parser finds links and mail addresses in ordinary text."
+"Use ```Link text <http://target>`_`` for inline web links.  If the link text "
+"should be the web address, you don't need special markup at all, the parser "
+"finds links and mail addresses in ordinary text."
 msgstr ""
 
 #: ../../documentation/markup.rst:173
@@ -353,16 +353,15 @@ msgstr ""
 
 #: ../../documentation/markup.rst:182
 msgid ""
-"Section headers are created by underlining (and optionally overlining) "
-"the section title with a punctuation character, at least as long as the "
-"text::"
+"Section headers are created by underlining (and optionally overlining) the "
+"section title with a punctuation character, at least as long as the text::"
 msgstr ""
 
 #: ../../documentation/markup.rst:189
 msgid ""
-"Normally, there are no heading levels assigned to certain characters as "
-"the structure is determined from the succession of headings.  However, "
-"for the Python documentation, here is a suggested convention:"
+"Normally, there are no heading levels assigned to certain characters as the "
+"structure is determined from the succession of headings.  However, for the "
+"Python documentation, here is a suggested convention:"
 msgstr ""
 
 #: ../../documentation/markup.rst:193
@@ -395,17 +394,17 @@ msgstr ""
 
 #: ../../documentation/markup.rst:204
 msgid ""
-"\"Explicit markup\" is used in reST for most constructs that need special"
-" handling, such as footnotes, specially-highlighted paragraphs, comments,"
-" and generic directives."
+"\"Explicit markup\" is used in reST for most constructs that need special "
+"handling, such as footnotes, specially-highlighted paragraphs, comments, and "
+"generic directives."
 msgstr ""
 
 #: ../../documentation/markup.rst:208
 msgid ""
-"An explicit markup block begins with a line starting with ``..`` followed"
-" by whitespace and is terminated by the next paragraph at the same level "
-"of indentation.  (There needs to be a blank line between explicit markup "
-"and normal paragraphs.  This may all sound a bit complicated, but it is "
+"An explicit markup block begins with a line starting with ``..`` followed by "
+"whitespace and is terminated by the next paragraph at the same level of "
+"indentation.  (There needs to be a blank line between explicit markup and "
+"normal paragraphs.  This may all sound a bit complicated, but it is "
 "intuitive enough when you write it.)"
 msgstr ""
 
@@ -415,17 +414,16 @@ msgstr ""
 
 #: ../../documentation/markup.rst:219
 msgid ""
-"A directive is a generic block of explicit markup.  Besides roles, it is "
-"one of the extension mechanisms of reST, and Sphinx makes heavy use of "
-"it."
+"A directive is a generic block of explicit markup.  Besides roles, it is one "
+"of the extension mechanisms of reST, and Sphinx makes heavy use of it."
 msgstr ""
 
 #: ../../documentation/markup.rst:222
 msgid ""
-"Basically, a directive consists of a name, arguments, options and "
-"content. (Keep this terminology in mind, it is used in `:ref:`the next "
-"section <Additional Markup Constructs>` describing custom directives.)  "
-"Looking at this example,"
+"Basically, a directive consists of a name, arguments, options and content. "
+"(Keep this terminology in mind, it is used in `:ref:`the next section "
+"<Additional Markup Constructs>` describing custom directives.)  Looking at "
+"this example,"
 msgstr ""
 
 #: ../../documentation/markup.rst:235
@@ -438,8 +436,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:240
 msgid ""
-"The directive content follows after a blank line and is indented relative"
-" to the directive start."
+"The directive content follows after a blank line and is indented relative to "
+"the directive start."
 msgstr ""
 
 #: ../../documentation/markup.rst:245 ../../documentation/markup.rst:1273
@@ -463,8 +461,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:264
 msgid ""
-"Every explicit markup block (starting with :literal:`.. \\ `) which isn't"
-" a :ref:`valid markup construct <directives>` is regarded as a comment::"
+"Every explicit markup block (starting with :literal:`.. \\ `) which isn't a :"
+"ref:`valid markup construct <directives>` is regarded as a comment::"
 msgstr ""
 
 #: ../../documentation/markup.rst:271
@@ -474,8 +472,8 @@ msgstr ""
 #: ../../documentation/markup.rst:273
 msgid ""
 "Since the easiest way to include special characters like em dashes or "
-"copyright signs in reST is to directly write them as Unicode characters, "
-"one has to specify an encoding:"
+"copyright signs in reST is to directly write them as Unicode characters, one "
+"has to specify an encoding:"
 msgstr ""
 
 #: ../../documentation/markup.rst:277
@@ -496,9 +494,9 @@ msgstr ""
 
 #: ../../documentation/markup.rst:286
 msgid ""
-"**Separation of inline markup:** As said above, inline markup spans must "
-"be separated from the surrounding text by non-word characters, you have "
-"to use an escaped space to get around that."
+"**Separation of inline markup:** As said above, inline markup spans must be "
+"separated from the surrounding text by non-word characters, you have to use "
+"an escaped space to get around that."
 msgstr ""
 
 #: ../../documentation/markup.rst:292
@@ -507,17 +505,17 @@ msgstr ""
 
 #: ../../documentation/markup.rst:294
 msgid ""
-"Sphinx adds a lot of new directives and interpreted text roles to "
-"standard reST markup.  This section contains the reference material for "
-"these facilities. Documentation for \"standard\" reST constructs is not "
-"included here, though they are used in the Python documentation."
+"Sphinx adds a lot of new directives and interpreted text roles to standard "
+"reST markup.  This section contains the reference material for these "
+"facilities. Documentation for \"standard\" reST constructs is not included "
+"here, though they are used in the Python documentation."
 msgstr ""
 
 #: ../../documentation/markup.rst:301
 msgid ""
 "This is just an overview of Sphinx' extended markup capabilities; full "
-"coverage can be found in `its own documentation <https://www.sphinx-"
-"doc.org/>`_."
+"coverage can be found in `its own documentation <https://www.sphinx-doc.org/"
+">`_."
 msgstr ""
 
 #: ../../documentation/markup.rst:307
@@ -526,10 +524,10 @@ msgstr ""
 
 #: ../../documentation/markup.rst:311
 msgid ""
-"Identifies the author of the current section.  The argument should "
-"include the author's name such that it can be used for presentation "
-"(though it isn't) and email address.  The domain name portion of the "
-"address should be lower case.  Example::"
+"Identifies the author of the current section.  The argument should include "
+"the author's name such that it can be used for presentation (though it "
+"isn't) and email address.  The domain name portion of the address should be "
+"lower case.  Example::"
 msgstr ""
 
 #: ../../documentation/markup.rst:318
@@ -544,33 +542,33 @@ msgstr ""
 
 #: ../../documentation/markup.rst:325
 msgid ""
-"The markup described in this section is used to provide information about"
-" a module being documented.  Each module should be documented in its own "
-"file. Normally this markup appears after the title heading of that file; "
-"a typical file might start like this::"
+"The markup described in this section is used to provide information about a "
+"module being documented.  Each module should be documented in its own file. "
+"Normally this markup appears after the title heading of that file; a typical "
+"file might start like this::"
 msgstr ""
 
 #: ../../documentation/markup.rst:339
 msgid ""
-"As you can see, the module-specific markup consists of two directives, "
-"the ``module`` directive and the ``moduleauthor`` directive."
+"As you can see, the module-specific markup consists of two directives, the "
+"``module`` directive and the ``moduleauthor`` directive."
 msgstr ""
 
 #: ../../documentation/markup.rst:344
 msgid ""
-"This directive marks the beginning of the description of a module, "
-"package, or submodule. The name should be fully qualified (i.e. including"
-" the package name for submodules)."
+"This directive marks the beginning of the description of a module, package, "
+"or submodule. The name should be fully qualified (i.e. including the package "
+"name for submodules)."
 msgstr ""
 
 #: ../../documentation/markup.rst:348
 msgid ""
 "The ``platform`` option, if present, is a comma-separated list of the "
 "platforms on which the module is available (if it is available on all "
-"platforms, the option should be omitted).  The keys are short "
-"identifiers; examples that are in use include \"IRIX\", \"Mac\", "
-"\"Windows\", and \"Unix\".  It is important to use a key which has "
-"already been used when applicable."
+"platforms, the option should be omitted).  The keys are short identifiers; "
+"examples that are in use include \"IRIX\", \"Mac\", \"Windows\", and "
+"\"Unix\".  It is important to use a key which has already been used when "
+"applicable."
 msgstr ""
 
 #: ../../documentation/markup.rst:354
@@ -581,23 +579,22 @@ msgstr ""
 
 #: ../../documentation/markup.rst:357
 msgid ""
-"The ``deprecated`` option can be given (with no value) to mark a module "
-"as deprecated; it will be designated as such in various locations then."
+"The ``deprecated`` option can be given (with no value) to mark a module as "
+"deprecated; it will be designated as such in various locations then."
 msgstr ""
 
 #: ../../documentation/markup.rst:362
 msgid ""
-"The ``moduleauthor`` directive, which can appear multiple times, names "
-"the authors of the module code, just like ``sectionauthor`` names the "
-"author(s) of a piece of documentation.  It too does not result in any "
-"output currently."
+"The ``moduleauthor`` directive, which can appear multiple times, names the "
+"authors of the module code, just like ``sectionauthor`` names the author(s) "
+"of a piece of documentation.  It too does not result in any output currently."
 msgstr ""
 
 #: ../../documentation/markup.rst:368
 msgid ""
 "It is important to make the section title of a module-describing file "
-"meaningful since that value will be inserted in the table-of-contents "
-"trees in overview files."
+"meaningful since that value will be inserted in the table-of-contents trees "
+"in overview files."
 msgstr ""
 
 #: ../../documentation/markup.rst:374
@@ -606,24 +603,23 @@ msgstr ""
 
 #: ../../documentation/markup.rst:376
 msgid ""
-"There are a number of directives used to describe specific features "
-"provided by modules.  Each directive requires one or more signatures to "
-"provide basic information about what is being described, and the content "
-"should be the description.  The basic version makes entries in the "
-"general index; if no index entry is desired, you can give the directive "
-"option flag ``:noindex:``.  The following example shows all of the "
-"features of this directive type::"
+"There are a number of directives used to describe specific features provided "
+"by modules.  Each directive requires one or more signatures to provide basic "
+"information about what is being described, and the content should be the "
+"description.  The basic version makes entries in the general index; if no "
+"index entry is desired, you can give the directive option flag ``:noindex:"
+"``.  The following example shows all of the features of this directive type::"
 msgstr ""
 
 #: ../../documentation/markup.rst:389
 msgid ""
-"The signatures of object methods or data attributes should not include "
-"the class name, but be nested in a class directive.  The generated files "
-"will reflect this nesting, and the target identifiers (for HTML output) "
-"will use both the class and method name, to enable consistent cross-"
-"references.  If you describe methods belonging to an abstract protocol "
-"such as context managers, use a class directive with a (pseudo-)type name"
-" too to make the index entries more informative."
+"The signatures of object methods or data attributes should not include the "
+"class name, but be nested in a class directive.  The generated files will "
+"reflect this nesting, and the target identifiers (for HTML output) will use "
+"both the class and method name, to enable consistent cross-references.  If "
+"you describe methods belonging to an abstract protocol such as context "
+"managers, use a class directive with a (pseudo-)type name too to make the "
+"index entries more informative."
 msgstr ""
 
 #: ../../documentation/markup.rst:397
@@ -636,15 +632,14 @@ msgstr ""
 
 #: ../../documentation/markup.rst:405
 msgid ""
-"This is also used to describe function-like preprocessor macros.  The "
-"names of the arguments should be given so they may be used in the "
-"description."
+"This is also used to describe function-like preprocessor macros.  The names "
+"of the arguments should be given so they may be used in the description."
 msgstr ""
 
 #: ../../documentation/markup.rst:408
 msgid ""
-"Note that you don't have to backslash-escape asterisks in the signature, "
-"as it is not parsed by the reST inliner."
+"Note that you don't have to backslash-escape asterisks in the signature, as "
+"it is not parsed by the reST inliner."
 msgstr ""
 
 #: ../../documentation/markup.rst:413
@@ -653,19 +648,18 @@ msgstr ""
 
 #: ../../documentation/markup.rst:417
 msgid ""
-"The text of the description should include the range of values allowed, "
-"how the value should be interpreted, and whether the value can be "
-"changed. References to structure members in text should use the "
-"``member`` role."
+"The text of the description should include the range of values allowed, how "
+"the value should be interpreted, and whether the value can be changed. "
+"References to structure members in text should use the ``member`` role."
 msgstr ""
 
 #: ../../documentation/markup.rst:423
 msgid ""
-"Describes a \"simple\" C macro.  Simple macros are macros which are used "
-"for code expansion, but which do not take arguments so cannot be "
-"described as functions.  This is not to be used for simple constant "
-"definitions.  Examples of its use in the Python documentation include "
-":c:macro:`PyObject_HEAD` and :c:macro:`Py_BEGIN_ALLOW_THREADS`."
+"Describes a \"simple\" C macro.  Simple macros are macros which are used for "
+"code expansion, but which do not take arguments so cannot be described as "
+"functions.  This is not to be used for simple constant definitions.  "
+"Examples of its use in the Python documentation include :c:macro:"
+"`PyObject_HEAD` and :c:macro:`Py_BEGIN_ALLOW_THREADS`."
 msgstr ""
 
 #: ../../documentation/markup.rst:431
@@ -674,15 +668,15 @@ msgstr ""
 
 #: ../../documentation/markup.rst:435
 msgid ""
-"Describes a global C variable.  The signature should include the type, "
-"such as::"
+"Describes a global C variable.  The signature should include the type, such "
+"as::"
 msgstr ""
 
 #: ../../documentation/markup.rst:442
 msgid ""
-"Describes global data in a module, including both variables and values "
-"used as \"defined constants.\"  Class and object attributes are not "
-"documented using this directive."
+"Describes global data in a module, including both variables and values used "
+"as \"defined constants.\"  Class and object attributes are not documented "
+"using this directive."
 msgstr ""
 
 #: ../../documentation/markup.rst:448
@@ -694,36 +688,36 @@ msgstr ""
 #: ../../documentation/markup.rst:453
 msgid ""
 "Describes a module-level function.  The signature should include the "
-"parameters, enclosing optional parameters in brackets.  Default values "
-"can be given if it enhances clarity.  For example::"
+"parameters, enclosing optional parameters in brackets.  Default values can "
+"be given if it enhances clarity.  For example::"
 msgstr ""
 
 #: ../../documentation/markup.rst:459
 msgid ""
-"Object methods are not documented using this directive. Bound object "
-"methods placed in the module namespace as part of the public interface of"
-" the module are documented using this, as they are equivalent to normal "
-"functions for most purposes."
+"Object methods are not documented using this directive. Bound object methods "
+"placed in the module namespace as part of the public interface of the module "
+"are documented using this, as they are equivalent to normal functions for "
+"most purposes."
 msgstr ""
 
 #: ../../documentation/markup.rst:464
 msgid ""
-"The description should include information about the parameters required "
-"and how they are used (especially whether mutable objects passed as "
-"parameters are modified), side effects, and possible exceptions.  A small"
-" example may be provided."
+"The description should include information about the parameters required and "
+"how they are used (especially whether mutable objects passed as parameters "
+"are modified), side effects, and possible exceptions.  A small example may "
+"be provided."
 msgstr ""
 
 #: ../../documentation/markup.rst:471
 msgid ""
-"Describes a module-level coroutine.  The description should include "
-"similar information to that described for ``function``."
+"Describes a module-level coroutine.  The description should include similar "
+"information to that described for ``function``."
 msgstr ""
 
 #: ../../documentation/markup.rst:476
 msgid ""
-"Describes a decorator function.  The signature should *not* represent the"
-" signature of the actual function, but the usage as a decorator.  For "
+"Describes a decorator function.  The signature should *not* represent the "
+"signature of the actual function, but the usage as a decorator.  For "
 "example, given the functions"
 msgstr ""
 
@@ -733,46 +727,46 @@ msgstr ""
 
 #: ../../documentation/markup.rst:502
 msgid ""
-"There is no ``deco`` role to link to a decorator that is marked up with "
-"this directive; rather, use the ``:func:`` role."
+"There is no ``deco`` role to link to a decorator that is marked up with this "
+"directive; rather, use the ``:func:`` role."
 msgstr ""
 
 #: ../../documentation/markup.rst:507
 msgid ""
-"Describes a class.  The signature can include parentheses with parameters"
-" which will be shown as the constructor arguments."
+"Describes a class.  The signature can include parentheses with parameters "
+"which will be shown as the constructor arguments."
 msgstr ""
 
 #: ../../documentation/markup.rst:512
 msgid ""
 "Describes an object data attribute.  The description should include "
-"information about the type of the data to be expected and whether it may "
-"be changed directly.  This directive should be nested in a class "
-"directive, like in this example::"
+"information about the type of the data to be expected and whether it may be "
+"changed directly.  This directive should be nested in a class directive, "
+"like in this example::"
 msgstr ""
 
 #: ../../documentation/markup.rst:525
 msgid ""
-"If is also possible to document an attribute outside of a class "
-"directive, for example if the documentation for different attributes and "
-"methods is split in multiple sections.  The class name should then be "
-"included explicitly::"
+"If is also possible to document an attribute outside of a class directive, "
+"for example if the documentation for different attributes and methods is "
+"split in multiple sections.  The class name should then be included "
+"explicitly::"
 msgstr ""
 
 #: ../../documentation/markup.rst:534
 msgid ""
-"Describes an object method.  The parameters should not include the "
-"``self`` parameter.  The description should include similar information "
-"to that described for ``function``.  This directive should be nested in a"
-" class directive, like in the example above."
+"Describes an object method.  The parameters should not include the ``self`` "
+"parameter.  The description should include similar information to that "
+"described for ``function``.  This directive should be nested in a class "
+"directive, like in the example above."
 msgstr ""
 
 #: ../../documentation/markup.rst:541
 msgid ""
-"Describes an object coroutine method.  The parameters should not include "
-"the ``self`` parameter.  The description should include similar "
-"information to that described for ``function``.  This directive should be"
-" nested in a ``class`` directive."
+"Describes an object coroutine method.  The parameters should not include the "
+"``self`` parameter.  The description should include similar information to "
+"that described for ``function``.  This directive should be nested in a "
+"``class`` directive."
 msgstr ""
 
 #: ../../documentation/markup.rst:548
@@ -785,24 +779,24 @@ msgstr ""
 
 #: ../../documentation/markup.rst:554
 msgid ""
-"Describes an object static method.  The description should include "
-"similar information to that described for ``function``.  This directive "
-"should be nested in a ``class`` directive."
+"Describes an object static method.  The description should include similar "
+"information to that described for ``function``.  This directive should be "
+"nested in a ``class`` directive."
 msgstr ""
 
 #: ../../documentation/markup.rst:560
 msgid ""
 "Describes an object class method.  The parameters should not include the "
-"``cls`` parameter.  The description should include similar information to"
-" that described for ``function``.  This directive should be nested in a "
+"``cls`` parameter.  The description should include similar information to "
+"that described for ``function``.  This directive should be nested in a "
 "``class`` directive."
 msgstr ""
 
 #: ../../documentation/markup.rst:567
 msgid ""
-"Describes an object abstract method.  The description should include "
-"similar information to that described for ``function``.  This directive "
-"should be nested in a ``class`` directive."
+"Describes an object abstract method.  The description should include similar "
+"information to that described for ``function``.  This directive should be "
+"nested in a ``class`` directive."
 msgstr ""
 
 #: ../../documentation/markup.rst:573
@@ -825,10 +819,9 @@ msgstr ""
 
 #: ../../documentation/markup.rst:593
 msgid ""
-"This directive produces the same formatting as the specific ones "
-"explained above but does not create index entries or cross-referencing "
-"targets.  It is used, for example, to describe the directives in this "
-"document. Example::"
+"This directive produces the same formatting as the specific ones explained "
+"above but does not create index entries or cross-referencing targets.  It is "
+"used, for example, to describe the directives in this document. Example::"
 msgstr ""
 
 #: ../../documentation/markup.rst:603
@@ -837,9 +830,9 @@ msgstr ""
 
 #: ../../documentation/markup.rst:605
 msgid ""
-"Examples of Python source code or interactive sessions are represented "
-"using standard reST literal blocks.  They are started by a ``::`` at the "
-"end of the preceding paragraph and delimited by indentation."
+"Examples of Python source code or interactive sessions are represented using "
+"standard reST literal blocks.  They are started by a ``::`` at the end of "
+"the preceding paragraph and delimited by indentation."
 msgstr ""
 
 #: ../../documentation/markup.rst:609
@@ -847,8 +840,8 @@ msgid ""
 "Representing an interactive session requires including the prompts and "
 "output along with the Python code.  No special markup is required for "
 "interactive sessions.  After the last line of input or output presented, "
-"there should not be an \"unused\" primary prompt; this is an example of "
-"what *not* to do:"
+"there should not be an \"unused\" primary prompt; this is an example of what "
+"*not* to do:"
 msgstr ""
 
 #: ../../documentation/markup.rst:620
@@ -857,9 +850,9 @@ msgstr ""
 
 #: ../../documentation/markup.rst:622
 msgid ""
-"There is a \"highlighting language\" for each source file.  By default, "
-"this is ``'python'`` as the majority of files will have to highlight "
-"Python snippets."
+"There is a \"highlighting language\" for each source file.  By default, this "
+"is ``'python'`` as the majority of files will have to highlight Python "
+"snippets."
 msgstr ""
 
 #: ../../documentation/markup.rst:626
@@ -870,20 +863,19 @@ msgstr ""
 
 #: ../../documentation/markup.rst:629
 msgid ""
-"The highlighting language can be changed using the ``highlight`` "
-"directive, used as follows::"
+"The highlighting language can be changed using the ``highlight`` directive, "
+"used as follows::"
 msgstr ""
 
 #: ../../documentation/markup.rst:634
 msgid ""
-"This language is used until the next ``highlight`` directive is "
-"encountered."
+"This language is used until the next ``highlight`` directive is encountered."
 msgstr ""
 
 #: ../../documentation/markup.rst:637
 msgid ""
-"The ``code-block`` directive can be used to specify the highlight "
-"language of a single code block, e.g.::"
+"The ``code-block`` directive can be used to specify the highlight language "
+"of a single code block, e.g.::"
 msgstr ""
 
 #: ../../documentation/markup.rst:648
@@ -914,17 +906,16 @@ msgstr ""
 
 #: ../../documentation/markup.rst:658
 msgid ""
-"Longer displays of verbatim text may be included by storing the example "
-"text in an external file containing only plain text.  The file may be "
-"included using the ``literalinclude`` directive. [1]_ For example, to "
-"include the Python source file :file:`example.py`, use::"
+"Longer displays of verbatim text may be included by storing the example text "
+"in an external file containing only plain text.  The file may be included "
+"using the ``literalinclude`` directive. [1]_ For example, to include the "
+"Python source file :file:`example.py`, use::"
 msgstr ""
 
 #: ../../documentation/markup.rst:665
 msgid ""
 "The file name is relative to the current file's path.  Documentation-"
-"specific include files should be placed in the ``Doc/includes`` "
-"subdirectory."
+"specific include files should be placed in the ``Doc/includes`` subdirectory."
 msgstr ""
 
 #: ../../documentation/markup.rst:672
@@ -933,15 +924,15 @@ msgstr ""
 
 #: ../../documentation/markup.rst:674
 msgid ""
-"As :ref:`previously mentioned <inline-markup>`, Sphinx uses interpreted "
-"text roles of the form ``:rolename:`content``` to insert semantic markup "
-"in documents."
+"As :ref:`previously mentioned <inline-markup>`, Sphinx uses interpreted text "
+"roles of the form ``:rolename:`content``` to insert semantic markup in "
+"documents."
 msgstr ""
 
 #: ../../documentation/markup.rst:678
 msgid ""
-"In the CPython documentation, there are a couple common cases where "
-"simpler markup should be used:"
+"In the CPython documentation, there are a couple common cases where simpler "
+"markup should be used:"
 msgstr ""
 
 #: ../../documentation/markup.rst:681
@@ -949,52 +940,52 @@ msgid "``*arg*`` (rendered as *arg*) for function and method arguments."
 msgstr ""
 
 #: ../../documentation/markup.rst:682
-msgid "````True````/````False````/````None```` for ``True``/``False``/``None``."
+msgid ""
+"````True````/````False````/````None```` for ``True``/``False``/``None``."
 msgstr ""
 
 #: ../../documentation/markup.rst:684
 msgid ""
-"There are some additional facilities that make cross-referencing roles "
-"more versatile:"
+"There are some additional facilities that make cross-referencing roles more "
+"versatile:"
 msgstr ""
 
 #: ../../documentation/markup.rst:687
 msgid ""
-"You may supply an explicit title and reference target, like in reST "
-"direct hyperlinks: ``:role:`title <target>``` will refer to *target*, but"
-" the link text will be *title*."
+"You may supply an explicit title and reference target, like in reST direct "
+"hyperlinks: ``:role:`title <target>``` will refer to *target*, but the link "
+"text will be *title*."
 msgstr ""
 
 #: ../../documentation/markup.rst:691
 msgid ""
-"If you prefix the content with ``!``, no reference/hyperlink will be "
-"created."
+"If you prefix the content with ``!``, no reference/hyperlink will be created."
 msgstr ""
 
 #: ../../documentation/markup.rst:693
 msgid ""
-"For the Python object roles, if you prefix the content with ``~``, the "
-"link text will only be the last component of the target.  For example, "
-"``:meth:`~Queue.Queue.get``` will refer to ``Queue.Queue.get`` but only "
-"display ``get`` as the link text."
+"For the Python object roles, if you prefix the content with ``~``, the link "
+"text will only be the last component of the target.  For example, ``:meth:"
+"`~Queue.Queue.get``` will refer to ``Queue.Queue.get`` but only display "
+"``get`` as the link text."
 msgstr ""
 
 #: ../../documentation/markup.rst:698
 msgid ""
-"In HTML output, the link's ``title`` attribute (that is e.g. shown as a "
-"tool-tip on mouse-hover) will always be the full target name."
+"In HTML output, the link's ``title`` attribute (that is e.g. shown as a tool-"
+"tip on mouse-hover) will always be the full target name."
 msgstr ""
 
 #: ../../documentation/markup.rst:701
 msgid ""
-"The following roles refer to objects in modules and are possibly "
-"hyperlinked if a matching identifier is found:"
+"The following roles refer to objects in modules and are possibly hyperlinked "
+"if a matching identifier is found:"
 msgstr ""
 
 #: ../../documentation/markup.rst:706
 msgid ""
-"The name of a module; a dotted name may be used.  This should also be "
-"used for package names."
+"The name of a module; a dotted name may be used.  This should also be used "
+"for package names."
 msgstr ""
 
 #: ../../documentation/markup.rst:711
@@ -1010,8 +1001,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:721
 msgid ""
-"The name of a \"defined\" constant.  This may be a C-language ``#define``"
-" or a Python variable that is not intended to be changed."
+"The name of a \"defined\" constant.  This may be a C-language ``#define`` or "
+"a Python variable that is not intended to be changed."
 msgstr ""
 
 #: ../../documentation/markup.rst:726
@@ -1020,8 +1011,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:730
 msgid ""
-"The name of a method of an object.  The role text should include the type"
-" name and the method name.  A dotted name may be used."
+"The name of a method of an object.  The role text should include the type "
+"name and the method name.  A dotted name may be used."
 msgstr ""
 
 #: ../../documentation/markup.rst:735
@@ -1034,34 +1025,33 @@ msgstr ""
 
 #: ../../documentation/markup.rst:741
 msgid ""
-"The name enclosed in this markup can include a module name and/or a class"
-" name. For example, ``:func:`filter``` could refer to a function named "
-"``filter`` in the current module, or the built-in function of that name."
-"  In contrast, ``:func:`foo.filter``` clearly refers to the ``filter`` "
-"function in the ``foo`` module."
+"The name enclosed in this markup can include a module name and/or a class "
+"name. For example, ``:func:`filter``` could refer to a function named "
+"``filter`` in the current module, or the built-in function of that name.  In "
+"contrast, ``:func:`foo.filter``` clearly refers to the ``filter`` function "
+"in the ``foo`` module."
 msgstr ""
 
 #: ../../documentation/markup.rst:747
 msgid ""
 "Normally, names in these roles are searched first without any further "
-"qualification, then with the current module name prepended, then with the"
-" current module and class name (if any) prepended.  If you prefix the "
-"name with a dot, this order is reversed.  For example, in the "
-"documentation of the :mod:`codecs` module, ``:func:`open``` always refers"
-" to the built-in function, while ``:func:`.open``` refers to "
-":func:`codecs.open`."
+"qualification, then with the current module name prepended, then with the "
+"current module and class name (if any) prepended.  If you prefix the name "
+"with a dot, this order is reversed.  For example, in the documentation of "
+"the :mod:`codecs` module, ``:func:`open``` always refers to the built-in "
+"function, while ``:func:`.open``` refers to :func:`codecs.open`."
 msgstr ""
 
 #: ../../documentation/markup.rst:754
 msgid ""
-"A similar heuristic is used to determine whether the name is an attribute"
-" of the currently documented class."
+"A similar heuristic is used to determine whether the name is an attribute of "
+"the currently documented class."
 msgstr ""
 
 #: ../../documentation/markup.rst:759
 msgid ""
-"The following roles create cross-references to C-language constructs if "
-"they are defined in the API documentation:"
+"The following roles create cross-references to C-language constructs if they "
+"are defined in the API documentation:"
 msgstr ""
 
 #: ../../documentation/markup.rst:764
@@ -1086,8 +1076,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:784
 msgid ""
-"The following roles do not refer to objects, but can create cross-"
-"references or internal links:"
+"The following roles do not refer to objects, but can create cross-references "
+"or internal links:"
 msgstr ""
 
 #: ../../documentation/markup.rst:789
@@ -1096,28 +1086,28 @@ msgstr ""
 
 #: ../../documentation/markup.rst:793
 msgid ""
-"The name of a Python keyword.  Using this role will generate a link to "
-"the documentation of the keyword.  ``True``, ``False`` and ``None`` do "
-"not use this role, but simple code markup (````True````), given that "
-"they're fundamental to the language and should be known to any "
-"programmer."
+"The name of a Python keyword.  Using this role will generate a link to the "
+"documentation of the keyword.  ``True``, ``False`` and ``None`` do not use "
+"this role, but simple code markup (````True````), given that they're "
+"fundamental to the language and should be known to any programmer."
 msgstr ""
 
 #: ../../documentation/markup.rst:800
 msgid ""
-"A command-line option of Python.  The leading hyphen(s) must be included."
-" If a matching ``cmdoption`` directive exists, it is linked to.  For "
-"options of other programs or scripts, use simple ````code```` markup."
+"A command-line option of Python.  The leading hyphen(s) must be included. If "
+"a matching ``cmdoption`` directive exists, it is linked to.  For options of "
+"other programs or scripts, use simple ````code```` markup."
 msgstr ""
 
 #: ../../documentation/markup.rst:806
 msgid ""
-"The name of a grammar token (used in the reference manual to create links"
-" between production displays)."
+"The name of a grammar token (used in the reference manual to create links "
+"between production displays)."
 msgstr ""
 
 #: ../../documentation/markup.rst:811
-msgid "The following role creates a cross-reference to the term in the glossary:"
+msgid ""
+"The following role creates a cross-reference to the term in the glossary:"
 msgstr ""
 
 #: ../../documentation/markup.rst:815
@@ -1125,20 +1115,20 @@ msgid ""
 "Reference to a term in the glossary.  The glossary is created using the "
 "``glossary`` directive containing a definition list with terms and "
 "definitions.  It does not have to be in the same file as the ``term`` "
-"markup, in fact, by default the Python docs have one global glossary in "
-"the ``glossary.rst`` file."
+"markup, in fact, by default the Python docs have one global glossary in the "
+"``glossary.rst`` file."
 msgstr ""
 
 #: ../../documentation/markup.rst:821
 msgid ""
-"If you use a term that's not explained in a glossary, you'll get a "
-"warning during build."
+"If you use a term that's not explained in a glossary, you'll get a warning "
+"during build."
 msgstr ""
 
 #: ../../documentation/markup.rst:826
 msgid ""
-"The following roles don't do anything special except formatting the text "
-"in a different style:"
+"The following roles don't do anything special except formatting the text in "
+"a different style:"
 msgstr ""
 
 #: ../../documentation/markup.rst:831
@@ -1165,34 +1155,34 @@ msgstr ""
 
 #: ../../documentation/markup.rst:850
 msgid ""
-"Labels presented as part of an interactive user interface should be "
-"marked using ``guilabel``.  This includes labels from text-based "
-"interfaces such as those created using :mod:`curses` or other text-based "
-"libraries.  Any label used in the interface should be marked with this "
-"role, including button labels, window titles, field names, menu and menu "
-"selection names, and even values in selection lists."
+"Labels presented as part of an interactive user interface should be marked "
+"using ``guilabel``.  This includes labels from text-based interfaces such as "
+"those created using :mod:`curses` or other text-based libraries.  Any label "
+"used in the interface should be marked with this role, including button "
+"labels, window titles, field names, menu and menu selection names, and even "
+"values in selection lists."
 msgstr ""
 
 #: ../../documentation/markup.rst:859
 msgid ""
-"Mark a sequence of keystrokes.  What form the key sequence takes may "
-"depend on platform- or application-specific conventions.  When there are "
-"no relevant conventions, the names of modifier keys should be spelled "
-"out, to improve accessibility for new users and non-native speakers.  For"
-" example, an *xemacs* key sequence may be marked like ``:kbd:`C-x C-f```,"
-" but without reference to a specific application or platform, the same "
-"sequence should be marked as ``:kbd:`Control-x Control-f```."
+"Mark a sequence of keystrokes.  What form the key sequence takes may depend "
+"on platform- or application-specific conventions.  When there are no "
+"relevant conventions, the names of modifier keys should be spelled out, to "
+"improve accessibility for new users and non-native speakers.  For example, "
+"an *xemacs* key sequence may be marked like ``:kbd:`C-x C-f```, but without "
+"reference to a specific application or platform, the same sequence should be "
+"marked as ``:kbd:`Control-x Control-f```."
 msgstr ""
 
 #: ../../documentation/markup.rst:869
 msgid ""
-"The name of an RFC 822-style mail header.  This markup does not imply "
-"that the header is being used in an email message, but can be used to "
-"refer to any header of the same \"style.\"  This is also used for headers"
-" defined by the various MIME specifications.  The header name should be "
-"entered in the same way it would normally be found in practice, with the "
-"camel-casing conventions being preferred where there is more than one "
-"common usage. For example: ``:mailheader:`Content-Type```."
+"The name of an RFC 822-style mail header.  This markup does not imply that "
+"the header is being used in an email message, but can be used to refer to "
+"any header of the same \"style.\"  This is also used for headers defined by "
+"the various MIME specifications.  The header name should be entered in the "
+"same way it would normally be found in practice, with the camel-casing "
+"conventions being preferred where there is more than one common usage. For "
+"example: ``:mailheader:`Content-Type```."
 msgstr ""
 
 #: ../../documentation/markup.rst:879
@@ -1201,34 +1191,34 @@ msgstr ""
 
 #: ../../documentation/markup.rst:883
 msgid ""
-"A reference to a Unix manual page including the section, e.g. "
-"``:manpage:`ls(1)```."
+"A reference to a Unix manual page including the section, e.g. ``:manpage:"
+"`ls(1)```."
 msgstr ""
 
 #: ../../documentation/markup.rst:888
 msgid ""
-"Menu selections should be marked using the ``menuselection`` role.  This "
-"is used to mark a complete sequence of menu selections, including "
-"selecting submenus and choosing a specific operation, or any subsequence "
-"of such a sequence.  The names of individual selections should be "
-"separated by ``-->``."
+"Menu selections should be marked using the ``menuselection`` role.  This is "
+"used to mark a complete sequence of menu selections, including selecting "
+"submenus and choosing a specific operation, or any subsequence of such a "
+"sequence.  The names of individual selections should be separated by ``-->``."
 msgstr ""
 
 #: ../../documentation/markup.rst:894
-msgid "For example, to mark the selection \"Start > Programs\", use this markup::"
+msgid ""
+"For example, to mark the selection \"Start > Programs\", use this markup::"
 msgstr ""
 
 #: ../../documentation/markup.rst:898
 msgid ""
-"When including a selection that includes some trailing indicator, such as"
-" the ellipsis some operating systems use to indicate that the command "
-"opens a dialog, the indicator should be omitted from the selection name."
+"When including a selection that includes some trailing indicator, such as "
+"the ellipsis some operating systems use to indicate that the command opens a "
+"dialog, the indicator should be omitted from the selection name."
 msgstr ""
 
 #: ../../documentation/markup.rst:904
 msgid ""
-"The name of a MIME type, or a component of a MIME type (the major or "
-"minor portion, taken alone)."
+"The name of a MIME type, or a component of a MIME type (the major or minor "
+"portion, taken alone)."
 msgstr ""
 
 #: ../../documentation/markup.rst:909
@@ -1237,9 +1227,9 @@ msgstr ""
 
 #: ../../documentation/markup.rst:913
 msgid ""
-"The name of an executable program.  This may differ from the file name "
-"for the executable for some platforms.  In particular, the ``.exe`` (or "
-"other) extension should be omitted for Windows programs."
+"The name of an executable program.  This may differ from the file name for "
+"the executable for some platforms.  In particular, the ``.exe`` (or other) "
+"extension should be omitted for Windows programs."
 msgstr ""
 
 #: ../../documentation/markup.rst:919
@@ -1264,8 +1254,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:934
 msgid ""
-"A reference to a Python Enhancement Proposal.  This generates appropriate"
-" index entries. The text \"PEP *number*\\ \" is generated; in the HTML "
+"A reference to a Python Enhancement Proposal.  This generates appropriate "
+"index entries. The text \"PEP *number*\\ \" is generated; in the HTML "
 "output, this text is a hyperlink to an online copy of the specified PEP. "
 "Such hyperlinks should not be a substitute for properly documenting the "
 "language in the manuals."
@@ -1273,16 +1263,15 @@ msgstr ""
 
 #: ../../documentation/markup.rst:942
 msgid ""
-"A reference to an Internet Request for Comments.  This generates "
-"appropriate index entries. The text \"RFC *number*\\ \" is generated; in "
-"the HTML output, this text is a hyperlink to an online copy of the "
-"specified RFC."
+"A reference to an Internet Request for Comments.  This generates appropriate "
+"index entries. The text \"RFC *number*\\ \" is generated; in the HTML "
+"output, this text is a hyperlink to an online copy of the specified RFC."
 msgstr ""
 
 #: ../../documentation/markup.rst:947
 msgid ""
-"Note that there are no special roles for including hyperlinks as you can "
-"use the standard reST markup for that purpose."
+"Note that there are no special roles for including hyperlinks as you can use "
+"the standard reST markup for that purpose."
 msgstr ""
 
 #: ../../documentation/markup.rst:954
@@ -1291,10 +1280,10 @@ msgstr ""
 
 #: ../../documentation/markup.rst:956
 msgid ""
-"To support cross-referencing to arbitrary sections in the documentation, "
-"the standard reST labels are \"abused\" a bit: Every label must precede a"
-" section title; and every label name must be unique throughout the entire"
-" documentation source."
+"To support cross-referencing to arbitrary sections in the documentation, the "
+"standard reST labels are \"abused\" a bit: Every label must precede a "
+"section title; and every label name must be unique throughout the entire "
+"documentation source."
 msgstr ""
 
 #: ../../documentation/markup.rst:961
@@ -1315,8 +1304,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:976
 msgid ""
-"Alternatively, you can reference any label (not just section titles) if "
-"you provide the link text ``:ref:`link text <reference-label>```."
+"Alternatively, you can reference any label (not just section titles) if you "
+"provide the link text ``:ref:`link text <reference-label>```."
 msgstr ""
 
 #: ../../documentation/markup.rst:980
@@ -1325,57 +1314,55 @@ msgstr ""
 
 #: ../../documentation/markup.rst:982
 msgid ""
-"These directives create short paragraphs and can be used inside "
-"information units as well as normal text:"
+"These directives create short paragraphs and can be used inside information "
+"units as well as normal text:"
 msgstr ""
 
 #: ../../documentation/markup.rst:987
 msgid ""
-"An especially important bit of information about an API that a user "
-"should be aware of when using whatever bit of API the note pertains to.  "
-"The content of the directive should be written in complete sentences and "
-"include all appropriate punctuation."
+"An especially important bit of information about an API that a user should "
+"be aware of when using whatever bit of API the note pertains to.  The "
+"content of the directive should be written in complete sentences and include "
+"all appropriate punctuation."
 msgstr ""
 
 #: ../../documentation/markup.rst:1000
 msgid ""
-"An important bit of information about an API that a user should be aware "
-"of when using whatever bit of API the warning pertains to.  The content "
-"of the directive should be written in complete sentences and include all "
+"An important bit of information about an API that a user should be aware of "
+"when using whatever bit of API the warning pertains to.  The content of the "
+"directive should be written in complete sentences and include all "
 "appropriate punctuation.  In the interest of not scaring users away from "
 "pages filled with warnings, this directive should only be chosen over "
-"``note`` for information regarding the possibility of crashes, data loss,"
-" or security implications."
+"``note`` for information regarding the possibility of crashes, data loss, or "
+"security implications."
 msgstr ""
 
 #: ../../documentation/markup.rst:1010
 msgid ""
 "This directive documents the version of Python which added the described "
-"feature, or a part of it, to the library or C API.  When this applies to "
-"an entire module, it should be placed at the top of the module section "
-"before any prose."
+"feature, or a part of it, to the library or C API.  When this applies to an "
+"entire module, it should be placed at the top of the module section before "
+"any prose."
 msgstr ""
 
 #: ../../documentation/markup.rst:1015
 msgid ""
-"The first argument must be given and is the version in question.  The "
-"second argument is optional and can be used to describe the details of "
-"the feature."
+"The first argument must be given and is the version in question.  The second "
+"argument is optional and can be used to describe the details of the feature."
 msgstr ""
 
 #: ../../documentation/markup.rst:1024
 msgid ""
 "Similar to ``versionadded``, but describes when and what changed in the "
-"named feature in some way (new parameters, changed side effects, platform"
-" support, etc.).  This one *must* have the second argument (explanation "
-"of the change)."
+"named feature in some way (new parameters, changed side effects, platform "
+"support, etc.).  This one *must* have the second argument (explanation of "
+"the change)."
 msgstr ""
 
 #: ../../documentation/markup.rst:1033
 msgid ""
-"Note that there should be no blank line between the directive head and "
-"the explanation; this is to make these blocks visually continuous in the "
-"markup."
+"Note that there should be no blank line between the directive head and the "
+"explanation; this is to make these blocks visually continuous in the markup."
 msgstr ""
 
 #: ../../documentation/markup.rst:1038
@@ -1390,8 +1377,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1049
 msgid ""
-"Like ``deprecated``, but it also indicates in which version the feature "
-"is removed."
+"Like ``deprecated``, but it also indicates in which version the feature is "
+"removed."
 msgstr ""
 
 #: ../../documentation/markup.rst:1052
@@ -1412,41 +1399,38 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1074
 msgid ""
-"\"\\ **CPython implementation detail:**\\ \" is automatically prepended "
-"to the content."
+"\"\\ **CPython implementation detail:**\\ \" is automatically prepended to "
+"the content."
 msgstr ""
 
 #: ../../documentation/markup.rst:1079
 msgid ""
 "Many sections include a list of references to module documentation or "
-"external documents.  These lists are created using the ``seealso`` "
-"directive."
+"external documents.  These lists are created using the ``seealso`` directive."
 msgstr ""
 
 #: ../../documentation/markup.rst:1082
 msgid ""
-"The ``seealso`` directive is typically placed in a section just before "
-"any sub-sections.  For the HTML output, it is shown boxed off from the "
-"main flow of the text."
+"The ``seealso`` directive is typically placed in a section just before any "
+"sub-sections.  For the HTML output, it is shown boxed off from the main flow "
+"of the text."
 msgstr ""
 
 #: ../../documentation/markup.rst:1086
 msgid ""
-"The content of the ``seealso`` directive should be a reST definition "
-"list. Example::"
+"The content of the ``seealso`` directive should be a reST definition list. "
+"Example::"
 msgstr ""
 
 #: ../../documentation/markup.rst:1099
 msgid ""
 "This directive creates a paragraph heading that is not used to create a "
-"table of contents node.  It is currently used for the \"Footnotes\" "
-"caption."
+"table of contents node.  It is currently used for the \"Footnotes\" caption."
 msgstr ""
 
 #: ../../documentation/markup.rst:1104
 msgid ""
-"This directive creates a centered boldfaced paragraph.  Use it as "
-"follows::"
+"This directive creates a centered boldfaced paragraph.  Use it as follows::"
 msgstr ""
 
 #: ../../documentation/markup.rst:1112
@@ -1455,19 +1439,19 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1114
 msgid ""
-"Since reST does not have facilities to interconnect several documents, or"
-" split documents into multiple output files, Sphinx uses a custom "
-"directive to add relations between the single files the documentation is "
-"made of, as well as tables of contents.  The ``toctree`` directive is the"
-" central element."
+"Since reST does not have facilities to interconnect several documents, or "
+"split documents into multiple output files, Sphinx uses a custom directive "
+"to add relations between the single files the documentation is made of, as "
+"well as tables of contents.  The ``toctree`` directive is the central "
+"element."
 msgstr ""
 
 #: ../../documentation/markup.rst:1121
 msgid ""
 "This directive inserts a \"TOC tree\" at the current location, using the "
 "individual TOCs (including \"sub-TOC trees\") of the files given in the "
-"directive body.  A numeric ``maxdepth`` option may be given to indicate "
-"the depth of the tree; by default, all levels are included."
+"directive body.  A numeric ``maxdepth`` option may be given to indicate the "
+"depth of the tree; by default, all levels are included."
 msgstr ""
 
 #: ../../documentation/markup.rst:1126
@@ -1480,31 +1464,31 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1139
 msgid ""
-"Tables of contents from all those files are inserted, with a maximum "
-"depth of two, that means one nested heading.  ``toctree`` directives in "
-"those files are also taken into account."
+"Tables of contents from all those files are inserted, with a maximum depth "
+"of two, that means one nested heading.  ``toctree`` directives in those "
+"files are also taken into account."
 msgstr ""
 
 #: ../../documentation/markup.rst:1142
 msgid ""
-"Sphinx knows that the relative order of the files ``intro``, ``strings`` "
-"and so forth, and it knows that they are children of the shown file, the "
-"library index.  From this information it generates \"next chapter\", "
-"\"previous chapter\" and \"parent chapter\" links."
+"Sphinx knows that the relative order of the files ``intro``, ``strings`` and "
+"so forth, and it knows that they are children of the shown file, the library "
+"index.  From this information it generates \"next chapter\", \"previous "
+"chapter\" and \"parent chapter\" links."
 msgstr ""
 
 #: ../../documentation/markup.rst:1147
 msgid ""
 "In the end, all files included in the build process must occur in one "
-"``toctree`` directive; Sphinx will emit a warning if it finds a file that"
-" is not included, because that means that this file will not be reachable"
-" through standard navigation."
+"``toctree`` directive; Sphinx will emit a warning if it finds a file that is "
+"not included, because that means that this file will not be reachable "
+"through standard navigation."
 msgstr ""
 
 #: ../../documentation/markup.rst:1152
 msgid ""
-"The special file ``contents.rst`` at the root of the source directory is "
-"the \"root\" of the TOC tree hierarchy; from it the \"Contents\" page is "
+"The special file ``contents.rst`` at the root of the source directory is the "
+"\"root\" of the TOC tree hierarchy; from it the \"Contents\" page is "
 "generated."
 msgstr ""
 
@@ -1514,16 +1498,15 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1159
 msgid ""
-"Sphinx automatically creates index entries from all information units "
-"(like functions, classes or attributes) like discussed before."
+"Sphinx automatically creates index entries from all information units (like "
+"functions, classes or attributes) like discussed before."
 msgstr ""
 
 #: ../../documentation/markup.rst:1162
 msgid ""
-"However, there is also an explicit directive available, to make the index"
-" more comprehensive and enable index entries in documents where "
-"information is not mainly contained in information units, such as the "
-"language reference."
+"However, there is also an explicit directive available, to make the index "
+"more comprehensive and enable index entries in documents where information "
+"is not mainly contained in information units, such as the language reference."
 msgstr ""
 
 #: ../../documentation/markup.rst:1166
@@ -1538,9 +1521,9 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1177
 msgid ""
-"This directive contains five entries, which will be converted to entries "
-"in the generated index which link to the exact location of the index "
-"statement (or, in case of offline media, the corresponding page number)."
+"This directive contains five entries, which will be converted to entries in "
+"the generated index which link to the exact location of the index statement "
+"(or, in case of offline media, the corresponding page number)."
 msgstr ""
 
 #: ../../documentation/markup.rst:1181
@@ -1554,8 +1537,8 @@ msgstr ""
 #: ../../documentation/markup.rst:1184
 msgid ""
 "Creates a single index entry.  Can be made a subentry by separating the "
-"subentry text with a semicolon (this notation is also used below to "
-"describe what entries are created)."
+"subentry text with a semicolon (this notation is also used below to describe "
+"what entries are created)."
 msgstr ""
 
 #: ../../documentation/markup.rst:1188
@@ -1574,9 +1557,9 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1191
 msgid ""
-"Likewise, ``triple: module; search; path`` is a shortcut that creates "
-"three index entries, which are ``module; search path``, ``search; path, "
-"module`` and ``path; module search``."
+"Likewise, ``triple: module; search; path`` is a shortcut that creates three "
+"index entries, which are ``module; search path``, ``search; path, module`` "
+"and ``path; module search``."
 msgstr ""
 
 #: ../../documentation/markup.rst:1198
@@ -1587,8 +1570,8 @@ msgstr ""
 msgid ""
 "These all create two index entries.  For example, ``module: hashlib`` "
 "creates the entries ``module; hashlib`` and ``hashlib; module``.  The "
-"builtin entry type is slightly different in that \"built-in function\" is"
-" used in place of \"builtin\" when creating the two entries."
+"builtin entry type is slightly different in that \"built-in function\" is "
+"used in place of \"builtin\" when creating the two entries."
 msgstr ""
 
 #: ../../documentation/markup.rst:1200
@@ -1608,8 +1591,8 @@ msgstr ""
 #: ../../documentation/markup.rst:1211
 msgid ""
 "Special markup is available for displaying the productions of a formal "
-"grammar. The markup is simple and does not attempt to model all aspects "
-"of BNF (or any derived forms), but provides enough to allow context-free "
+"grammar. The markup is simple and does not attempt to model all aspects of "
+"BNF (or any derived forms), but provides enough to allow context-free "
 "grammars to be displayed in a way that causes uses of a symbol to be "
 "rendered as hyperlinks to the definition of the symbol.  There is this "
 "directive:"
@@ -1617,22 +1600,23 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1219
 msgid ""
-"This directive is used to enclose a group of productions.  Each "
-"production is given on a single line and consists of a name, separated by"
-" a colon from the following definition.  If the definition spans multiple"
-" lines, each continuation line must begin with a colon placed at the same"
-" column as in the first line."
+"This directive is used to enclose a group of productions.  Each production "
+"is given on a single line and consists of a name, separated by a colon from "
+"the following definition.  If the definition spans multiple lines, each "
+"continuation line must begin with a colon placed at the same column as in "
+"the first line."
 msgstr ""
 
 #: ../../documentation/markup.rst:1225
-msgid "Blank lines are not allowed within ``productionlist`` directive arguments."
+msgid ""
+"Blank lines are not allowed within ``productionlist`` directive arguments."
 msgstr ""
 
 #: ../../documentation/markup.rst:1227
 msgid ""
-"The definition can contain token names which are marked as interpreted "
-"text (e.g. ``unaryneg ::= \"-\" `integer```) -- this generates cross-"
-"references to the productions of these tokens."
+"The definition can contain token names which are marked as interpreted text "
+"(e.g. ``unaryneg ::= \"-\" `integer```) -- this generates cross-references "
+"to the productions of these tokens."
 msgstr ""
 
 #: ../../documentation/markup.rst:1231
@@ -1651,8 +1635,8 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1252
 msgid ""
-"The documentation system provides three substitutions that are defined by"
-" default. They are set in the build configuration file :file:`conf.py`."
+"The documentation system provides three substitutions that are defined by "
+"default. They are set in the build configuration file :file:`conf.py`."
 msgstr ""
 
 #: ../../documentation/markup.rst:1257
@@ -1664,20 +1648,19 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1262
 msgid ""
-"Replaced by the Python version the documentation refers to. This consists"
-" only of the major and minor version parts, e.g. ``2.5``, even for "
-"version 2.5.1."
+"Replaced by the Python version the documentation refers to. This consists "
+"only of the major and minor version parts, e.g. ``2.5``, even for version "
+"2.5.1."
 msgstr ""
 
 #: ../../documentation/markup.rst:1268
 msgid ""
-"Replaced by either today's date, or the date set in the build "
-"configuration file.  Normally has the format ``April 14, 2007``."
+"Replaced by either today's date, or the date set in the build configuration "
+"file.  Normally has the format ``April 14, 2007``."
 msgstr ""
 
 #: ../../documentation/markup.rst:1274
 msgid ""
-"There is a standard ``include`` directive, but it raises errors if the "
-"file is not found.  This one only emits a warning."
+"There is a standard ``include`` directive, but it raises errors if the file "
+"is not found.  This one only emits a warning."
 msgstr ""
-

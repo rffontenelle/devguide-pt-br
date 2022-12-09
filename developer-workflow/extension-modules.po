@@ -24,14 +24,14 @@ msgstr ""
 
 #: ../../developer-workflow/extension-modules.rst:8
 msgid ""
-"In this section, we could explain how to write a CPython extension with "
-"the C language, but the topic can take a complete book."
+"In this section, we could explain how to write a CPython extension with the "
+"C language, but the topic can take a complete book."
 msgstr ""
 
 #: ../../developer-workflow/extension-modules.rst:10
 msgid ""
-"For this reason, we prefer to give you some links where you can read a "
-"very good documentation."
+"For this reason, we prefer to give you some links where you can read a very "
+"good documentation."
 msgstr ""
 
 #: ../../developer-workflow/extension-modules.rst:12
@@ -53,4 +53,3 @@ msgstr ""
 #: ../../developer-workflow/extension-modules.rst:17
 msgid "https://pythonextensionpatterns.readthedocs.io/en/latest/"
 msgstr ""
-

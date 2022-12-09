@@ -28,33 +28,32 @@ msgstr ""
 
 #: ../../triage/issue-tracker.rst:12
 msgid ""
-"If you think you have found a bug in Python, you can report it to the "
-"`issue tracker`_. The `issue tracker`_ is now hosted on GitHub, alongside"
-" the codebase and pull requests.  Documentation bugs can also be reported"
-" there."
+"If you think you have found a bug in Python, you can report it to the `issue "
+"tracker`_. The `issue tracker`_ is now hosted on GitHub, alongside the "
+"codebase and pull requests.  Documentation bugs can also be reported there."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:16
 msgid ""
-"If you would like to file an issue about this devguide, please do so at "
-"the `devguide repo`_."
+"If you would like to file an issue about this devguide, please do so at the "
+"`devguide repo`_."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:20
 msgid ""
 "Python used to use a dedicated `Roundup`_ instance as its issue tracker. "
 "That old bug tracker was hosted under the domain ``bugs.python.org`` "
-"(sometimes called ``bpo`` for short). Currently a read-only version is "
-"still available on that domain for historical purposes. All ``bpo`` data "
-"has been migrated to the current `issue tracker`_ on GitHub."
+"(sometimes called ``bpo`` for short). Currently a read-only version is still "
+"available on that domain for historical purposes. All ``bpo`` data has been "
+"migrated to the current `issue tracker`_ on GitHub."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:26
 msgid ""
-"If you're familiar with ``bpo`` and would like to learn more about GitHub"
-" issues, please read this page, and the :ref:`triaging` page as they "
-"provide good introductory material. There is also a :ref:`gh-faq` "
-"document to answer some of the more popular questions."
+"If you're familiar with ``bpo`` and would like to learn more about GitHub "
+"issues, please read this page, and the :ref:`triaging` page as they provide "
+"good introductory material. There is also a :ref:`gh-faq` document to answer "
+"some of the more popular questions."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:32
@@ -63,15 +62,15 @@ msgstr ""
 
 #: ../../triage/issue-tracker.rst:34
 msgid ""
-"The first step before filing an issue report is to see whether the "
-"problem has already been reported.  Checking if the problem is an "
-"existing issue will:"
+"The first step before filing an issue report is to see whether the problem "
+"has already been reported.  Checking if the problem is an existing issue "
+"will:"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:37
 msgid ""
-"help you see if the problem has already been resolved or has been fixed "
-"for the next release"
+"help you see if the problem has already been resolved or has been fixed for "
+"the next release"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:39
@@ -84,16 +83,16 @@ msgstr ""
 
 #: ../../triage/issue-tracker.rst:41
 msgid ""
-"determine if additional information, such as how to replicate the issue, "
-"is needed"
+"determine if additional information, such as how to replicate the issue, is "
+"needed"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:44
 msgid ""
-"To see if an issue already exists, search the bug database using the "
-"search box above the list of bugs on the issues page. A form-based "
-"`advanced search`_ query builder is also available on GitHub to help "
-"creating the text query you need."
+"To see if an issue already exists, search the bug database using the search "
+"box above the list of bugs on the issues page. A form-based `advanced "
+"search`_ query builder is also available on GitHub to help creating the text "
+"query you need."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:49
@@ -102,10 +101,10 @@ msgstr ""
 
 #: ../../triage/issue-tracker.rst:51
 msgid ""
-"If the problem you're reporting is not already in the `issue tracker`_, "
-"you can report it using the green \"New issue\" button on the right of "
-"the search box above the list of bugs. If you're not already signed in to"
-" GitHub, it will ask you to do so now."
+"If the problem you're reporting is not already in the `issue tracker`_, you "
+"can report it using the green \"New issue\" button on the right of the "
+"search box above the list of bugs. If you're not already signed in to "
+"GitHub, it will ask you to do so now."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:56
@@ -119,7 +118,8 @@ msgid "**Bug report**: an existing feature isn't working as expected;"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:60
-msgid "**Documentation**: there is missing, invalid, or misleading documentation;"
+msgid ""
+"**Documentation**: there is missing, invalid, or misleading documentation;"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:61
@@ -167,13 +167,12 @@ msgstr ""
 
 #: ../../triage/issue-tracker.rst:79
 msgid ""
-"in the **Write** field, describe the problem in detail using hints from "
-"the template that was put in that field for you. Be sure to include what "
-"you expected to happen, what did happen, and how to replicate the "
-"problem. Be sure to include whether any extension modules were involved, "
-"and what hardware and software platform you were using (including version"
-" information as appropriate). In particular, *what version of Python* you"
-" were using."
+"in the **Write** field, describe the problem in detail using hints from the "
+"template that was put in that field for you. Be sure to include what you "
+"expected to happen, what did happen, and how to replicate the problem. Be "
+"sure to include whether any extension modules were involved, and what "
+"hardware and software platform you were using (including version information "
+"as appropriate). In particular, *what version of Python* you were using."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:88
@@ -184,14 +183,14 @@ msgstr ""
 msgid ""
 "There is a number of additional fields like **Assignees**, **Labels**, "
 "**Projects**, and **Milestone**. Those are filled by triagers and core "
-"developers, this is covered in the :ref:`triaging` page. You don't need "
-"to worry about those when reporting issues as a Python user."
+"developers, this is covered in the :ref:`triaging` page. You don't need to "
+"worry about those when reporting issues as a Python user."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:95
 msgid ""
-"You will automatically receive an update each time an action is taken on "
-"the bug, unless you changed your GitHub notification settings."
+"You will automatically receive an update each time an action is taken on the "
+"bug, unless you changed your GitHub notification settings."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:100
@@ -200,31 +199,31 @@ msgstr ""
 
 #: ../../triage/issue-tracker.rst:102
 msgid ""
-"As humans, we will have differences of opinions from time to time. First "
-"and foremost, please be respectful that care, thought, and volunteer time"
-" went into the resolution."
+"As humans, we will have differences of opinions from time to time. First and "
+"foremost, please be respectful that care, thought, and volunteer time went "
+"into the resolution."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:106
 msgid ""
 "With this in mind, take some time to consider any comments made in "
-"association with the resolution of the issue. On reflection, the "
-"resolution steps may seem more reasonable than you initially thought."
+"association with the resolution of the issue. On reflection, the resolution "
+"steps may seem more reasonable than you initially thought."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:110
 msgid ""
 "If you still feel the resolution is incorrect, then raise a thoughtful "
-"question on the `Core Development Discourse category`_. Further argument "
-"and disrespectful responses after a consensus has been reached amongst "
-"the core developers is unlikely to win any converts."
+"question on the `Core Development Discourse category`_. Further argument and "
+"disrespectful responses after a consensus has been reached amongst the core "
+"developers is unlikely to win any converts."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:116
 msgid ""
-"As a reminder, issues closed by a core developer have already been "
-"carefully considered. Please do not reopen a closed issue. An issue can "
-"be closed with reason either as ``complete`` or ``not planned``."
+"As a reminder, issues closed by a core developer have already been carefully "
+"considered. Please do not reopen a closed issue. An issue can be closed with "
+"reason either as ``complete`` or ``not planned``."
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:122
@@ -234,4 +233,3 @@ msgstr ""
 #: ../../triage/issue-tracker.rst:123
 msgid "Where to report issues about Python."
 msgstr ""
-

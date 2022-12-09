@@ -21,4 +21,3 @@ msgstr ""
 #: ../../getting-started/index.rst:3
 msgid "Getting Started"
 msgstr ""
-

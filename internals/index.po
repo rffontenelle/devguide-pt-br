@@ -21,4 +21,3 @@ msgstr ""
 #: ../../internals/index.rst:3
 msgid "CPython's Internals"
 msgstr ""
-

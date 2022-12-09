@@ -21,4 +21,3 @@ msgstr ""
 #: ../../advanced-tools/index.rst:3
 msgid "Advanced Tools"
 msgstr ""
-

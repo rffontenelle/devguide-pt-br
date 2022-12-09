@@ -24,15 +24,14 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:9
 msgid ""
-"If you experience low-level problems such as crashes or deadlocks (e.g. "
-"when tinkering with parts of CPython which are written in C), it can be "
-"convenient to use a low-level debugger such as gdb in order to diagnose "
-"and fix the issue.  By default, however, gdb (or any of its front-ends) "
-"doesn't know about high-level information specific to the CPython "
-"interpreter, such as which Python function is currently executing, or "
-"what type or value has a given Python object represented by a standard "
-"``PyObject *`` pointer.  We hereafter present two ways to overcome this "
-"limitation."
+"If you experience low-level problems such as crashes or deadlocks (e.g. when "
+"tinkering with parts of CPython which are written in C), it can be "
+"convenient to use a low-level debugger such as gdb in order to diagnose and "
+"fix the issue.  By default, however, gdb (or any of its front-ends) doesn't "
+"know about high-level information specific to the CPython interpreter, such "
+"as which Python function is currently executing, or what type or value has a "
+"given Python object represented by a standard ``PyObject *`` pointer.  We "
+"hereafter present two ways to overcome this limitation."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:21
@@ -41,19 +40,17 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:23
 msgid ""
-"In gdb 7, support for `extending gdb with Python "
-"<https://sourceware.org/gdb/current/onlinedocs/gdb/Python.html#Python>`_ "
-"was added. When CPython is built you will notice a ``python-gdb.py`` file"
-" in the root directory of your checkout. Read the module docstring for "
-"details on how to use the file to enhance gdb for easier debugging of a "
-"CPython process."
+"In gdb 7, support for `extending gdb with Python <https://sourceware.org/gdb/"
+"current/onlinedocs/gdb/Python.html#Python>`_ was added. When CPython is "
+"built you will notice a ``python-gdb.py`` file in the root directory of your "
+"checkout. Read the module docstring for details on how to use the file to "
+"enhance gdb for easier debugging of a CPython process."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:29
 msgid ""
-"To activate support, you must add the directory containing ``python-"
-"gdb.py`` to GDB's \"auto-load-safe-path\".  Put this in your "
-"``~/.gdbinit`` file::"
+"To activate support, you must add the directory containing ``python-gdb.py`` "
+"to GDB's \"auto-load-safe-path\".  Put this in your ``~/.gdbinit`` file::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:34
@@ -68,9 +65,8 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:55
 msgid ""
-"(Notice how the dictionary argument to ``PyDict_GetItemString`` is "
-"displayed as its ``repr()``, rather than an opaque ``PyObject *`` "
-"pointer.)"
+"(Notice how the dictionary argument to ``PyDict_GetItemString`` is displayed "
+"as its ``repr()``, rather than an opaque ``PyObject *`` pointer.)"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:58
@@ -83,30 +79,30 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:81
 msgid ""
-"The pretty-printers try to closely match the ``repr()`` implementation of"
-" the underlying implementation of Python, and thus vary somewhat between "
+"The pretty-printers try to closely match the ``repr()`` implementation of "
+"the underlying implementation of Python, and thus vary somewhat between "
 "Python 2 and Python 3."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:85
 msgid ""
-"An area that can be confusing is that the custom printer for some types "
-"look a lot like gdb's built-in printer for standard types.  For example, "
-"the pretty-printer for a Python 3 ``int`` gives a ``repr()`` that is not "
+"An area that can be confusing is that the custom printer for some types look "
+"a lot like gdb's built-in printer for standard types.  For example, the "
+"pretty-printer for a Python 3 ``int`` gives a ``repr()`` that is not "
 "distinguishable from a printing of a regular machine-level integer::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:100
 msgid ""
-"A similar confusion can arise with the ``str`` type, where the output "
-"looks a lot like gdb's built-in printer for ``char *``::"
+"A similar confusion can arise with the ``str`` type, where the output looks "
+"a lot like gdb's built-in printer for ``char *``::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:106
 msgid ""
-"The pretty-printer for ``str`` instances defaults to using single-quotes "
-"(as does Python's ``repr`` for strings) whereas the standard printer for "
-"``char *`` values uses double-quotes and contains a hexadecimal address::"
+"The pretty-printer for ``str`` instances defaults to using single-quotes (as "
+"does Python's ``repr`` for strings) whereas the standard printer for ``char "
+"*`` values uses double-quotes and contains a hexadecimal address::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:113
@@ -117,8 +113,8 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:120
 msgid ""
-"As well as adding pretty-printing support for ``PyObject *``, the "
-"extension adds a number of commands to gdb:"
+"As well as adding pretty-printing support for ``PyObject *``, the extension "
+"adds a number of commands to gdb:"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:142
@@ -127,15 +123,15 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:124
 msgid ""
-"List the Python source code (if any) for the current frame in the "
-"selected thread.  The current line is marked with a \">\"::"
+"List the Python source code (if any) for the current frame in the selected "
+"thread.  The current line is marked with a \">\"::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:140
 msgid ""
-"Use ``py-list START`` to list at a different line number within the "
-"python source, and ``py-list START,END`` to list a specific range of "
-"lines within the python source."
+"Use ``py-list START`` to list at a different line number within the python "
+"source, and ``py-list START,END`` to list a specific range of lines within "
+"the python source."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:192
@@ -144,18 +140,18 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:145
 msgid ""
-"The ``py-up`` and ``py-down`` commands are analogous to gdb's regular "
-"``up`` and ``down`` commands, but try to move at the level of CPython "
-"frames, rather than C frames."
+"The ``py-up`` and ``py-down`` commands are analogous to gdb's regular ``up`` "
+"and ``down`` commands, but try to move at the level of CPython frames, "
+"rather than C frames."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:149
 msgid ""
-"gdb is not always able to read the relevant frame information, depending "
-"on the optimization level with which CPython was compiled. Internally, "
-"the commands look for C frames that are executing ``PyEval_EvalFrameEx`` "
-"(which implements the core bytecode interpreter loop within CPython) and "
-"look up the value of the related ``PyFrameObject *``."
+"gdb is not always able to read the relevant frame information, depending on "
+"the optimization level with which CPython was compiled. Internally, the "
+"commands look for C frames that are executing ``PyEval_EvalFrameEx`` (which "
+"implements the core bytecode interpreter loop within CPython) and look up "
+"the value of the related ``PyFrameObject *``."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:155
@@ -180,8 +176,8 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:195
 msgid ""
-"The ``py-bt`` command attempts to display a Python-level backtrace of the"
-" current thread."
+"The ``py-bt`` command attempts to display a Python-level backtrace of the "
+"current thread."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:214
@@ -196,8 +192,8 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:218
 msgid ""
-"The ``py-print`` command looks up a Python name and tries to print it. It"
-" looks in locals within the current thread, then globals, then finally "
+"The ``py-print`` command looks up a Python name and tries to print it. It "
+"looks in locals within the current thread, then globals, then finally "
 "builtins::"
 msgstr ""
 
@@ -214,23 +210,21 @@ msgstr ""
 #: ../../advanced-tools/gdb.rst:241
 msgid ""
 "You can of course use other gdb commands.  For example, the ``frame`` "
-"command takes you directly to a particular frame within the selected "
-"thread. We can use it to go a specific frame shown by ``py-bt`` like "
-"this::"
+"command takes you directly to a particular frame within the selected thread. "
+"We can use it to go a specific frame shown by ``py-bt`` like this::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:260
 msgid ""
-"The ``info threads`` command will give you a list of the threads within "
-"the process, and you can use the ``thread`` command to select a different"
-" one::"
+"The ``info threads`` command will give you a list of the threads within the "
+"process, and you can use the ``thread`` command to select a different one::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:268
 msgid ""
-"You can use ``thread apply all COMMAND`` or (``t a a COMMAND`` for short)"
-" to run a command on all threads.  You can use this with ``py-bt`` to see"
-" what every thread is doing at the Python level::"
+"You can use ``thread apply all COMMAND`` or (``t a a COMMAND`` for short) to "
+"run a command on all threads.  You can use this with ``py-bt`` to see what "
+"every thread is doing at the Python level::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:300
@@ -245,10 +239,10 @@ msgstr ""
 msgid ""
 "The file at ``Misc/gdbinit`` contains a gdb configuration file which "
 "provides extra commands when working with a CPython process. To register "
-"these commands permanently, either copy the commands to your personal gdb"
-" configuration file or symlink ``~/.gdbinit`` to ``Misc/gdbinit``.  To "
-"use these commands from a single gdb session without registering them, "
-"type ``source Misc/gdbinit`` from your gdb session."
+"these commands permanently, either copy the commands to your personal gdb "
+"configuration file or symlink ``~/.gdbinit`` to ``Misc/gdbinit``.  To use "
+"these commands from a single gdb session without registering them, type "
+"``source Misc/gdbinit`` from your gdb session."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:315
@@ -257,18 +251,17 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:317
 msgid ""
-"``test_gdb`` attempts to automatically load additional Python specific "
-"hooks into gdb in order to test them. Unfortunately, the command line "
-"options it uses to do this aren't always supported correctly."
+"``test_gdb`` attempts to automatically load additional Python specific hooks "
+"into gdb in order to test them. Unfortunately, the command line options it "
+"uses to do this aren't always supported correctly."
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:321
 msgid ""
-"If ``test_gdb`` is being skipped with an \"auto-loading has been "
-"declined\" message, then it is necessary to identify any Python build "
-"directories as auto-load safe. One way to achieve this is to add a line "
-"like the following to ``~/.gdbinit`` (edit the specific list of paths as "
-"appropriate)::"
+"If ``test_gdb`` is being skipped with an \"auto-loading has been declined\" "
+"message, then it is necessary to identify any Python build directories as "
+"auto-load safe. One way to achieve this is to add a line like the following "
+"to ``~/.gdbinit`` (edit the specific list of paths as appropriate)::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:330
@@ -287,11 +280,10 @@ msgstr ""
 
 #: ../../advanced-tools/gdb.rst:338
 msgid ""
-"With extended exposure to particular parts of the Python runtime, you "
-"might find it helpful to define a routine set of breakpoints and commands"
-" to execute when they are hit. For convenience, save your breakpoints to "
-"a file and load them in future sessions using the ``save breakpoints`` "
-"command::"
+"With extended exposure to particular parts of the Python runtime, you might "
+"find it helpful to define a routine set of breakpoints and commands to "
+"execute when they are hit. For convenience, save your breakpoints to a file "
+"and load them in future sessions using the ``save breakpoints`` command::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:346
@@ -307,16 +299,15 @@ msgstr ""
 #: ../../advanced-tools/gdb.rst:355
 msgid ""
 "You will most often set breakpoints at the start of functions, but this "
-"approach is less helpful when debugging the runtime virtual machine, "
-"since the main interpreter loop function, ``_PyEval_EvalFrameDefault``, "
-"is well over 4,000 lines long as of Python 3.12. Fortunately, among the "
-"`many ways to set breakpoints <https://sourceware.org/gdb/onlinedocs/gdb"
-"/Specify-Location.html>`_, you can break at C labels, such as those "
-"generated for computed gotos. If you are debugging an interpreter "
-"compiled with computed goto support (generally true, certainly when using"
-" GCC), each instruction will be prefaced with a label named "
-"``TARGET_<instruction>``, e.g., ``TARGET_LOAD_CONST``.  You can then set "
-"a breakpoint with a command like::"
+"approach is less helpful when debugging the runtime virtual machine, since "
+"the main interpreter loop function, ``_PyEval_EvalFrameDefault``, is well "
+"over 4,000 lines long as of Python 3.12. Fortunately, among the `many ways "
+"to set breakpoints <https://sourceware.org/gdb/onlinedocs/gdb/Specify-"
+"Location.html>`_, you can break at C labels, such as those generated for "
+"computed gotos. If you are debugging an interpreter compiled with computed "
+"goto support (generally true, certainly when using GCC), each instruction "
+"will be prefaced with a label named ``TARGET_<instruction>``, e.g., "
+"``TARGET_LOAD_CONST``.  You can then set a breakpoint with a command like::"
 msgstr ""
 
 #: ../../advanced-tools/gdb.rst:370
@@ -325,4 +316,3 @@ msgid ""
 "worrying that the starting line number of individual instructions change "
 "over time."
 msgstr ""
-

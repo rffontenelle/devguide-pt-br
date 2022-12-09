@@ -24,11 +24,10 @@ msgstr ""
 
 #: ../../documentation/translating.rst:9
 msgid ""
-"Python documentation translations are governed by :PEP:`545`. They are "
-"built by `docsbuild-scripts <https://github.com/python/docsbuild-"
-"scripts/>`__ and hosted on docs.python.org. There are several "
-"documentation translations already in production; others are works in "
-"progress."
+"Python documentation translations are governed by :PEP:`545`. They are built "
+"by `docsbuild-scripts <https://github.com/python/docsbuild-scripts/>`__ and "
+"hosted on docs.python.org. There are several documentation translations "
+"already in production; others are works in progress."
 msgstr ""
 
 #: ../../documentation/translating.rst:16
@@ -203,8 +202,8 @@ msgstr ""
 
 #: ../../documentation/translating.rst:59
 msgid ""
-"`GitHub <github_pt_br_>`_ `Wiki <wiki_pt_br_>`_ `Telegram <chat_pt_br_>`_"
-" `article <article_pt_br_>`_"
+"`GitHub <github_pt_br_>`_ `Wiki <wiki_pt_br_>`_ `Telegram <chat_pt_br_>`_ "
+"`article <article_pt_br_>`_"
 msgstr ""
 
 #: ../../documentation/translating.rst:64
@@ -281,10 +280,9 @@ msgstr ""
 
 #: ../../documentation/translating.rst:133
 msgid ""
-"First subscribe to the `translation mailing list <translation_ml_>`_, and"
-" introduce yourself and the translation you're starting. Translations "
-"fall under the aegis of the `PSF Translation Workgroup "
-"<translation_wg_>`_"
+"First subscribe to the `translation mailing list <translation_ml_>`_, and "
+"introduce yourself and the translation you're starting. Translations fall "
+"under the aegis of the `PSF Translation Workgroup <translation_wg_>`_"
 msgstr ""
 
 #: ../../documentation/translating.rst:137
@@ -309,22 +307,22 @@ msgstr ""
 
 #: ../../documentation/translating.rst:145
 msgid ""
-"You can use any tool to translate, as long as you can synchronize with "
-"git. Some use Transifex, and some use only GitHub. You can choose another"
-" way if you like; it's up to you."
+"You can use any tool to translate, as long as you can synchronize with git. "
+"Some use Transifex, and some use only GitHub. You can choose another way if "
+"you like; it's up to you."
 msgstr ""
 
 #: ../../documentation/translating.rst:148
 msgid ""
-"Ensure we update this page to reflect your work and progress, either via "
-"a PR or by asking on the `translation mailing list <translation_ml_>`_."
+"Ensure we update this page to reflect your work and progress, either via a "
+"PR or by asking on the `translation mailing list <translation_ml_>`_."
 msgstr ""
 
 #: ../../documentation/translating.rst:150
 #, python-format
 msgid ""
-"When ``bugs.html``, ``tutorial``, and ``library/functions`` are 100% "
-"completed, ask on the `translation mailing list <translation_ml_>`_ for "
+"When ``bugs.html``, ``tutorial``, and ``library/functions`` are "
+"100% completed, ask on the `translation mailing list <translation_ml_>`_ for "
 "your language to be added in the language picker on docs.python.org."
 msgstr ""
 
@@ -338,29 +336,28 @@ msgstr ""
 
 #: ../../documentation/translating.rst:160
 msgid ""
-"Each translation is assigned an appropriate lowercased language tag, with"
-" an optional region subtag, and joined with a dash, like ``pt-br`` or "
-"``fr``."
+"Each translation is assigned an appropriate lowercased language tag, with an "
+"optional region subtag, and joined with a dash, like ``pt-br`` or ``fr``."
 msgstr ""
 
 #: ../../documentation/translating.rst:164
 msgid ""
-"Each translation is under CC0 and marked as such in the README (as in the"
-" cookiecutter)."
+"Each translation is under CC0 and marked as such in the README (as in the "
+"cookiecutter)."
 msgstr ""
 
 #: ../../documentation/translating.rst:167
 msgid ""
-"Translation files are hosted on ``https://github.com/python/python-"
-"docs-{LANGUAGE_TAG}`` (not mandatory to start a translation, but "
-"mandatory to land on ``docs.python.org``)."
+"Translation files are hosted on ``https://github.com/python/python-docs-"
+"{LANGUAGE_TAG}`` (not mandatory to start a translation, but mandatory to "
+"land on ``docs.python.org``)."
 msgstr ""
 
 #: ../../documentation/translating.rst:172
 msgid ""
 "Translations having completed ``tutorial/``, ``library/stdtypes`` and "
-"``library/functions`` are hosted on "
-"``https://docs.python.org/{LANGUAGE_TAG}/{VERSION_TAG}/``."
+"``library/functions`` are hosted on ``https://docs.python.org/{LANGUAGE_TAG}/"
+"{VERSION_TAG}/``."
 msgstr ""
 
 #: ../../documentation/translating.rst:178
@@ -370,8 +367,8 @@ msgstr ""
 #: ../../documentation/translating.rst:180
 msgid ""
 "Discussions about translations occur on the `translation mailing list "
-"<translation_ml_>`_, and there's a `Libera.Chat IRC "
-"<https://libera.chat/>`_ channel, ``#python-doc``."
+"<translation_ml_>`_, and there's a `Libera.Chat IRC <https://libera.chat/>`_ "
+"channel, ``#python-doc``."
 msgstr ""
 
 #: ../../documentation/translating.rst:186
@@ -385,8 +382,8 @@ msgstr ""
 #: ../../documentation/translating.rst:191
 msgid ""
 "Consensus is to work on current stable. You can then propagate your "
-"translation from one branch to another using `pomerge "
-"<https://pypi.org/project/pomerge/>`__."
+"translation from one branch to another using `pomerge <https://pypi.org/"
+"project/pomerge/>`__."
 msgstr ""
 
 #: ../../documentation/translating.rst:197
@@ -399,20 +396,20 @@ msgstr ""
 
 #: ../../documentation/translating.rst:201
 msgid ""
-"`pomerge <https://pypi.org/project/pomerge/>`__ to propagate translations"
-" from one file to others."
+"`pomerge <https://pypi.org/project/pomerge/>`__ to propagate translations "
+"from one file to others."
 msgstr ""
 
 #: ../../documentation/translating.rst:203
 msgid ""
-"`pospell <https://pypi.org/project/pospell/>`__ to check for typos in "
-"``.po`` files."
+"`pospell <https://pypi.org/project/pospell/>`__ to check for typos in ``."
+"po`` files."
 msgstr ""
 
 #: ../../documentation/translating.rst:204
 msgid ""
-"`powrap <https://pypi.org/project/powrap/>`__ to rewrap the ``.po`` files"
-" before committing. This helps keep git diffs short."
+"`powrap <https://pypi.org/project/powrap/>`__ to rewrap the ``.po`` files "
+"before committing. This helps keep git diffs short."
 msgstr ""
 
 #: ../../documentation/translating.rst:206
@@ -427,8 +424,8 @@ msgstr ""
 
 #: ../../documentation/translating.rst:212
 msgid ""
-"There is no election; each translation has to sort this out.  Here are "
-"some suggestions."
+"There is no election; each translation has to sort this out.  Here are some "
+"suggestions."
 msgstr ""
 
 #: ../../documentation/translating.rst:214
@@ -439,29 +436,28 @@ msgstr ""
 
 #: ../../documentation/translating.rst:215
 msgid ""
-"If the given language has a native core dev, the core dev has their say "
-"on the choice."
+"If the given language has a native core dev, the core dev has their say on "
+"the choice."
 msgstr ""
 
 #: ../../documentation/translating.rst:217
 msgid ""
-"Anyone who wants to become coordinator for their native language and "
-"shows motivation by translating and building a community will be named "
-"coordinator."
+"Anyone who wants to become coordinator for their native language and shows "
+"motivation by translating and building a community will be named coordinator."
 msgstr ""
 
 #: ../../documentation/translating.rst:220
 msgid ""
-"In case of concurrency between two persons, no one will sort this out for"
-" you.  It is up to you two to organize a local election or whatever is "
-"needed to sort this out."
+"In case of concurrency between two persons, no one will sort this out for "
+"you.  It is up to you two to organize a local election or whatever is needed "
+"to sort this out."
 msgstr ""
 
 #: ../../documentation/translating.rst:223
 msgid ""
-"If a coordinator becomes inactive or unreachable for a long period of "
-"time, someone else can ask for a takeover on the `translation mailing "
-"list <translation_ml_>`_."
+"If a coordinator becomes inactive or unreachable for a long period of time, "
+"someone else can ask for a takeover on the `translation mailing list "
+"<translation_ml_>`_."
 msgstr ""
 
 #: ../../documentation/translating.rst:228
@@ -470,8 +466,8 @@ msgstr ""
 
 #: ../../documentation/translating.rst:230
 msgid ""
-"Ask on the `translation mailing list <translation_ml_>`_, or better, make"
-" a PR on the `devguide <https://github.com/python/devguide/>`__."
+"Ask on the `translation mailing list <translation_ml_>`_, or better, make a "
+"PR on the `devguide <https://github.com/python/devguide/>`__."
 msgstr ""
 
 #: ../../documentation/translating.rst:235
@@ -480,9 +476,9 @@ msgstr ""
 
 #: ../../documentation/translating.rst:237
 msgid ""
-"You can ask for help on the `translation mailing list "
-"<translation_ml_>`_, and the team will help you create an appropriate "
-"repository. You can still use tools like transifex, if you like."
+"You can ask for help on the `translation mailing list <translation_ml_>`_, "
+"and the team will help you create an appropriate repository. You can still "
+"use tools like transifex, if you like."
 msgstr ""
 
 #: ../../documentation/translating.rst:243
@@ -491,11 +487,11 @@ msgstr ""
 
 #: ../../documentation/translating.rst:245
 msgid ""
-"No, inside the ``github.com/python`` organization we’ll all have the "
-"exact same hierarchy so bots will be able to build all of our "
-"translations. So you may have to convert from one hierarchy to another. "
-"Ask for help on the `translation mailing list <translation_ml_>`_ if "
-"you’re not sure on how to do it."
+"No, inside the ``github.com/python`` organization we’ll all have the exact "
+"same hierarchy so bots will be able to build all of our translations. So you "
+"may have to convert from one hierarchy to another. Ask for help on the "
+"`translation mailing list <translation_ml_>`_ if you’re not sure on how to "
+"do it."
 msgstr ""
 
 #: ../../documentation/translating.rst:253
@@ -505,7 +501,5 @@ msgstr ""
 #: ../../documentation/translating.rst:255
 msgid ""
 "As for every project, we have a *branch* per version.  We store ``.po`` "
-"files in the root of the repository using the ``gettext_compact=0`` "
-"style."
+"files in the root of the repository using the ``gettext_compact=0`` style."
 msgstr ""
-
