@@ -3,24 +3,28 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-09 08:39-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
+"net>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../documentation/devguide.rst:5
 msgid "Helping with the Developer's Guide"
-msgstr ""
+msgstr "Ajudando com o guia do desenvolvedor"
 
 #: ../../documentation/devguide.rst:9
 msgid ""
@@ -29,6 +33,10 @@ msgid ""
 "lives in a `separate repository`_ and bug reports should be submitted to the "
 "`devguide GitHub tracker`_."
 msgstr ""
+"O guia do desenvolvedor (o que você está lendo agora) usa o mesmo processo "
+"da documentação principal do Python, exceto por algumas pequenas diferenças. "
+"A fonte reside em um `repositório separado`_ e relatórios de bugs devem ser "
+"enviados para o `rastreador do GitHub do devguide`_."
 
 #: ../../documentation/devguide.rst:14
 msgid ""
@@ -37,22 +45,30 @@ msgid ""
 "Changes to CPython documentation follow the workflow of a CPython release "
 "and are published in the release."
 msgstr ""
+"Nosso fluxo de trabalho no devguide usa integração e implantação contínuas, "
+"de modo que as alterações no devguide são normalmente publicadas quando a "
+"pull request é mesclada. As alterações na documentação do CPython seguem o "
+"fluxo de trabalho de uma versão do CPython e são publicadas na versão."
 
 #: ../../documentation/devguide.rst:21
 msgid "Developer's Guide workflow"
-msgstr ""
+msgstr "Fluxo de trabalho do guia do desenvolvedor"
 
 #: ../../documentation/devguide.rst:23
 msgid ""
 "To submit a :ref:`pull request <pullrequest>`, you can fork the `devguide "
 "repo`_ to your GitHub account and clone it using::"
 msgstr ""
+"Para enviar uma :ref:`pull request <pullrequest>`, você pode fazer um fork "
+"do `repositório do devguide`_ para sua conta GitHub e cloná-lo usando::"
 
 #: ../../documentation/devguide.rst:28
 msgid ""
 "For your PR to be accepted, you will also need to sign the :ref:`contributor "
 "agreement <cla>`."
 msgstr ""
+"Para que seu PR seja aceito, você também precisará assinar o :ref:`acordo de "
+"contribuidor <cla>`."
 
 #: ../../documentation/devguide.rst:31
 msgid ""
@@ -62,10 +78,16 @@ msgid ""
 "from a ``requirements.txt`` file. For your convenience, this is all "
 "*automated for you*. To build the devguide on a Unix-like system use::"
 msgstr ""
+"Para compilar o devguide, algumas dependências adicionais são necessárias "
+"(mais importante, `Sphinx`_), e a maneira padrão de instalar dependências em "
+"projetos Python é criar um virtualenv e, em seguida, instalar dependências "
+"de um arquivo ``requirements.txt`` . Para sua conveniência, tudo isso é "
+"*automatizado para você*. Para compilar o devguide em um sistema semelhante "
+"ao Unix, use::"
 
 #: ../../documentation/devguide.rst:39
 msgid "in the checkout directory.  On Windows use:"
-msgstr ""
+msgstr "no diretório de checkout. No Windows use:"
 
 #: ../../documentation/devguide.rst:45
 msgid ""
@@ -75,3 +97,9 @@ msgid ""
 "request <pullrequest>`.  You may wish to run ``make check`` and ``make "
 "linkcheck`` to make sure that it runs without errors."
 msgstr ""
+"Você encontrará os arquivos gerados em ``_build/html`` ou, se você usar "
+"``make htmlview``, os documentos serão abertos em um navegador assim que a "
+"compilação for concluída. Observe que ``make check`` é executado "
+"automaticamente quando você envia uma :ref:`pull request <pullrequest>`. "
+"Você pode querer executar ``make check`` e ``make linkcheck`` para ter "
+"certeza de que será executado sem erros."
