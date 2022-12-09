@@ -35,21 +35,18 @@ def create_parser() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def setup_repo(repo_path: Path, branch: str, repo_url: str):
+def setup_repo(repo_path: Path, branch: str):
     """Ensure the repository is up to date if previously clones, or clone it.
     """
     if repo_path.is_dir():
         """Ensure we're up-to-date."""
         run("git", "-C", repo_path, "checkout", branch)
         run("git", "-C", repo_path, "pull", "--ff-only")
-    else:
-        """Clone the repository"""
-        run("git", "clone", repo_url, "--branch", branch, repo_path)
 
 
 if __name__ == "__main__":
     args = create_parser()
-    setup_repo(args.devguide_repo, "main", "https://github.com/python/devguide")
+    setup_repo(args.devguide_repo, "main")
     rmtree(args.devguide_repo / "_build", ignore_errors=True)
     rmtree(args.devguide_repo / "locales", ignore_errors=True)
     run(
