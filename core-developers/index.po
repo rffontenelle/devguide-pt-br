@@ -20,4 +20,4 @@ msgstr ""
 
 #: ../../core-developers/index.rst:3
 msgid "Core Developers"
-msgstr ""
+msgstr "Desenvolvedores Core"

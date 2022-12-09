@@ -288,7 +288,7 @@ msgstr ""
 
 #: ../../core-developers/committing.rst:157
 msgid ":ref:`gitbootcamp`"
-msgstr ""
+msgstr ":ref:`gitbootcamp`"
 
 #: ../../core-developers/committing.rst:159
 msgid ""

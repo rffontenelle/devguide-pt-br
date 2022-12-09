@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../documentation/markup.rst:14
 msgid "Quick Reference"
-msgstr ""
+msgstr "Referência rápida"
 
 #: ../../documentation/markup.rst:16
 msgid ""
