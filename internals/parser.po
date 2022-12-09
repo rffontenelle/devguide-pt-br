@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../internals/parser.rst:7
 msgid "Pablo Galindo Salgado"
-msgstr ""
+msgstr "Pablo Galindo Salgado"
 
 #: ../../internals/parser.rst:12
 msgid "Abstract"

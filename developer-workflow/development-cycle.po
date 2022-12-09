@@ -427,7 +427,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:263
 msgid "Benjamin Peterson"
-msgstr ""
+msgstr "Benjamin Peterson"
 
 #: ../../developer-workflow/development-cycle.rst:263
 #: ../../developer-workflow/development-cycle.rst:265
@@ -482,7 +482,7 @@ msgstr ""
 #: ../../developer-workflow/development-cycle.rst:273
 #: ../../developer-workflow/development-cycle.rst:313
 msgid "Łukasz Langa"
-msgstr ""
+msgstr "Łukasz Langa"
 
 #: ../../developer-workflow/development-cycle.rst:273
 msgid "CPython Developer in Residence"
@@ -551,7 +551,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:316
 msgid "Ned Deily"
-msgstr ""
+msgstr "Ned Deily"
 
 #: ../../developer-workflow/development-cycle.rst:316
 msgid "Python 3.6 and 3.7 Release Manager"
@@ -563,7 +563,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:318
 msgid "Larry Hastings"
-msgstr ""
+msgstr "Larry Hastings"
 
 #: ../../developer-workflow/development-cycle.rst:318
 msgid "Retired Release Manager (for Python 3.4 and 3.5)"

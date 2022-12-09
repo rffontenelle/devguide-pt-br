@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../../getting-started/getting-help.rst:103
 msgid "Schedule"
-msgstr ""
+msgstr "Agendamento"
 
 #: ../../getting-started/getting-help.rst:103
 msgid "Details"

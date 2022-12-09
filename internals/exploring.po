@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../internals/exploring.rst:1
 msgid "3.6"
-msgstr ""
+msgstr "3.6"
 
 #: ../../internals/exploring.rst:1
 msgid "`Yet another guided tour of CPython`_"
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../../internals/exploring.rst:1
 msgid "3.5"
-msgstr ""
+msgstr "3.5"
 
 #: ../../internals/exploring.rst:1
 msgid "`Python Asynchronous I/O Walkthrough`_"
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../../internals/exploring.rst:1
 msgid "3.4"
-msgstr ""
+msgstr "3.4"
 
 #: ../../internals/exploring.rst:1
 msgid "`Your Guide to the CPython Source Code`_"
@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../../internals/exploring.rst:1
 msgid "3.8"
-msgstr ""
+msgstr "3.8"
 
 #: ../../internals/exploring.rst:71
 msgid "**Historical references**"
@@ -264,7 +264,7 @@ msgstr ""
 
 #: ../../internals/exploring.rst:1
 msgid "3.1"
-msgstr ""
+msgstr "3.1"
 
 #: ../../internals/exploring.rst:1
 msgid "`Eli Bendersky's Python Internals`_"

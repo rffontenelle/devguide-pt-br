@@ -476,7 +476,7 @@ msgstr ""
 
 #: ../../triage/labels.rst:233
 msgid "security"
-msgstr ""
+msgstr "security"
 
 #: ../../triage/labels.rst:233
 msgid ""
@@ -726,7 +726,7 @@ msgstr ""
 
 #: ../../triage/labels.rst:368 ../../triage/labels.rst:371
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../../triage/labels.rst:373
 msgid "open"

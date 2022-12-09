@@ -3,24 +3,28 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-09 07:29-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
+"net>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../versions.rst:6
 msgid "Status of Python Versions"
-msgstr ""
+msgstr "Status das versões do Python"
 
 #: ../../versions.rst:8
 msgid ""
@@ -28,368 +32,382 @@ msgid ""
 "that accepts new features.  The latest release for each Python version can "
 "be found on the `download page <https://www.python.org/downloads/>`_."
 msgstr ""
+"O branch principal é atualmente o futuro Python 3.12, e é o único branch que "
+"aceita novos recursos. O lançamento mais recente para cada versão do Python "
+"pode ser encontrado na `página de download <https://www.python.org/downloads/"
+">`_."
 
 #: ../../versions.rst:14
 msgid "Python Release Cycle"
-msgstr ""
+msgstr "Ciclo de lançamentos do Python"
 
 #: ../../versions.rst:20
 msgid "Supported Versions"
-msgstr ""
+msgstr "Versões suportadas"
 
 #: ../../versions.rst:22
 msgid "Dates shown in *italic* are scheduled and can be adjusted."
-msgstr ""
+msgstr "As datas mostradas em *itálico* são agendadas e podem ser ajustadas."
 
 #: ../../include/branches.csv:1 ../../include/end-of-life.csv:1
 msgid "Branch"
-msgstr ""
+msgstr "Branch"
 
 #: ../../include/branches.csv:1 ../../include/end-of-life.csv:1
 msgid "Schedule"
-msgstr ""
+msgstr "Agendamento"
 
 #: ../../include/branches.csv:1 ../../include/end-of-life.csv:1
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../../include/branches.csv:1 ../../include/end-of-life.csv:1
 msgid "First release"
-msgstr ""
+msgstr "Primeiro lançamento"
 
 #: ../../include/branches.csv:1 ../../include/end-of-life.csv:1
 msgid "End of life"
-msgstr ""
+msgstr "Fim de vida"
 
 #: ../../include/branches.csv:1 ../../include/end-of-life.csv:1
 msgid "Release manager"
-msgstr ""
+msgstr "Gerente de lançamento"
 
 #: ../../include/branches.csv:1
 msgid "main"
-msgstr ""
+msgstr "main"
 
 #: ../../include/branches.csv:1
 msgid ":pep:`693`"
-msgstr ""
+msgstr ":pep:`693`"
 
 #: ../../include/branches.csv:1 ../../versions.rst
 msgid "feature"
-msgstr ""
+msgstr "feature"
 
 #: ../../include/branches.csv:1
 msgid "*2023-10-02*"
-msgstr ""
+msgstr "*2023-10-02*"
 
 #: ../../include/branches.csv:1
 msgid "*2028-10*"
-msgstr ""
+msgstr "*2028-10*"
 
 #: ../../include/branches.csv:1
 msgid "Thomas Wouters"
-msgstr ""
+msgstr "Thomas Wouters"
 
 #: ../../include/branches.csv:1
 msgid "3.11"
-msgstr ""
+msgstr "3.11"
 
 #: ../../include/branches.csv:1
 msgid ":pep:`664`"
-msgstr ""
+msgstr ":pep:`664`"
 
 #: ../../include/branches.csv:1 ../../versions.rst
 msgid "bugfix"
-msgstr ""
+msgstr "bugfix"
 
 #: ../../include/branches.csv:1
 msgid "2022-10-24"
-msgstr ""
+msgstr "2022-10-24"
 
 #: ../../include/branches.csv:1
 msgid "*2027-10*"
-msgstr ""
+msgstr "*2027-10*"
 
 #: ../../include/branches.csv:1
 msgid "Pablo Galindo Salgado"
-msgstr ""
+msgstr "Pablo Galindo Salgado"
 
 #: ../../include/branches.csv:1
 msgid "3.10"
-msgstr ""
+msgstr "3.10"
 
 #: ../../include/branches.csv:1
 msgid ":pep:`619`"
-msgstr ""
+msgstr ":pep:`619`"
 
 #: ../../include/branches.csv:1
 msgid "2021-10-04"
-msgstr ""
+msgstr "2021-10-04"
 
 #: ../../include/branches.csv:1
 msgid "*2026-10*"
-msgstr ""
+msgstr "*2026-10*"
 
 #: ../../include/branches.csv:1
 msgid "3.9"
-msgstr ""
+msgstr "3.9"
 
 #: ../../include/branches.csv:1
 msgid ":pep:`596`"
-msgstr ""
+msgstr ":pep:`596`"
 
 #: ../../include/branches.csv:1 ../../versions.rst
 msgid "security"
-msgstr ""
+msgstr "security"
 
 #: ../../include/branches.csv:1
 msgid "2020-10-05"
-msgstr ""
+msgstr "2020-10-05"
 
 #: ../../include/branches.csv:1
 msgid "*2025-10*"
-msgstr ""
+msgstr "*2025-10*"
 
 #: ../../include/branches.csv:1
 msgid "Łukasz Langa"
-msgstr ""
+msgstr "Łukasz Langa"
 
 #: ../../include/branches.csv:1
 msgid "3.8"
-msgstr ""
+msgstr "3.8"
 
 #: ../../include/branches.csv:1
 msgid ":pep:`569`"
-msgstr ""
+msgstr ":pep:`569`"
 
 #: ../../include/branches.csv:1
 msgid "2019-10-14"
-msgstr ""
+msgstr "2019-10-14"
 
 #: ../../include/branches.csv:1
 msgid "*2024-10*"
-msgstr ""
+msgstr "*2024-10*"
 
 #: ../../include/branches.csv:1
 msgid "3.7"
-msgstr ""
+msgstr "3.7"
 
 #: ../../include/branches.csv:1
 msgid ":pep:`537`"
-msgstr ""
+msgstr ":pep:`537`"
 
 #: ../../include/branches.csv:1
 msgid "2018-06-27"
-msgstr ""
+msgstr "2018-06-27"
 
 #: ../../include/branches.csv:1
 msgid "*2023-06-27*"
-msgstr ""
+msgstr "*2023-06-27*"
 
 #: ../../include/branches.csv:1 ../../include/end-of-life.csv:1
 msgid "Ned Deily"
-msgstr ""
+msgstr "Ned Deily"
 
 #: ../../versions.rst:33
 msgid "Unsupported Versions"
-msgstr ""
+msgstr "Versões não suportadas"
 
 #: ../../include/end-of-life.csv:1
 msgid "3.6"
-msgstr ""
+msgstr "3.6"
 
 #: ../../include/end-of-life.csv:1
 msgid ":pep:`494`"
-msgstr ""
+msgstr ":pep:`494`"
 
 #: ../../include/end-of-life.csv:1 ../../versions.rst
 msgid "end-of-life"
-msgstr ""
+msgstr "end-of-life"
 
 #: ../../include/end-of-life.csv:1
 msgid "2016-12-23"
-msgstr ""
+msgstr "2016-12-23"
 
 #: ../../include/end-of-life.csv:1
 msgid "2021-12-23"
-msgstr ""
+msgstr "2021-12-23"
 
 #: ../../include/end-of-life.csv:1
 msgid "3.5"
-msgstr ""
+msgstr "3.5"
 
 #: ../../include/end-of-life.csv:1
 msgid ":pep:`478`"
-msgstr ""
+msgstr ":pep:`478`"
 
 #: ../../include/end-of-life.csv:1
 msgid "2015-09-13"
-msgstr ""
+msgstr "2015-09-13"
 
 #: ../../include/end-of-life.csv:1
 msgid "2020-09-30"
-msgstr ""
+msgstr "2020-09-30"
 
 #: ../../include/end-of-life.csv:1
 msgid "Larry Hastings"
-msgstr ""
+msgstr "Larry Hastings"
 
 #: ../../include/end-of-life.csv:1
 msgid "3.4"
-msgstr ""
+msgstr "3.4"
 
 #: ../../include/end-of-life.csv:1
 msgid ":pep:`429`"
-msgstr ""
+msgstr ":pep:`429`"
 
 #: ../../include/end-of-life.csv:1
 msgid "2014-03-16"
-msgstr ""
+msgstr "2014-03-16"
 
 #: ../../include/end-of-life.csv:1
 msgid "2019-03-18"
-msgstr ""
+msgstr "2019-03-18"
 
 #: ../../include/end-of-life.csv:1
 msgid "3.3"
-msgstr ""
+msgstr "3.3"
 
 #: ../../include/end-of-life.csv:1
 msgid ":pep:`398`"
-msgstr ""
+msgstr ":pep:`398`"
 
 #: ../../include/end-of-life.csv:1
 msgid "2012-09-29"
-msgstr ""
+msgstr "2012-09-29"
 
 #: ../../include/end-of-life.csv:1
 msgid "2017-09-29"
-msgstr ""
+msgstr "2017-09-29"
 
 #: ../../include/end-of-life.csv:1
 msgid "Georg Brandl, Ned Deily (3.3.7+)"
-msgstr ""
+msgstr "Georg Brandl, Ned Deily (3.3.7+)"
 
 #: ../../include/end-of-life.csv:1
 msgid "3.2"
-msgstr ""
+msgstr "3.2"
 
 #: ../../include/end-of-life.csv:1
 msgid ":pep:`392`"
-msgstr ""
+msgstr ":pep:`392`"
 
 #: ../../include/end-of-life.csv:1
 msgid "2011-02-20"
-msgstr ""
+msgstr "2011-02-20"
 
 #: ../../include/end-of-life.csv:1
 msgid "2016-02-20"
-msgstr ""
+msgstr "2016-02-20"
 
 #: ../../include/end-of-life.csv:1
 msgid "Georg Brandl"
-msgstr ""
+msgstr "Georg Brandl"
 
 #: ../../include/end-of-life.csv:1
 msgid "3.1"
-msgstr ""
+msgstr "3.1"
 
 #: ../../include/end-of-life.csv:1
 msgid ":pep:`375`"
-msgstr ""
+msgstr ":pep:`375`"
 
 #: ../../include/end-of-life.csv:1
 msgid "2009-06-27"
-msgstr ""
+msgstr "2009-06-27"
 
 #: ../../include/end-of-life.csv:1
 msgid "2012-04-09"
-msgstr ""
+msgstr "2012-04-09"
 
 #: ../../include/end-of-life.csv:1
 msgid "Benjamin Peterson"
-msgstr ""
+msgstr "Benjamin Peterson"
 
 #: ../../include/end-of-life.csv:1
 msgid "3.0"
-msgstr ""
+msgstr "3.0"
 
 #: ../../include/end-of-life.csv:1
 msgid ":pep:`361`"
-msgstr ""
+msgstr ":pep:`361`"
 
 #: ../../include/end-of-life.csv:1
 msgid "2008-12-03"
-msgstr ""
+msgstr "2008-12-03"
 
 #: ../../include/end-of-life.csv:1
 msgid "Barry Warsaw"
-msgstr ""
+msgstr "Barry Warsaw"
 
 #: ../../include/end-of-life.csv:1
 msgid "2.7"
-msgstr ""
+msgstr "2.7"
 
 #: ../../include/end-of-life.csv:1
 msgid ":pep:`373`"
-msgstr ""
+msgstr ":pep:`373`"
 
 #: ../../include/end-of-life.csv:1
 msgid "2010-07-03"
-msgstr ""
+msgstr "2010-07-03"
 
 #: ../../include/end-of-life.csv:1
 msgid "2020-01-01"
-msgstr ""
+msgstr "2020-01-01"
 
 #: ../../include/end-of-life.csv:1
 msgid "2.6"
-msgstr ""
+msgstr "2.6"
 
 #: ../../include/end-of-life.csv:1
 msgid "2008-10-01"
-msgstr ""
+msgstr "2008-10-01"
 
 #: ../../include/end-of-life.csv:1
 msgid "2013-10-29"
-msgstr ""
+msgstr "2013-10-29"
 
 #: ../../versions.rst:42
 msgid "Status Key"
-msgstr ""
+msgstr "Chave do status"
 
 #: ../../versions.rst:44
 msgid "new features, bugfixes, and security fixes are accepted."
-msgstr ""
+msgstr "novos recursos, correções de bugs e corrções de segurança são aceitos."
 
 #: ../../versions.rst
 msgid "prerelease"
-msgstr ""
+msgstr "prerelease"
 
 #: ../../versions.rst:45
 msgid ""
 "feature fixes, bugfixes, and security fixes are accepted for the upcoming "
 "feature release."
 msgstr ""
+"correções de recursos, correções de bugs, correções de segurança são aceitos "
+"para o próximo lançamento de recurso."
 
 #: ../../versions.rst:47
 msgid ""
 "bugfixes and security fixes are accepted, new binaries are still released. "
 "(Also called **maintenance** mode or **stable** release)"
 msgstr ""
+"correções de bugs e correções de segurança são aceitos, novos binários ainda "
+"são lançados. (também chamado de modo **maintenance**, ou manutenção, ou "
+"lançamento **stable**, ou estável)"
 
 #: ../../versions.rst:49
 msgid ""
 "only security fixes are accepted and no more binaries are released, but new "
 "source-only versions can be released"
 msgstr ""
+"apenas correções de segurança são aceitas e não são lançados mais binários, "
+"mas novas versões somente de código-fonte podem ser lançadas"
 
 #: ../../versions.rst:51
 msgid "release cycle is frozen; no further changes can be pushed to it."
 msgstr ""
+"ciclo de lançamento é congelado; nenhuma alteração adicional pode ser "
+"enviada para ela."
 
 #: ../../versions.rst:53
 msgid "See also the :ref:`devcycle` page for more information about branches."
 msgstr ""
+"Veja também a página :ref:`devcycle` para mais informações sobre branches."
 
 #: ../../versions.rst:55
 msgid ""
@@ -397,3 +415,6 @@ msgid ""
 "but can be adjusted by the release manager of each branch.  All Python 2 "
 "versions have reached end-of-life."
 msgstr ""
+"Por padrão, o fim de vida é programado 5 anos após o primeiro lançamento, "
+"mas pode ser ajustado pelo gerente de lançamento de cada filial. Todas as "
+"versões do Python 2 atingiram o fim da vida útil."

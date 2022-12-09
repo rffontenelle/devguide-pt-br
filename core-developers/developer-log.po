@@ -831,7 +831,7 @@ msgstr ""
 
 #: ../../core-developers/developers.csv:1
 msgid "Ned Deily"
-msgstr ""
+msgstr "Ned Deily"
 
 #: ../../core-developers/developers.csv:1
 msgid "ned-deily"
@@ -875,7 +875,7 @@ msgstr ""
 
 #: ../../core-developers/developers.csv:1
 msgid "Łukasz Langa"
-msgstr ""
+msgstr "Łukasz Langa"
 
 #: ../../core-developers/developers.csv:1
 msgid "ambv"
@@ -1003,7 +1003,7 @@ msgstr ""
 
 #: ../../core-developers/developers.csv:1
 msgid "Larry Hastings"
-msgstr ""
+msgstr "Larry Hastings"
 
 #: ../../core-developers/developers.csv:1
 msgid "larryhastings"
@@ -1255,7 +1255,7 @@ msgstr ""
 
 #: ../../core-developers/developers.csv:1
 msgid "Benjamin Peterson"
-msgstr ""
+msgstr "Benjamin Peterson"
 
 #: ../../core-developers/developers.csv:1
 msgid "benjaminp"
@@ -1532,7 +1532,7 @@ msgstr ""
 
 #: ../../core-developers/developers.csv:1
 msgid "Georg Brandl"
-msgstr ""
+msgstr "Georg Brandl"
 
 #: ../../core-developers/developers.csv:1
 msgid "birkenfeld"
@@ -2001,7 +2001,7 @@ msgstr ""
 
 #: ../../core-developers/developers.csv:1
 msgid "Thomas Wouters"
-msgstr ""
+msgstr "Thomas Wouters"
 
 #: ../../core-developers/developers.csv:1
 msgid "Yhg1s"
@@ -2189,7 +2189,7 @@ msgstr ""
 
 #: ../../core-developers/developers.csv:1
 msgid "Barry Warsaw"
-msgstr ""
+msgstr "Barry Warsaw"
 
 #: ../../core-developers/developers.csv:1
 msgid "warsaw"

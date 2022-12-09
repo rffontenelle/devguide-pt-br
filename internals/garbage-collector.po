@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../internals/garbage-collector.rst:9
 msgid "Pablo Galindo Salgado"
-msgstr ""
+msgstr "Pablo Galindo Salgado"
 
 #: ../../internals/garbage-collector.rst:14
 msgid "Abstract"
