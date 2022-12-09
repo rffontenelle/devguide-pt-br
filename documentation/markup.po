@@ -442,7 +442,7 @@ msgstr ""
 
 #: ../../documentation/markup.rst:245 ../../documentation/markup.rst:1273
 msgid "Footnotes"
-msgstr ""
+msgstr "Notas de rodapé"
 
 #: ../../documentation/markup.rst:247
 msgid ""

@@ -3,32 +3,36 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-09 08:28-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
+"net>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../documentation/style-guide.rst:5
 msgid "Style Guide"
-msgstr ""
+msgstr "Guia de estilo"
 
 #: ../../documentation/style-guide.rst:9
 msgid "This document describes the style guide for our documentation."
-msgstr ""
+msgstr "Este documento descreve o guia de estilo para nossa documentação."
 
 #: ../../documentation/style-guide.rst:13
 msgid "Use of whitespace"
-msgstr ""
+msgstr "Uso de espaço em branco"
 
 #: ../../documentation/style-guide.rst:15
 msgid ""
@@ -37,12 +41,19 @@ msgid ""
 "indented code samples and long links may extend beyond that.  Code example "
 "bodies should use normal Python 4-space indentation."
 msgstr ""
+"Todos os arquivos reST usam um recuo de 3 espaços; tabulação não é "
+"permitida. O comprimento máximo da linha é de 80 caracteres para texto "
+"normal, mas tabelas, amostras de código profundamente recuadas e links "
+"longos podem se estender além disso. Corpos de exemplo de código devem usar "
+"recuo normal de 4 espaços do Python."
 
 #: ../../documentation/style-guide.rst:20
 msgid ""
 "Make generous use of blank lines where applicable; they help group things "
 "together."
 msgstr ""
+"Faça uso generoso de linhas em branco quando aplicável; eles ajudam a "
+"agrupar as coisas."
 
 #: ../../documentation/style-guide.rst:23
 msgid ""
@@ -50,10 +61,14 @@ msgid ""
 "ignores the second space, it is customarily put in by some users, for "
 "example to aid Emacs' auto-fill mode."
 msgstr ""
+"Um ponto final de frase pode ser seguido por um ou dois espaços; enquanto o "
+"reST ignora o segundo espaço, ele é normalmente inserido por alguns "
+"usuários, por exemplo, para auxiliar o modo de preenchimento automático do "
+"Emacs."
 
 #: ../../documentation/style-guide.rst:28
 msgid "Footnotes"
-msgstr ""
+msgstr "Notas de rodapé"
 
 #: ../../documentation/style-guide.rst:30
 msgid ""
@@ -62,6 +77,11 @@ msgid ""
 "added at the end of the sentence, it should follow the sentence-ending "
 "punctuation. The reST markup should appear something like this::"
 msgstr ""
+"Notas de rodapé são geralmente desencorajadas, embora possam ser usadas "
+"quando são a melhor maneira de apresentar informações específicas. Quando "
+"uma referência de nota de rodapé é adicionada no final da frase, ela deve "
+"seguir a pontuação final da frase. A marcação reST deve aparecer mais ou "
+"menos assim::"
 
 #: ../../documentation/style-guide.rst:37
 msgid ""
@@ -69,18 +89,23 @@ msgid ""
 "long, at the end of a section. The docutils will automatically create "
 "backlinks to the footnote reference."
 msgstr ""
+"As notas de rodapé devem ser reunidas no final de um arquivo ou, se o "
+"arquivo for muito longo, no final de uma seção. Os docutils criarão "
+"automaticamente backlinks (em uma tradução literal, \"links de volta\") para "
+"a referência da nota de rodapé."
 
 #: ../../documentation/style-guide.rst:41
 msgid "Footnotes may appear in the middle of sentences where appropriate."
 msgstr ""
+"As notas de rodapé podem aparecer no meio das frases, quando apropriado."
 
 #: ../../documentation/style-guide.rst:44
 msgid "Capitalization"
-msgstr ""
+msgstr "Maiusculização"
 
 #: ../../documentation/style-guide.rst:-1
 msgid "Sentence case"
-msgstr ""
+msgstr "Sentence case"
 
 #: ../../documentation/style-guide.rst:48
 msgid ""
@@ -88,6 +113,9 @@ msgid ""
 "the first word is always capitalized and other words are only capitalized if "
 "there is a specific rule requiring it."
 msgstr ""
+"*Sentence case* é um conjunto de regras de maiusculização usadas em frases "
+"em inglês: a primeira palavra é sempre maiúscula e as outras palavras só são "
+"maiúsculas se houver uma regra específica que o exija."
 
 #: ../../documentation/style-guide.rst:52
 msgid ""
@@ -97,12 +125,20 @@ msgid ""
 "title case, you can either convert all titles to sentence case or use the "
 "dominant style in the new section title."
 msgstr ""
+"Na documentação do Python, é preferível usar maiúsculas e minúsculas nos "
+"títulos das seções, mas a consistência dentro de uma unidade é mais "
+"importante do que seguir essa regra. Se você adicionar uma seção a um "
+"capítulo onde a maioria das seções está em letras maiúsculas e minúsculas, "
+"você pode converter todos os títulos em letras maiúsculas e minúsculas ou "
+"usar o estilo dominante no novo título da seção."
 
 #: ../../documentation/style-guide.rst:58
 msgid ""
 "Sentences that start with a word for which specific rules require starting "
 "it with a lower case letter should be avoided."
 msgstr ""
+"Devem ser evitadas as frases que começam com uma palavra cujas regras "
+"específicas exigem que comece com uma letra minúscula."
 
 #: ../../documentation/style-guide.rst:63
 msgid ""
@@ -110,6 +146,9 @@ msgid ""
 "\"modulename --- Short description of the module.\"  In this case, the "
 "description should be capitalized as a stand-alone sentence."
 msgstr ""
+"As seções que descrevem um módulo de biblioteca geralmente têm títulos na "
+"forma de \"nomemódulo --- breve descrição do módulo.\" Nesse caso, a "
+"descrição deve ser escrita em letras maiúsculas como uma frase independente."
 
 #: ../../documentation/style-guide.rst:68
 msgid ""
@@ -119,16 +158,23 @@ msgid ""
 "preferred spellings are given here to aid authors in maintaining the "
 "consistency of presentation in the Python documentation."
 msgstr ""
+"Muitos nomes especiais são usados na documentação do Python, incluindo nomes "
+"de sistemas operacionais, linguagens de programação, corpos de padrões e "
+"similares. A maioria dessas entidades não recebe nenhuma marcação especial, "
+"mas as grafias preferidas são dadas aqui para ajudar os autores a manter a "
+"consistência da apresentação na documentação do Python."
 
 #: ../../documentation/style-guide.rst:74
 msgid ""
 "Other terms and words deserve special mention as well; these conventions "
 "should be used to ensure consistency throughout the documentation:"
 msgstr ""
+"Outros termos e palavras também merecem menção especial; essas convenções "
+"devem ser usadas para garantir a consistência em toda a documentação:"
 
 #: ../../documentation/style-guide.rst:83
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: ../../documentation/style-guide.rst:78
 msgid ""
@@ -138,28 +184,36 @@ msgid ""
 "reasonable way to predict which occurrence will be the first seen by the "
 "reader. It is better to use the word \"processor\" instead."
 msgstr ""
+"Para \"central processing unit\", ou unidade central de processamento em "
+"português. Muitos guias de estilo dizem que isso deve ser explicado no "
+"primeiro uso (e se você precisar usá-lo, faça-o!). Para a documentação do "
+"Python, essa abreviação deve ser evitada, pois não há uma maneira razoável "
+"de prever qual ocorrência será vista pela primeira vez pelo leitor. É melhor "
+"usar a palavra *processor* (em português, processador)."
 
 #: ../../documentation/style-guide.rst:87
 msgid "POSIX"
-msgstr ""
+msgstr "POSIX"
 
 #: ../../documentation/style-guide.rst:86
 msgid ""
 "The name assigned to a particular group of standards. This is always "
 "uppercase."
 msgstr ""
+"O nome atribuído a um determinado grupo de padrões. Isso está sempre em "
+"maiúsculo."
 
 #: ../../documentation/style-guide.rst:90
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: ../../documentation/style-guide.rst:90
 msgid "The name of our favorite programming language is always capitalized."
-msgstr ""
+msgstr "O nome da nossa linguagem de programação favorita é sempre maiúsculo."
 
 #: ../../documentation/style-guide.rst:95
 msgid "reST"
-msgstr ""
+msgstr "reST"
 
 #: ../../documentation/style-guide.rst:93
 msgid ""
@@ -167,35 +221,44 @@ msgid ""
 "produce Python documentation.  When spelled out, it is always one word and "
 "both forms start with a lower case 'r'."
 msgstr ""
+"Para \"reStructuredText\", uma sintaxe de marcação de texto simples e fácil "
+"de ler usada para produzir a documentação do Python. Quando soletrado, é "
+"sempre uma palavra e ambas as formas começam com um 'r' minúsculo."
 
 #: ../../documentation/style-guide.rst:99
 msgid "Unicode"
-msgstr ""
+msgstr "Unicode"
 
 #: ../../documentation/style-guide.rst:98
 msgid ""
 "The name of a character coding system. This is always written capitalized."
 msgstr ""
+"O nome de um sistema de codificação de caracteres. Isso é sempre escrito com "
+"primeira letra maiúscula."
 
 #: ../../documentation/style-guide.rst:103
 msgid "Unix"
-msgstr ""
+msgstr "Unix"
 
 #: ../../documentation/style-guide.rst:102
 msgid ""
 "The name of the operating system developed at AT&T Bell Labs in the early "
 "1970s."
 msgstr ""
+"O nome do sistema operacional desenvolvido no AT&T Bell Labs no início dos "
+"anos 1970."
 
 #: ../../documentation/style-guide.rst:106
 msgid "Affirmative Tone"
-msgstr ""
+msgstr "Tome afirmativo"
 
 #: ../../documentation/style-guide.rst:108
 msgid ""
 "The documentation focuses on affirmatively stating what the language does "
 "and how to use it effectively."
 msgstr ""
+"A documentação se concentra em afirmar afirmativamente o que a linguagem faz "
+"e como usá-la de forma eficaz."
 
 #: ../../documentation/style-guide.rst:111
 msgid ""
@@ -204,10 +267,14 @@ msgid ""
 "kinds of value judgments belong in external blogs and wikis, not in the core "
 "documentation."
 msgstr ""
+"Exceto para certos riscos de segurança ou falha de segmentação, os "
+"documentos devem evitar palavras como \"o recurso x é perigoso\" ou "
+"\"somente para especialistas\". Esses tipos de julgamentos de valor "
+"pertencem a blogs e wikis externos, não à documentação central."
 
 #: ../../documentation/style-guide.rst:116
 msgid "Bad example (creating worry in the mind of a reader):"
-msgstr ""
+msgstr "Mau exemplo (criando preocupação na mente do leitor):"
 
 #: ../../documentation/style-guide.rst:118
 msgid ""
@@ -215,12 +282,16 @@ msgid ""
 "excessive resource consumption.  Never rely on reference counting to "
 "automatically close a file."
 msgstr ""
+"Aviso: deixar de fechar explicitamente um arquivo pode resultar em perda de "
+"dados ou consumo excessivo de recursos. Nunca confie na contagem de "
+"referências para fechar um arquivo automaticamente."
 
 #: ../../documentation/style-guide.rst:122
 msgid ""
 "Good example (establishing confident knowledge in the effective use of the "
 "language):"
 msgstr ""
+"Bom exemplo (estabelecendo conhecimento confiante no uso efetivo do idioma):"
 
 #: ../../documentation/style-guide.rst:125
 msgid ""
@@ -229,16 +300,23 @@ msgid ""
 "achieve the same effect.  This assures that files are flushed and file "
 "descriptor resources are released in a timely manner."
 msgstr ""
+"Uma prática recomendada para usar arquivos é usar um par try/finally para "
+"fechar explicitamente um arquivo após ele ser usado. Como alternativa, usar "
+"uma instrução with pode obter o mesmo efeito. Isso garante que os arquivos "
+"sejam liberados e os recursos do descritor de arquivo sejam liberados em "
+"tempo hábil."
 
 #: ../../documentation/style-guide.rst:131
 msgid "Economy of Expression"
-msgstr ""
+msgstr "Economia de expressão"
 
 #: ../../documentation/style-guide.rst:133
 msgid ""
 "More documentation is not necessarily better documentation.  Err on the side "
 "of being succinct."
 msgstr ""
+"Mais documentação não é necessariamente melhor documentação. Erre sendo "
+"sucinto."
 
 #: ../../documentation/style-guide.rst:136
 msgid ""
@@ -248,10 +326,15 @@ msgid ""
 "can create the impression that a function is more complex or harder to use "
 "than it actually is."
 msgstr ""
+"É um fato lamentável que tornar a documentação mais longa pode ser um "
+"impedimento para a compreensão e pode resultar em ainda mais maneiras de ler "
+"ou interpretar mal o texto. Descrições longas cheias de casos e advertências "
+"podem criar a impressão de que uma função é mais complexa ou mais difícil de "
+"usar do que realmente é."
 
 #: ../../documentation/style-guide.rst:142
 msgid "Security Considerations (and Other Concerns)"
-msgstr ""
+msgstr "Considerações de segurança (e outras preocupações)"
 
 #: ../../documentation/style-guide.rst:144
 msgid ""
@@ -262,6 +345,12 @@ msgid ""
 "specifically to Python's support for that task, doesn't make for a good "
 "reading experience."
 msgstr ""
+"Alguns módulos fornecidos com o Python são inerentemente expostos a "
+"problemas de segurança (por exemplo, vulnerabilidades de injeção de shell) "
+"devido ao propósito do módulo (por exemplo: :mod:`ssl`). Preencher a "
+"documentação desses módulos com caixas de aviso vermelhas para problemas "
+"devidos à tarefa em questão, em vez de especificamente ao suporte do Python "
+"para essa tarefa, não contribui para uma boa experiência de leitura."
 
 #: ../../documentation/style-guide.rst:151
 msgid ""
@@ -271,6 +360,12 @@ msgid ""
 "similar to :samp:`\"Please refer to the :ref:\\`{security-considerations}\\` "
 "section for important information on how to avoid common mistakes.\"`."
 msgstr ""
+"Em vez disso, essas questões de segurança devem ser reunidas em uma seção "
+"dedicada \"Security Considerations\" (em português, Considerações de "
+"segurança) dentro da documentação do módulo e com referência cruzada da "
+"documentação das interfaces afetadas com uma nota semelhante a :samp:"
+"`\"Please refer to the :ref:\\`{security-considerations}\\` section for "
+"important information on how to avoid common mistakes.\"`."
 
 #: ../../documentation/style-guide.rst:157
 msgid ""
@@ -279,10 +374,15 @@ msgid ""
 "these can be documented in a \"Common Errors\" section and cross-referenced "
 "rather than repeated for every affected interface."
 msgstr ""
+"Da mesma forma, se houver um erro comum que afete muitas interfaces em um "
+"módulo (por exemplo, buffers de tubo de nível do sistema operacional "
+"enchendo e paralisando processos filho), eles podem ser documentados em uma "
+"seção \"Common Errors\" (em português, Erros comuns) e referenciados em vez "
+"de repetidos para cada afetado interface."
 
 #: ../../documentation/style-guide.rst:163
 msgid "Code Examples"
-msgstr ""
+msgstr "Exemplos de códigos"
 
 #: ../../documentation/style-guide.rst:165
 msgid ""
@@ -290,6 +390,9 @@ msgid ""
 "often grasp a simple example more quickly than they can digest a formal "
 "description in prose."
 msgstr ""
+"Exemplos de códigos curtos podem ser um complemento útil para a compreensão. "
+"Os leitores muitas vezes podem compreender um exemplo simples mais "
+"rapidamente do que digerir uma descrição formal em prosa."
 
 #: ../../documentation/style-guide.rst:169
 msgid ""
@@ -299,6 +402,11 @@ msgid ""
 "URL than it would be with an example of removing the last word from a line "
 "of Monty Python dialog."
 msgstr ""
+"As pessoas aprendem mais rápido com exemplos concretos e motivadores que "
+"correspondem ao contexto de um caso de uso típico. Por exemplo, o método :"
+"meth:`str.rpartition` é melhor demonstrado com um exemplo dividindo o "
+"domínio de uma URL do que com um exemplo de remoção da última palavra de uma "
+"linha de diálogo do Monty Python."
 
 #: ../../documentation/style-guide.rst:174
 msgid ""
@@ -308,10 +416,15 @@ msgid ""
 "it makes it difficult for readers to cut-and-paste examples so they can "
 "experiment with variations."
 msgstr ""
+"As reticências para o prompt do interpretador secundário :py:data:`sys.ps2` "
+"devem ser usadas apenas com moderação, onde é necessário diferenciar "
+"claramente entre as linhas de entrada e as linhas de saída. Além de "
+"contribuir com a desordem visual, torna difícil para os leitores recortar e "
+"colar exemplos para que possam experimentar variações."
 
 #: ../../documentation/style-guide.rst:181
 msgid "Code Equivalents"
-msgstr ""
+msgstr "Equivalentes de código"
 
 #: ../../documentation/style-guide.rst:183
 msgid ""
@@ -319,6 +432,9 @@ msgid ""
 "useful adjunct to a prose description.  A documenter should carefully weigh "
 "whether the code equivalent adds value."
 msgstr ""
+"Fornecer equivalentes de código Python puro (ou equivalentes aproximados) "
+"pode ser um complemento útil para uma descrição em prosa. Um documentador "
+"deve avaliar cuidadosamente se o código equivalente agrega valor."
 
 #: ../../documentation/style-guide.rst:187
 msgid ""
@@ -329,6 +445,13 @@ msgid ""
 "commonly requested alternative where :func:`all` would return the specific "
 "object evaluating to False whenever the function terminates early."
 msgstr ""
+"Um bom exemplo é o código equivalente para :func:`all`. O código curto "
+"equivalente de 4 linhas é facilmente digerido; enfatiza novamente o "
+"comportamento inicial; e esclarece a manipulação do caso de canto onde o "
+"iterável está vazio. Além disso, serve como um modelo para pessoas que "
+"desejam implementar uma alternativa comumente solicitada, onde :func:`all` "
+"retornaria o objeto específico avaliado como False sempre que a função "
+"terminasse antecipadamente."
 
 #: ../../documentation/style-guide.rst:194
 msgid ""
@@ -339,6 +462,12 @@ msgid ""
 "operation of the \"grouper\" is more easily shown in code than in English "
 "prose."
 msgstr ""
+"Um exemplo mais questionável é o código para :func:`itertools.groupby`. Seu "
+"equivalente em código é muito complexo para ser uma ajuda rápida para a "
+"compreensão. Apesar de sua complexidade, o equivalente em código foi mantido "
+"porque serve de modelo para implementações alternativas e porque a operação "
+"do \"agrupador\" é mais facilmente mostrada em código do que em prosa em "
+"inglês."
 
 #: ../../documentation/style-guide.rst:200
 msgid ""
@@ -346,10 +475,13 @@ msgid ""
 "function. The exact steps in converting a number to octal doesn't add value "
 "for a user trying to learn what the function does."
 msgstr ""
+"Um exemplo de quando não usar um código equivalente é para a função :func:"
+"`oct`. As etapas exatas na conversão de um número para octal não agregam "
+"valor para um usuário tentando aprender o que a função faz."
 
 #: ../../documentation/style-guide.rst:205
 msgid "Audience"
-msgstr ""
+msgstr "Audiência"
 
 #: ../../documentation/style-guide.rst:207
 msgid ""
@@ -359,6 +491,11 @@ msgid ""
 "and do your best to connect-the-dots, but don't talk down to them or waste "
 "their time."
 msgstr ""
+"O tom do tutorial (e de todos os documentos) precisa respeitar a "
+"inteligência do leitor. Não presuma que os leitores são estúpidos. Disponha "
+"as informações relevantes, mostre casos de uso motivadores, forneça links "
+"para glossários e faça o possível para conectar os pontos, mas não fale mal "
+"deles ou desperdice seu tempo."
 
 #: ../../documentation/style-guide.rst:212
 msgid ""
@@ -368,6 +505,11 @@ msgid ""
 "make a misstep.  The tutorial serves as guide for intelligent and curious "
 "readers, saving details for the how-to guides and other sources."
 msgstr ""
+"O tutorial destina-se a iniciantes, muitos dos quais usarão o tutorial para "
+"avaliar o idioma como um todo. A experiência precisa ser positiva e não "
+"deixar o leitor com medo de que algo ruim aconteça se ele der um passo em "
+"falso. O tutorial serve como guia para leitores inteligentes e curiosos, "
+"guardando detalhes para guias de instruções e outras fontes."
 
 #: ../../documentation/style-guide.rst:218
 msgid ""
@@ -379,3 +521,10 @@ msgid ""
 "saved the user from making false assumptions about the language (\"I was "
 "surprised by ...\")."
 msgstr ""
+"Seja cuidadoso ao aceitar solicitações de mudanças na documentação da "
+"categoria rara, mas vocal, de leitor que está procurando justificativa para "
+"um de seus erros de programação (\"Eu cometi um erro, portanto os documentos "
+"devem estar errados ...\"). Normalmente, a documentação não era consultada "
+"até que o erro fosse cometido. É lamentável, mas normalmente nenhuma edição "
+"de documentação teria evitado que o usuário fizesse falsas suposições sobre "
+"a linguagem (\"Fiquei surpreso com ...\")."

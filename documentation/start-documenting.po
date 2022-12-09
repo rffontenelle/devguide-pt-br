@@ -188,7 +188,7 @@ msgstr ""
 
 #: ../../documentation/start-documenting.rst:143
 msgid "Style Guide"
-msgstr ""
+msgstr "Guia de estilo"
 
 #: ../../documentation/start-documenting.rst:145
 msgid "Moved to :doc:`style-guide`"
