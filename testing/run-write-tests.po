@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../testing/run-write-tests.rst:6
+msgid "Running and Writing Tests"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:10
+msgid ""
+"This document assumes you are working from an :ref:`in-development "
+"<indevbranch>` checkout of Python. If you are not then some things "
+"presented here may not work as they may depend on new features not "
+"available in earlier versions of Python."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:16
+msgid "Running"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:18
+msgid ""
+"The shortest, simplest way of running the test suite is the following "
+"command from the root directory of your checkout (after you have "
+":ref:`built Python <compiling>`)::"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:24
+msgid ""
+"You may need to change this command as follows throughout this section. "
+"On :ref:`most <mac-python.exe>` macOS systems, replace :file:`./python` "
+"with :file:`./python.exe`.  On Windows, use :file:`python.bat`.  If using"
+" Python 2.7, replace ``test`` with ``test.regrtest``."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:29
+msgid ""
+"This will run the majority of tests, but exclude a small portion of them;"
+" these excluded tests use special kinds of resources: for example, "
+"accessing the Internet, or trying to play a sound or to display a "
+"graphical interface on your desktop.  They are disabled by default so "
+"that running the test suite is not too intrusive.  To enable some of "
+"these additional tests (and for other flags which can help debug various "
+"issues such as reference leaks), read the help text::"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:39
+msgid ""
+"If you want to run a single test file, simply specify the test file name "
+"(without the extension) as an argument.  You also probably want to enable"
+" verbose mode (using ``-v``), so that individual failures are detailed::"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:45
+msgid ""
+"To run a single test case, use the ``unittest`` module, providing the "
+"import path to the test case::"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:50
+msgid ""
+"Some test modules also support direct invocation, which might be useful "
+"for IDEs and local debugging::"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:55
+msgid "But, there are several important notes:"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:57
+msgid ""
+"This way of running tests exists only for local developer needs and is "
+"discouraged for anything else"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:59
+msgid ""
+"Some modules do not support it at all. One example is ``test_importlib``."
+" In other words: if some module does not have ``unittest.main()``, then "
+"most likely it does not support direct invocation."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:63
+msgid ""
+"If you have a multi-core or multi-CPU machine, you can enable parallel "
+"testing using several Python processes so as to speed up things::"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:68
+msgid ""
+"If you are running a version of Python prior to 3.3 you must specify the "
+"number of processes to run simultaneously (e.g. ``-j2``)."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:73
+msgid ""
+"Finally, if you want to run tests under a more strenuous set of settings,"
+" you can run ``test`` as::"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:78
+msgid ""
+"The various extra flags passed to Python cause it to be much stricter "
+"about various things (the ``-Wd`` flag should be ``-W error`` at some "
+"point, but the test suite has not reached a point where all warnings have"
+" been dealt with and so we cannot guarantee that a bug-free Python will "
+"properly complete a test run with ``-W error``). The ``-r`` flag to the "
+"test runner causes it to run tests in a more random order which helps to "
+"check that the various tests do not interfere with each other.  The "
+"``-w`` flag causes failing tests to be run again to see if the failures "
+"are transient or consistent. The ``-uall`` flag allows the use of all "
+"available resources so as to not skip tests requiring, e.g., Internet "
+"access."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:89
+msgid ""
+"To check for reference leaks (only needed if you modified C code), use "
+"the ``-R`` flag.  For example, ``-R 3:2`` will first run the test 3 times"
+" to settle down the reference count, and then run it 2 more times to "
+"verify if there are any leaks."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:94
+msgid ""
+"You can also execute the ``Tools/scripts/run_tests.py`` script as  found "
+"in a CPython checkout. The script tries to balance speed with "
+"thoroughness. But if you want the most thorough tests you should use the "
+"strenuous approach shown above."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:101
+msgid "Unexpected Skips"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:103
+msgid ""
+"Sometimes when running the test suite, you will see \"unexpected skips\" "
+"reported. These represent cases where an entire test module has been "
+"skipped, but the test suite normally expects the tests in that module to "
+"be executed on that platform."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:108
+msgid ""
+"Often, the cause is that an optional module hasn't been built due to "
+"missing build dependencies. In these cases, the missing module reported "
+"when the test is skipped should match one of the modules reported as "
+"failing to build when :ref:`compiling`."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:113
+msgid ""
+"In other cases, the skip message should provide enough detail to help "
+"figure out and resolve the cause of the problem (for example, the default"
+" security settings on some platforms will disallow some tests)"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:119
+msgid "Writing"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:121
+msgid ""
+"Writing tests for Python is much like writing tests for your own code. "
+"Tests need to be thorough, fast, isolated, consistently repeatable, and "
+"as simple as possible. We try to have tests both for normal behaviour and"
+" for error conditions.  Tests live in the ``Lib/test`` directory, where "
+"every file that includes tests has a ``test_`` prefix."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:127
+msgid ""
+"One difference with ordinary testing is that you are encouraged to rely "
+"on the :py:mod:`test.support` module. It contains various helpers that "
+"are tailored to Python's test suite and help smooth out common problems "
+"such as platform differences, resource consumption and cleanup, or "
+"warnings management. That module is not suitable for use outside of the "
+"standard library."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:133
+msgid ""
+"When you are adding tests to an existing test file, it is also "
+"recommended that you study the other tests in that file; it will teach "
+"you which precautions you have to take to make your tests robust and "
+"portable."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:137
+msgid "For tests of the C API, see Tests sections in :ref:`c-api`."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:141
+msgid "Benchmarks"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:143
+msgid "Benchmarking is useful to test that a change does not degrade performance."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:145
+msgid ""
+"`The Python Benchmark Suite <https://github.com/python/pyperformance>`_ "
+"has a collection of benchmarks for all Python implementations. "
+"Documentation about running the benchmarks is in the `README.txt "
+"<https://github.com/python/pyperformance/blob/main/README.rst>`_ of the "
+"repo."
+msgstr ""
+

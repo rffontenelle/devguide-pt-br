@@ -1,0 +1,779 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../getting-started/git-boot-camp.rst:5
+msgid "Git Bootcamp and Cheat Sheet"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:11
+msgid ""
+"This section provides instructions on common tasks in CPython's workflow."
+" It's designed to assist new contributors who have some familiarity with "
+"git and GitHub."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:15
+msgid ""
+"If you are new to git and GitHub, please become comfortable with these "
+"instructions before submitting a pull request. As there are several ways "
+"to accomplish these tasks using git and GitHub, this section reflects one"
+" method suitable for new contributors. Experienced contributors may "
+"desire a different approach."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:22
+msgid ""
+"In this section, we will go over some commonly used Git commands that are"
+" relevant to CPython's workflow."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:26
+msgid ""
+"Setting up git aliases for common tasks can be useful to you. You can get"
+" more information about that in `git documentation <https://git-"
+"scm.com/book/en/v2/Git-Basics-Git-Aliases>`_"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:33
+msgid "Forking CPython GitHub Repository"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:35
+msgid "You will only need to do this once."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:37
+#: ../../getting-started/git-boot-camp.rst:295
+msgid "Go to https://github.com/python/cpython."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:39
+msgid "Press ``Fork`` on the top right."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:41
+msgid ""
+"When asked where to fork the repository, choose to fork it to your "
+"username."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:43
+msgid ""
+"Your forked CPython repository will be created at "
+"https://github.com/<username>/cpython."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:48
+msgid "Cloning a Forked CPython Repository"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:50
+msgid "You will only need to do this once per machine.  From your command line::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:54
+msgid "It is also recommended to configure an ``upstream`` remote repository::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:59
+msgid "You can also use SSH-based or HTTPS-based URLs."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:62
+msgid "Configure the Remotes"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:67
+msgid "Configure ``git`` to pull ``main`` from the ``upstream`` remote::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:71
+msgid ""
+"Since one should never attempt to push to ``upstream``, configure ``git``"
+" to push always to ``origin``::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:77
+msgid "Listing the Remote Repositories"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:79
+msgid ""
+"To list the remote repositories that are configured, along with their "
+"URLs::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:83
+msgid ""
+"You should have two remote repositories: ``origin`` pointing to your "
+"forked CPython repository, and ``upstream`` pointing to the official "
+"CPython repository::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:91
+msgid "To verify the upstream for ``main``::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:95
+msgid ""
+"It should emit ``upstream``, indicating to track/pull changes for "
+"``main`` from the ``upstream`` remote."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:102
+msgid "Setting Up Your Name and Email Address"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:109
+msgid ""
+"The ``--global`` flag sets these parameters globally while the "
+"``--local`` flag sets them only for the current project."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:115
+msgid "Enabling ``autocrlf`` on Windows"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:117
+msgid ""
+"The ``autocrlf`` option will fix automatically any Windows-specific line "
+"endings. This should be enabled on Windows, since the public repository "
+"has a hook which will reject all changesets having the wrong line "
+"endings::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:124
+msgid "Creating and Switching Branches"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:127
+msgid "Never commit directly to the ``main`` branch."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:129
+msgid "Create a new branch from ``main`` and switch to it::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:133
+msgid "This is equivalent to::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:140
+msgid "To find the branch you are currently on::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:144
+msgid ""
+"The current branch will have an asterisk next to the branch name.  Note, "
+"this will only list all of your local branches."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:147
+msgid "To list all the branches, including the remote branches::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:151
+msgid "To switch to a different branch::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:155
+msgid ""
+"Other releases are just branches in the repository.  For example, to work"
+" on the 2.7 release from the ``upstream`` remote::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:163
+msgid "Deleting Branches"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:165
+msgid "To delete a **local** branch that you no longer need::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:170
+msgid "To delete a **remote** branch::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:174
+msgid "You may specify more than one branch for deletion."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:178
+msgid "Renaming Branch"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:180
+msgid ""
+"The CPython repository's default branch was renamed from ``master`` to "
+"``main`` after the Python 3.10b1 release."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:183
+msgid ""
+"If you have a fork on GitHub (as described in :ref:`fork-cpython`) that "
+"was created before the rename, you should visit the GitHub page for your "
+"fork to rename the branch there. You only have to do this once. GitHub "
+"should provide you with a dialog for this. If it doesn't (or the dialog "
+"was already dismissed), you can rename the branch in your fork manually "
+"`by following these GitHub instructions "
+"<https://github.com/github/renaming#renaming-existing-branches>`__"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:190
+msgid ""
+"After renaming the branch in your fork, you need to update any local "
+"clones as well. This only has to be done once per clone::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:198
+msgid "(GitHub also provides these instructions after you rename the branch.)"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:200
+msgid ""
+"If you do not have a fork on GitHub, but rather a direct clone of the "
+"main repo created before the branch rename, you still have to update your"
+" local clones. This still only has to be done once per clone. In that "
+"case, you can rename your local branch as follows::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:213
+msgid "Staging and Committing Files"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:215
+msgid "To show the current changes::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:219
+msgid "To stage the files to be included in your commit::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:224
+msgid "To commit the files that have been staged (done in step 2):"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:231
+msgid "Reverting Changes"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:233
+msgid "To revert changes to a file that has not been committed yet::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:237
+msgid ""
+"If the change has been committed, and now you want to reset it to "
+"whatever the origin is at::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:243
+msgid "Stashing Changes"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:245
+msgid "To stash away changes that are not ready to be committed yet::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:249
+msgid "To re-apply the last stashed change::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:256
+msgid "Comparing Changes"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:258
+msgid "View all non-commited changes::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:262
+msgid "Compare to the ``main`` branch::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:266
+msgid ""
+"Exclude generated files from diff using an ``attr`` `pathspec <https"
+"://git-scm.com/docs/gitglossary#def_pathspec>`_ (note the single "
+"quotes)::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:272
+msgid "Exclude generated files from diff by default::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:276
+msgid ""
+"The ``generated`` `attribute <https://git-scm.com/docs/gitattributes>`_ "
+"is defined in :file:`.gitattributes`, found in the repository root."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:282
+msgid "Pushing Changes"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:284
+msgid ""
+"Once your changes are ready for a review or a pull request, you will need"
+" to push them to the remote repository."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:293
+msgid "Creating a Pull Request"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:297
+msgid "Press the ``New pull request`` button."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:299
+msgid "Click the ``compare across forks`` link."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:301
+msgid "Select the base repository: ``python/cpython`` and base branch: ``main``."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:303
+msgid ""
+"Select the head repository: ``<username>/cpython`` and head branch: the "
+"branch containing your changes."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:306
+msgid "Press the ``Create pull request`` button."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:308
+msgid ""
+"You should include the issue number in the title of the PR, in the format"
+" ``gh-NNNNN: <PR Title>``."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:312
+msgid "Linking to Issues and Pull Requests"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:314
+msgid ""
+"You can link to issues and pull requests using ``gh-NNNNN`` (this form is"
+" preferred over ``#NNNNN``).  If the reference appears in a list, the "
+"link will be expanded to show the status and title of the issue/PR."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:318
+msgid ""
+"When you create a PR that includes ``gh-NNNNN`` in the title, `bedevere`_"
+" will automatically add a link to the issue in the first message."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:321
+msgid ""
+"In addition, pull requests support `special keywords`_ that can be used "
+"to link to an issue and automatically close it when the PR is merged. "
+"However, issues often require multiple PRs before they can be closed "
+"(e.g. backports to other branches), so this features is only useful if "
+"you know for sure that a single PR is enough to address and close the "
+"issue."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:331
+msgid "Updating your CPython Fork"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:333
+#: ../../getting-started/git-boot-camp.rst:384
+#: ../../getting-started/git-boot-camp.rst:427
+msgid "Scenario:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:335
+msgid "You forked the CPython repository some time ago."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:336
+#: ../../getting-started/git-boot-camp.rst:358
+msgid "Time passes."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:337
+msgid "There have been new commits made in the upstream CPython repository."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:338
+msgid "Your forked CPython repository is no longer up to date."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:339
+msgid ""
+"You now want to update your forked CPython repository to be the same as "
+"the upstream CPython repository."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:342
+msgid ""
+"Please do not try to solve this by creating a pull request from "
+"``python:main`` to ``<username>:main`` as the authors of the patches will"
+" get notified unnecessarily."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:346
+#: ../../getting-started/git-boot-camp.rst:364
+msgid "Solution::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:352
+msgid ""
+"For the above commands to work, please follow the instructions found in "
+"the :ref:`checkout` section"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:355
+msgid "Another scenario:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:357
+msgid "You created ``some-branch`` some time ago."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:359
+msgid "You made some commits to ``some-branch``."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:360
+msgid "Meanwhile, there are recent changes from the upstream CPython repository."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:361
+msgid ""
+"You want to incorporate the recent changes from the upstream CPython "
+"repository into ``some-branch``."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:371
+msgid ""
+"You may see error messages like \"CONFLICT\" and \"Automatic merge "
+"failed;\" when you run ``git merge upstream/main``."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:374
+msgid ""
+"When it happens, you need to resolve conflict.  See these articles about "
+"resolving conflicts:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:376
+msgid ""
+"`About merge conflicts <https://docs.github.com/en/pull-requests"
+"/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-"
+"conflicts>`_"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:377
+msgid ""
+"`Resolving a merge conflict using the command line "
+"<https://docs.github.com/en/pull-requests/collaborating-with-pull-"
+"requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-"
+"command-line>`_"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:382
+msgid "Applying a Patch to Git"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:386
+msgid "A patch exists but there is no pull request for it."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:388
+msgid "Solution:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:390
+msgid "Download the patch locally."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:392
+msgid "Apply the patch::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:396
+msgid ""
+"If there are errors, update to a revision from when the patch was created"
+" and then try the ``git apply`` again:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:404
+msgid ""
+"If the patch still won't apply, then a patch tool will not be able to "
+"apply the patch and it will need to be re-implemented manually."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:407
+msgid "If the apply was successful, create a new branch and switch to it."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:409
+msgid "Stage and commit the changes."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:411
+msgid ""
+"If the patch was applied to an old revision, it needs to be updated and "
+"merge conflicts need to be resolved::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:417
+msgid ""
+"For very old changes, ``git merge --no-ff`` may be easier than a rebase, "
+"with regards to resolving conflicts."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:420
+msgid "Push the changes and open a pull request."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:425
+msgid "Downloading Other's Patches"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:429
+msgid "A contributor made a pull request to CPython."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:430
+msgid "Before merging it, you want to be able to test their changes locally."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:432
+msgid ""
+"If you've got `GitHub CLI <https://cli.github.com>`_ or `hub "
+"<https://hub.github.com>`_ installed, you can simply do::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:438
+msgid ""
+"Both of these tools will configure a remote URL for the branch, so you "
+"can ``git push`` if the pull request author checked \"Allow edits from "
+"maintainers\" when creating the pull request."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:442
+msgid ""
+"If you don't have GitHub CLI or hub installed, you can set up a git "
+"alias. On Unix and macOS::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:447
+msgid "On Windows, reverse the single (``'``) and double (``\"``) quotes:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:453
+msgid ""
+"The alias only needs to be done once.  After the alias is set up, you can"
+" get a local copy of a pull request as follows::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:461
+msgid "Accepting and Merging a Pull Request"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:463
+msgid "Pull requests can be accepted and merged by a Python Core Developer."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:465
+msgid ""
+"At the bottom of the pull request page, click the ``Squash and merge`` "
+"button."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:468
+msgid ""
+"Replace the reference to GitHub pull request ``#NNNN`` with ``GH-NNNN``. "
+"If the title is too long, the pull request number can be added to the "
+"message body."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:472
+msgid "Adjust and clean up the commit message."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:474
+msgid "Example of good commit message::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:481
+msgid "Example of bad commit message::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:491
+msgid ""
+"`How to Write a Git Commit Message <https://cbea.ms/git-commit/>`_ is a "
+"nice article describing how to write a good commit message."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:494
+msgid "Press the ``Confirm squash and merge`` button."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:497
+msgid "Backporting Merged Changes"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:499
+msgid ""
+"A pull request may need to be backported into one of the maintenance "
+"branches after it has been accepted and merged into ``main``.  It is "
+"usually indicated by the label ``needs backport to X.Y`` on the pull "
+"request itself."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:503
+msgid ""
+"Use the utility script `cherry_picker.py <https://github.com/python"
+"/cherry-picker>`_ from the `core-workflow  <https://github.com/python"
+"/core-workflow>`_ repository to backport the commit."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:508
+msgid ""
+"The commit hash for backporting is the squashed commit that was merged to"
+" the ``main`` branch.  On the merged pull request, scroll to the bottom "
+"of the page.  Find the event that says something like::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:514
+msgid ""
+"By following the link to ``<commit_sha1>``, you will get the full commit "
+"hash."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:516
+msgid ""
+"Alternatively, the commit hash can also be obtained by the following git "
+"commands:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:524
+msgid ""
+"The above commands will print out the hash of the commit containing "
+"``\"gh-12345\"`` as part of the commit message."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:527
+msgid ""
+"When formatting the commit message for a backport commit: leave the "
+"original one as is and delete the number of the backport pull request."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:530
+msgid "Example of good backport commit message::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:539
+msgid "Example of bad backport commit message::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:547
+msgid "Editing a Pull Request Prior to Merging"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:549
+msgid ""
+"When a pull request submitter has enabled the `Allow edits from "
+"maintainers`_ option, Python Core Developers may decide to make any "
+"remaining edits needed prior to merging themselves, rather than asking "
+"the submitter to do them. This can be particularly appropriate when the "
+"remaining changes are bookkeeping items like updating ``Misc/ACKS``."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:557
+msgid "To edit an open pull request that targets ``main``:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:559
+msgid ""
+"In the pull request page, under the description, there is some "
+"information about the contributor's forked CPython repository and branch "
+"name that will be useful later::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:564
+msgid "Fetch the pull request, using the :ref:`git pr <git_pr>` alias::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:568
+msgid "This will checkout the contributor's branch at ``<pr_number>``."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:570
+msgid ""
+"Make and commit your changes on the branch.  For example, merge in "
+"changes made to ``main`` since the PR was submitted (any merge commits "
+"will be removed by the later ``Squash and Merge`` when accepting the "
+"change):"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:581
+msgid "Push the changes back to the contributor's PR branch::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:585
+msgid "Optionally, :ref:`delete the PR branch <deleting_branches>`."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:589
+msgid "GitHub CLI"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:591
+msgid ""
+"`GitHub CLI <https://cli.github.com>`_ is a command-line interface that "
+"allows you to create, update, and check GitHub issues and pull requests."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:595
+msgid ""
+"You can install GitHub CLI `by following these instructions "
+"<https://github.com/cli/cli#installation>`_. After installing, you need "
+"to authenticate::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:601
+msgid "Examples of useful commands:"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:603
+msgid "Create a PR::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:607
+msgid "Check out another PR::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:611
+msgid "Set ``ssh`` as the Git protocol::"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:615
+msgid "Set the browser::"
+msgstr ""
+

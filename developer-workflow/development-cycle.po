@@ -1,0 +1,649 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../developer-workflow/development-cycle.rst:5
+msgid "Development Cycle"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:7
+msgid ""
+"The responsibilities of a core developer shift based on what kind of "
+"branch of Python a developer is working on and what stage the branch is "
+"in."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:10
+msgid ""
+"To clarify terminology, Python uses a ``major.minor.micro`` nomenclature "
+"for production-ready releases. So for Python 3.1.2 final, that is a "
+"*major version* of 3, a *minor version* of 1, and a *micro version* of 2."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:14
+msgid ""
+"new *major versions* are exceptional; they only come when strongly "
+"incompatible changes are deemed necessary, and are planned very long in "
+"advance;"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:18
+msgid ""
+"new *minor versions* are feature releases; they get released annually, "
+"from the current :ref:`in-development <indevbranch>` branch;"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:21
+msgid ""
+"new *micro versions* are bugfix releases; they get released roughly every"
+" 2 months; they are prepared in :ref:`maintenance <maintbranch>` "
+"branches."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:25
+msgid ""
+"We also publish non-final versions which get an additional qualifier: "
+":ref:`alpha`, :ref:`beta`, :ref:`release candidate <rc>`.  These versions"
+" are aimed at testing by advanced users, not production use."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:29
+msgid ""
+"Each release of Python is tagged in the source repo with a tag of the "
+"form ``vX.Y.ZTN``, where ``X`` is the major version, ``Y`` is the minor "
+"version, ``Z`` is the micro version, ``T`` is the release level (``a`` "
+"for alpha releases, ``b`` for beta, ``rc`` release candidate, and *null* "
+"for final releases), and ``N`` is the release serial number. Some "
+"examples of release tags: ``v3.7.0a1``, ``v3.6.3``, ``v2.7.14rc1``."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:37
+msgid "Branches"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:39
+msgid ""
+"There is a branch for each *feature version*, whether released or not "
+"(e.g. 3.7, 3.8)."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:46
+msgid "In-development (main) branch"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:48
+msgid ""
+"The ``main`` branch is the branch for the next feature release; it is "
+"under active development for all kinds of changes: new features, semantic"
+" changes, performance improvements, bug fixes."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:52
+msgid ""
+"At some point during the life-cycle of a release, a new :ref:`maintenance"
+" branch <maintbranch>` is created to host all bug fixing activity for "
+"further micro versions in a feature version (3.8.1, 3.8.2, etc.)."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:56
+msgid ""
+"For versions 3.4 and before, this was conventionally done when the final "
+"release was cut (for example, 3.4.0 final)."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:59
+msgid ""
+"Starting with the 3.5 release, we create the release maintenance branch "
+"(e.g. 3.5) at the time we enter beta (3.5.0 beta 1).  This allows feature"
+" development for the release 3.n+1 to occur within the main branch "
+"alongside the beta and release candidate stabilization periods for "
+"release 3.n."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:68
+msgid "Maintenance branches"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:70
+msgid ""
+"A branch for a previous feature release, currently being maintained for "
+"bug fixes, or for the next feature release in its :ref:`beta <beta>` or "
+":ref:`release candidate <rc>` stages. There is usually either one or two "
+"maintenance branches at any given time for Python 3.x.  After the final "
+"release of a new minor version (3.x.0), releases produced from a "
+"maintenance branch are called **bugfix** or **maintenance** releases; the"
+" terms are used interchangeably. These releases have a **micro version** "
+"number greater than zero."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:79
+msgid ""
+"The only changes allowed to occur in a maintenance branch without debate "
+"are bug fixes.  Also, a general rule for maintenance branches is that "
+"compatibility must not be broken at any point between sibling micro "
+"releases (3.5.1, 3.5.2, etc.).  For both rules, only rare exceptions are "
+"accepted and **must** be discussed first."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:85
+msgid ""
+"A new maintenance branch is normally created when the next feature "
+"release cycle reaches feature freeze, i.e. at its first beta pre-release."
+" From that point on, changes intended for remaining pre-releases, the "
+"final release (3.x.0), and subsequent bugfix releases are merged to that "
+"maintenance branch."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:91
+msgid ""
+"Sometime following the final release (3.x.0), the maintenance branch for "
+"the previous minor version will go into :ref:`security mode <secbranch>`,"
+" usually after at least one more bugfix release at the discretion of the "
+"release manager.  For example, the 3.4 maintenance branch was put into "
+":ref:`security mode <secbranch>` after the 3.4.4 bugfix release which "
+"followed the release of 3.5.1."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:101
+msgid "Security branches"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:103
+msgid ""
+"A branch less than 5 years old but no longer in bugfix mode is a security"
+" branch."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:106
+msgid ""
+"The only changes made to a security branch are those fixing issues "
+"exploitable by attackers such as crashes, privilege escalation and, "
+"optionally, other issues such as denial of service attacks.  Any other "
+"changes are **not** considered a security risk and thus not backported to"
+" a security branch. You should also consider fixing hard-failing tests in"
+" open security branches since it is important to be able to run the tests"
+" successfully before releasing."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:113
+msgid ""
+"Commits to security branches are to be coordinated with the release "
+"manager for the corresponding feature version, as listed in the "
+":ref:`branchstatus`. Merging of pull requests to security branches is "
+"restricted to release managers. Any release made from a security branch "
+"is source-only and done only when actual security patches have been "
+"applied to the branch. These releases have a **micro version** number "
+"greater than the last **bugfix** release."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:123
+msgid "End-of-life branches"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:125
+msgid ""
+"The code base for a release cycle which has reached end-of-life status is"
+" frozen and no longer has a branch in the repo.  The final state of the "
+"end-of-lifed branch is recorded as a tag with the same name as the former"
+" branch, e.g. ``3.3`` or ``2.6``."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:130
+msgid "The :ref:`versions` page contains list of active and end-of-life branches."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:132
+msgid ""
+"The latest release for each Python version can be found on the `download "
+"page <https://www.python.org/downloads/>`_."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:138
+msgid "Stages"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:140
+msgid ""
+"Based on what stage the :ref:`in-development <indevbranch>` version of "
+"Python is in, the responsibilities of a core developer change in regards "
+"to commits to the :abbr:`VCS (version control system)`."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:146
+msgid "Pre-alpha"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:148
+msgid ""
+"The branch is in this stage when no official release has been done since "
+"the latest final release.  There are no special restrictions placed on "
+"commits, although the usual advice applies (getting patches reviewed, "
+"avoiding breaking the buildbots)."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:156
+msgid "Alpha"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:158
+msgid ""
+"Alpha releases typically serve as a reminder to core developers that they"
+" need to start getting in changes that change semantics or add something "
+"to Python as such things should not be added during a Beta_. Otherwise no"
+" new restrictions are in place while in alpha."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:166
+msgid "Beta"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:168
+msgid ""
+"After a first beta release is published, no new features are accepted.  "
+"Only bug fixes and improvements to documentation and tests can now be "
+"committed. This is when core developers should concentrate on the task of"
+" fixing regressions and other new issues filed by users who have "
+"downloaded the alpha and beta releases."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:174
+msgid ""
+"Being in beta can be viewed much like being in RC_ but without the extra "
+"overhead of needing commit reviews."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:177
+msgid ""
+"Please see the note in the `In-development (main) branch`_ section above "
+"for new information about the creation of the 3.5 maintenance branch "
+"during beta."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:184
+msgid "Release Candidate (RC)"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:186
+msgid ""
+"A branch preparing for an RC release can only have bugfixes applied that "
+"have been reviewed by other core developers.  Generally, these issues "
+"must be severe enough (e.g. crashes) that they deserve fixing before the "
+"final release. All other issues should be deferred to the next "
+"development cycle, since stability is the strongest concern at this "
+"point."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:192
+msgid ""
+"While the goal is to have no code changes between a RC and a final "
+"release, there may be a need for final documentation or test fixes. Any "
+"such proposed changes should be discussed first with the release manager."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:196
+msgid ""
+"You **cannot** skip the peer review during an RC, no matter how small! "
+"Even if it is a simple copy-and-paste change, **everything** requires "
+"peer review from a core developer."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:203
+msgid "Final"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:205
+msgid ""
+"When a final release is being cut, only the release manager (RM) can make"
+" changes to the branch.  After the final release is published, the full "
+":ref:`development cycle <stages>` starts again for the next minor "
+"version."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:211
+msgid "Repository Administration"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:213
+msgid ""
+"The source code is currently hosted on `GitHub "
+"<https://github.com/python/cpython>`_ in the `Python organization "
+"<https://github.com/python/>`_."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:217
+msgid "Organization Repository Policy"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:219
+msgid ""
+"Within the `Python organization <https://github.com/python/>`_, "
+"repositories are expected to fall within these general categories:"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:221
+msgid ""
+"The reference implementation of Python and related repositories (i.e. "
+"`CPython <https://github.com/python/cpython>`_)"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:222
+msgid ""
+"Reference implementations of PEPs (e.g. `mypy "
+"<https://github.com/python/mypy>`_)"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:223
+msgid ""
+"Tooling and support around CPython and the language (e.g. `python.org "
+"repository <https://github.com/python/pythondotorg>`_)"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:224
+msgid ""
+"PSF-related repositories (e.g. the `Code of Conduct "
+"<https://github.com/python/pycon-code-of-conduct>`_)"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:225
+msgid ""
+"PSF Infrastructure repositories (e.g. the `PSF Infrastructure Salt "
+"configurations <https://github.com/python/psf-salt>`_)"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:227
+msgid ""
+"For any repository which does not explicitly and clearly fall under one "
+"of these categories, permission should be sought from the `Python "
+"steering council <https://github.com/python/steering-council>`_."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:231
+msgid "Organization Owner Policy"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:233
+msgid ""
+"The GitHub Organization Owner role allows for full management of all "
+"aspects of the Python organization. Allowing for visibility and "
+"management of all aspects at all levels including organization "
+"membership, team membership, access control, and merge privileges on all "
+"repositories. For full details of the permission levels see `GitHub's "
+"documentation on Organization permission levels "
+"<https://docs.github.com/en/organizations/managing-peoples-access-to-"
+"your-organization-with-roles/roles-in-an-organization#permissions-for-"
+"organization-roles>`_. This role is paramount to the security of the "
+"Python Language, Community, and Infrastructure."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:243
+msgid ""
+"The Executive Director of the Python Software Foundation delegates "
+"authority on GitHub Organization Owner Status to Ee Durbin - Python "
+"Software Foundation Director of Infrastructure. Common reasons for this "
+"role are: Infrastructure Staff Membership, Python Software Foundation "
+"General Counsel, and Python Software Foundation Staff as fallback."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:249
+#: ../../developer-workflow/development-cycle.rst:298
+msgid ""
+"Inactive or unreachable members may be removed with or without notice. "
+"Members who no longer necessitate this level of access will be removed "
+"with notice."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:252
+msgid ""
+"Multi-Factor Authentication must be enabled by the user in order to "
+"remain an Owner of the Python Organization."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:258
+msgid "Current Owners"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:261
+#: ../../developer-workflow/development-cycle.rst:308
+msgid "Name"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:261
+#: ../../developer-workflow/development-cycle.rst:308
+msgid "Role"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:261
+#: ../../developer-workflow/development-cycle.rst:308
+msgid "GitHub Username"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:263
+msgid "Benjamin Peterson"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:263
+#: ../../developer-workflow/development-cycle.rst:265
+#: ../../developer-workflow/development-cycle.rst:267
+msgid "Infrastructure Staff"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:263
+msgid "benjaminp"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:265
+msgid "Noah Kantrowitz"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:265
+msgid "coderanger"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:267
+msgid "Donald Stufft"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:267
+msgid "dstufft"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:269
+msgid "Ee Durbin"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:269
+msgid "PSF Director of Infrastructure"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:269
+msgid "ewdurbin"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:271
+msgid "Van Lindberg"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:271
+msgid "PSF General Counsel"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:271
+msgid "VanL"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:273
+#: ../../developer-workflow/development-cycle.rst:313
+msgid "Łukasz Langa"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:273
+msgid "CPython Developer in Residence"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:273
+#: ../../developer-workflow/development-cycle.rst:313
+msgid "ambv"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:276
+msgid ""
+"Certain actions (blocking spam accounts, inviting new users, adjusting "
+"organization-level settings) can only `be performed`_ by owners of the "
+"Python organization on GitHub. The ``@python/organization-owners`` team "
+"can be mentioned to request assistance from an organization owner."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:284
+msgid "Repository Administrator Role Policy"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:286
+msgid ""
+"The Administrator role on the repository allows for managing all aspects "
+"including collaborators, access control, integrations, webhooks, and "
+"branch protection. For full details of the permission levels see "
+"`GitHub's documentation on repository permission levels "
+"<https://docs.github.com/en/organizations/managing-peoples-access-to-"
+"your-organization-with-roles/roles-in-an-organization#permissions-for-"
+"organization-roles>`_. Common reasons for this role are: maintenance of "
+"Core Developer Workflow tooling, Release Managers for all :ref:`in-"
+"development <indevbranch>`, :ref:`maintenance <maintbranch>`, and "
+":ref:`security mode <secbranch>` releases, and additional Python Core "
+"Developers as necessary for redundancy. Occasional temporary "
+"administrator access is acceptable as necessary for Core Developer "
+"workflow projects."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:301
+msgid ""
+"Multi-Factor Authentication must be enabled by the user in order to "
+"remain an Administrator of the repository."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:305
+msgid "Current Administrators"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:310
+msgid "Pablo Galindo"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:310
+msgid "Python 3.10 and 3.11 Release Manager, Maintainer of buildbot.python.org"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:310
+msgid "pablogsal"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:313
+msgid ""
+"Python 3.8 and 3.9 Release Manager, PSF CPython Developer in Residence "
+"2021-2022"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:316
+msgid "Ned Deily"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:316
+msgid "Python 3.6 and 3.7 Release Manager"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:316
+msgid "ned-deily"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:318
+msgid "Larry Hastings"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:318
+msgid "Retired Release Manager (for Python 3.4 and 3.5)"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:318
+msgid "larryhastings"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:320
+msgid "Berker Peksag"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:320
+msgid "Maintainer of bpo-linkify and cpython-emailer-webhook"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:320
+msgid "berkerpeksag"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:322
+msgid "Brett Cannon"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:322
+msgid "brettcannon"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:324
+msgid "Ezio Melotti"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:324
+msgid "Maintainer of bugs.python.org GitHub webhook integration"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:324
+msgid "ezio-melotti"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:326
+msgid "Mariatta Wijaya"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:326
+msgid "Maintainer of bedevere, blurb_it and miss-islington"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:326
+msgid "Mariatta"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:330
+msgid "Repository Release Manager Role Policy"
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:332
+msgid ""
+"Release Managers for :ref:`in-development <indevbranch>`, "
+":ref:`maintenance <maintbranch>`, and :ref:`security mode <secbranch>` "
+"Python releases are granted Administrator privileges on the repository. "
+"Once a release branch has entered :ref:`end-of-life <eolbranch>`, the "
+"Release Manager for that branch is removed as an Administrator and "
+"granted sole privileges (out side of repository administrators) to merge "
+"changes to that branch."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:339
+msgid ""
+"Multi-Factor Authentication must be enabled by the user in order to "
+"retain access as a Release Manager of the branch."
+msgstr ""
+

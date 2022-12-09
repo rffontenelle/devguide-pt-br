@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../triage/github-bpo-faq.rst:6
+msgid "GitHub Issues for BPO Users"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:8
+msgid ""
+"Here are some frequently asked questions about how to do things in GitHub"
+" issues that you used to be able to do on `bpo`_."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:11
+msgid ""
+"Before you ask your own question, make sure you read :ref:`tracker` and "
+":ref:`triaging` (specifically including :ref:`gh-labels`) as those pages "
+"include a lot of introductory material."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:16
+msgid "How to format my comments nicely?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:18
+msgid ""
+"There is a wonderful `beginner guide to writing and formatting on GitHub "
+"<https://docs.github.com/en/get-started/writing-on-github/getting-"
+"started-with-writing-and-formatting-on-github>`_. Highly recommended."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:22
+msgid ""
+"One pro-tip we can sell you right here is that if you want to paste some "
+"longer log as a comment, attach a file instead (see how below). If you "
+"still insist on pasting it in your comment, do it like this::"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:34
+msgid "How to attach files to an issue?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:36
+msgid ""
+"Drag them into the comment field, wait until the file uploads, and GitHub"
+" will automatically put a link to your file in your comment text."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:40
+msgid "How to link to file paths in the repository when writing comments?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:42
+msgid ""
+"Use Markdown links. If you link to the default GitHub path, the file will"
+" link to the latest current version on the given branch."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:45
+msgid ""
+"You can get a permanent link to a given revision of a given file by "
+"`pressing \"y\" <https://docs.github.com/en/repositories/working-with-"
+"files/using-files/getting-permanent-links-to-files>`_."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:49
+msgid "How to do advanced searches?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:51
+msgid ""
+"Use the `GitHub search syntax`_ or the interactive `advanced search`_ "
+"form that generates search queries for you."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:55
+msgid "Where is the \"nosy list\"?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:57
+msgid ""
+"Subscribe another person to the issue by tagging them in the comment with"
+" ``@username``."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:60
+msgid ""
+"If you want to subscribe yourself to an issue, click the *🔔 Subscribe* "
+"button in the sidebar."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:63
+msgid ""
+"Similarly, if you were tagged by somebody else but decided this issue is "
+"not for you, you might click the *🔕 Unsubscribe* button in the sidebar."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:67
+msgid ""
+"There is no exact equivalent of the \"nosy list\" feature, so to preserve"
+" this information during the transfer, we list the previous members of "
+"this list in the first message on the migrated issue."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:72
+msgid "How to add issue dependencies?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:74
+msgid "Add a checkbox list like this in the issue description::"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:80
+msgid ""
+"then those will become sub-tasks on the given issue. Moreover, GitHub "
+"will automatically mark a task as complete if the other referenced issue "
+"is closed. More details in the `official GitHub documentation "
+"<https://docs.github.com/en/get-started/writing-on-github/working-with-"
+"advanced-formatting/about-task-lists>`_."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:86
+msgid "What on Earth is a \"mannequin\"?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:88
+msgid ""
+"For issues migrated to GitHub from `bpo`_ where the authors or commenters"
+" are not core developers, we opted not to link to their GitHub accounts "
+"directly. Users not in the `python organization on GitHub "
+"<https://github.com/orgs/python/people>`_ might not like comments to "
+"appear under their name from an automated import.  Others never linked "
+"GitHub on `bpo`_ in the first place so linking their account, if any, "
+"would be impossible."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:95
+msgid ""
+"In those cases a \"mannequin\" account is present to help follow the "
+"conversation that happened in the issue. In case the user did share their"
+" GitHub account name in their `bpo`_ profile, we use that. Otherwise, "
+"their classic `bpo`_ username is used instead."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:101
+msgid "Where did the \"Resolution\" field go?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:103
+msgid "Based on historical data we found it not being used very often."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:106
+msgid "Where did the \"Low\", \"High\", and \"Critical\" priorities go?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:108
+msgid "Based on historical data we found those not being used very often."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:111
+msgid "How to find a random issue?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:113
+msgid "This is not supported by GitHub."
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:116
+msgid "Where are regression labels?"
+msgstr ""
+
+#: ../../triage/github-bpo-faq.rst:118
+msgid ""
+"We rarely updated this information and it turned out not to be "
+"particularly useful outside of the change log."
+msgstr ""
+

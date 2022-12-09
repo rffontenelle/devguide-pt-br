@@ -1,0 +1,2255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../core-developers/developer-log.rst:5
+msgid "Developer Log"
+msgstr ""
+
+#: ../../core-developers/developer-log.rst:7
+msgid ""
+"This page lists the historical members of the Python development team. "
+"(The master list is kept in a private repository due to containing "
+"sensitive contact information.)"
+msgstr ""
+
+#: ../../core-developers/developer-log.rst:1
+msgid "Name"
+msgstr ""
+
+#: ../../core-developers/developer-log.rst:1
+msgid "GitHub username"
+msgstr ""
+
+#: ../../core-developers/developer-log.rst:1
+msgid "Joined"
+msgstr ""
+
+#: ../../core-developers/developer-log.rst:1
+msgid "Left"
+msgstr ""
+
+#: ../../core-developers/developer-log.rst:1
+msgid "Notes"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Kumar Aditya"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "kumaraditya303"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2022-11-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Hugo van Kemenade"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "hugovk"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Alex Waygood"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "AlexWaygood"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2022-10-18"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Filipe Laíns"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "FFY00"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2022-10-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Erlend Egeberg Aasland"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "erlend-aasland"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2022-05-05"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jelle Zijlstra"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "JelleZijlstra"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2022-02-15"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Dennis Sweeney"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "sweeneyde"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2022-02-02"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ken Jin"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Fidget-Spinner"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2021-08-26"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ammar Askar"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ammaraskar"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2021-07-30"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Irit Katriel"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "iritkatriel"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2021-05-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Batuhan Taskaya"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "isidentical"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-11-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Brandt Bucher"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "brandtbucher"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-09-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Lysandros Nikolaou"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "lysnikolaou"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-06-29"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Kyle Stanley"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "aeros"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-04-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Dong-hee Na"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "corona10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-04-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Karthikeyan Singaravelan"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "tirkarthi"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2019-12-31"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Joannah Nanjekye"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "nanjekyejoannah"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2019-09-23"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Abhilash Raj"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "maxking"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2019-08-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Paul Ganssle"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "pganssle"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2019-06-15"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Stéphane Wirtel"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "matrixise"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2019-04-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Stefan Behnel"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "scoder"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Cheryl Sabella"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "csabella"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2019-02-19"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Lisa Roach"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "lisroach"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2018-09-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Emily Morehouse"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "emilyemorehouse"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Pablo Galindo"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "pablogsal"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2018-06-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Mark Shannon"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "markshannon"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2018-05-15"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Petr Viktorin"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "encukou"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2018-04-16"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Nathaniel J. Smith"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "njsmith"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2018-01-25"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Julien Palard"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "JulienPalard"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2017-12-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ivan Levkivskyi"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ilevkivskyi"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2017-12-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Carol Willing"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "willingc"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2017-05-24"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Mariatta"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2017-01-27"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Xiang Zhang"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "zhangyangyu"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2016-11-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Inada Naoki"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "methane"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2016-09-26"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Xavier de Gaye"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "xdegaye"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2016-06-03"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Privileges relinquished on 2018-01-25"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Davin Potts"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "applio"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2016-03-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Martin Panter"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "vadmium"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2015-08-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-11-26"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Paul Moore"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "pfmoore"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2015-03-15"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Robert Collins"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "rbtcollins"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2014-10-16"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "To work on unittest"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Berker Peksağ"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "berkerpeksag"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2014-06-26"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Steve Dower"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "zooba"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2014-05-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Kushal Das"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "kushaldas"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2014-04-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Steven D'Aprano"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "stevendaprano"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2014-02-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For statistics module"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Yury Selivanov"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1st1"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2014-01-23"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Zachary Ware"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "zware"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2013-11-02"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Donald Stufft"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "dstufft"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2013-08-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ethan Furman"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ethanfurman"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2013-05-11"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Serhiy Storchaka"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "serhiy-storchaka"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2012-12-26"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Chris Jerdonek"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "cjerdonek"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2012-09-24"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Eric Snow"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ericsnowcurrently"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2012-09-05"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Peter Moody"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2012-05-20"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2017-02-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For ipaddress module; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Hynek Schlawack"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "hynek"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2012-05-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Richard Oudkerk"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2012-04-29"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For multiprocessing module; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Andrew Svetlov"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "asvetlov"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2012-03-13"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "At PyCon sprint"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Petri Lehtinen"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "akheron"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-10-22"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-11-12"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Meador Inge"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "meadori"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-09-19"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jeremy Kloth"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "jkloth"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-09-12"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Sandro Tosi"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "sandrotosi"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-08-01"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Alex Gaynor"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "alex"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-07-18"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For PyPy compatibility (since expanded scope)"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Charles-François Natali"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-05-19"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Nadeem Vawda"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-04-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jason R. Coombs"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "jaraco"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-03-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For sprinting on distutils2"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ross Lagerwall"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-03-13"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Eli Bendersky"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "eliben"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-01-11"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ned Deily"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ned-deily"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2011-01-09"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "David Malcolm"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "davidmalcolm"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-10-27"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "relinquished privileges on 2020-11-12"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Tal Einat"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "taleinat"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-10-04"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Initially for IDLE"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Łukasz Langa"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ambv"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-09-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Daniel Stutzbach"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-08-22"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Éric Araujo"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "merwok"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-08-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Brian Quinlan"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "brianquinlan"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-07-26"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For work related to PEP 3148"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Alexander Belopolsky"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "abalkin"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-05-25"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Tim Golden"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "tjguk"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-04-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Giampaolo Rodolà"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "giampaolo"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-04-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jean-Paul Calderone"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-04-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Brian Curtin"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "briancurtin"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-03-24"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Florent Xicluna"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-02-25"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Dino Viehland"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "DinoV"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-02-23"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For IronPython compatibility"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Larry Hastings"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "larryhastings"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-02-22"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Victor Stinner"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "vstinner"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-01-30"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Stefan Krah"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "skrah"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2010-01-05"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-10-07"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For the decimal module"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Doug Hellmann"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "dhellmann"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2009-09-20"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-11-11"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For documentation; relinquished privileges on 2020-11-11"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Frank Wierzbicki"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2009-08-02"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For Jython compatibility; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ezio Melotti"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ezio-melotti"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2009-06-07"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For documentation"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Philip Jenvey"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "pjenvey"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2009-05-07"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For Jython compatibility"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Michael Foord"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "voidspace"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2009-04-01"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "R\\. David Murray"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "bitdancer"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2009-03-30"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Chris Withers"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "cjw296"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2009-03-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Tarek Ziadé"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "tarekziade"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-12-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For distutils module"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Hirokazu Yamamoto"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-08-12"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For Windows build; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Armin Ronacher"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "mitsuhiko"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-07-23"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For documentation toolset and ast module"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Antoine Pitrou"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "pitrou"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-07-16"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Senthil Kumaran"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "orsenthil"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-06-16"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jesse Noller"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jesús Cea"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "jcea"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-05-13"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For bsddb module"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Guilherme Polo"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-04-24"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jeroen Ruigrok van der Werven"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-04-12"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For documentation; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Benjamin Peterson"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "benjaminp"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-03-25"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For bug triage"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "David Wolever"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "wolever"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-03-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-11-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For 2to3 module"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Trent Nelson"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "tpn"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Mark Dickinson"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "mdickinson"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2008-01-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For maths-related work"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Amaury Forgeot d'Arc"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "amauryfa"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-11-09"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Christian Heimes"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "tiran"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-10-31"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Bill Janssen"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-08-28"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For ssl module; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jeffrey Yasskin"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-08-09"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Mark Summerfield"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-08-01"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Alexandre Vassalotti"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "avassalotti"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-05-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For GSoC"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Travis E. Oliphant"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-04-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Eric V. Smith"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ericvsmith"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-02-28"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For PEP 3101 in a sandbox"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Josiah Carlson"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "josiahcarlson"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-01-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For asyncore and asynchat modules"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Collin Winter"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2007-01-05"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For PEP access; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Richard Jones"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2006-05-23"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For Need for Speed sprint; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Kristján Valur Jónsson"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2006-05-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jack Diederich"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "jackdied"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For Need for Speed sprint"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Steven Bethard"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2006-04-27"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For PEP access and SourceForge maintenance; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Gerhard Häring"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2006-04-23"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Did not make the GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "George Yoshida"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2006-04-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For tracker administration; did not make GitHub transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ronald Oussoren"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ronaldoussoren"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2006-03-03"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For Mac-related work"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Nick Coghlan"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ncoghlan"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2005-10-16"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Georg Brandl"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "birkenfeld"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2005-05-28"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Terry Jan Reedy"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "terryjreedy"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2005-04-07"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Bob Ippolito"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "etrepum"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2005-03-02"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Peter Astrand"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2004-10-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Facundo Batista"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "facundobatista"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2004-10-16"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Sean Reifschneider"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2004-09-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Johannes Gijsbers"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2004-08-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2005-07-27"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Privileges relinquished on 2005-07-27"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Matthias Klose"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "doko42"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2004-08-04"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "PJ Eby"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "pjeby"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2004-03-24"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Vinay Sajip"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "vsajip"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2004-02-20"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Hye-Shik Chang"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "hyeshik"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2003-12-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Armin Rigo"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2003-10-24"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2012-06-01"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Privileges relinquished in 2012"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Andrew McNamara"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2003-06-09"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Samuele Pedroni"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2003-05-16"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Alex Martelli"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "aleaxit"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2003-04-22"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Brett Cannon"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "brettcannon"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2003-04-18"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "David Goodger"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2003-01-02"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Gustavo Niemeyer"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2002-11-05"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Tony Lownds"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2002-09-22"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Steve Holden"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "holdenweb"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2002-06-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Relinquished privileges on 2005-04-07,"
+msgstr ""
+
+#: ../../core-developers/developers.csv:2
+msgid ""
+"but granted again for Need for Speed sprint; did not make GitHub "
+"transition"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Christian Tismer"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "ctismer"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2002-05-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jason Tishler"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2002-05-15"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Walter Dörwald"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "doerwalter"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2002-03-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Andrew MacIntyre"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2002-02-17"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2016-01-02"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Privileges relinquished 2016-01-02"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Gregory P. Smith"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "gpshead"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2002-01-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Anthony Baxter"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-12-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Neal Norwitz"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-12-19"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Raymond Hettinger"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "rhettinger"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-12-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Chui Tey"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-10-31"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Michael W. Hudson"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-08-27"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Finn Bock"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-08-23"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2005-04-13"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Privileges relinquished on 2005-04-13"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Piers Lauder"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-07-20"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Kurt B. Kaiser"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "kbkaiser"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-07-03"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Steven M. Gava"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-06-25"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Steve Purcell"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2001-03-22"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jim Fulton"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-10-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ka-Ping Yee"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-10-03"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Lars Gustäbel"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "gustaebel"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-09-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "For tarfile module"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Neil Schemenauer"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "nascheme"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-09-15"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Martin v. Löwis"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-09-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Thomas Heller"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "theller"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-09-07"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-11-18"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Moshe Zadka"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-07-29"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2005-04-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Privileges relinquished on 2005-04-08"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Thomas Wouters"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Yhg1s"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-07-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Peter Schneider-Kamp"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-07-10"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Paul Prescod"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-07-01"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2005-04-30"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Privileges relinquished on 2005-04-30"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Tim Peters"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "tim-one"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-06-30"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Skip Montanaro"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "smontanaro"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2015-04-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Privileges relinquished 2015-04-21"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Fredrik Lundh"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-06-29"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Mark Hammond"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "mhammond"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-06-09"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Marc-André Lemburg"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "malemburg"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-06-07"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Trent Mick"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-06-06"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Eric S. Raymond"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2000-06-02"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Greg Stein"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1999-11-07"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Just van Rossum"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1999-01-22"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Greg Ward"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1998-12-18"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Andrew Kuchling"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "akuchling"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1998-04-09"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Ken Manheimer"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1998-03-03"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jeremy Hylton"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "jeremyhylton"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1997-08-13"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Roger E. Masse"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1996-12-09"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Fred Drake"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "freddrake"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1996-07-23"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Barry Warsaw"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "warsaw"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1994-07-25"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Jack Jansen"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "jackjansen"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1992-08-13"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Sjoerd Mullender"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "sjoerdmullender"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1992-08-04"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "2020-11-14"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "Guido van Rossum"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "gvanrossum"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "1989-12-25"
+msgstr ""
+
+#: ../../core-developers/developer-log.rst:17
+msgid "Procedure for Granting or Dropping Access"
+msgstr ""
+
+#: ../../core-developers/developer-log.rst:19
+msgid ""
+"To be granted the ability to manage who is a committer, you must be a "
+"team maintainer of the `Python core team`_ on GitHub. Once you have that "
+"privilege you can add people to the team. They will be asked to accept "
+"the membership which they can do by visiting https://github.com/python "
+"and clicking on the appropriate button that will be displayed to them in "
+"the upper part of the page."
+msgstr ""
+

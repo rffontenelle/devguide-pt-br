@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../documentation/devguide.rst:5
+msgid "Helping with the Developer's Guide"
+msgstr ""
+
+#: ../../documentation/devguide.rst:9
+msgid ""
+"The Developer's Guide (what you're reading now) uses the same process as "
+"the main Python documentation, except for some small differences.  The "
+"source lives in a `separate repository`_ and bug reports should be "
+"submitted to the `devguide GitHub tracker`_."
+msgstr ""
+
+#: ../../documentation/devguide.rst:14
+msgid ""
+"Our devguide workflow uses continuous integration and deployment so "
+"changes to the devguide are normally published when the pull request is "
+"merged. Changes to CPython documentation follow the workflow of a CPython"
+" release and are published in the release."
+msgstr ""
+
+#: ../../documentation/devguide.rst:21
+msgid "Developer's Guide workflow"
+msgstr ""
+
+#: ../../documentation/devguide.rst:23
+msgid ""
+"To submit a :ref:`pull request <pullrequest>`, you can fork the `devguide"
+" repo`_ to your GitHub account and clone it using::"
+msgstr ""
+
+#: ../../documentation/devguide.rst:28
+msgid ""
+"For your PR to be accepted, you will also need to sign the "
+":ref:`contributor agreement <cla>`."
+msgstr ""
+
+#: ../../documentation/devguide.rst:31
+msgid ""
+"To build the devguide, some additional dependencies are required (most "
+"importantly, `Sphinx`_), and the standard way to install dependencies in "
+"Python projects is to create a virtualenv, and then install dependencies "
+"from a ``requirements.txt`` file. For your convenience, this is all "
+"*automated for you*. To build the devguide on a Unix-like system use::"
+msgstr ""
+
+#: ../../documentation/devguide.rst:39
+msgid "in the checkout directory.  On Windows use:"
+msgstr ""
+
+#: ../../documentation/devguide.rst:45
+msgid ""
+"You will find the generated files in ``_build/html`` or, if you use "
+"``make htmlview``, the docs will be opened in a browser once the build "
+"completes.  Note that ``make check`` runs automatically when you submit a"
+" :ref:`pull request <pullrequest>`.  You may wish to run ``make check`` "
+"and ``make linkcheck`` to make sure that it runs without errors."
+msgstr ""
+

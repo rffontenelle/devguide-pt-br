@@ -1,0 +1,511 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../documentation/translating.rst:5
+msgid "Translating"
+msgstr ""
+
+#: ../../documentation/translating.rst:9
+msgid ""
+"Python documentation translations are governed by :PEP:`545`. They are "
+"built by `docsbuild-scripts <https://github.com/python/docsbuild-"
+"scripts/>`__ and hosted on docs.python.org. There are several "
+"documentation translations already in production; others are works in "
+"progress."
+msgstr ""
+
+#: ../../documentation/translating.rst:16
+msgid "Language"
+msgstr ""
+
+#: ../../documentation/translating.rst:16
+msgid "Contact"
+msgstr ""
+
+#: ../../documentation/translating.rst:16
+msgid "Links"
+msgstr ""
+
+#: ../../documentation/translating.rst:18
+msgid "Arabic (ar)"
+msgstr ""
+
+#: ../../documentation/translating.rst:18
+msgid "`Abdur-Rahmaan Janhangeer <gh_osdotsystem_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:18
+msgid "`GitHub <github_ar_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:21
+msgid "Bengali as spoken in India (bn_IN)"
+msgstr ""
+
+#: ../../documentation/translating.rst:21
+msgid "`Kushal Das <gh_kushal_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:21
+msgid "`GitHub <github_bn_in_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:25
+msgid "French (fr)"
+msgstr ""
+
+#: ../../documentation/translating.rst:25
+msgid "`Julien Palard (@JulienPalard) <gh_mdk_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:25
+msgid "`GitHub <github_fr_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:28
+msgid "Hindi as spoken in India (hi_IN)"
+msgstr ""
+
+#: ../../documentation/translating.rst:28
+msgid "`GitHub <github_hi_in_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:31
+msgid "Hungarian (hu)"
+msgstr ""
+
+#: ../../documentation/translating.rst:31
+msgid "`Tamás Bajusz (@gbtami) <gh_gbtami_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:31
+msgid "`GitHub <github_hu_>`_ `Mailing List <list_hu_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:34
+msgid "Indonesian (id)"
+msgstr ""
+
+#: ../../documentation/translating.rst:34
+msgid "`Oon Arfiandwi <gh_oonid_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:34
+msgid "`GitHub <github_id_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:36
+msgid "Italian (it)"
+msgstr ""
+
+#: ../../documentation/translating.rst:36
+msgid "`mail <mail_it_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:38
+msgid "Japanese (ja)"
+msgstr ""
+
+#: ../../documentation/translating.rst:38
+msgid "`Kinebuchi Tomohiko (@cocoatomo) <gh_cocoatomo_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:38
+msgid "`GitHub <github_ja_>`_ `Doc <doc_ja_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:41
+msgid "Korean (ko)"
+msgstr ""
+
+#: ../../documentation/translating.rst:41
+msgid "`GitHub <github_ko_>`_ `Doc <doc_ko_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:44
+msgid "Marathi (mr)"
+msgstr ""
+
+#: ../../documentation/translating.rst:44
+msgid "`Sanket Garade <email_garade_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:44
+msgid "`GitHub <github_mr_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:47
+msgid "Lithuanian (lt)"
+msgstr ""
+
+#: ../../documentation/translating.rst:47
+msgid "`mail <mail_lt_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:49
+msgid "Persian (fa)"
+msgstr ""
+
+#: ../../documentation/translating.rst:49
+msgid "`Komeil Parseh (@mmdbalkhi) <gh_mmdbalkhi_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:49
+msgid "`GitHub <github_fa_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:52
+msgid "Polish (pl)"
+msgstr ""
+
+#: ../../documentation/translating.rst:52
+msgid "`Maciej Olko (@m-aciek) <gh_maciek_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:52
+msgid ""
+"`GitHub <github_pl_>`_ `Translations <tx_pl_>`_ `Doc <doc_pl_>`_ `mail "
+"<mail_pl_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:57
+msgid "Portuguese (pt)"
+msgstr ""
+
+#: ../../documentation/translating.rst:57
+msgid "Gustavo Toffo"
+msgstr ""
+
+#: ../../documentation/translating.rst:59
+msgid "Portuguese as spoken in Brasil (pt-br)"
+msgstr ""
+
+#: ../../documentation/translating.rst:59
+msgid "Marco Rougeth"
+msgstr ""
+
+#: ../../documentation/translating.rst:59
+msgid ""
+"`GitHub <github_pt_br_>`_ `Wiki <wiki_pt_br_>`_ `Telegram <chat_pt_br_>`_"
+" `article <article_pt_br_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:64
+msgid "Russian (ru)"
+msgstr ""
+
+#: ../../documentation/translating.rst:64
+msgid "`mail <mail_ru_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:66
+msgid "Simplified Chinese (zh-cn)"
+msgstr ""
+
+#: ../../documentation/translating.rst:66
+msgid "`Shengjing Zhu <gh_zhsj_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:66
+msgid "`Transifex <tx_zh_cn_>`_ `GitHub <github_zh_cn_>`_ `Doc <doc_zh_cn_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:70
+msgid "Spanish (es)"
+msgstr ""
+
+#: ../../documentation/translating.rst:70
+msgid "Raúl Cumplido"
+msgstr ""
+
+#: ../../documentation/translating.rst:70
+msgid "`GitHub <github_es_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:72
+msgid "Traditional Chinese (zh-tw)"
+msgstr ""
+
+#: ../../documentation/translating.rst:72
+msgid "`王威翔 Matt Wang <gh_mattwang44_>`_, Josix Wang"
+msgstr ""
+
+#: ../../documentation/translating.rst:72
+msgid "`GitHub <github_zh_tw_>`_ `Doc <doc_zh_tw_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:76
+msgid "Turkish (tr)"
+msgstr ""
+
+#: ../../documentation/translating.rst:76
+msgid "`Ege Akman (@egeakman) <email_egeakman_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:76
+msgid "`GitHub <github_tr_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:79
+msgid "Ukrainian (uk)"
+msgstr ""
+
+#: ../../documentation/translating.rst:79
+msgid "`Dmytro Kazanzhy (@kazanzhy) <email_kazanzhy_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:79
+msgid "`GitHub <github_uk_>`_ `Translations <tx_uk_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:131
+msgid "Starting a new translation"
+msgstr ""
+
+#: ../../documentation/translating.rst:133
+msgid ""
+"First subscribe to the `translation mailing list <translation_ml_>`_, and"
+" introduce yourself and the translation you're starting. Translations "
+"fall under the aegis of the `PSF Translation Workgroup "
+"<translation_wg_>`_"
+msgstr ""
+
+#: ../../documentation/translating.rst:137
+msgid ""
+"Then you can bootstrap your new translation by using our `cookiecutter "
+"<https://github.com/JulienPalard/python-docs-cookiecutter>`__."
+msgstr ""
+
+#: ../../documentation/translating.rst:140
+msgid "The important steps look like this:"
+msgstr ""
+
+#: ../../documentation/translating.rst:142
+msgid ""
+"Create the GitHub repo (anywhere) with the right hierarchy (using the "
+"cookiecutter)."
+msgstr ""
+
+#: ../../documentation/translating.rst:144
+msgid "Gather people to help you translate. You can't do it alone."
+msgstr ""
+
+#: ../../documentation/translating.rst:145
+msgid ""
+"You can use any tool to translate, as long as you can synchronize with "
+"git. Some use Transifex, and some use only GitHub. You can choose another"
+" way if you like; it's up to you."
+msgstr ""
+
+#: ../../documentation/translating.rst:148
+msgid ""
+"Ensure we update this page to reflect your work and progress, either via "
+"a PR or by asking on the `translation mailing list <translation_ml_>`_."
+msgstr ""
+
+#: ../../documentation/translating.rst:150
+#, python-format
+msgid ""
+"When ``bugs.html``, ``tutorial``, and ``library/functions`` are 100% "
+"completed, ask on the `translation mailing list <translation_ml_>`_ for "
+"your language to be added in the language picker on docs.python.org."
+msgstr ""
+
+#: ../../documentation/translating.rst:156
+msgid "PEP 545 summary"
+msgstr ""
+
+#: ../../documentation/translating.rst:158
+msgid "Here are the essential points of :PEP:`545`:"
+msgstr ""
+
+#: ../../documentation/translating.rst:160
+msgid ""
+"Each translation is assigned an appropriate lowercased language tag, with"
+" an optional region subtag, and joined with a dash, like ``pt-br`` or "
+"``fr``."
+msgstr ""
+
+#: ../../documentation/translating.rst:164
+msgid ""
+"Each translation is under CC0 and marked as such in the README (as in the"
+" cookiecutter)."
+msgstr ""
+
+#: ../../documentation/translating.rst:167
+msgid ""
+"Translation files are hosted on ``https://github.com/python/python-"
+"docs-{LANGUAGE_TAG}`` (not mandatory to start a translation, but "
+"mandatory to land on ``docs.python.org``)."
+msgstr ""
+
+#: ../../documentation/translating.rst:172
+msgid ""
+"Translations having completed ``tutorial/``, ``library/stdtypes`` and "
+"``library/functions`` are hosted on "
+"``https://docs.python.org/{LANGUAGE_TAG}/{VERSION_TAG}/``."
+msgstr ""
+
+#: ../../documentation/translating.rst:178
+msgid "How to get help"
+msgstr ""
+
+#: ../../documentation/translating.rst:180
+msgid ""
+"Discussions about translations occur on the `translation mailing list "
+"<translation_ml_>`_, and there's a `Libera.Chat IRC "
+"<https://libera.chat/>`_ channel, ``#python-doc``."
+msgstr ""
+
+#: ../../documentation/translating.rst:186
+msgid "Translation FAQ"
+msgstr ""
+
+#: ../../documentation/translating.rst:189
+msgid "Which version of the Python documentation should be translated?"
+msgstr ""
+
+#: ../../documentation/translating.rst:191
+msgid ""
+"Consensus is to work on current stable. You can then propagate your "
+"translation from one branch to another using `pomerge "
+"<https://pypi.org/project/pomerge/>`__."
+msgstr ""
+
+#: ../../documentation/translating.rst:197
+msgid "Are there some tools to help in managing the repo?"
+msgstr ""
+
+#: ../../documentation/translating.rst:199
+msgid "Here's what we're using:"
+msgstr ""
+
+#: ../../documentation/translating.rst:201
+msgid ""
+"`pomerge <https://pypi.org/project/pomerge/>`__ to propagate translations"
+" from one file to others."
+msgstr ""
+
+#: ../../documentation/translating.rst:203
+msgid ""
+"`pospell <https://pypi.org/project/pospell/>`__ to check for typos in "
+"``.po`` files."
+msgstr ""
+
+#: ../../documentation/translating.rst:204
+msgid ""
+"`powrap <https://pypi.org/project/powrap/>`__ to rewrap the ``.po`` files"
+" before committing. This helps keep git diffs short."
+msgstr ""
+
+#: ../../documentation/translating.rst:206
+msgid ""
+"`potodo <https://pypi.org/project/potodo/>`__ to list what needs to be "
+"translated."
+msgstr ""
+
+#: ../../documentation/translating.rst:210
+msgid "How is a coordinator elected?"
+msgstr ""
+
+#: ../../documentation/translating.rst:212
+msgid ""
+"There is no election; each translation has to sort this out.  Here are "
+"some suggestions."
+msgstr ""
+
+#: ../../documentation/translating.rst:214
+msgid ""
+"Coordinator requests are to be public on the `translation mailing list "
+"<translation_ml_>`_."
+msgstr ""
+
+#: ../../documentation/translating.rst:215
+msgid ""
+"If the given language has a native core dev, the core dev has their say "
+"on the choice."
+msgstr ""
+
+#: ../../documentation/translating.rst:217
+msgid ""
+"Anyone who wants to become coordinator for their native language and "
+"shows motivation by translating and building a community will be named "
+"coordinator."
+msgstr ""
+
+#: ../../documentation/translating.rst:220
+msgid ""
+"In case of concurrency between two persons, no one will sort this out for"
+" you.  It is up to you two to organize a local election or whatever is "
+"needed to sort this out."
+msgstr ""
+
+#: ../../documentation/translating.rst:223
+msgid ""
+"If a coordinator becomes inactive or unreachable for a long period of "
+"time, someone else can ask for a takeover on the `translation mailing "
+"list <translation_ml_>`_."
+msgstr ""
+
+#: ../../documentation/translating.rst:228
+msgid "The entry for my translation is missing/not up to date on this page"
+msgstr ""
+
+#: ../../documentation/translating.rst:230
+msgid ""
+"Ask on the `translation mailing list <translation_ml_>`_, or better, make"
+" a PR on the `devguide <https://github.com/python/devguide/>`__."
+msgstr ""
+
+#: ../../documentation/translating.rst:235
+msgid "I have a translation, but it's not in git. What should I do?"
+msgstr ""
+
+#: ../../documentation/translating.rst:237
+msgid ""
+"You can ask for help on the `translation mailing list "
+"<translation_ml_>`_, and the team will help you create an appropriate "
+"repository. You can still use tools like transifex, if you like."
+msgstr ""
+
+#: ../../documentation/translating.rst:243
+msgid "My git hierarchy does not match yours. Can I keep it?"
+msgstr ""
+
+#: ../../documentation/translating.rst:245
+msgid ""
+"No, inside the ``github.com/python`` organization we’ll all have the "
+"exact same hierarchy so bots will be able to build all of our "
+"translations. So you may have to convert from one hierarchy to another. "
+"Ask for help on the `translation mailing list <translation_ml_>`_ if "
+"you’re not sure on how to do it."
+msgstr ""
+
+#: ../../documentation/translating.rst:253
+msgid "What hierarchy should I use in my GitHub repository?"
+msgstr ""
+
+#: ../../documentation/translating.rst:255
+msgid ""
+"As for every project, we have a *branch* per version.  We store ``.po`` "
+"files in the root of the repository using the ``gettext_compact=0`` "
+"style."
+msgstr ""
+

@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../core-developers/become-core-developer.rst:6
+msgid "How to Become a Core Developer"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:9
+msgid "What it Takes"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:11
+msgid ""
+"When you have consistently contributed patches which meet quality "
+"standards without requiring extensive rewrites prior to being committed, "
+"you may qualify for commit privileges and become a core developer of "
+"Python. You must also work well with other core developers (and people in"
+" general) as you become an ambassador for the Python project."
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:17
+msgid ""
+"Typically a core developer will offer you the chance to gain commit "
+"privilege. The person making the offer will become your mentor and watch "
+"your commits for a while to make sure you understand the development "
+"process. If other core developers agree that you should gain commit "
+"privileges you are then extended an official offer. How core developers "
+"come to that agreement are outlined in :pep:`13`."
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:26
+msgid "Gaining Commit Privileges"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:28
+msgid "The steps to gaining commit privileges are:"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:30
+msgid ""
+"A core developer starts a poll in the `Committers category`_ on the "
+"`Python Discourse`_ (``discuss.python.org``)"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:33
+msgid "Open for 7 days"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:34
+msgid "Results shown upon close"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:36
+msgid "The poll is announced on the `python-committers mailing list`_"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:37
+msgid ""
+"Wait for the poll to close and see if the results confirm your membership"
+" as per the voting results required by :pep:`13`"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:39
+msgid ""
+"The person who nominated you emails the steering council with your email "
+"address and a request that the council either accept or reject the "
+"proposed membership"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:42
+msgid ""
+"Assuming the steering council does not object, a member of the council "
+"will email you asking for:"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:45
+msgid "Account details as required by 🔒 https://github.com/python/voters/"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:47
+msgid ""
+"Your preferred email address to subscribe to the python-committers "
+"mailing list with"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:49
+msgid ""
+"A reminder about the `Code of Conduct`_ and to report issues to the PSF "
+"Conduct WG"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:52
+msgid ""
+"Once you have provided the pertinent details, your various new privileges"
+" will be turned on"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:54
+msgid "Your details will be added to 🔒 https://github.com/python/voters/"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:55
+msgid ""
+"They will update the devguide to publicly list your team membership at "
+":ref:`developers`"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:57
+msgid ""
+"An announcement email by the steering council member handling your new "
+"membership will be sent to the Committers Discourse category"
+msgstr ""
+

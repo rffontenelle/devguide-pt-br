@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2022, Python Software Foundation
+# This file is distributed under the same license as the Python Developer's
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python Developer's Guide \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../documentation/help-documenting.rst:6
+msgid "Helping with Documentation"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:8
+msgid ""
+"Python is known for having well-written documentation. Maintaining the "
+"documentation's accuracy and keeping a high level of quality takes a lot "
+"of effort. Community members, like you, help with writing, editing, and "
+"updating content, and these contributions are appreciated and welcomed."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:13
+msgid "This high-level **Helping with Documentation** section provides:"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:15
+msgid "an overview of Python's documentation"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:16
+msgid "how to help with documentation issues"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:17
+msgid "information on proofreading"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:19
+msgid ""
+"You will find extensive and detailed information on how to write "
+"documentation and submit changes on the :ref:`Documenting Python "
+"<documenting>` page."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:24
+msgid "Python Documentation"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:26
+msgid ""
+"The :ref:`Documenting Python <documenting>` section covers the details of"
+" how Python's documentation works. It includes information about the "
+"markup language used, specific formats, and style recommendations. "
+"Looking at pre-existing documentation source files can be very helpful "
+"when getting started. :ref:`How to build the documentation <building-"
+"doc>` walks you through the steps to create a draft build which lets you "
+"see how your changes will look and validates that your new markup is "
+"correct."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:34
+msgid ""
+"You can view the documentation built from :ref:`in-development "
+"<indevbranch>` and :ref:`maintenance <maintbranch>` branches at "
+"https://docs.python.org/dev/. The in-development and recent maintenance "
+"branches are rebuilt once per day."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:38
+msgid ""
+"If you would like to be more involved with documentation, consider "
+"subscribing to the `docs@python.org "
+"<https://mail.python.org/mailman3/lists/docs.python.org/>`_ mailing list."
+" The `issue tracker`_ sends new documentation issues to this mailing "
+"list, and, less frequently, the list receives some directly mailed bug "
+"reports. The `docs-sig@python.org "
+"<https://mail.python.org/mailman/listinfo/doc-sig>`_ mailing list "
+"discusses the documentation toolchain, projects, and standards."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:47
+msgid "Helping with documentation issues"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:49
+msgid ""
+"If you look at `documentation issues`_ on the `issue tracker`_, you will "
+"find various documentation problems that may need work. Issues vary from "
+"typos to unclear documentation and items lacking documentation."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:53
+msgid "If you see a documentation issue that you would like to tackle, you can:"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:55
+msgid ""
+"check to see if there is a paperclip or `octocat`_ icon at the end of the"
+" issue's title column.  If there is, then someone has already created a "
+"pull request for the issue."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:58
+msgid ""
+"leave a comment on the issue saying you are going to try and create a "
+"pull request and roughly how long you think you will take to do so (this "
+"allows others to take on the issue if you happen to forget or lose "
+"interest)."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:61
+msgid "submit a :ref:`pull request <pullrequest>` for the issue."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:63
+msgid ""
+"By following the steps in the :ref:`Quick Guide to Pull Requests "
+"<pullrequest-quickguide>`, you will learn the workflow for documentation "
+"pull requests."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:71
+msgid "Proofreading"
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:73
+msgid ""
+"While an issue filed on the `issue tracker`_ means there is a known issue"
+" somewhere, that does not mean there are not other issues lurking about "
+"in the documentation. Proofreading a part of the documentation, such as a"
+" \"How to\" or OS specific document, can often uncover problems (e.g., "
+"documentation that needs updating for Python 3)."
+msgstr ""
+
+#: ../../documentation/help-documenting.rst:79
+msgid ""
+"If you decide to proofread, read a section of the documentation from "
+"start to finish, filing issues in the issue tracker for each major type "
+"of problem you find. Simple typos don't require issues of their own, but,"
+" instead, submit a pull request directly. It's best to avoid filing a "
+"single issue for an entire section containing multiple problems; instead,"
+" file several issues so that it is easier to break the work up for "
+"multiple people and more efficient review."
+msgstr ""
+
