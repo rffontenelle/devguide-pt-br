@@ -3,24 +3,28 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-09 08:36-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
+"net>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../documentation/help-documenting.rst:6
 msgid "Helping with Documentation"
-msgstr ""
+msgstr "Ajudando com documentação"
 
 #: ../../documentation/help-documenting.rst:8
 msgid ""
@@ -29,22 +33,26 @@ msgid ""
 "effort. Community members, like you, help with writing, editing, and "
 "updating content, and these contributions are appreciated and welcomed."
 msgstr ""
+"Python é conhecido por ter uma documentação bem escrita. Manter a precisão "
+"da documentação e manter um alto nível de qualidade exige muito esforço. Os "
+"membros da comunidade, como você, ajudam a escrever, editar e atualizar o "
+"conteúdo, e essas contribuições são apreciadas e bem-vindas."
 
 #: ../../documentation/help-documenting.rst:13
 msgid "This high-level **Helping with Documentation** section provides:"
-msgstr ""
+msgstr "Esta seção **Ajudando com a documentação** de alto nível fornece:"
 
 #: ../../documentation/help-documenting.rst:15
 msgid "an overview of Python's documentation"
-msgstr ""
+msgstr "uma visão geral da documentação do Python"
 
 #: ../../documentation/help-documenting.rst:16
 msgid "how to help with documentation issues"
-msgstr ""
+msgstr "o como ajudar com problemas de documentação"
 
 #: ../../documentation/help-documenting.rst:17
 msgid "information on proofreading"
-msgstr ""
+msgstr "informações sobre revisão"
 
 #: ../../documentation/help-documenting.rst:19
 msgid ""
@@ -52,10 +60,13 @@ msgid ""
 "documentation and submit changes on the :ref:`Documenting Python "
 "<documenting>` page."
 msgstr ""
+"Você encontrará informações extensas e detalhadas sobre como escrever a "
+"documentação e enviar alterações na página :ref:`Documentando Python "
+"<documenting>`."
 
 #: ../../documentation/help-documenting.rst:24
 msgid "Python Documentation"
-msgstr ""
+msgstr "Documentação do Python"
 
 #: ../../documentation/help-documenting.rst:26
 msgid ""
@@ -67,6 +78,13 @@ msgid ""
 "through the steps to create a draft build which lets you see how your "
 "changes will look and validates that your new markup is correct."
 msgstr ""
+"A seção :ref:`Documentando Python <documentação>` aborda os detalhes de como "
+"a documentação do Python funciona. Inclui informações sobre a linguagem de "
+"marcação usada, formatos específicos e recomendações de estilo. Observar os "
+"arquivos de origem da documentação pré-existente pode ser muito útil ao "
+"começar. :ref:`Como construir a documentação <building-doc>` orienta você "
+"através das etapas para criar um rascunho de compilação que permite ver como "
+"suas alterações ficarão e valida se sua nova marcação está correta."
 
 #: ../../documentation/help-documenting.rst:34
 msgid ""
@@ -75,6 +93,10 @@ msgid ""
 "python.org/dev/. The in-development and recent maintenance branches are "
 "rebuilt once per day."
 msgstr ""
+"Você pode ver a documentação construída a partir dos branches :ref:`em "
+"desenvolvimento <indevbranch>` e de :ref:`manutenção <maintbranch>` em "
+"https://docs.python.org/dev/. Os branches em desenvolvimento e de manutenção "
+"recente são recompilados uma vez por dia."
 
 #: ../../documentation/help-documenting.rst:38
 msgid ""
@@ -86,10 +108,18 @@ msgid ""
 "mail.python.org/mailman/listinfo/doc-sig>`_ mailing list discusses the "
 "documentation toolchain, projects, and standards."
 msgstr ""
+"Se você gostaria de se envolver mais com a documentação, considere se "
+"inscrever na lista de discussão `docs@python.org <https://mail.python.org/"
+"mailman3/lists/docs.python.org/>`_. O `rastreeador de problemas`_ envia "
+"novos relatórios de problemas de documentação para esta lista de discussão "
+"e, com menos frequência, a lista recebe alguns relatórios de bugs enviados "
+"diretamente pelo e-mail. A lista de discussão `docs-sig@python.org <https://"
+"mail.python.org/mailman/listinfo/doc-sig>`_ discute a cadeia de ferramentas "
+"de documentação, projetos e padrões."
 
 #: ../../documentation/help-documenting.rst:47
 msgid "Helping with documentation issues"
-msgstr ""
+msgstr "Ajuda com problemas de documentação"
 
 #: ../../documentation/help-documenting.rst:49
 msgid ""
@@ -97,11 +127,17 @@ msgid ""
 "find various documentation problems that may need work. Issues vary from "
 "typos to unclear documentation and items lacking documentation."
 msgstr ""
+"Se você examinar os `problemas da documentação`_ no `rastreador de "
+"problemas`_, encontrará vários problemas de documentação que podem precisar "
+"de correção. Os problemas variam de erros de digitação a documentação pouco "
+"clara e itens sem documentação."
 
 #: ../../documentation/help-documenting.rst:53
 msgid ""
 "If you see a documentation issue that you would like to tackle, you can:"
 msgstr ""
+"Se você encontrar um problema de documentação que gostaria de resolver, você "
+"pode:"
 
 #: ../../documentation/help-documenting.rst:55
 msgid ""
@@ -109,6 +145,9 @@ msgid ""
 "issue's title column.  If there is, then someone has already created a pull "
 "request for the issue."
 msgstr ""
+"verificar se há um clipe de papel ou ícone `octocat`_ no final da coluna do "
+"título da edição. Se houver, alguém já criou uma solicitação pull para o "
+"problema."
 
 #: ../../documentation/help-documenting.rst:58
 msgid ""
@@ -116,10 +155,14 @@ msgid ""
 "request and roughly how long you think you will take to do so (this allows "
 "others to take on the issue if you happen to forget or lose interest)."
 msgstr ""
+"deixar um comentário sobre o problema dizendo que você vai tentar criar um "
+"pull request e aproximadamente quanto tempo você acha que levará para fazê-"
+"lo (isso permite que outras pessoas assumam o problema se você esquecer ou "
+"perder o interesse)."
 
 #: ../../documentation/help-documenting.rst:61
 msgid "submit a :ref:`pull request <pullrequest>` for the issue."
-msgstr ""
+msgstr "enviar uma :ref:`pull request <pullrequest>` para o problema."
 
 #: ../../documentation/help-documenting.rst:63
 msgid ""
@@ -127,10 +170,13 @@ msgid ""
 "<pullrequest-quickguide>`, you will learn the workflow for documentation "
 "pull requests."
 msgstr ""
+"Seguindo as etapas do :ref:`Guia rápido para pull requests <pullrequest-"
+"quickguide>`, você aprenderá o fluxo de trabalho para pull requests da "
+"documentação."
 
 #: ../../documentation/help-documenting.rst:71
 msgid "Proofreading"
-msgstr ""
+msgstr "Revisando"
 
 #: ../../documentation/help-documenting.rst:73
 msgid ""
@@ -140,6 +186,12 @@ msgid ""
 "to\" or OS specific document, can often uncover problems (e.g., "
 "documentation that needs updating for Python 3)."
 msgstr ""
+"Embora um problema registrado no `rastreador de problemas`_ signifique que "
+"há um problema conhecido em algum lugar, isso não significa que não haja "
+"outros problemas ocultos na documentação. A revisão de uma parte da "
+"documentação, como um \"HOWTO\" ou um documento específico do sistema "
+"operacional, geralmente pode revelar problemas (por exemplo, documentação "
+"que precisa ser atualizada para o Python 3)."
 
 #: ../../documentation/help-documenting.rst:79
 msgid ""
@@ -151,3 +203,11 @@ msgid ""
 "so that it is easier to break the work up for multiple people and more "
 "efficient review."
 msgstr ""
+"Se você decidir revisar, leia uma seção da documentação do início ao fim, "
+"registrando problemas no rastreador de problemas para cada tipo de problema "
+"principal que encontrar. Erros de digitação simples não exigem relatórios de "
+"problema próprios, mas, em vez disso, envie uma pull request diretamente. É "
+"melhor evitar criar um único relatório problema para uma seção inteira "
+"contendo vários problemas; em vez disso, registre vários relatórios de "
+"problemas para que seja mais fácil dividir o trabalho para várias pessoas e "
+"uma revisão mais eficiente."
