@@ -3,54 +3,65 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-12 17:35-0300\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../core-developers/committing.rst:4
 msgid "Accepting Pull Requests"
-msgstr ""
+msgstr "Aceitando pull requests"
 
 #: ../../core-developers/committing.rst:8
 msgid ""
 "This page is a step-by-step guide for core developers who need to assess, "
 "merge, and possibly backport a pull request on the main repository."
 msgstr ""
+"Esta página é um guia passo a passo para desenvolvedores core que precisam "
+"avaliar, mesclar e possivelmente fazer o *backport* de uma pull request no "
+"repositório principal."
 
 #: ../../core-developers/committing.rst:12
 msgid "Assessing a pull request"
-msgstr ""
+msgstr "Avaliação de uma pull request"
 
 #: ../../core-developers/committing.rst:14
 msgid ""
 "Before you can accept a pull request, you need to make sure that it is ready "
 "to enter the public source tree. Ask yourself the following questions:"
 msgstr ""
+"Antes de aceitar uma pull request, você precisa ter certeza de que ela está "
+"pronta para entrar na árvore de origem pública. Pergunte a você mesmo as "
+"seguintes questões:"
 
 #: ../../core-developers/committing.rst:19
 msgid "**Are there ongoing discussions at the issue tracker?**"
-msgstr ""
+msgstr "**Existem discussões em andamento no rastreador de problemas?**"
 
 #: ../../core-developers/committing.rst:18
 msgid ""
 "Read the linked issue. If there are ongoing discussions, then we need to "
 "have a resolution there before we can merge the pull request."
 msgstr ""
+"Leia o relatório de problema vinculado. Se houver discussões em andamento, "
+"precisamos ter uma resolução antes de podermos mesclar a pull request."
 
 #: ../../core-developers/committing.rst:24
 msgid "**Was the pull request first made against the appropriate branch?**"
-msgstr ""
+msgstr "**A pull request foi feita primeiro no branch apropriado?**"
 
 #: ../../core-developers/committing.rst:22
 msgid ""
@@ -58,10 +69,14 @@ msgid ""
 "branch. Pull requests should only target bug-fix branches if an issue "
 "appears in only that version and possibly older versions."
 msgstr ""
+"O único branch (em português, ramificação) que recebe novos recursos é "
+"``main``, o branch em desenvolvimento. Os pull requests só devem ter como "
+"alvo branches de correção de bug se um problema aparecer apenas nessa versão "
+"e possivelmente em versões mais antigas."
 
 #: ../../core-developers/committing.rst:29
 msgid "**Are the changes acceptable?**"
-msgstr ""
+msgstr "**As mudanças são aceitáveis?**"
 
 #: ../../core-developers/committing.rst:27
 msgid ""
@@ -69,29 +84,40 @@ msgid ""
 "you can open a ``WIP``-prefixed pull request, publish patches on the `issue "
 "tracker`_, or create a public fork of the repository."
 msgstr ""
+"Se você deseja compartilhar seu código de trabalho em andamento (em inglês, "
+"*work-in-progress*) em uma versão de *feature* (recurso) ou *bugfix* "
+"(correção de bug), então você pode abrir uma pull request com prefixo "
+"``WIP``, publicar patches no `rastreador de problemas`_ ou criar um fork "
+"público do repositório."
 
 #: ../../core-developers/committing.rst:32
 msgid "**Do the checks on the pull request show that the test suite passes?**"
 msgstr ""
+"**As verificações na pull request mostram que o conjunto de testes foi "
+"aprovado?**"
 
 #: ../../core-developers/committing.rst:32
 msgid "Make sure that all of the status checks are passing."
-msgstr ""
+msgstr "Certifique-se de que todas as verificações de status estejam passando."
 
 #: ../../core-developers/committing.rst:36
 msgid "**Is the patch in a good state?**"
-msgstr ""
+msgstr "**O patch está em bom estado?**"
 
 #: ../../core-developers/committing.rst:35
 msgid ""
 "Check :ref:`patch` and :ref:`helptriage` to review what is expected of a "
 "patch."
 msgstr ""
+"Confira :ref:`patch` e :ref:`helptriage` para revisar o que se espera de um "
+"patch."
 
 #: ../../core-developers/committing.rst:44
 msgid ""
 "**Does the patch break backwards-compatibility without a strong reason?**"
 msgstr ""
+"**O patch quebra a compatibilidade com versões anteriores sem um motivo "
+"forte?**"
 
 #: ../../core-developers/committing.rst:39
 msgid ""
@@ -101,10 +127,15 @@ msgid ""
 "are unsure if the breakage is worth it, then ask on the `Core Development "
 "Discourse category <https://discuss.python.org/c/core-dev/23>`__."
 msgstr ""
+":ref:`Execute todo o conjunto de testes <runtests>` para garantir que tudo "
+"passe. Se houver uma alteração na semântica, deve haver um motivo forte, "
+"porque isso fará com que o código de algumas pessoas seja quebrado. Se você "
+"não tem certeza se a quebra vale a pena, pergunte na `categoria Core "
+"Development do Discourse <https://discuss.python.org/c/core-dev/23>`__."
 
 #: ../../core-developers/committing.rst:49
 msgid "**Does documentation need to be updated?**"
-msgstr ""
+msgstr "**A documentação precisa ser atualizada?**"
 
 #: ../../core-developers/committing.rst:47
 msgid ""
@@ -112,12 +143,18 @@ msgid ""
 "deprecating or removing a feature), then make sure that those changes are "
 "reflected in the documentation before you merge the pull request."
 msgstr ""
+"Se a pull request introduzir alterações incompatíveis com versões anteriores "
+"(por exemplo, depreciação ou remoção de um recurso), certifique-se de que "
+"essas alterações sejam refletidas na documentação antes de mesclar a pull "
+"request."
 
 #: ../../core-developers/committing.rst:58
 msgid ""
 "**Were appropriate labels added to signify necessary backporting of the pull "
 "request?**"
 msgstr ""
+"**Os rótulos apropriados foram adicionados para indicar o backporting "
+"necessário da pull request?**"
 
 #: ../../core-developers/committing.rst:52
 msgid ""
@@ -128,12 +165,21 @@ msgid ""
 "the original pull request. (Only core developers and members of the :ref:"
 "`Python Triage Team <triage-team>` can apply labels to GitHub pull requests)."
 msgstr ""
+"Se for determinado que uma pull request precisa ser portada para um ou mais "
+"dos branches de manutenção, então um desenvolvedor core pode aplicar o "
+"rótulo ``needs backport to X.Y`` à pull request. Depois que a pull request "
+"de backport tiver sido criada, remova o rótulo ``needs backport to X.Y`` da "
+"pull request original. (Apenas desenvolvedores core e membros do :ref:"
+"`Python Triage Team <triage-team>` (em português, equipe de triagem) podem "
+"aplicar rótulos às pull requests do GitHub)."
 
 #: ../../core-developers/committing.rst:68
 msgid ""
 "**Does the pull request pass a check indicating that the submitter has "
 "signed the CLA?**"
 msgstr ""
+"**A pull request passa por uma verificação indicando que o remetente assinou "
+"o CLA?**"
 
 #: ../../core-developers/committing.rst:61
 msgid ""
@@ -145,11 +191,19 @@ msgid ""
 "and replies in the PR if they haven't. For further questions about the CLA "
 "process, write to contributors@python.org."
 msgstr ""
+"Certifique-se de que o colaborador tenha assinado um `Contrato de "
+"licenciamento de colaborador <https://www.python.org/psf/contrib/contrib-"
+"form/>`_ (CLA), a menos que sua alteração não tenha propriedade intelectual "
+"possível associada a ela (por exemplo, corrigindo um erro de ortografia na "
+"documentação). O `bot CPython CLA <https://github.com/apps/cpython-cla-bot/"
+">`_ verifica se o autor assinou o CLA e responde no PR se não o fez. Para "
+"mais perguntas sobre o processo CLA, escreva para contribuidores@python.org."
 
 #: ../../core-developers/committing.rst:76
 msgid ""
 "**Were** ``What's New in Python`` **and** ``Misc/NEWS.d/next`` **updated?**"
 msgstr ""
+"``What's New in Python`` **e** ``Misc/NEWS.d/next`` **foram atualizados?**"
 
 #: ../../core-developers/committing.rst:71
 msgid ""
@@ -159,10 +213,16 @@ msgid ""
 "added as well. Changes that affect only documentation generally do not "
 "require a ``NEWS`` entry. (See the following section for more information.)"
 msgstr ""
+"Se a alteração for particularmente interessante para os usuários finais (por "
+"exemplo, novos recursos, melhorias significativas ou alterações "
+"incompatíveis com versões anteriores), uma entrada no documento ``What's New "
+"in Python`` (em ``Doc/whatsnew/``) deve ser adicionado também. Alterações "
+"que afetam apenas a documentação geralmente não requerem uma entrada "
+"``NEWS``. (Consulte a seção a seguir para obter mais informações.)"
 
 #: ../../core-developers/committing.rst:81
 msgid "Updating NEWS and What's New in Python"
-msgstr ""
+msgstr "Atualizando NEWS e What's New in Python"
 
 #: ../../core-developers/committing.rst:83
 msgid ""
@@ -173,26 +233,37 @@ msgid ""
 "should be added as well. Changes that affect documentation only generally do "
 "not require a ``NEWS`` entry."
 msgstr ""
+"Quase todas as alterações feitas no código base merecem uma entrada em "
+"``Misc/NEWS.d``. Se a alteração for particularmente interessante para os "
+"usuários finais (por exemplo, novos recursos, melhorias significativas ou "
+"alterações incompatíveis com versões anteriores), uma entrada no documento "
+"``What's New in Python`` (em ``Doc/whatsnew/``) deve ser adicionado também. "
+"Alterações que afetam apenas a documentação geralmente não requerem uma "
+"entrada ``NEWS``."
 
 #: ../../core-developers/committing.rst:90
 msgid ""
 "There are two notable exceptions to this general principle, and they both "
 "relate to changes that:"
 msgstr ""
+"Há duas exceções notáveis a esse princípio geral, e ambas se relacionam a "
+"mudanças que:"
 
 #: ../../core-developers/committing.rst:93
 msgid "Already have a ``NEWS`` entry"
-msgstr ""
+msgstr "Já tem uma entrada no ``NEWS``"
 
 #: ../../core-developers/committing.rst:94
 msgid ""
 "Have not yet been included in any formal release (including alpha and beta "
 "releases)"
 msgstr ""
+"Ainda não foram incluídos em nenhuma versão formal (incluindo versões alfa e "
+"beta)"
 
 #: ../../core-developers/committing.rst:97
 msgid "These are the two exceptions:"
-msgstr ""
+msgstr "Estas são as duas exceções:"
 
 #: ../../core-developers/committing.rst:99
 msgid ""
@@ -201,6 +272,11 @@ msgid ""
 "change has been reverted (e.g. when a feature is released in an alpha and "
 "then cut prior to the first beta)."
 msgstr ""
+"**Se uma alteração for revertida antes do lançamento**, a entrada "
+"correspondente será simplesmente removida. Caso contrário, uma nova entrada "
+"deve ser adicionada observando que a alteração foi revertida (por exemplo, "
+"quando um recurso é lançado em um alfa e depois cortado antes do primeiro "
+"beta)."
 
 #: ../../core-developers/committing.rst:104
 msgid ""
@@ -208,12 +284,17 @@ msgid ""
 "and the original** ``NEWS`` **entry remains valid**, then no additional "
 "entry is needed."
 msgstr ""
+"**Se uma alteração for uma correção (ou outro ajuste) para uma alteração "
+"anterior não lançada e a entrada original no** ``NEWS`` **permanecer "
+"válida**, nenhuma entrada adicional será necessária."
 
 #: ../../core-developers/committing.rst:108
 msgid ""
 "If a change needs an entry in ``What's New in Python``, then it is very "
 "likely not suitable for including in a maintenance release."
 msgstr ""
+"Se uma mudança precisa de uma entrada em ``What's New in Python``, então "
+"provavelmente não é adequado para incluir em uma versão de manutenção."
 
 #: ../../core-developers/committing.rst:111
 msgid ""
@@ -222,6 +303,10 @@ msgid ""
 "herokuapp.com/>`_, or the `blurb <https://pypi.org/project/blurb/>`_ tool "
 "and its ``blurb add`` command."
 msgstr ""
+"Entradas no ``NEWS`` vão para o diretório ``Misc/NEWS.d`` como arquivos "
+"individuais. A entrada ``NEWS`` pode ser criada usando `blurb-it <https://"
+"blurb-it.herokuapp.com/>`_ ou a ferramenta `blurb <https://pypi.org/project/"
+"blurb/ >`_ e seu comando ``blurb add``."
 
 #: ../../core-developers/committing.rst:116
 msgid ""
@@ -232,18 +317,29 @@ msgid ""
 "changes relating to the standard library). The file name itself should be in "
 "the format ``<datetime>.gh-issue-<issue-number>.<nonce>.rst``:"
 msgstr ""
+"Se você não conseguir usar a ferramenta, então você pode criar o arquivo de "
+"entrada ``NEWS`` manualmente. O diretório ``Misc/NEWS.d`` contém um "
+"subdiretório chamado ``next``, que contém vários subdiretórios representando "
+"classificações para o que foi afetado (por exemplo, ``Misc/NEWS.d/next/"
+"Library`` para alterações relacionadas à biblioteca padrão). O próprio nome "
+"do arquivo deve estar no formato ``<data-hora>.gh-issue-<número-issue>."
+"<nonce>.rst``:"
 
 #: ../../core-developers/committing.rst:123
 msgid ""
 "``<datetime>`` is today's date joined with a hyphen (``-``) to the current "
 "time, in the ``YYYY-MM-DD-hh-mm-ss`` format (e.g. ``2017-05-27-16-46-23``)."
 msgstr ""
+"``<data-hora>`` é a data de hoje unida com um hífen (``-``) à hora atual, no "
+"formato ``YYYY-MM-DD-hh-mm-ss`` (por exemplo, ``2017-27-05-16-46-23``)."
 
 #: ../../core-developers/committing.rst:125
 msgid ""
 "``<issue-number>`` is the issue number the change is for (e.g. ``12345`` for "
 "``gh-issue-12345``)."
 msgstr ""
+"``<número-issue>`` é o número do *issue* (relatório de problema do GitHub)  "
+"para o qual a alteração é (por exemplo, ``12345`` para ``gh-issue-12345``)."
 
 #: ../../core-developers/committing.rst:127
 msgid ""
@@ -252,12 +348,19 @@ msgid ""
 "it can be any length of letters and numbers. Its uniqueness can be satisfied "
 "by typing random characters on your keyboard."
 msgstr ""
+"``<nonce>`` é uma string única para garantir que o nome do arquivo seja "
+"único entre os branches (por exemplo, ``Yl4gI2``). Geralmente tem seis "
+"caracteres, mas pode ter qualquer comprimento de letras e números. Sua "
+"singularidade pode ser satisfeita digitando caracteres aleatórios em seu "
+"teclado."
 
 #: ../../core-developers/committing.rst:132
 msgid ""
 "As a result, a file name can look something like ``Misc/NEWS.d/next/"
 "Library/2017-05-27-16-46-23.gh-issue-12345.Yl4gI2.rst``."
 msgstr ""
+"Como resultado, um nome de arquivo pode se parecer com ``Misc/NEWS.d/next/"
+"Library/2017-05-27-16-46-23.gh-issue-12345.Yl4gI2.rst``."
 
 #: ../../core-developers/committing.rst:135
 msgid ""
@@ -268,6 +371,12 @@ msgid ""
 "`inline markups <rest-inline-markup>` too. Here is an example of a ``NEWS`` "
 "entry::"
 msgstr ""
+"O conteúdo de um arquivo ``NEWS`` deve ser reStructuredText válido. Uma "
+"largura de coluna de 80 caracteres deve ser usada. Não há recuo ou marcador "
+"inicial no arquivo (por exemplo, ``-``). Também não há necessidade de "
+"iniciar a entrada com o número do relatório de problema, pois ele faz parte "
+"do nome do arquivo. Você pode usar :ref:`marcações em linha <rest-inline-"
+"markup>`, ou *inline*, também. Aqui está um exemplo de uma entrada ``NEWS``::"
 
 #: ../../core-developers/committing.rst:145
 msgid ""
@@ -275,16 +384,23 @@ msgid ""
 "information. You can build HTML and verify that the link target is "
 "appropriate by using :ref:`make html <building-using-make>`."
 msgstr ""
+"As funções em linha do Sphinx como ``:func:`` podem ser usadas para ajudar "
+"os leitores a encontrar mais informações. Você pode construir HTML e "
+"verificar se o destino do link é apropriado usando :ref:`make html <building-"
+"using-make>`."
 
 #: ../../core-developers/committing.rst:149
 msgid ""
 "While Sphinx roles can be beneficial to readers, they are not required. "
 "Inline ````code blocks```` can be used instead."
 msgstr ""
+"Embora as funções (ou *roles*) do Sphinx possam ser benéficas para os "
+"leitores, eles não são obrigatórios. Os ````blocos de código```` em linha "
+"podem ser usados em seu lugar."
 
 #: ../../core-developers/committing.rst:154
 msgid "Working with Git_"
-msgstr ""
+msgstr "Trabalhando com Git_"
 
 #: ../../core-developers/committing.rst:157
 msgid ":ref:`gitbootcamp`"
@@ -295,6 +411,8 @@ msgid ""
 "As a core developer, you have the ability to push changes to the official "
 "Python repositories, so you need to be careful with your workflow:"
 msgstr ""
+"Como desenvolvedor core, você pode enviar alterações aos repositórios "
+"oficiais do Python, portanto, tenha cuidado com seu fluxo de trabalho:"
 
 #: ../../core-developers/committing.rst:162
 msgid ""
@@ -303,6 +421,10 @@ msgid ""
 "also push these branches to a separate public repository for maintenance "
 "work before it is integrated into the main repository."
 msgstr ""
+"**Você não deve enviar novos branches para o repositório principal.** Você "
+"ainda pode usá-los no fork que você usa para o desenvolvimento de patches. "
+"Você também pode enviar esses branches para um repositório público separado "
+"para trabalho de manutenção antes de ser integrado ao repositório principal."
 
 #: ../../core-developers/committing.rst:167
 msgid ""
@@ -310,6 +432,9 @@ msgid ""
 "maintenance branches.** You should commit against your own feature branch, "
 "and then create a pull request."
 msgstr ""
+"**Você não deve fazer commit diretamente no branch** ``main`` **, ou em "
+"qualquer um dos branches de manutenção.** Você deve fazer commit em relação "
+"ao seu próprio branch de recurso, e então criar uma pull request."
 
 #: ../../core-developers/committing.rst:171
 msgid ""
@@ -320,6 +445,13 @@ msgid ""
 "any of the maintenance branches. To keep the CPython repository tidy, remove "
 "the new branch within a few days."
 msgstr ""
+"**Para uma pequena alteração, você pode fazer uma edição rápida por meio da "
+"interface web de usuário do GitHub.** Se optar por usar a interface web do "
+"usuário, saiba que o GitHub criará um novo branch no repositório principal "
+"do CPython em vez de em seu fork. Exclua este ramo recém-criado após ele ter "
+"sido mesclado no branch ``main`` ou em qualquer um dos branches de "
+"manutenção. Para manter o repositório CPython organizado, remova o novo "
+"branch em alguns dias."
 
 #: ../../core-developers/committing.rst:178
 msgid ""
@@ -327,10 +459,13 @@ msgid ""
 "local changes (even committed ones) if you're not happy with your local "
 "clone."
 msgstr ""
+"Mantenha um fork do repositório principal, pois isso permitirá que você "
+"reverta todas as alterações locais (mesmo as já \"commitadas\") se não "
+"estiver satisfeito com seu clone local."
 
 #: ../../core-developers/committing.rst:189
 msgid "Seeing active branches"
-msgstr ""
+msgstr "Vendo branches ativos"
 
 #: ../../core-developers/committing.rst:191
 msgid ""
@@ -339,10 +474,14 @@ msgid ""
 "in-development branch. The other branches receive only bug fixes or security "
 "fixes."
 msgstr ""
+"Se você usar ``git branch``, então você verá uma :ref:`lista de branches "
+"<branchstatus>`. O único branch que recebe novos recursos é ``main``, o "
+"branch em desenvolvimento. Os outros branches recebem apenas correções de "
+"bugs ou correções de segurança."
 
 #: ../../core-developers/committing.rst:200
 msgid "Backporting changes to an older version"
-msgstr ""
+msgstr "Fazendo backport de alterações para uma versão mais antiga"
 
 #: ../../core-developers/committing.rst:202
 msgid ""
@@ -350,6 +489,9 @@ msgid ""
 "more of the maintenance branches, then a core developer can apply the label "
 "``needs backport to X.Y`` to the pull request."
 msgstr ""
+"Se for determinado que uma pull request precisa ser portada para um ou mais "
+"dos branches de manutenção, então um desenvolvedor principal pode aplicar o "
+"rótulo ``needs backport to X.Y`` à pull request."
 
 #: ../../core-developers/committing.rst:206
 msgid ""
@@ -359,6 +501,11 @@ msgid ""
 "backporting it themselves, using the backport generated by cherry_picker.py_ "
 "as a starting point."
 msgstr ""
+"Depois que a pull request foi mesclada, miss-islington (bot) primeiro "
+"tentará fazer o backport automaticamente. Se miss-islington não puder fazer "
+"isso, o autor da pull request ou o desenvolvedor core que a mesclou deve "
+"procurar fazer o backport por conta própria, usando o backport gerado por "
+"cherry_picker.py_ como ponto de partida."
 
 #: ../../core-developers/committing.rst:212
 msgid ""
@@ -366,12 +513,17 @@ msgid ""
 "``git log`` on the ``main`` branch. To display the 10 most recent commit "
 "hashes and their first line of the commit, use the following command::"
 msgstr ""
+"Você pode obter o hash de commit do pull request original ou pode usar ``git "
+"log`` no branch ``main``. Para exibir os 10 hashes de commit mais recentes e "
+"sua primeira linha do commit, use o seguinte comando::"
 
 #: ../../core-developers/committing.rst:220
 msgid ""
 "You can prefix the backport pull request with the branch, and reference the "
 "pull request number from ``main``. Here is an example::"
 msgstr ""
+"Você pode prefixar o pull request do backport com o branch, e referenciar o "
+"número do pull request de ``main``. Aqui está um exemplo::"
 
 #: ../../core-developers/committing.rst:225
 msgid ""
@@ -379,6 +531,9 @@ msgid ""
 "number of the original *pull request*. Note that cherry_picker.py_ adds the "
 "branch prefix automatically."
 msgstr ""
+"Aqui, \"gh-12345\" é o número do *issue* do GitHub e \"GH-NNNN\" é o número "
+"do *pull request* original. Observe que cherry_picker.py_ adiciona o prefixo "
+"do branch automaticamente."
 
 #: ../../core-developers/committing.rst:229
 msgid ""
@@ -387,10 +542,14 @@ msgid ""
 "members of the :ref:`Python Triage Team <triage-team>` can apply labels to "
 "GitHub pull requests)."
 msgstr ""
+"Depois que a pull request de backport tiver sido criada, remova o rótulo "
+"``needs backport to X.Y`` da pull request original. (Apenas desenvolvedores "
+"cores e membros da equipe de triagem, a :ref:`Python Triage Team <triage-"
+"team>`, podem aplicar rótulos às pull requests do GitHub)."
 
 #: ../../core-developers/committing.rst:238
 msgid "Reverting a merged pull request"
-msgstr ""
+msgstr "Revertendo uma pull request mesclada"
 
 #: ../../core-developers/committing.rst:240
 msgid ""
@@ -400,6 +559,11 @@ msgid ""
 "on the main CPython repository. Delete the branch once the pull request has "
 "been merged."
 msgstr ""
+"Para reverter uma pull request mesclada, pressione o botão ``Revert`` na "
+"parte inferior da pull request. Isso abrirá a página para criar uma nova "
+"pull request onde o commit pode ser revertido. Ele também criará um novo "
+"branch no repositório principal do CPython. Exclua o branch assim que a pull "
+"request for mesclada."
 
 #: ../../core-developers/committing.rst:246
 msgid ""
@@ -407,3 +571,6 @@ msgid ""
 "why it was done. The reason should be included as part of the commit "
 "message. Here is an example::"
 msgstr ""
+"Sempre inclua o motivo da reversão do commit para ajudar os outros a "
+"entender por que isso foi feito. O motivo deve ser incluído como parte da "
+"mensagem do commit. Aqui está um exemplo::"
