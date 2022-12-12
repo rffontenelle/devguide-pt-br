@@ -3,28 +3,31 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-12 15:28-0300\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../core-developers/become-core-developer.rst:6
 msgid "How to Become a Core Developer"
-msgstr ""
+msgstr "Como se tornar um desenvolvedor core"
 
 #: ../../core-developers/become-core-developer.rst:9
 msgid "What it Takes"
-msgstr ""
+msgstr "O que é preciso"
 
 #: ../../core-developers/become-core-developer.rst:11
 msgid ""
@@ -34,6 +37,12 @@ msgid ""
 "must also work well with other core developers (and people in general) as "
 "you become an ambassador for the Python project."
 msgstr ""
+"Quando você contribui consistentemente com patches que atendem aos padrões "
+"de qualidade sem exigir reescritas extensas antes de ser confirmado, você "
+"pode se qualificar para privilégios de fazer commits e se tornar um "
+"desenvolvedor core do Python. Você também deve trabalhar bem com outros "
+"desenvolvedores cores (e pessoas em geral) ao se tornar um embaixador do "
+"projeto Python."
 
 #: ../../core-developers/become-core-developer.rst:17
 msgid ""
@@ -44,38 +53,49 @@ msgid ""
 "privileges you are then extended an official offer. How core developers come "
 "to that agreement are outlined in :pep:`13`."
 msgstr ""
+"Normalmente, um desenvolvedor core oferece a você a chance de obter "
+"privilégio de fazer commits. A pessoa que fizer a oferta se tornará seu "
+"mentor e observará seus commits por um tempo para garantir que você entenda "
+"o processo de desenvolvimento. Se outros desenvolvedores principais "
+"concordarem que você deve obter privilégios de fazer commits, você receberá "
+"uma oferta oficial. Como os desenvolvedores cores chegam a esse acordo está "
+"descrito em :pep:`13`."
 
 #: ../../core-developers/become-core-developer.rst:26
 msgid "Gaining Commit Privileges"
-msgstr ""
+msgstr "Ganhando privilégios de fazer commit"
 
 #: ../../core-developers/become-core-developer.rst:28
 msgid "The steps to gaining commit privileges are:"
-msgstr ""
+msgstr "As etapas para obter privilégios de fazer commit são:"
 
 #: ../../core-developers/become-core-developer.rst:30
 msgid ""
 "A core developer starts a poll in the `Committers category`_ on the `Python "
 "Discourse`_ (``discuss.python.org``)"
 msgstr ""
+"Um desenvolvedor core inicia uma votação na `categoria Committers`_ no "
+"`Python Discourse`_ (``discuss.python.org``)"
 
 #: ../../core-developers/become-core-developer.rst:33
 msgid "Open for 7 days"
-msgstr ""
+msgstr "Aberta por 7 dias"
 
 #: ../../core-developers/become-core-developer.rst:34
 msgid "Results shown upon close"
-msgstr ""
+msgstr "Resultados mostrados ao fechar"
 
 #: ../../core-developers/become-core-developer.rst:36
 msgid "The poll is announced on the `python-committers mailing list`_"
-msgstr ""
+msgstr "A votação é anunciada na lista de discussão `python-committers`_"
 
 #: ../../core-developers/become-core-developer.rst:37
 msgid ""
 "Wait for the poll to close and see if the results confirm your membership as "
 "per the voting results required by :pep:`13`"
 msgstr ""
+"Aguarde o encerramento da votação e veja se os resultados confirmam sua "
+"adesão de acordo com os resultados da votação exigidos pela :pep:`13`"
 
 #: ../../core-developers/become-core-developer.rst:39
 msgid ""
@@ -83,47 +103,63 @@ msgid ""
 "address and a request that the council either accept or reject the proposed "
 "membership"
 msgstr ""
+"A pessoa que indicou você envia um e-mail ao conselho diretor com seu "
+"endereço de e-mail e uma solicitação para que o conselho aceite ou rejeite a "
+"adesão proposta"
 
 #: ../../core-developers/become-core-developer.rst:42
 msgid ""
 "Assuming the steering council does not object, a member of the council will "
 "email you asking for:"
 msgstr ""
+"Supondo que o conselho diretor não se oponha, um membro do conselho enviará "
+"um e-mail a você solicitando:"
 
 #: ../../core-developers/become-core-developer.rst:45
 msgid "Account details as required by 🔒 https://github.com/python/voters/"
 msgstr ""
+"Detalhes da conta conforme exigido por 🔒 https://github.com/python/voters/"
 
 #: ../../core-developers/become-core-developer.rst:47
 msgid ""
 "Your preferred email address to subscribe to the python-committers mailing "
 "list with"
 msgstr ""
+"Seu endereço de e-mail preferido para se inscrever na lista de discussão "
+"python-committers com"
 
 #: ../../core-developers/become-core-developer.rst:49
 msgid ""
 "A reminder about the `Code of Conduct`_ and to report issues to the PSF "
 "Conduct WG"
 msgstr ""
+"Um lembrete sobre o `Código de Conduta`_ e para relatar problemas ao PSF "
+"Conduct WG (em português, grupo de trabalho de conduta da PSF)"
 
 #: ../../core-developers/become-core-developer.rst:52
 msgid ""
 "Once you have provided the pertinent details, your various new privileges "
 "will be turned on"
 msgstr ""
+"Depois de fornecer os detalhes pertinentes, seus vários novos privilégios "
+"serão ativados"
 
 #: ../../core-developers/become-core-developer.rst:54
 msgid "Your details will be added to 🔒 https://github.com/python/voters/"
-msgstr ""
+msgstr "Seus detalhes serão adicionados a 🔒 https://github.com/python/voters/"
 
 #: ../../core-developers/become-core-developer.rst:55
 msgid ""
 "They will update the devguide to publicly list your team membership at :ref:"
 "`developers`"
 msgstr ""
+"Eles atualizarão o guia de desenvolvimento para listar publicamente os "
+"membros de sua equipe em :ref:`developers`"
 
 #: ../../core-developers/become-core-developer.rst:57
 msgid ""
 "An announcement email by the steering council member handling your new "
 "membership will be sent to the Committers Discourse category"
 msgstr ""
+"Um e-mail de anúncio do membro do conselho diretor que está lidando com sua "
+"nova associação será enviado para a categoria Comitters do Discourse"
