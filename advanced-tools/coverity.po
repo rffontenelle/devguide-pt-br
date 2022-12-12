@@ -3,24 +3,27 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-12 14:29-0300\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../advanced-tools/coverity.rst:5
 msgid "Coverity Scan"
-msgstr ""
+msgstr "Coverity Scan"
 
 #: ../../advanced-tools/coverity.rst:7
 msgid ""
@@ -28,6 +31,9 @@ msgid ""
 "projects. It is based on Coverity's commercial product and is able to "
 "analyze C, C++ and Java code."
 msgstr ""
+"Coverity Scan (em português, varredura de cobertura) é um serviço gratuito "
+"para análise de código estático de projetos de código aberto. Ele é baseado "
+"no produto comercial da Coverity e é capaz de analisar códigos C, C++ e Java."
 
 #: ../../advanced-tools/coverity.rst:11
 msgid ""
@@ -42,10 +48,21 @@ msgid ""
 "unchecked return values, dead code, buffer overflows, integer overflows, "
 "uninitialized variables, and many more."
 msgstr ""
+"A análise de código estático do Coverity não executa o código. Em vez disso, "
+"ele usa interpretação abstrata para obter informações sobre o fluxo de "
+"controle e o fluxo de dados do código. É capaz de seguir todos os caminhos "
+"de código possíveis que um programa pode seguir. Por exemplo, o analisador "
+"entende que ``malloc()`` retorna uma memória que deve ser liberada com "
+"``free()`` posteriormente. Ele segue todos os ramos e chamadas de função "
+"para ver se todas as combinações possíveis liberam a memória. O analisador é "
+"capaz de detectar todos os tipos de problemas, como vazamentos de recursos "
+"(memória, descritores de arquivo), desreferenciação de NULL, uso após "
+"liberação, valores de retorno não verificados, código morto, estouros de "
+"buffer, estouros de número inteiro, variáveis não inicializadas e muito mais."
 
 #: ../../advanced-tools/coverity.rst:24
 msgid "Access to analysis reports"
-msgstr ""
+msgstr "Acesso a relatórios de análise"
 
 #: ../../advanced-tools/coverity.rst:26
 msgid ""
@@ -54,6 +71,10 @@ msgid ""
 "*Projects using Scan* and add yourself to the Python project. New members "
 "must be approved by an admin (see `Contact`_)."
 msgstr ""
+"Os resultados estão disponíveis no site do `Coverity Scan`_. Para acessar os "
+"resultados, você mesmo deve criar uma conta. Em seguida, vá para *Projects "
+"using Scan* e adicione-se ao projeto Python. Novos membros devem ser "
+"aprovados por um administrador (consulte `Contact`_)."
 
 #: ../../advanced-tools/coverity.rst:31
 msgid ""
@@ -62,10 +83,15 @@ msgid ""
 "detects a critical issue in Python's code -- new analyzers may even find new "
 "bugs in mature code. We don't want to disclose issues prematurely."
 msgstr ""
+"O acesso é restrito apenas aos desenvolvedores principais do Python. Outros "
+"indivíduos também podem ter acesso a nosso próprio critério. De vez em "
+"quando, o Coverity detecta um problema crítico no código do Python - novos "
+"analisadores podem até encontrar novos bugs no código maduro. Não queremos "
+"divulgar questões prematuramente."
 
 #: ../../advanced-tools/coverity.rst:38
 msgid "Building and uploading analysis"
-msgstr ""
+msgstr "Compilando e enviando análises"
 
 #: ../../advanced-tools/coverity.rst:40
 msgid ""
@@ -76,22 +102,31 @@ msgid ""
 "Open Source Labs. The process is maintained by Christian Heimes (see "
 "`Contact`_). At present only the tip is analyzed with the 64bit Linux tools."
 msgstr ""
+"O processo é automatizado. Um script verifica o código, executa ``cov-"
+"build`` e envia a análise mais recente para o Coverity. Como o Coverity "
+"limitou o número máximo de compilações por semana, o Python é analisado a "
+"cada dois dias. A compilação é executada em uma máquina virtual dedicada na "
+"infraestrutura do PSF no OSU Open Source Labs. O processo é mantido por "
+"Christian Heimes (ver `Contact`_). No momento, apenas a dica é analisada com "
+"as ferramentas do Linux de 64 bits."
 
 #: ../../advanced-tools/coverity.rst:49
 msgid "Known limitations"
-msgstr ""
+msgstr "Limitações conhecidas"
 
 #: ../../advanced-tools/coverity.rst:51
 msgid "Some aspects of Python's C code are not yet understood by Coverity."
 msgstr ""
+"Alguns aspectos do código C do Python ainda não são compreendidos pelo "
+"Coverity."
 
 #: ../../advanced-tools/coverity.rst:54
 msgid "False positives"
-msgstr ""
+msgstr "Falsos-positivos"
 
 #: ../../advanced-tools/coverity.rst:59
 msgid "``Py_BuildValue(\"N\", PyObject*)``"
-msgstr ""
+msgstr "``Py_BuildValue(\"N\", PyObject*)``"
 
 #: ../../advanced-tools/coverity.rst:57
 msgid ""
@@ -99,10 +134,13 @@ msgid ""
 "without touching its reference count. On this ground the analyzer detects a "
 "resource leak. CID 719685"
 msgstr ""
+"O Coverity não entende que o caractere de formato ``N`` passa o objeto sem "
+"tocar em sua contagem de referência. Com base nisso, o analisador detecta um "
+"vazamento de recursos. CID 719685"
 
 #: ../../advanced-tools/coverity.rst:64
 msgid "``PyLong_FromLong()`` for negative values"
-msgstr ""
+msgstr "``PyLong_FromLong()`` para valores negativos"
 
 #: ../../advanced-tools/coverity.rst:62
 msgid ""
@@ -110,20 +148,25 @@ msgid ""
 "functions cannot handle a negative value because the value might be used as "
 "an array index in ``get_small_int()``. CID 486783"
 msgstr ""
+"Coverity afirma que ``PyLong_FromLong()`` e outras funções "
+"``PyLong_From*()`` não podem lidar com um valor negativo porque o valor pode "
+"ser usado como um índice de array em ``get_small_int()``. CID 486783"
 
 #: ../../advanced-tools/coverity.rst:68
 msgid "``PyLong_FromLong()`` for n in [-5 ... +255]"
-msgstr ""
+msgstr "``PyLong_FromLong()`` para n em [-5 ... +255]"
 
 #: ../../advanced-tools/coverity.rst:67
 msgid ""
 "For integers in the range of Python's small int cache the ``PyLong_From*()`` "
 "function can never fail and never returns NULL. CID 1058291"
 msgstr ""
+"Para inteiros no intervalo de cache com small int do Python, a função "
+"``PyLong_From*()`` pode nunca falhar e nunca retorna NULL. CID 1058291"
 
 #: ../../advanced-tools/coverity.rst:75
 msgid "``PyArg_ParseTupleAndKeywords(args, kwargs, \"s#\", &data, &length)``"
-msgstr ""
+msgstr "``PyArg_ParseTupleAndKeywords(args, kwargs, \"s#\", &data, &length)``"
 
 #: ../../advanced-tools/coverity.rst:71
 msgid ""
@@ -133,10 +176,15 @@ msgid ""
 "buffer overflow if data is written to a fixed size buffer although ``length "
 "<= sizeof(buffer)``.  CID 486613"
 msgstr ""
+"Algumas funções usam a combinação de caracteres de formato como ``s#``, "
+"``u#`` ou ``z#`` para obter dados e comprimento de um array de caracteres. "
+"Coverity não reconhece a relação entre dados e comprimento. Às vezes, ele "
+"detecta um estouro de buffer se os dados forem gravados em um buffer de "
+"tamanho fixo, embora ``lenght <= sizeof(buffer)``. CID 486613"
 
 #: ../../advanced-tools/coverity.rst:81
 msgid "``path_converter()`` dereferencing after null check"
-msgstr ""
+msgstr "``path_converter()`` ser desreferenciado após verificação de null"
 
 #: ../../advanced-tools/coverity.rst:78
 msgid ""
@@ -144,10 +192,13 @@ msgid ""
 "either ``path_t.narrow`` or ``path_t.wide`` is filled unless ``path_t."
 "nullable`` is explicitly enabled. CID 719648"
 msgstr ""
+"A função ``path_converter()`` em ``posixmodule.c`` garante que ``path_t."
+"narrow`` ou ``path_t.wide`` seja preenchido, a menos que ``path_t.nullable`` "
+"esteja explicitamente ativado. CID 719648"
 
 #: ../../advanced-tools/coverity.rst:84
 msgid "Modeling"
-msgstr ""
+msgstr "Modelagem"
 
 #: ../../advanced-tools/coverity.rst:86
 msgid ""
@@ -156,14 +207,19 @@ msgid ""
 "Python's modeling file for Coverity. Please keep the copy in sync with the "
 "model file in *Analysis Settings* of `Coverity Scan`_."
 msgstr ""
+"A modelagem (em inglês, modeling) é explicada no *Coverity Help Center* que "
+"está disponível no menu de ajuda do `Coverity Connect`_. `coverity_model.c`_ "
+"contém uma cópia do arquivo de modelagem Python para Coverity. Por favor, "
+"mantenha a cópia sincronizada com o arquivo de modelo em *Analysis Settings* "
+"de `Coverity Scan`_."
 
 #: ../../advanced-tools/coverity.rst:93
 msgid "Workflow"
-msgstr ""
+msgstr "Fluxo de trabalho"
 
 #: ../../advanced-tools/coverity.rst:96
 msgid "False positive and intentional issues"
-msgstr ""
+msgstr "Falsos positivos e problemas intencionais"
 
 #: ../../advanced-tools/coverity.rst:98
 msgid ""
@@ -172,16 +228,24 @@ msgid ""
 "to \"Ignore\", owner to your own account and add a comment why the issue is "
 "considered false positive or intentional."
 msgstr ""
+"Se o problema estiver listado em `Limitações conhecidas`_, defina a "
+"classificação como \"Falso positivo\" ou \"Intencional\", a ação como "
+"\"Ignorar\", proprietário da sua própria conta e adicione um comentário "
+"sobre o motivo pelo qual o problema é considerado falso positivo ou "
+"intencional."
 
 #: ../../advanced-tools/coverity.rst:103
 msgid ""
 "If you think it's a new false positive or intentional then please contact an "
 "admin. The first step should be an updated to Python's `Modeling`_ file."
 msgstr ""
+"Se você acha que é um novo falso positivo ou intencional, entre em contato "
+"com um administrador. A primeira etapa deve ser uma atualização para o "
+"arquivo de `modelagem`_ do Python."
 
 #: ../../advanced-tools/coverity.rst:108
 msgid "Positive issues"
-msgstr ""
+msgstr "Questões positivas"
 
 #: ../../advanced-tools/coverity.rst:110
 msgid ""
@@ -190,42 +254,52 @@ msgid ""
 "(Coverity ID) to both the ticket and the checkin message. It makes it much "
 "easier to understand the relation between tickets, fixes and Coverity issues."
 msgstr ""
+"Você deve sempre criar um problema, a menos que seja realmente um caso "
+"trivial. Por favor, adicione o URL completo ao ticket em *Ext. Reference* e "
+"adicione o CID (Coverity ID) tanto no ticket quanto na mensagem de check-in. "
+"Fica muito mais fácil entender a relação entre tickets, correções e "
+"problemas de Coverity."
 
 #: ../../advanced-tools/coverity.rst:117
 msgid "Contact"
-msgstr ""
+msgstr "Contato"
 
 #: ../../advanced-tools/coverity.rst:119
 msgid ""
 "Please include both Brett and Christian in any mail regarding Coverity. "
 "Mails to Coverity should go through Brett or Christian, too."
 msgstr ""
+"Por favor, inclua Brett e Christian em qualquer correspondência sobre "
+"Coverity. As correspondências para a Coverity também devem passar por Brett "
+"ou Christian."
 
 #: ../../advanced-tools/coverity.rst:123
 msgid "Christian Heimes <christian (at) python (dot) org>"
-msgstr ""
+msgstr "Christian Heimes <christian (at) python (dot) org>"
 
 #: ../../advanced-tools/coverity.rst:123
 msgid ""
 "admin, maintainer of build machine, intermediary between Python and Coverity"
 msgstr ""
+"administrador, mantenedor da máquina de compilação, intermediário entre "
+"Python e Coverity"
 
 #: ../../advanced-tools/coverity.rst:126
 msgid "Brett Cannon <brett (at) python (dot) org>"
-msgstr ""
+msgstr "Brett Cannon <brett (at) python (dot) org>"
 
 #: ../../advanced-tools/coverity.rst:126
 msgid "co-admin"
-msgstr ""
+msgstr "co-administrador"
 
 #: ../../advanced-tools/coverity.rst:130
 msgid "Dakshesh Vyas <scan-admin@coverity.com>"
-msgstr ""
+msgstr "Dakshesh Vyas <scan-admin@coverity.com>"
 
 #: ../../advanced-tools/coverity.rst:129
 msgid "Technical Manager - Coverity Scan"
-msgstr ""
+msgstr "Gerente Técnico - Coverity Scan"
 
 #: ../../advanced-tools/coverity.rst:134
 msgid "`Coverity Scan FAQ <https://scan.coverity.com/faq/>`_"
-msgstr ""
+msgstr "`FAQ do Coverity Scan <https://scan.coverity.com/faq/>`_"
