@@ -3,24 +3,27 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-12 08:37-0300\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../advanced-tools/clang.rst:5
 msgid "Dynamic Analysis with Clang"
-msgstr ""
+msgstr "Análise dinâmica com Clang"
 
 #: ../../advanced-tools/clang.rst:9
 msgid ""
@@ -29,6 +32,10 @@ msgid ""
 "cover downloading, building and installing the latest Clang/LLVM combination "
 "(which is currently 3.4)."
 msgstr ""
+"Este documento descreve como usar o Clang para realizar análises em Python e "
+"suas bibliotecas. Além de realizar a análise, o documento abordará o "
+"download, a criação e a instalação da combinação Clang/LLVM mais recente "
+"(que atualmente é 3.4)."
 
 #: ../../advanced-tools/clang.rst:14
 msgid ""
@@ -38,10 +45,15 @@ msgid ""
 "The blog posting is a detailed examinations of issues uncovered by Clang in "
 "``libc++``."
 msgstr ""
+"Este documento não abrange a interpretação dos resultados. Para uma "
+"discussão sobre a interpretação dos resultados, consulte `Testing libc++ "
+"with -fsanitize=undefined <https://cplusplusmusings.wordpress.com/tag/clang/"
+">`_ de Marshall Clow. A postagem do blog é um exame detalhado dos problemas "
+"descobertos pelo Clang em ``libc++``."
 
 #: ../../advanced-tools/clang.rst:21
 msgid "What is Clang?"
-msgstr ""
+msgstr "O que é Clang?"
 
 #: ../../advanced-tools/clang.rst:23
 msgid ""
@@ -50,10 +62,15 @@ msgid ""
 "sanitizers - or checkers - are hooks into the code generation phase to "
 "instrument compiled code so suspicious behavior is flagged."
 msgstr ""
+"Clang é o front-end de C, C++ e Objective C para o compilador LLVM. O front-"
+"end fornece acesso ao otimizador e gerador de código do LLVM. Os "
+"sanitizadores - ou verificadores - são ganchos na fase de geração de código "
+"para instrumentar o código compilado, de modo que o comportamento suspeito "
+"seja sinalizado."
 
 #: ../../advanced-tools/clang.rst:29
 msgid "What are Sanitizers?"
-msgstr ""
+msgstr "O que são sanitizadores?"
 
 #: ../../advanced-tools/clang.rst:31
 msgid ""
@@ -61,6 +78,10 @@ msgid ""
 "undefined behavior. The checking occurs at runtime with actual runtime "
 "parameters so false positives are kept to a minimum."
 msgstr ""
+"Sanitizadores Clang são verificadores de tempo de execução usados para "
+"identificar comportamentos suspeitos e indefinidos. A verificação ocorre no "
+"tempo de execução com os parâmetros de tempo de execução reais, de modo que "
+"os falsos positivos sejam reduzidos ao mínimo."
 
 #: ../../advanced-tools/clang.rst:35
 msgid ""
@@ -71,18 +92,32 @@ msgid ""
 "The flags are passed through ``CFLAGS`` and ``CXXFLAGS``, and sometimes "
 "through ``CC`` and ``CXX`` (in addition to the compiler)."
 msgstr ""
+"Há vários sanitizadores disponíveis, mas dois que devem ser usados "
+"regularmente são o Address Sanitizer (ou ASan) e o Undefined Behavior "
+"Sanitizer (ou UBSan). Em português, o ASan seria sanitizador de endereço e "
+"UBSan seria sanitizador de comportador indefinido. ASan é invocado com a "
+"opção do compilador ``-fsanitize=address``, e UBSan é invocado com ``-"
+"fsanitize=undefined``. Os sinalizadores, ou *flags*, são passados através de "
+"``CFLAGS`` e ``CXXFLAGS``, e algumas vezes através de ``CC`` e ``CXX`` (além "
+"do compilador)."
 
 #: ../../advanced-tools/clang.rst:42
 msgid ""
 "A complete list of sanitizers can be found at `Controlling Code Generation "
 "<https://clang.llvm.org/docs/UsersManual.html#controlling-code-generation>`_."
 msgstr ""
+"Uma lista completa de sanitizadores pode ser encontrada em `Controlling Code "
+"Generation <https://clang.llvm.org/docs/UsersManual.html#controlling-code-"
+"generation>`_."
 
 #: ../../advanced-tools/clang.rst:47
 msgid ""
 "Because sanitizers operate at runtime on real program parameters, its "
 "important to provide a complete set of positive and negative self tests."
 msgstr ""
+"Como os sanitizadores operam em tempo de execução em parâmetros reais do "
+"programa, é importante fornecer um conjunto completo de autotestes positivos "
+"e negativos."
 
 #: ../../advanced-tools/clang.rst:50
 msgid ""
@@ -91,10 +126,14 @@ msgid ""
 "be used to compliment other methods, including Code Reviews, Valgrind, "
 "Coverity, etc."
 msgstr ""
+"Clang e seus sanitizadores têm pontos fortes (e fracos). É apenas uma "
+"ferramenta no baú de guerra para descobrir bugs e melhorar a qualidade do "
+"código. O Clang deve ser usado para complementar outros métodos, incluindo "
+"Code Reviews, Valgrind, Coverity, etc."
 
 #: ../../advanced-tools/clang.rst:56
 msgid "Clang/LLVM Setup"
-msgstr ""
+msgstr "Instalação de Clang/LLVM"
 
 #: ../../advanced-tools/clang.rst:58
 msgid ""
@@ -102,21 +141,29 @@ msgid ""
 "Clang and LLVM. There are three components to download and build. They are "
 "the LLVM compiler, the compiler front end and the compiler runtime library."
 msgstr ""
+"Esta parte do documento abrange o download, a criação e a instalação do "
+"Clang e do LLVM. Existem três componentes para baixar e compilar. Eles são o "
+"compilador LLVM, o front-end do compilador e a biblioteca de tempo de "
+"execução do compilador."
 
 #: ../../advanced-tools/clang.rst:62
 msgid ""
 "In preparation you should create a scratch directory. Also ensure you are "
 "using Python 2 and not Python 3. Python 3 will cause the build to fail."
 msgstr ""
+"Em preparação, você deve criar um diretório temporário. Além disso, "
+"verifique se você está usando o Python 2 e não o Python 3. O Python 3 fará "
+"com que a compilação falhe."
 
 #: ../../advanced-tools/clang.rst:66
 msgid "Download, Build and Install"
-msgstr ""
+msgstr "Baixar, compilar e instalar"
 
 #: ../../advanced-tools/clang.rst:68
 msgid ""
 "Perform the following to download, build and install the Clang/LLVM 3.4. ::"
 msgstr ""
+"Execute o seguinte para baixar, compilar e instalar o Clang/LLVM 3.4. ::"
 
 #: ../../advanced-tools/clang.rst:96
 msgid ""
@@ -124,6 +171,9 @@ msgid ""
 "ensure you are utilizing Python 2 and not Python 3. If you encounter the "
 "error after switching to Python 2, then delete everything and start over."
 msgstr ""
+"Se você receber um erro ``'LibraryDependencies.inc' file not found``, "
+"certifique-se de estar utilizando o Python 2 e não o Python 3. Se você "
+"encontrar o erro após mudar para o Python 2, exclua tudo e comece de novo."
 
 #: ../../advanced-tools/clang.rst:100
 msgid ""
@@ -131,12 +181,17 @@ msgid ""
 "local/bin`` and the various libraries will be installed in ``/usr/local/lib/"
 "clang/3.4/lib/linux/``:"
 msgstr ""
+"Após a execução do ``make install``, os compiladores serão instalados em ``/"
+"usr/local/bin`` e as várias bibliotecas serão instaladas em ``/usr/local/lib/"
+"clang/3.4/lib/linux/``:"
 
 #: ../../advanced-tools/clang.rst:113
 msgid ""
 "On macOS, the libraries are installed in ``/usr/local/lib/clang/3.3/lib/"
 "darwin/``:"
 msgstr ""
+"No macOS, as bibliotecas são instaladas em ``/usr/local/lib/clang/3.3/lib/"
+"darwin/``:"
 
 #: ../../advanced-tools/clang.rst:128
 msgid ""
@@ -146,6 +201,12 @@ msgid ""
 "``CXXFLAGS``, ``LDFLAGS``) during ``configure``, then you should modify the "
 "makefile after configuring to ensure the flag is passed through the compiler."
 msgstr ""
+"Você nunca deve ter que adicionar as bibliotecas a um projeto. Clang cuidará "
+"disso para você. Se você achar que não pode passar o sinalizador ``-"
+"fsanitize=XXX`` através das variáveis implícitas do ``make`` (``CFLAGS``, "
+"``CXXFLAGS``, ``CC``, ``CXXFLAGS`` , ``LDFLAGS``) durante o ``configure``, "
+"então você deve modificar o makefile após a configuração para garantir que o "
+"sinalizador seja passado pelo compilador."
 
 #: ../../advanced-tools/clang.rst:135
 msgid ""
@@ -153,6 +214,10 @@ msgid ""
 "example, you might want to run a ``scan-build`` or examine the results with "
 "``scan-view``. You can copy the components by hand with: ::"
 msgstr ""
+"O instalador ocasionalmente não instala todos os componentes necessários. "
+"Por exemplo, você pode querer executar um ``scan-build`` ou examinar os "
+"resultados com ``scan-view``. Você pode copiar os componentes manualmente "
+"com: ::"
 
 #: ../../advanced-tools/clang.rst:146
 msgid ""
@@ -161,10 +226,14 @@ msgid ""
 "things work as expected. If a library is missing, then you should search for "
 "it in the Clang/LLVM build directory."
 msgstr ""
+"Como o instalador não instala todos os componentes necessários "
+"ocasionalmente, você não deve excluir o diretório temporário até ter certeza "
+"de que tudo está funcionando conforme o esperado. Se uma biblioteca estiver "
+"faltando, você deve procurá-la no diretório de compilação Clang/LLVM."
 
 #: ../../advanced-tools/clang.rst:152
 msgid "Python Build Setup"
-msgstr ""
+msgstr "Configuração da compilação do Python"
 
 #: ../../advanced-tools/clang.rst:154
 msgid ""
@@ -172,6 +241,9 @@ msgid ""
 "required so the sanitizers analyze Python with under its test suite. Two "
 "checkers are used - ASan and UBSan."
 msgstr ""
+"Esta parte do documento aborda a invocação do Clang e do LLVM com as opções "
+"necessárias para que os sanitizadores analisem o Python em seu conjunto de "
+"testes. Dois verificadores são usados - ASan e UBSan."
 
 #: ../../advanced-tools/clang.rst:158
 msgid ""
@@ -179,6 +251,9 @@ msgid ""
 "positive and negative self tests as possible. You can never have enough self "
 "tests."
 msgstr ""
+"Como os sanitizadores são verificadores de tempo de execução, é melhor ter "
+"tantos autotestes positivos e negativos quanto possível. Você nunca pode ter "
+"autotestes suficientes."
 
 #: ../../advanced-tools/clang.rst:161
 msgid ""
@@ -188,6 +263,12 @@ msgid ""
 "the linker because the makefile rules for ``BUILDPYTHON``, ``_testembed`` "
 "and ``_freeze_importlib`` don't use the implicit variables."
 msgstr ""
+"A ideia geral é compilar e vincular com os sinalizadores do sanitizador. No "
+"momento de vinculação ou *link*, o Clang incluirá as bibliotecas de tempo de "
+"execução necessárias. No entanto, você não pode usar ``CFLAGS`` e "
+"``CXXFLAGS`` para passar as opções através do compilador para o vinculador, "
+"ou *linker*, porque as regras do makefile para ``BUILDPYTHON``, "
+"``_testembed`` e ``_freeze_importlib`` não use as variáveis implícitas."
 
 #: ../../advanced-tools/clang.rst:167
 msgid ""
@@ -196,20 +277,26 @@ msgid ""
 "flags though the compiler is used below, but passing them through "
 "``LDFLAGS`` is also reported to work."
 msgstr ""
+"Como solução para a ausência de sinalizadores para o vinculador, você pode "
+"passar as opções do higienizador por meio dos compiladores - ``CC`` e "
+"``CXX``. Passar os sinalizadores pelo compilador é usado abaixo, mas passá-"
+"los através do ``LDFLAGS`` também funciona."
 
 #: ../../advanced-tools/clang.rst:173
 msgid "Building Python"
-msgstr ""
+msgstr "Compilando o Python"
 
 #: ../../advanced-tools/clang.rst:175
 msgid ""
 "To begin, export the variables of interest with the desired sanitizers. Its "
 "OK to specify both sanitizers: ::"
 msgstr ""
+"Para começar, exporte as variáveis de interesse com os sanitizadores "
+"desejados. Não há problema em especificar os dois sanitizadores: ::"
 
 #: ../../advanced-tools/clang.rst:182
 msgid "Or: ::"
-msgstr ""
+msgstr "Ou: ::"
 
 #: ../../advanced-tools/clang.rst:188
 msgid ""
@@ -217,18 +304,23 @@ msgid ""
 "C++ projects due to noise. Its not needed with Python, but you will likely "
 "need it for other C++ projects."
 msgstr ""
+"O ``-fno-sanitize=vptr`` remove verificações a vtable que fazem parte do "
+"UBSan de projetos C++ devido ao ruído. Não é necessário com o Python, mas "
+"você provavelmente precisará dele para outros projetos C++."
 
 #: ../../advanced-tools/clang.rst:192
 msgid "After exporting ``CC`` and ``CXX``, ``configure`` as normal:"
-msgstr ""
+msgstr "Após exportar ``CC`` e ``CXX``, execute o ``configure`` normalmente:"
 
 #: ../../advanced-tools/clang.rst:207
 msgid "Next is a standard ``make`` (formatting added for clarity):"
 msgstr ""
+"O próximo é um ``make`` padrão (formatação adicionada para maior clareza):"
 
 #: ../../advanced-tools/clang.rst:222
 msgid "Finally is ``make test`` (formatting added for clarity):"
 msgstr ""
+"Por fim, temos ``make test`` (formatação adicionada para maior clareza):"
 
 #: ../../advanced-tools/clang.rst:236
 msgid ""
@@ -236,6 +328,10 @@ msgid ""
 "through ``asan_symbolize.py`` to get a good trace. For example, from Issue "
 "20953 during compile (formatting added for clarity):"
 msgstr ""
+"Se você estiver usando o sanitizador de endereços, é importante canalizar a "
+"saída através de ``asan_symbolize.py`` para obter um bom rastreamento ou "
+"*trace*. Por exemplo, da edição 20953 durante a compilação (formatação "
+"adicionada para maior clareza):"
 
 #: ../../advanced-tools/clang.rst:305
 msgid ""
@@ -243,10 +339,13 @@ msgid ""
 "If its not installed, then look in the Clang/LLVM build directory for it and "
 "copy it to ``/usr/local/bin``."
 msgstr ""
+"``asan_symbolize.py`` deve ser instalado durante o ``make install``. Se não "
+"estiver instalado, procure-o no diretório de compilação do Clang/LLVM e "
+"copie-o para ``/usr/local/bin``."
 
 #: ../../advanced-tools/clang.rst:310
 msgid "Blacklisting (Ignoring) Findings"
-msgstr ""
+msgstr "Bloqueando (ignorando) descobertas"
 
 #: ../../advanced-tools/clang.rst:314
 msgid ""
@@ -255,41 +354,58 @@ msgid ""
 "is needed because it reports every instance of an issue, even if the issue "
 "is reported 10's of thousands of time in un-managed library code."
 msgstr ""
+"O Clang permite que você altere o comportamento das ferramentas do "
+"sanitizador para determinado nível de origem, fornecendo um arquivo de lista "
+"negra especial em tempo de compilação. A lista de bloqueio é necessária "
+"porque relata todas as instâncias de um problema, mesmo que o problema seja "
+"relatado dezenas de milhares de vezes em código de biblioteca não gerenciado."
 
 #: ../../advanced-tools/clang.rst:319
 msgid ""
 "You specify the blacklist with ``-fsanitize-blacklist=XXX``. For example::"
 msgstr ""
+"Você especifica a lista de bloqueio com ``-fsanitize-blacklist=XXX``. Por "
+"exemplo::"
 
 #: ../../advanced-tools/clang.rst:323
 msgid ""
 "``my_blacklist.txt`` would then contain entries such as the following. The "
 "entry will ignore a bug in ``libc++``'s ``ios`` formatting functions::"
 msgstr ""
+"``my_blacklist.txt`` conteria entradas como as seguintes. A entrada irá "
+"ignorar um bug nas funções de formatação ``ios`` do ``libc++``::"
 
 #: ../../advanced-tools/clang.rst:328
 msgid ""
 "As an example with Python 3.4.0, ``audioop.c`` will produce a number of "
 "findings::"
 msgstr ""
+"Como um exemplo com Python 3.4.0, ``audioop.c`` produzirá uma série de "
+"descobertas::"
 
 #: ../../advanced-tools/clang.rst:344
 msgid ""
 "One of the function of interest is ``audioop_getsample_impl`` (flagged at "
 "line 422), and the blacklist entry would include::"
 msgstr ""
+"Uma das funções de interesse é ``audioop_getsample_impl`` (sinalizada na "
+"linha 422), e a entrada da lista negra incluiria::"
 
 #: ../../advanced-tools/clang.rst:349
 msgid "Or, you could ignore the entire file with::"
-msgstr ""
+msgstr "Ou você pode ignorar o arquivo inteiro com::"
 
 #: ../../advanced-tools/clang.rst:353
 msgid ""
 "Unfortunately, you won't know what to blacklist until you run the sanitizer."
 msgstr ""
+"Infelizmente, você não saberá o que colocar na lista de bloqueio até "
+"executar o sanitizador."
 
 #: ../../advanced-tools/clang.rst:355
 msgid ""
 "The documentation is available at `Sanitizer special case list <https://"
 "clang.llvm.org/docs/SanitizerSpecialCaseList.html>`_."
 msgstr ""
+"A documentação está disponível em `Lista de casos especiais do sanitizador "
+"<https://clang.llvm.org/docs/SanitizerSpecialCaseList.html>`_."
