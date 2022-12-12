@@ -1517,7 +1517,7 @@ msgstr ""
 
 #: ../../documentation/markup.rst:1169
 msgid "For example::"
-msgstr ""
+msgstr "Por exemplo::"
 
 #: ../../documentation/markup.rst:1177
 msgid ""

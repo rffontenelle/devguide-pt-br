@@ -3,24 +3,27 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-12 15:19-0300\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../advanced-tools/gdb.rst:5
 msgid "GDB support"
-msgstr ""
+msgstr "Suporte ao GDB"
 
 #: ../../advanced-tools/gdb.rst:9
 msgid ""
@@ -33,10 +36,19 @@ msgid ""
 "given Python object represented by a standard ``PyObject *`` pointer.  We "
 "hereafter present two ways to overcome this limitation."
 msgstr ""
+"Se você tiver problemas de baixo nível, como travamentos ou *deadlocks* (por "
+"exemplo, ao mexer em partes do CPython escritas em C), pode ser conveniente "
+"usar um depurador de baixo nível, como o gdb, para diagnosticar e corrigir o "
+"problema. Por padrão, no entanto, o gdb (ou qualquer um de seus front-ends) "
+"não conhece informações de alto nível específicas do interpretador CPython, "
+"como qual função Python está sendo executada no momento ou qual tipo ou "
+"valor tem um determinado objeto Python representado por um ponteiro "
+"``PyObject *`` padrão. Apresentamos a seguir duas maneiras de superar essa "
+"limitação."
 
 #: ../../advanced-tools/gdb.rst:21
 msgid "GDB 7 and later"
-msgstr ""
+msgstr "GDB 7 e posterior"
 
 #: ../../advanced-tools/gdb.rst:23
 msgid ""
@@ -46,28 +58,41 @@ msgid ""
 "checkout. Read the module docstring for details on how to use the file to "
 "enhance gdb for easier debugging of a CPython process."
 msgstr ""
+"No gdb 7, o suporte para `estender o gdb com Python <https://sourceware.org/"
+"gdb/current/onlinedocs/gdb/Python.html#Python>`_ foi adicionado. Quando o "
+"CPython for construído, você notará um arquivo ``python-gdb.py`` no "
+"diretório raiz do seu checkout. Leia a documentação do módulo para obter "
+"detalhes sobre como usar o arquivo para aprimorar o gdb para facilitar a "
+"depuração de um processo CPython."
 
 #: ../../advanced-tools/gdb.rst:29
 msgid ""
 "To activate support, you must add the directory containing ``python-gdb.py`` "
 "to GDB's \"auto-load-safe-path\".  Put this in your ``~/.gdbinit`` file::"
 msgstr ""
+"Para ativar o suporte, você deve adicionar o diretório contendo ``python-gdb."
+"py`` ao \"auto-load-safe-path\" do GDB. Coloque isso no seu arquivo ``~/."
+"gdbinit``::"
 
 #: ../../advanced-tools/gdb.rst:34
 msgid "You can also add multiple paths, separated by ``:``."
-msgstr ""
+msgstr "Você também pode adicionar vários caminhos, separados por ``:``."
 
 #: ../../advanced-tools/gdb.rst:36
 msgid ""
 "This is what a backtrace looks like (truncated) when this extension is "
 "enabled::"
 msgstr ""
+"É assim que um backtrace se parece (truncado) quando esta extensão está "
+"habilitada::"
 
 #: ../../advanced-tools/gdb.rst:55
 msgid ""
 "(Notice how the dictionary argument to ``PyDict_GetItemString`` is displayed "
 "as its ``repr()``, rather than an opaque ``PyObject *`` pointer.)"
 msgstr ""
+"(Observe como o argumento do dicionário para ``PyDict_GetItemString`` é "
+"exibido como seu ``repr()``, em vez de um ponteiro ``PyObject *`` opaco.)"
 
 #: ../../advanced-tools/gdb.rst:58
 msgid ""
@@ -76,6 +101,10 @@ msgid ""
 "object, then cast the value to a pointer of the appropriate type.  For "
 "example::"
 msgstr ""
+"A extensão funciona fornecendo uma rotina de impressão personalizada para "
+"valores do tipo ``PyObject *``. Se você precisar acessar detalhes de nível "
+"inferior de um objeto, converta o valor em um ponteiro do tipo apropriado. "
+"Por exemplo::"
 
 #: ../../advanced-tools/gdb.rst:81
 msgid ""
@@ -83,6 +112,9 @@ msgid ""
 "the underlying implementation of Python, and thus vary somewhat between "
 "Python 2 and Python 3."
 msgstr ""
+"Os *pretty-printters* tentam corresponder de perto à implementação "
+"``repr()`` da implementação subjacente do Python e, portanto, variam um "
+"pouco entre o Python 2 e o Python 3."
 
 #: ../../advanced-tools/gdb.rst:85
 msgid ""
@@ -91,12 +123,19 @@ msgid ""
 "pretty-printer for a Python 3 ``int`` gives a ``repr()`` that is not "
 "distinguishable from a printing of a regular machine-level integer::"
 msgstr ""
+"Uma área que pode ser confusa é que a impressora personalizada para alguns "
+"tipos se parece muito com a impressora integrada do gdb para tipos padrão. "
+"Por exemplo, o *pretty-printer* para Python 3 ``int`` dá um ``repr()`` que "
+"não é distinguível de uma impressão de um inteiro regular no nível da "
+"máquina::"
 
 #: ../../advanced-tools/gdb.rst:100
 msgid ""
 "A similar confusion can arise with the ``str`` type, where the output looks "
 "a lot like gdb's built-in printer for ``char *``::"
 msgstr ""
+"Uma confusão semelhante pode surgir com o tipo ``str``, onde a saída se "
+"parece muito com a impressora interna do gdb para ``char *``::"
 
 #: ../../advanced-tools/gdb.rst:106
 msgid ""
@@ -104,28 +143,38 @@ msgid ""
 "does Python's ``repr`` for strings) whereas the standard printer for ``char "
 "*`` values uses double-quotes and contains a hexadecimal address::"
 msgstr ""
+"O *pretty-printer* para instâncias ``str`` assume como padrão o uso de aspas "
+"simples (assim como o ``repr`` do Python para strings), enquanto o *printer* "
+"padrão para valores ``char *`` usa aspas duplas e contém um endereço "
+"hexadecimal ::"
 
 #: ../../advanced-tools/gdb.rst:113
 msgid ""
 "Here's how to see the implementation details of a ``str`` instance (for "
 "Python 3, where a ``str`` is a ``PyUnicodeObject *``)::"
 msgstr ""
+"Veja como ver os detalhes de implementação de uma instância ``str`` (para "
+"Python 3, onde um ``str`` é um ``PyUnicodeObject *``)::"
 
 #: ../../advanced-tools/gdb.rst:120
 msgid ""
 "As well as adding pretty-printing support for ``PyObject *``, the extension "
 "adds a number of commands to gdb:"
 msgstr ""
+"Além de adicionar suporte a *pretty-print* para ``PyObject *``, a extensão "
+"adiciona vários comandos ao gdb:"
 
 #: ../../advanced-tools/gdb.rst:142
 msgid "``py-list``"
-msgstr ""
+msgstr "``py-list``"
 
 #: ../../advanced-tools/gdb.rst:124
 msgid ""
 "List the Python source code (if any) for the current frame in the selected "
 "thread.  The current line is marked with a \">\"::"
 msgstr ""
+"Lista o código-fonte Python (se houver) para o quadro atual na thread "
+"selecionada. A linha atual é marcada com um \">\"::"
 
 #: ../../advanced-tools/gdb.rst:140
 msgid ""
@@ -133,10 +182,13 @@ msgid ""
 "source, and ``py-list START,END`` to list a specific range of lines within "
 "the python source."
 msgstr ""
+"Use ``py-list START`` para listar em um número de linha diferente dentro da "
+"fonte python, e ``py-list START,END`` para listar um intervalo específico de "
+"linhas dentro da fonte do python."
 
 #: ../../advanced-tools/gdb.rst:192
 msgid "``py-up`` and ``py-down``"
-msgstr ""
+msgstr "``py-up`` e ``py-down``"
 
 #: ../../advanced-tools/gdb.rst:145
 msgid ""
@@ -144,6 +196,9 @@ msgid ""
 "and ``down`` commands, but try to move at the level of CPython frames, "
 "rather than C frames."
 msgstr ""
+"Os comandos ``py-up`` e ``py-down`` são análogos aos comandos regulares "
+"``up`` e ``down`` do gdb, mas tente mover no nível de quadros CPython, em "
+"vez de quadros C."
 
 #: ../../advanced-tools/gdb.rst:149
 msgid ""
@@ -153,42 +208,52 @@ msgid ""
 "implements the core bytecode interpreter loop within CPython) and look up "
 "the value of the related ``PyFrameObject *``."
 msgstr ""
+"O gdb nem sempre é capaz de ler as informações relevantes do quadro, "
+"dependendo do nível de otimização com o qual o CPython foi compilado. "
+"Internamente, os comandos procuram quadros C que estão executando "
+"``PyEval_EvalFrameEx`` (que implementa o laço do interpretador de bytecode "
+"principal dentro do CPython) e procuram o valor do ``PyFrameObject *`` "
+"relacionado."
 
 #: ../../advanced-tools/gdb.rst:155
 msgid "They emit the frame number (at the C level) within the thread."
-msgstr ""
+msgstr "Eles emitem o número do quadro (no nível C) dentro da thread."
 
 #: ../../advanced-tools/gdb.rst:157 ../../advanced-tools/gdb.rst:198
 msgid "For example::"
-msgstr ""
+msgstr "Por exemplo::"
 
 #: ../../advanced-tools/gdb.rst:170
 msgid "so we're at the top of the python stack.  Going back down::"
-msgstr ""
+msgstr "então estamos no topo da pilha do python. Voltando para baixo::"
 
 #: ../../advanced-tools/gdb.rst:192
 msgid "and we're at the bottom of the python stack."
-msgstr ""
+msgstr "e estamos no final da pilha do python."
 
 #: ../../advanced-tools/gdb.rst:215
 msgid "``py-bt``"
-msgstr ""
+msgstr "``py-bt``"
 
 #: ../../advanced-tools/gdb.rst:195
 msgid ""
 "The ``py-bt`` command attempts to display a Python-level backtrace of the "
 "current thread."
 msgstr ""
+"O comando ``py-bt`` tenta exibir um *backtrace* no nível do Python da thread "
+"atual."
 
 #: ../../advanced-tools/gdb.rst:214
 msgid ""
 "The frame numbers correspond to those displayed by gdb's standard "
 "``backtrace`` command."
 msgstr ""
+"Os números dos quadros correspondem àqueles exibidos pelo comando "
+"``backtrace`` padrão do gdb."
 
 #: ../../advanced-tools/gdb.rst:230
 msgid "``py-print``"
-msgstr ""
+msgstr "``py-print``"
 
 #: ../../advanced-tools/gdb.rst:218
 msgid ""
@@ -196,16 +261,21 @@ msgid ""
 "looks in locals within the current thread, then globals, then finally "
 "builtins::"
 msgstr ""
+"O comando ``py-print`` procura um nome Python e tenta imprimi-lo. Ele "
+"procura locais dentro da thread atual, depois globais e, finalmente, "
+"embutidos::"
 
 #: ../../advanced-tools/gdb.rst:239
 msgid "``py-locals``"
-msgstr ""
+msgstr "``py-locals``"
 
 #: ../../advanced-tools/gdb.rst:233
 msgid ""
 "The ``py-locals`` command looks up all Python locals within the current "
 "Python frame in the selected thread, and prints their representations::"
 msgstr ""
+"O comando ``py-locals`` procura todos os locais do Python dentro do quadro "
+"atual do Python na thread selecionada e imprime suas representações::"
 
 #: ../../advanced-tools/gdb.rst:241
 msgid ""
@@ -213,12 +283,19 @@ msgid ""
 "command takes you directly to a particular frame within the selected thread. "
 "We can use it to go a specific frame shown by ``py-bt`` like this::"
 msgstr ""
+"É claro que você pode usar outros comandos gdb. Por exemplo, o comando "
+"``frame`` leva você diretamente a um quadro específico dentro da thread "
+"selecionada. Podemos usá-lo para ir a um quadro específico mostrado por ``py-"
+"bt`` assim::"
 
 #: ../../advanced-tools/gdb.rst:260
 msgid ""
 "The ``info threads`` command will give you a list of the threads within the "
 "process, and you can use the ``thread`` command to select a different one::"
 msgstr ""
+"O comando ``info threads`` lhe dará uma lista das threads dentro do "
+"processo, e você pode usar o comando ``thread`` para selecionar um "
+"diferente::"
 
 #: ../../advanced-tools/gdb.rst:268
 msgid ""
@@ -226,14 +303,17 @@ msgid ""
 "run a command on all threads.  You can use this with ``py-bt`` to see what "
 "every thread is doing at the Python level::"
 msgstr ""
+"Você pode usar ``thread apply all COMANDO`` ou (``t a a COMANDO`` para "
+"abreviar) para executar um comando em todos os threads. Você pode usar isso "
+"com ``py-bt`` para ver o que cada thread está fazendo no nível do Python::"
 
 #: ../../advanced-tools/gdb.rst:300
 msgid "This is only available for Python 2.7, 3.2 and higher."
-msgstr ""
+msgstr "Isso está disponível apenas para Python 2.7, 3.2 e superior."
 
 #: ../../advanced-tools/gdb.rst:304
 msgid "GDB 6 and earlier"
-msgstr ""
+msgstr "GDB 6 ou anterior"
 
 #: ../../advanced-tools/gdb.rst:306
 msgid ""
@@ -244,10 +324,17 @@ msgid ""
 "these commands from a single gdb session without registering them, type "
 "``source Misc/gdbinit`` from your gdb session."
 msgstr ""
+"O arquivo em ``Misc/gdbinit`` contém um arquivo de configuração gdb que "
+"fornece comandos extras ao trabalhar com um processo CPython. Para registrar "
+"esses comandos permanentemente, copie os comandos para seu arquivo de "
+"configuração gdb pessoal ou crie um link simbólico ``~/.gdbinit`` para "
+"``Misc/gdbinit``. Para usar esses comandos de uma única sessão gdb sem "
+"registrá-los, digite ``source Misc/gdbinit`` de sua sessão gdb."
 
 #: ../../advanced-tools/gdb.rst:315
 msgid "Updating auto-load-safe-path to allow test_gdb to run"
 msgstr ""
+"Atualizando auto-load-safe-path para permitir que test_gdb seja executado"
 
 #: ../../advanced-tools/gdb.rst:317
 msgid ""
@@ -255,6 +342,9 @@ msgid ""
 "into gdb in order to test them. Unfortunately, the command line options it "
 "uses to do this aren't always supported correctly."
 msgstr ""
+"``test_gdb`` tenta carregar automaticamente ganchos adicionais específicos "
+"do Python no gdb para testá-los. Infelizmente, as opções de linha de comando "
+"que ele usa para fazer isso nem sempre são suportadas corretamente."
 
 #: ../../advanced-tools/gdb.rst:321
 msgid ""
@@ -263,20 +353,27 @@ msgid ""
 "auto-load safe. One way to achieve this is to add a line like the following "
 "to ``~/.gdbinit`` (edit the specific list of paths as appropriate)::"
 msgstr ""
+"Se ``test_gdb`` estiver sendo ignorado com uma mensagem \"auto-loading has "
+"been failed\", então é necessário identificar quaisquer diretórios de "
+"construção do Python como seguros para carregamento automático. Uma maneira "
+"de conseguir isso é adicionar uma linha como a seguinte a ``~/.gdbinit`` "
+"(edite a lista específica de caminhos conforme apropriado)::"
 
 #: ../../advanced-tools/gdb.rst:330
 msgid "GDB tips"
-msgstr ""
+msgstr "Dicas de GDB"
 
 #: ../../advanced-tools/gdb.rst:332
 msgid ""
 "Learning to use GDB effectively improves your chances of successfully "
 "debugging problems with Python's internals."
 msgstr ""
+"Aprender a usar o GDB efetivamente melhora suas chances de depurar com "
+"sucesso problemas internos do Python."
 
 #: ../../advanced-tools/gdb.rst:336
 msgid "Saving and loading breakpoints"
-msgstr ""
+msgstr "Salvando e carregando pontos de interrupção"
 
 #: ../../advanced-tools/gdb.rst:338
 msgid ""
@@ -285,16 +382,22 @@ msgid ""
 "execute when they are hit. For convenience, save your breakpoints to a file "
 "and load them in future sessions using the ``save breakpoints`` command::"
 msgstr ""
+"Com a exposição estendida a partes específicas do tempo de execução do "
+"Python, pode ser útil definir um conjunto de rotina de pontos de interrupção "
+"e comandos a serem executados quando forem atingidos. Por conveniência, "
+"salve seus pontos de interrupção em um arquivo e carregue-os em sessões "
+"futuras usando o comando ``save breakpoints``::"
 
 #: ../../advanced-tools/gdb.rst:346
 msgid ""
 "You can edit the file to your heart's content, then load it in a later "
 "session::"
 msgstr ""
+"Você pode editar o arquivo como quiser e carregá-lo em uma sessão posterior::"
 
 #: ../../advanced-tools/gdb.rst:353
 msgid "Breaking at labels"
-msgstr ""
+msgstr "Interrompendo em rótulos"
 
 #: ../../advanced-tools/gdb.rst:355
 msgid ""
@@ -309,6 +412,18 @@ msgid ""
 "will be prefaced with a label named ``TARGET_<instruction>``, e.g., "
 "``TARGET_LOAD_CONST``.  You can then set a breakpoint with a command like::"
 msgstr ""
+"Na maioria das vezes, você definirá pontos de interrupção no início das "
+"funções, mas essa abordagem é menos útil ao depurar a máquina virtual de "
+"tempo de execução, pois a principal função de laço do interpretador, "
+"``_PyEval_EvalFrameDefault``, tem mais de 4.000 linhas desde o Python 3.12. "
+"Felizmente, entre as `muitas maneiras de definir pontos de interrupção "
+"<https://sourceware.org/gdb/onlinedocs/gdb/Specify-Location.html>`_, você "
+"pode interromper em rótulos C, como aqueles gerados para *gotos*\\s "
+"computados. Se você estiver depurando um interpretador compilado com suporte "
+"a *goto* computado (geralmente verdadeiro, certamente ao usar o GCC), cada "
+"instrução será prefaciada com um rótulo chamado ``TARGET_<instrução>``, por "
+"exemplo, ``TARGET_LOAD_CONST``. Você pode então definir um ponto de "
+"interrupção com um comando como::"
 
 #: ../../advanced-tools/gdb.rst:370
 msgid ""
@@ -316,3 +431,6 @@ msgid ""
 "worrying that the starting line number of individual instructions change "
 "over time."
 msgstr ""
+"Adicione comandos, salve em um arquivo e recarregue em sessões futuras sem "
+"se preocupar com a mudança do número da linha inicial de instruções "
+"individuais com o tempo."
