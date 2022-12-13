@@ -413,7 +413,7 @@ msgstr ""
 #: ../../developer-workflow/development-cycle.rst:261
 #: ../../developer-workflow/development-cycle.rst:308
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: ../../developer-workflow/development-cycle.rst:261
 #: ../../developer-workflow/development-cycle.rst:308
@@ -437,7 +437,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:263
 msgid "benjaminp"
-msgstr ""
+msgstr "benjaminp"
 
 #: ../../developer-workflow/development-cycle.rst:265
 msgid "Noah Kantrowitz"
@@ -449,11 +449,11 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:267
 msgid "Donald Stufft"
-msgstr ""
+msgstr "Donald Stufft"
 
 #: ../../developer-workflow/development-cycle.rst:267
 msgid "dstufft"
-msgstr ""
+msgstr "dstufft"
 
 #: ../../developer-workflow/development-cycle.rst:269
 msgid "Ee Durbin"
@@ -491,7 +491,7 @@ msgstr ""
 #: ../../developer-workflow/development-cycle.rst:273
 #: ../../developer-workflow/development-cycle.rst:313
 msgid "ambv"
-msgstr ""
+msgstr "ambv"
 
 #: ../../developer-workflow/development-cycle.rst:276
 msgid ""
@@ -533,7 +533,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:310
 msgid "Pablo Galindo"
-msgstr ""
+msgstr "Pablo Galindo"
 
 #: ../../developer-workflow/development-cycle.rst:310
 msgid "Python 3.10 and 3.11 Release Manager, Maintainer of buildbot.python.org"
@@ -541,7 +541,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:310
 msgid "pablogsal"
-msgstr ""
+msgstr "pablogsal"
 
 #: ../../developer-workflow/development-cycle.rst:313
 msgid ""
@@ -559,7 +559,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:316
 msgid "ned-deily"
-msgstr ""
+msgstr "ned-deily"
 
 #: ../../developer-workflow/development-cycle.rst:318
 msgid "Larry Hastings"
@@ -571,7 +571,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:318
 msgid "larryhastings"
-msgstr ""
+msgstr "larryhastings"
 
 #: ../../developer-workflow/development-cycle.rst:320
 msgid "Berker Peksag"
@@ -583,19 +583,19 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:320
 msgid "berkerpeksag"
-msgstr ""
+msgstr "berkerpeksag"
 
 #: ../../developer-workflow/development-cycle.rst:322
 msgid "Brett Cannon"
-msgstr ""
+msgstr "Brett Cannon"
 
 #: ../../developer-workflow/development-cycle.rst:322
 msgid "brettcannon"
-msgstr ""
+msgstr "brettcannon"
 
 #: ../../developer-workflow/development-cycle.rst:324
 msgid "Ezio Melotti"
-msgstr ""
+msgstr "Ezio Melotti"
 
 #: ../../developer-workflow/development-cycle.rst:324
 msgid "Maintainer of bugs.python.org GitHub webhook integration"
@@ -603,7 +603,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:324
 msgid "ezio-melotti"
-msgstr ""
+msgstr "ezio-melotti"
 
 #: ../../developer-workflow/development-cycle.rst:326
 msgid "Mariatta Wijaya"
@@ -615,7 +615,7 @@ msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:326
 msgid "Mariatta"
-msgstr ""
+msgstr "Mariatta"
 
 #: ../../developer-workflow/development-cycle.rst:330
 msgid "Repository Release Manager Role Policy"

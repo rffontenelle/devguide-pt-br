@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../getting-started/getting-help.rst:105
 msgid "Zachary Ware"
-msgstr ""
+msgstr "Zachary Ware"
 
 #: ../../getting-started/getting-help.rst:105
 msgid "See details link"

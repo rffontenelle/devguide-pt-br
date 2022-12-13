@@ -196,7 +196,7 @@ msgstr ""
 
 #: ../../internals/exploring.rst:1
 msgid "Guido van Rossum"
-msgstr ""
+msgstr "Guido van Rossum"
 
 #: ../../internals/exploring.rst:1
 msgid "3.5"
@@ -276,7 +276,7 @@ msgstr ""
 
 #: ../../internals/exploring.rst:1
 msgid "Eli Bendersky"
-msgstr ""
+msgstr "Eli Bendersky"
 
 #: ../../internals/exploring.rst:1
 msgid "3.x"
