@@ -2,7 +2,7 @@
 
 version: 2
 
-# Clone debguide and copy PO files inside its tree to be built
+# Clone devguide and copy PO files inside its tree to be built
 build:
   os: ubuntu-22.04
   tools:
