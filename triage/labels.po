@@ -1,8 +1,7 @@
-# SOME DESCRIPTIVE TITLE.
+# Brazilian Portuguese translation for triage/labels.po
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 #, fuzzy
 msgid ""
