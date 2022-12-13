@@ -196,7 +196,7 @@ msgstr ""
 
 #: ../../documentation/start-documenting.rst:149
 msgid "Translating"
-msgstr ""
+msgstr "Tradução"
 
 #: ../../documentation/start-documenting.rst:151
 msgid "Moved to :doc:`translating`"
