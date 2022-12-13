@@ -9,16 +9,14 @@ build:
     python: "3.10"
   jobs:
     post_create_environment:
-      - git clone https://github.com/python/devguide
-      - mkdir -p devguide/locales/pt_BR/LC_MESSAGES/
-      - shopt -s extglob
-      - cp -r !(devguide) devguide/locales/pt_BR/LC_MESSAGES/
+      - git clone https://github.com/python/devguide ../devguide
+      - echo -e '\nlocales_dir = ../devguide-pt-br' >> ../devguide/conf.py
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
-   configuration: devguide/conf.py
+   configuration: ../devguide/conf.py
 
 # Optionally declare the Python requirements required to build your docs
 python:
    install:
-   - requirements: devguide/requirements.txt
+   - requirements: ../devguide/requirements.txt
