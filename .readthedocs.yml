@@ -1,0 +1,23 @@
+# .readthedocs.yml for devguide-pt-br
+
+version: 2
+
+# Clone debguide and copy PO files inside its tree to be built
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.10"
+  jobs:
+    post_create_environment:
+      - git clone https://github.com/python/devguide
+      - for po in $(git ls-files *.po **/*.po); do install -Dm644 $po devguide/locales/pt_BR/LC_MESSAGES/$po; done
+
+# use conf.py given by devguide
+sphinx:
+   configuration: devguide/conf.py
+
+# use requirements given by devguide
+python:
+   install:
+   - requirements: devguide/requirements.txt
+
