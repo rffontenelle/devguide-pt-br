@@ -1,8 +1,8 @@
-# .readthedocs.yml for devguide-pt-br
+# .readthedocs.yaml for devguide-pt-br
 
+# Required
 version: 2
 
-# Clone devguide and copy PO files inside its tree to be built
 build:
   os: ubuntu-22.04
   tools:
@@ -10,15 +10,14 @@ build:
   jobs:
     post_create_environment:
       - git clone https://github.com/python/devguide
-      - ls devguide
-      - for po in `git ls-files *.po **/*.po`; do install -Dm644 $po devguide/locales/pt_BR/LC_MESSAGES/$po; done
+      - mkdir -p devguide/locales/pt_BR/LC_MESSAGES/
+      - cp -R *.po *.*po devguide/locales/pt_BR/LC_MESSAGES/
 
-# use conf.py given by devguide
+# Build documentation in the docs/ directory with Sphinx
 sphinx:
    configuration: devguide/conf.py
 
-# use requirements given by devguide
+# Optionally declare the Python requirements required to build your docs
 python:
    install:
    - requirements: devguide/requirements.txt
-
