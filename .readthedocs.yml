@@ -10,7 +10,8 @@ build:
   jobs:
     post_create_environment:
       - git clone https://github.com/python/devguide ../devguide
-      - echo -e '\nlocales_dir = ../devguide-pt-br' >> ../devguide/conf.py
+      - echo >> ../devguide/conf.py
+      - echo "locales_dir = ../devguide-pt-br" >> ../devguide/conf.py
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
