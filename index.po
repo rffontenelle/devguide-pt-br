@@ -263,7 +263,7 @@ msgstr "Triagers"
 
 #: ../../index.rst:119
 msgid "Core Developers"
-msgstr "Desenvolvedores Core"
+msgstr "Desenvolvedores core"
 
 #: ../../index.rst:121
 msgid ":ref:`setup`"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../documentation/start-documenting.rst:6
 msgid "Getting Started"
-msgstr ""
+msgstr "Primeiros passos"
 
 #: ../../documentation/start-documenting.rst:10
 msgid ""
