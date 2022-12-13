@@ -512,7 +512,7 @@ msgstr ""
 
 #: ../../triage/labels.rst:255
 msgid "Documentation"
-msgstr ""
+msgstr "Documentação"
 
 #: ../../triage/labels.rst:255
 msgid ""
