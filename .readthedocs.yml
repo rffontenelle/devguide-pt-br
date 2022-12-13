@@ -10,7 +10,8 @@ build:
   jobs:
     post_create_environment:
       - git clone https://github.com/python/devguide
-      - for po in $(git ls-files *.po **/*.po); do install -Dm644 $po devguide/locales/pt_BR/LC_MESSAGES/$po; done
+      - ls devguide
+      - for po in `git ls-files *.po **/*.po`; do install -Dm644 $po devguide/locales/pt_BR/LC_MESSAGES/$po; done
 
 # use conf.py given by devguide
 sphinx:
