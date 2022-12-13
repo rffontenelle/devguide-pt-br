@@ -11,7 +11,8 @@ build:
     post_create_environment:
       - git clone https://github.com/python/devguide
       - mkdir -p devguide/locales/pt_BR/LC_MESSAGES/
-      - cp -R *.po */*.po devguide/locales/pt_BR/LC_MESSAGES/
+      - shopt -s extglob
+      - cp -r !(devguide) devguide/locales/pt_BR/LC_MESSAGES/
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
