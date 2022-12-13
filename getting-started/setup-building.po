@@ -325,7 +325,7 @@ msgstr ""
 
 #: ../../getting-started/setup-building.rst:246
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../getting-started/setup-building.rst:248
 msgid ""
@@ -430,7 +430,7 @@ msgstr ""
 
 #: ../../getting-started/setup-building.rst:335
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../getting-started/setup-building.rst:337
 msgid ""

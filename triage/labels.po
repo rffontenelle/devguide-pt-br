@@ -465,7 +465,7 @@ msgstr ""
 
 #: ../../triage/labels.rst:227
 msgid "performance"
-msgstr ""
+msgstr "desempenho"
 
 #: ../../triage/labels.rst:227
 msgid ""

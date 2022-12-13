@@ -3,24 +3,27 @@
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-12 23:20-0300\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.11.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: ../../core-developers/experts.rst:5
 msgid "Experts Index"
-msgstr ""
+msgstr "Índice de especialistas"
 
 #: ../../core-developers/experts.rst:7
 msgid ""
@@ -35,6 +38,18 @@ msgid ""
 "discuss.python.org/c/core-dev/23>`__, while any other issues can and should "
 "be decided by any committer."
 msgstr ""
+"Este documento possui tabelas que listam Módulos, Ferramentas, Plataformas e "
+"Áreas de Interesse no Python e nomes do GitHub para cada item que indicam um "
+"mantenedor ou um especialista na área. Esta lista destina-se a ser usada por "
+"remetentes de problemas, pessoas de triagem de problemas e outros "
+"participantes de problemas para encontrar pessoas para @mencionar ou "
+"adicionar como revisores a relatórios de problemas e pull requests. As "
+"pessoas nesta lista podem ser solicitadas a emitir um julgamento final sobre "
+"um recurso ou bug. Se nenhum mantenedor ativo estiver listado para um "
+"determinado módulo, então mudanças questionáveis devem ser discutidas na "
+"`categoria Core Development do Discourse <https://discuss.python.org/c/core-"
+"dev/23>`__, enquanto quaisquer outros problemas pode e deve ser decidido por "
+"qualquer committer."
 
 #: ../../core-developers/experts.rst:18
 msgid ""
@@ -43,6 +58,11 @@ msgid ""
 "automatically.  The :file:`CODEOWNERS` file is also used to indicate "
 "maintainers that will be automatically added as reviewers to pull requests."
 msgstr ""
+"Os desenvolvedores podem optar por seguir rótulos, portanto, se um rótulo "
+"que eles estão seguindo for adicionado a um relatório de problemas ou pull "
+"request, eles serão notificados automaticamente. O arquivo :file:"
+"`CODEOWNERS` também é usado para indicar os mantenedores que serão "
+"adicionados automaticamente como revisores para pull request."
 
 #: ../../core-developers/experts.rst:23
 msgid ""
@@ -50,12 +70,17 @@ msgid ""
 "person.  Names followed by a '*' may be assigned issues involving the module "
 "or topic."
 msgstr ""
+"A menos que um nome seja seguido por um '*', você nunca deve atribuir um "
+"problema a essa pessoa. Nomes seguidos por um '*' podem ser atribuídos a "
+"soluções de problemas envolvendo o módulo ou tópico."
 
 #: ../../core-developers/experts.rst:27
 msgid ""
 "Names followed by a '^' indicate old bugs.python.org usernames, for people "
 "that did not transition to GitHub."
 msgstr ""
+"Nomes seguidos por um '^' indicam nomes de usuários antigos do bugs.python."
+"org, para pessoas que não fizeram a transição para o GitHub."
 
 #: ../../core-developers/experts.rst:30
 msgid ""
@@ -63,6 +88,10 @@ msgid ""
 "people have expertise.  These people can also be contacted for help, "
 "opinions, and decisions when issues involve their areas."
 msgstr ""
+"As tabelas de Plataforma e Área de Interesse listam campos mais amplos nos "
+"quais várias pessoas têm experiência. Essas pessoas também podem ser "
+"contatadas para obter ajuda, opiniões e decisões quando os problemas "
+"envolvem suas áreas."
 
 #: ../../core-developers/experts.rst:34
 msgid ""
@@ -71,12 +100,20 @@ msgid ""
 "this list by placing the word 'inactive' in parenthesis behind their tracker "
 "id.  They are of course free to remove that inactive mark at any time."
 msgstr ""
+"Se um mantenedor listado não responder aos pedidos de comentários por um "
+"período prolongado (três semanas ou mais), ele deve ser marcado como inativo "
+"nesta lista colocando a palavra 'inactive' (na tradução, usou-se "
+"\"inativo\") entre parênteses atrás de seu ID de rastreador. Eles são livres "
+"para remover essa marca inativa a qualquer momento."
 
 #: ../../core-developers/experts.rst:40
 msgid ""
 "Committers should update these tables as their areas of expertise widen. New "
 "topics may be added to the Interest Area table at will."
 msgstr ""
+"Os committers devem atualizar essas tabelas à medida que suas áreas de "
+"especialização aumentam. Novos tópicos podem ser adicionados à tabela Área "
+"de Interesse à vontade."
 
 #: ../../core-developers/experts.rst:43
 msgid ""
@@ -85,47 +122,51 @@ msgid ""
 "committers to find responsible parties, and by committers who do not feel "
 "qualified to make a decision in a particular context."
 msgstr ""
+"A existência desta lista não indica que essas pessoas *devem* ser contatadas "
+"para decisões; é, antes, um recurso a ser usado por não-committers para "
+"encontrar responsáveis, e por committers que não se sentem qualificados para "
+"tomar uma decisão em um contexto particular."
 
 #: ../../core-developers/experts.rst:50
 msgid "Stdlib"
-msgstr ""
+msgstr "Stdlib"
 
 #: ../../core-developers/experts.rst:53
 msgid "Module"
-msgstr ""
+msgstr "Módulo"
 
 #: ../../core-developers/experts.rst:53 ../../core-developers/experts.rst:284
 #: ../../core-developers/experts.rst:295 ../../core-developers/experts.rst:315
 msgid "Maintainers"
-msgstr ""
+msgstr "Mantenedores"
 
 #: ../../core-developers/experts.rst:55
 msgid "__future__"
-msgstr ""
+msgstr "__future__"
 
 #: ../../core-developers/experts.rst:56
 msgid "__main__"
-msgstr ""
+msgstr "__main__"
 
 #: ../../core-developers/experts.rst:56
 msgid "gvanrossum, ncoghlan"
-msgstr ""
+msgstr "gvanrossum, ncoghlan"
 
 #: ../../core-developers/experts.rst:57
 msgid "_thread"
-msgstr ""
+msgstr "_thread"
 
 #: ../../core-developers/experts.rst:58
 msgid "_testbuffer"
-msgstr ""
+msgstr "_testbuffer"
 
 #: ../../core-developers/experts.rst:59
 msgid "abc"
-msgstr ""
+msgstr "abc"
 
 #: ../../core-developers/experts.rst:60
 msgid "aifc"
-msgstr ""
+msgstr "aifc"
 
 #: ../../core-developers/experts.rst:60
 msgid "bitdancer"
@@ -133,47 +174,47 @@ msgstr "bitdancer"
 
 #: ../../core-developers/experts.rst:61
 msgid "argparse"
-msgstr ""
+msgstr "argparse"
 
 #: ../../core-developers/experts.rst:62
 msgid "array"
-msgstr ""
+msgstr "array"
 
 #: ../../core-developers/experts.rst:63
 msgid "ast"
-msgstr ""
+msgstr "ast"
 
 #: ../../core-developers/experts.rst:63
 msgid "benjaminp, pablogsal, isidentical"
-msgstr ""
+msgstr "benjaminp, pablogsal, isidentical"
 
 #: ../../core-developers/experts.rst:64
 msgid "asynchat"
-msgstr ""
+msgstr "asynchat"
 
 #: ../../core-developers/experts.rst:64 ../../core-developers/experts.rst:66
 msgid "josiahcarlson, giampaolo*, stutzbach^"
-msgstr ""
+msgstr "josiahcarlson, giampaolo*, stutzbach^"
 
 #: ../../core-developers/experts.rst:65
 msgid "asyncio"
-msgstr ""
+msgstr "asyncio"
 
 #: ../../core-developers/experts.rst:65
 msgid "1st1, asvetlov, gvanrossum, graingert, kumaraditya303"
-msgstr ""
+msgstr "1st1, asvetlov, gvanrossum, graingert, kumaraditya303"
 
 #: ../../core-developers/experts.rst:66
 msgid "asyncore"
-msgstr ""
+msgstr "asyncore"
 
 #: ../../core-developers/experts.rst:67
 msgid "atexit"
-msgstr ""
+msgstr "atexit"
 
 #: ../../core-developers/experts.rst:68
 msgid "audioop"
-msgstr ""
+msgstr "audioop"
 
 #: ../../core-developers/experts.rst:68 ../../core-developers/experts.rst:169
 msgid "serhiy-storchaka"
@@ -181,61 +222,61 @@ msgstr "serhiy-storchaka"
 
 #: ../../core-developers/experts.rst:69
 msgid "base64"
-msgstr ""
+msgstr "base64"
 
 #: ../../core-developers/experts.rst:70
 msgid "bdb"
-msgstr ""
+msgstr "bdb"
 
 #: ../../core-developers/experts.rst:71
 msgid "binascii"
-msgstr ""
+msgstr "binascii"
 
 #: ../../core-developers/experts.rst:72
 msgid "binhex"
-msgstr ""
+msgstr "binhex"
 
 #: ../../core-developers/experts.rst:73
 msgid "bisect"
-msgstr ""
+msgstr "bisect"
 
 #: ../../core-developers/experts.rst:73 ../../core-developers/experts.rst:85
 #: ../../core-developers/experts.rst:121 ../../core-developers/experts.rst:143
 #: ../../core-developers/experts.rst:190 ../../core-developers/experts.rst:317
 msgid "rhettinger*"
-msgstr ""
+msgstr "rhettinger*"
 
 #: ../../core-developers/experts.rst:74
 msgid "builtins"
-msgstr ""
+msgstr "builtins"
 
 #: ../../core-developers/experts.rst:75
 msgid "bz2"
-msgstr ""
+msgstr "bz2"
 
 #: ../../core-developers/experts.rst:76
 msgid "calendar"
-msgstr ""
+msgstr "calendar"
 
 #: ../../core-developers/experts.rst:77
 msgid "cgi"
-msgstr ""
+msgstr "cgi"
 
 #: ../../core-developers/experts.rst:77 ../../core-developers/experts.rst:78
 msgid "ethanfurman*"
-msgstr ""
+msgstr "ethanfurman*"
 
 #: ../../core-developers/experts.rst:78
 msgid "cgitb"
-msgstr ""
+msgstr "cgitb"
 
 #: ../../core-developers/experts.rst:79
 msgid "chunk"
-msgstr ""
+msgstr "chunk"
 
 #: ../../core-developers/experts.rst:80
 msgid "cmath"
-msgstr ""
+msgstr "cmath"
 
 #: ../../core-developers/experts.rst:80 ../../core-developers/experts.rst:119
 #: ../../core-developers/experts.rst:329
@@ -244,75 +285,75 @@ msgstr "mdickinson"
 
 #: ../../core-developers/experts.rst:81
 msgid "cmd"
-msgstr ""
+msgstr "cmd"
 
 #: ../../core-developers/experts.rst:82
 msgid "code"
-msgstr ""
+msgstr "code"
 
 #: ../../core-developers/experts.rst:83
 msgid "codecs"
-msgstr ""
+msgstr "codecs"
 
 #: ../../core-developers/experts.rst:83
 msgid "malemburg, doerwalter"
-msgstr ""
+msgstr "malemburg, doerwalter"
 
 #: ../../core-developers/experts.rst:84
 msgid "codeop"
-msgstr ""
+msgstr "codeop"
 
 #: ../../core-developers/experts.rst:85
 msgid "collections"
-msgstr ""
+msgstr "collections"
 
 #: ../../core-developers/experts.rst:86
 msgid "collections.abc"
-msgstr ""
+msgstr "collections.abc"
 
 #: ../../core-developers/experts.rst:86 ../../core-developers/experts.rst:130
 msgid "rhettinger*, stutzbach^"
-msgstr ""
+msgstr "rhettinger*, stutzbach^"
 
 #: ../../core-developers/experts.rst:87
 msgid "colorsys"
-msgstr ""
+msgstr "colorsys"
 
 #: ../../core-developers/experts.rst:88
 msgid "compileall"
-msgstr ""
+msgstr "compileall"
 
 #: ../../core-developers/experts.rst:89
 msgid "concurrent.futures"
-msgstr ""
+msgstr "concurrent.futures"
 
 #: ../../core-developers/experts.rst:89
 msgid "pitrou, brianquinlan, gpshead*"
-msgstr ""
+msgstr "pitrou, brianquinlan, gpshead*"
 
 #: ../../core-developers/experts.rst:90
 msgid "configparser"
-msgstr ""
+msgstr "configparser"
 
 #: ../../core-developers/experts.rst:90
 msgid "ambv*"
-msgstr ""
+msgstr "ambv*"
 
 #: ../../core-developers/experts.rst:91
 msgid "contextlib"
-msgstr ""
+msgstr "contextlib"
 
 #: ../../core-developers/experts.rst:91
 msgid "ncoghlan, 1st1"
-msgstr ""
+msgstr "ncoghlan, 1st1"
 
 #: ../../core-developers/experts.rst:92
 msgid "contextvars"
-msgstr ""
+msgstr "contextvars"
 
 #: ../../core-developers/experts.rst:93
 msgid "copy"
-msgstr ""
+msgstr "copy"
 
 #: ../../core-developers/experts.rst:93 ../../core-developers/experts.rst:94
 #: ../../core-developers/experts.rst:174 ../../core-developers/experts.rst:175
@@ -321,39 +362,39 @@ msgstr "avassalotti"
 
 #: ../../core-developers/experts.rst:94
 msgid "copyreg"
-msgstr ""
+msgstr "copyreg"
 
 #: ../../core-developers/experts.rst:95
 msgid "cProfile"
-msgstr ""
+msgstr "cProfile"
 
 #: ../../core-developers/experts.rst:96
 msgid "crypt"
-msgstr ""
+msgstr "crypt"
 
 #: ../../core-developers/experts.rst:96 ../../core-developers/experts.rst:227
 msgid "jafo^*"
-msgstr ""
+msgstr "jafo^*"
 
 #: ../../core-developers/experts.rst:97
 msgid "csv"
-msgstr ""
+msgstr "csv"
 
 #: ../../core-developers/experts.rst:97
 msgid "smontanaro (inactive)"
-msgstr ""
+msgstr "smontanaro (inativo)"
 
 #: ../../core-developers/experts.rst:98
 msgid "ctypes"
-msgstr ""
+msgstr "ctypes"
 
 #: ../../core-developers/experts.rst:98
 msgid "theller (inactive), abalkin, amauryfa, meadori"
-msgstr ""
+msgstr "theller (inativo), abalkin, amauryfa, meadori"
 
 #: ../../core-developers/experts.rst:99
 msgid "curses"
-msgstr ""
+msgstr "curses"
 
 #: ../../core-developers/experts.rst:99 ../../core-developers/experts.rst:112
 #: ../../core-developers/experts.rst:114 ../../core-developers/experts.rst:157
@@ -364,45 +405,45 @@ msgstr "Yhg1s"
 
 #: ../../core-developers/experts.rst:100
 msgid "dataclasses"
-msgstr ""
+msgstr "dataclasses"
 
 #: ../../core-developers/experts.rst:100 ../../core-developers/experts.rst:336
 #: ../../core-developers/experts.rst:356
 msgid "ericvsmith*"
-msgstr ""
+msgstr "ericvsmith*"
 
 #: ../../core-developers/experts.rst:101
 msgid "datetime"
-msgstr ""
+msgstr "datetime"
 
 #: ../../core-developers/experts.rst:101 ../../core-developers/experts.rst:236
 msgid "abalkin, pganssle"
-msgstr ""
+msgstr "abalkin, pganssle"
 
 #: ../../core-developers/experts.rst:102
 msgid "dbm"
-msgstr ""
+msgstr "dbm"
 
 #: ../../core-developers/experts.rst:103
 msgid "decimal"
-msgstr ""
+msgstr "decimal"
 
 #: ../../core-developers/experts.rst:103
 msgid "facundobatista, rhettinger, mdickinson"
-msgstr ""
+msgstr "facundobatista, rhettinger, mdickinson"
 
 #: ../../core-developers/experts.rst:104
 msgid "difflib"
-msgstr ""
+msgstr "difflib"
 
 #: ../../core-developers/experts.rst:104 ../../core-developers/experts.rst:107
 #: ../../core-developers/experts.rst:228
 msgid "tim-one (inactive)"
-msgstr ""
+msgstr "tim-one (inativo)"
 
 #: ../../core-developers/experts.rst:105
 msgid "dis"
-msgstr ""
+msgstr "dis"
 
 #: ../../core-developers/experts.rst:105 ../../core-developers/experts.rst:140
 #: ../../core-developers/experts.rst:246
@@ -411,27 +452,27 @@ msgstr "1st1"
 
 #: ../../core-developers/experts.rst:106
 msgid "distutils"
-msgstr ""
+msgstr "distutils"
 
 #: ../../core-developers/experts.rst:106
 msgid "merwok, dstufft"
-msgstr ""
+msgstr "merwok, dstufft"
 
 #: ../../core-developers/experts.rst:107
 msgid "doctest"
-msgstr ""
+msgstr "doctest"
 
 #: ../../core-developers/experts.rst:108
 msgid "email"
-msgstr ""
+msgstr "email"
 
 #: ../../core-developers/experts.rst:108
 msgid "warsaw, bitdancer*, maxking"
-msgstr ""
+msgstr "warsaw, bitdancer*, maxking"
 
 #: ../../core-developers/experts.rst:109
 msgid "encodings"
-msgstr ""
+msgstr "encodings"
 
 #: ../../core-developers/experts.rst:109 ../../core-developers/experts.rst:149
 #: ../../core-developers/experts.rst:178 ../../core-developers/experts.rst:330
@@ -441,151 +482,151 @@ msgstr "malemburg"
 
 #: ../../core-developers/experts.rst:110
 msgid "ensurepip"
-msgstr ""
+msgstr "ensurepip"
 
 #: ../../core-developers/experts.rst:110
 msgid "ncoghlan, dstufft, pradyunsg"
-msgstr ""
+msgstr "ncoghlan, dstufft, pradyunsg"
 
 #: ../../core-developers/experts.rst:111
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: ../../core-developers/experts.rst:111
 msgid "eliben*, warsaw, ethanfurman*"
-msgstr ""
+msgstr "eliben*, warsaw, ethanfurman*"
 
 #: ../../core-developers/experts.rst:112
 msgid "errno"
-msgstr ""
+msgstr "errno"
 
 #: ../../core-developers/experts.rst:113
 msgid "faulthandler"
-msgstr ""
+msgstr "faulthandler"
 
 #: ../../core-developers/experts.rst:113
 msgid "vstinner, gpshead"
-msgstr ""
+msgstr "vstinner, gpshead"
 
 #: ../../core-developers/experts.rst:114
 msgid "fcntl"
-msgstr ""
+msgstr "fcntl"
 
 #: ../../core-developers/experts.rst:115
 msgid "filecmp"
-msgstr ""
+msgstr "filecmp"
 
 #: ../../core-developers/experts.rst:116
 msgid "fileinput"
-msgstr ""
+msgstr "fileinput"
 
 #: ../../core-developers/experts.rst:117
 msgid "fnmatch"
-msgstr ""
+msgstr "fnmatch"
 
 #: ../../core-developers/experts.rst:118
 msgid "formatter"
-msgstr ""
+msgstr "formatter"
 
 #: ../../core-developers/experts.rst:119
 msgid "fractions"
-msgstr ""
+msgstr "fractions"
 
 #: ../../core-developers/experts.rst:120
 msgid "ftplib"
-msgstr ""
+msgstr "ftplib"
 
 #: ../../core-developers/experts.rst:120
 msgid "giampaolo*"
-msgstr ""
+msgstr "giampaolo*"
 
 #: ../../core-developers/experts.rst:121
 msgid "functools"
-msgstr ""
+msgstr "functools"
 
 #: ../../core-developers/experts.rst:122
 msgid "gc"
-msgstr ""
+msgstr "gc"
 
 #: ../../core-developers/experts.rst:122
 msgid "pitrou, pablogsal"
-msgstr ""
+msgstr "pitrou, pablogsal"
 
 #: ../../core-developers/experts.rst:123
 msgid "getopt"
-msgstr ""
+msgstr "getopt"
 
 #: ../../core-developers/experts.rst:124
 msgid "getpass"
-msgstr ""
+msgstr "getpass"
 
 #: ../../core-developers/experts.rst:125
 msgid "gettext"
-msgstr ""
+msgstr "gettext"
 
 #: ../../core-developers/experts.rst:126
 msgid "glob"
-msgstr ""
+msgstr "glob"
 
 #: ../../core-developers/experts.rst:127
 msgid "grp"
-msgstr ""
+msgstr "grp"
 
 #: ../../core-developers/experts.rst:128
 msgid "gzip"
-msgstr ""
+msgstr "gzip"
 
 #: ../../core-developers/experts.rst:129
 msgid "hashlib"
-msgstr ""
+msgstr "hashlib"
 
 #: ../../core-developers/experts.rst:129 ../../core-developers/experts.rst:131
 msgid "tiran, gpshead*"
-msgstr ""
+msgstr "tiran, gpshead*"
 
 #: ../../core-developers/experts.rst:130
 msgid "heapq"
-msgstr ""
+msgstr "heapq"
 
 #: ../../core-developers/experts.rst:131
 msgid "hmac"
-msgstr ""
+msgstr "hmac"
 
 #: ../../core-developers/experts.rst:132
 msgid "html"
-msgstr ""
+msgstr "html"
 
 #: ../../core-developers/experts.rst:132
 msgid "ezio-melotti*"
-msgstr ""
+msgstr "ezio-melotti*"
 
 #: ../../core-developers/experts.rst:133
 msgid "http"
-msgstr ""
+msgstr "http"
 
 #: ../../core-developers/experts.rst:134
 msgid "idlelib"
-msgstr ""
+msgstr "idlelib"
 
 #: ../../core-developers/experts.rst:134
 msgid "kbkaiser (inactive), terryjreedy*, serwy (inactive), taleinat"
-msgstr ""
+msgstr "kbkaiser (inativo), terryjreedy*, serwy (inativo), taleinat"
 
 #: ../../core-developers/experts.rst:136
 msgid "imaplib"
-msgstr ""
+msgstr "imaplib"
 
 #: ../../core-developers/experts.rst:137
 msgid "imghdr"
-msgstr ""
+msgstr "imghdr"
 
 #: ../../core-developers/experts.rst:138
 msgid "imp"
-msgstr ""
+msgstr "imp"
 
 #: ../../core-developers/experts.rst:139
 msgid "importlib"
-msgstr ""
+msgstr "importlib"
 
 #: ../../core-developers/experts.rst:139
 msgid "brettcannon"
@@ -593,43 +634,43 @@ msgstr "brettcannon"
 
 #: ../../core-developers/experts.rst:140
 msgid "inspect"
-msgstr ""
+msgstr "inspect"
 
 #: ../../core-developers/experts.rst:141 ../../core-developers/experts.rst:340
 msgid "io"
-msgstr ""
+msgstr "io"
 
 #: ../../core-developers/experts.rst:141
 msgid "benjaminp, stutzbach^"
-msgstr ""
+msgstr "benjaminp, stutzbach^"
 
 #: ../../core-developers/experts.rst:142
 msgid "ipaddress"
-msgstr ""
+msgstr "ipaddress"
 
 #: ../../core-developers/experts.rst:142
 msgid "pmoody^"
-msgstr ""
+msgstr "pmoody^"
 
 #: ../../core-developers/experts.rst:143
 msgid "itertools"
-msgstr ""
+msgstr "itertools"
 
 #: ../../core-developers/experts.rst:144
 msgid "json"
-msgstr ""
+msgstr "json"
 
 #: ../../core-developers/experts.rst:144
 msgid "etrepum (inactive), ezio-melotti, rhettinger"
-msgstr ""
+msgstr "etrepum (inativo), ezio-melotti, rhettinger"
 
 #: ../../core-developers/experts.rst:145
 msgid "keyword"
-msgstr ""
+msgstr "keyword"
 
 #: ../../core-developers/experts.rst:146
 msgid "lib2to3"
-msgstr ""
+msgstr "lib2to3"
 
 #: ../../core-developers/experts.rst:146 ../../core-developers/experts.rst:224
 #: ../../core-developers/experts.rst:352
@@ -638,19 +679,19 @@ msgstr "benjaminp"
 
 #: ../../core-developers/experts.rst:147
 msgid "libmpdec"
-msgstr ""
+msgstr "libmpdec"
 
 #: ../../core-developers/experts.rst:148
 msgid "linecache"
-msgstr ""
+msgstr "linecache"
 
 #: ../../core-developers/experts.rst:149 ../../core-developers/experts.rst:341
 msgid "locale"
-msgstr ""
+msgstr "locale"
 
 #: ../../core-developers/experts.rst:150
 msgid "logging"
-msgstr ""
+msgstr "logging"
 
 #: ../../core-developers/experts.rst:150 ../../core-developers/experts.rst:254
 msgid "vsajip"
@@ -658,83 +699,83 @@ msgstr "vsajip"
 
 #: ../../core-developers/experts.rst:151
 msgid "lzma"
-msgstr ""
+msgstr "lzma"
 
 #: ../../core-developers/experts.rst:152
 msgid "mailbox"
-msgstr ""
+msgstr "mailbox"
 
 #: ../../core-developers/experts.rst:153
 msgid "mailcap"
-msgstr ""
+msgstr "mailcap"
 
 #: ../../core-developers/experts.rst:154
 msgid "marshal"
-msgstr ""
+msgstr "marshal"
 
 #: ../../core-developers/experts.rst:155
 msgid "math"
-msgstr ""
+msgstr "math"
 
 #: ../../core-developers/experts.rst:155
 msgid "mdickinson, rhettinger, stutzbach^"
-msgstr ""
+msgstr "mdickinson, rhettinger, stutzbach^"
 
 #: ../../core-developers/experts.rst:156
 msgid "mimetypes"
-msgstr ""
+msgstr "mimetypes"
 
 #: ../../core-developers/experts.rst:157
 msgid "mmap"
-msgstr ""
+msgstr "mmap"
 
 #: ../../core-developers/experts.rst:158
 msgid "modulefinder"
-msgstr ""
+msgstr "modulefinder"
 
 #: ../../core-developers/experts.rst:158
 msgid "theller (inactive), jvr^"
-msgstr ""
+msgstr "theller (inativo), jvr^"
 
 #: ../../core-developers/experts.rst:159
 msgid "msilib"
-msgstr ""
+msgstr "msilib"
 
 #: ../../core-developers/experts.rst:160
 msgid "msvcrt"
-msgstr ""
+msgstr "msvcrt"
 
 #: ../../core-developers/experts.rst:161
 msgid "multiprocessing"
-msgstr ""
+msgstr "multiprocessing"
 
 #: ../../core-developers/experts.rst:161
 msgid "applio*, pitrou, jnoller^ (inactive), sbt^ (inactive), gpshead*"
-msgstr ""
+msgstr "applio*, pitrou, jnoller^ (inativo), sbt^ (inativo), gpshead*"
 
 #: ../../core-developers/experts.rst:162
 msgid "netrc"
-msgstr ""
+msgstr "netrc"
 
 #: ../../core-developers/experts.rst:163
 msgid "nis"
-msgstr ""
+msgstr "nis"
 
 #: ../../core-developers/experts.rst:164
 msgid "nntplib"
-msgstr ""
+msgstr "nntplib"
 
 #: ../../core-developers/experts.rst:165
 msgid "numbers"
-msgstr ""
+msgstr "numbers"
 
 #: ../../core-developers/experts.rst:166
 msgid "operator"
-msgstr ""
+msgstr "operator"
 
 #: ../../core-developers/experts.rst:167
 msgid "optparse"
-msgstr ""
+msgstr "optparse"
 
 #: ../../core-developers/experts.rst:167
 msgid "mitsuhiko"
@@ -742,71 +783,71 @@ msgstr "mitsuhiko"
 
 #: ../../core-developers/experts.rst:168
 msgid "os"
-msgstr ""
+msgstr "os"
 
 #: ../../core-developers/experts.rst:169
 msgid "os.path"
-msgstr ""
+msgstr "os.path"
 
 #: ../../core-developers/experts.rst:170
 msgid "ossaudiodev"
-msgstr ""
+msgstr "ossaudiodev"
 
 #: ../../core-developers/experts.rst:171
 msgid "parser"
-msgstr ""
+msgstr "parser"
 
 #: ../../core-developers/experts.rst:171
 msgid "benjaminp, pablogsal"
-msgstr ""
+msgstr "benjaminp, pablogsal"
 
 #: ../../core-developers/experts.rst:172
 msgid "pathlib"
-msgstr ""
+msgstr "pathlib"
 
 #: ../../core-developers/experts.rst:173
 msgid "pdb"
-msgstr ""
+msgstr "pdb"
 
 #: ../../core-developers/experts.rst:174
 msgid "pickle"
-msgstr ""
+msgstr "pickle"
 
 #: ../../core-developers/experts.rst:175
 msgid "pickletools"
-msgstr ""
+msgstr "pickletools"
 
 #: ../../core-developers/experts.rst:176
 msgid "pipes"
-msgstr ""
+msgstr "pipes"
 
 #: ../../core-developers/experts.rst:177
 msgid "pkgutil"
-msgstr ""
+msgstr "pkgutil"
 
 #: ../../core-developers/experts.rst:178
 msgid "platform"
-msgstr ""
+msgstr "platform"
 
 #: ../../core-developers/experts.rst:179
 msgid "plistlib"
-msgstr ""
+msgstr "plistlib"
 
 #: ../../core-developers/experts.rst:180
 msgid "poplib"
-msgstr ""
+msgstr "poplib"
 
 #: ../../core-developers/experts.rst:181
 msgid "posix"
-msgstr ""
+msgstr "posix"
 
 #: ../../core-developers/experts.rst:181
 msgid "larryhastings, gpshead"
-msgstr ""
+msgstr "larryhastings, gpshead"
 
 #: ../../core-developers/experts.rst:182
 msgid "pprint"
-msgstr ""
+msgstr "pprint"
 
 #: ../../core-developers/experts.rst:182 ../../core-developers/experts.rst:257
 msgid "freddrake"
@@ -814,32 +855,32 @@ msgstr "freddrake"
 
 #: ../../core-developers/experts.rst:183
 msgid "profile"
-msgstr ""
+msgstr "profile"
 
 #: ../../core-developers/experts.rst:184
 msgid "pstats"
-msgstr ""
+msgstr "pstats"
 
 #: ../../core-developers/experts.rst:185
 msgid "pty"
-msgstr ""
+msgstr "pty"
 
 #: ../../core-developers/experts.rst:185 ../../core-developers/experts.rst:244
 #: ../../core-developers/experts.rst:275 ../../core-developers/experts.rst:320
 msgid "Yhg1s*"
-msgstr ""
+msgstr "Yhg1s*"
 
 #: ../../core-developers/experts.rst:186
 msgid "pwd"
-msgstr ""
+msgstr "pwd"
 
 #: ../../core-developers/experts.rst:187
 msgid "py_compile"
-msgstr ""
+msgstr "py_compile"
 
 #: ../../core-developers/experts.rst:188
 msgid "pyclbr"
-msgstr ""
+msgstr "pyclbr"
 
 #: ../../core-developers/experts.rst:188
 msgid "isidentical"
@@ -847,51 +888,51 @@ msgstr "isidentical"
 
 #: ../../core-developers/experts.rst:189
 msgid "pydoc"
-msgstr ""
+msgstr "pydoc"
 
 #: ../../core-developers/experts.rst:190
 msgid "queue"
-msgstr ""
+msgstr "queue"
 
 #: ../../core-developers/experts.rst:191
 msgid "quopri"
-msgstr ""
+msgstr "quopri"
 
 #: ../../core-developers/experts.rst:192
 msgid "random"
-msgstr ""
+msgstr "random"
 
 #: ../../core-developers/experts.rst:192
 msgid "rhettinger, mdickinson"
-msgstr ""
+msgstr "rhettinger, mdickinson"
 
 #: ../../core-developers/experts.rst:193
 msgid "re"
-msgstr ""
+msgstr "re"
 
 #: ../../core-developers/experts.rst:193
 msgid "ezio-melotti, serhiy-storchaka"
-msgstr ""
+msgstr "ezio-melotti, serhiy-storchaka"
 
 #: ../../core-developers/experts.rst:194
 msgid "readline"
-msgstr ""
+msgstr "readline"
 
 #: ../../core-developers/experts.rst:195
 msgid "reprlib"
-msgstr ""
+msgstr "reprlib"
 
 #: ../../core-developers/experts.rst:196
 msgid "resource"
-msgstr ""
+msgstr "resource"
 
 #: ../../core-developers/experts.rst:197
 msgid "rlcompleter"
-msgstr ""
+msgstr "rlcompleter"
 
 #: ../../core-developers/experts.rst:198
 msgid "runpy"
-msgstr ""
+msgstr "runpy"
 
 #: ../../core-developers/experts.rst:198 ../../core-developers/experts.rst:325
 msgid "ncoghlan"
@@ -899,43 +940,43 @@ msgstr "ncoghlan"
 
 #: ../../core-developers/experts.rst:199
 msgid "sched"
-msgstr ""
+msgstr "sched"
 
 #: ../../core-developers/experts.rst:200
 msgid "secrets"
-msgstr ""
+msgstr "secrets"
 
 #: ../../core-developers/experts.rst:201
 msgid "select"
-msgstr ""
+msgstr "select"
 
 #: ../../core-developers/experts.rst:202
 msgid "selectors"
-msgstr ""
+msgstr "selectors"
 
 #: ../../core-developers/experts.rst:202
 msgid "neologix^, giampaolo"
-msgstr ""
+msgstr "neologix^, giampaolo"
 
 #: ../../core-developers/experts.rst:203
 msgid "shelve"
-msgstr ""
+msgstr "shelve"
 
 #: ../../core-developers/experts.rst:204
 msgid "shlex"
-msgstr ""
+msgstr "shlex"
 
 #: ../../core-developers/experts.rst:205
 msgid "shutil"
-msgstr ""
+msgstr "shutil"
 
 #: ../../core-developers/experts.rst:205
 msgid "tarekziade, giampaolo"
-msgstr ""
+msgstr "tarekziade, giampaolo"
 
 #: ../../core-developers/experts.rst:206
 msgid "signal"
-msgstr ""
+msgstr "signal"
 
 #: ../../core-developers/experts.rst:206 ../../core-developers/experts.rst:211
 #: ../../core-developers/experts.rst:359
@@ -944,11 +985,11 @@ msgstr "gpshead"
 
 #: ../../core-developers/experts.rst:207
 msgid "site"
-msgstr ""
+msgstr "site"
 
 #: ../../core-developers/experts.rst:208
 msgid "smtpd"
-msgstr ""
+msgstr "smtpd"
 
 #: ../../core-developers/experts.rst:208 ../../core-developers/experts.rst:335
 msgid "giampaolo"
@@ -956,43 +997,43 @@ msgstr "giampaolo"
 
 #: ../../core-developers/experts.rst:209
 msgid "smtplib"
-msgstr ""
+msgstr "smtplib"
 
 #: ../../core-developers/experts.rst:210
 msgid "sndhdr"
-msgstr ""
+msgstr "sndhdr"
 
 #: ../../core-developers/experts.rst:211
 msgid "socket"
-msgstr ""
+msgstr "socket"
 
 #: ../../core-developers/experts.rst:212
 msgid "socketserver"
-msgstr ""
+msgstr "socketserver"
 
 #: ../../core-developers/experts.rst:213
 msgid "spwd"
-msgstr ""
+msgstr "spwd"
 
 #: ../../core-developers/experts.rst:214
 msgid "sqlite3"
-msgstr ""
+msgstr "sqlite3"
 
 #: ../../core-developers/experts.rst:214
 msgid "ghaering^, erlend-aasland*"
-msgstr ""
+msgstr "ghaering^, erlend-aasland*"
 
 #: ../../core-developers/experts.rst:215
 msgid "ssl"
-msgstr ""
+msgstr "ssl"
 
 #: ../../core-developers/experts.rst:215
 msgid "jackjansen, tiran, dstufft, alex"
-msgstr ""
+msgstr "jackjansen, tiran, dstufft, alex"
 
 #: ../../core-developers/experts.rst:216
 msgid "stat"
-msgstr ""
+msgstr "stat"
 
 #: ../../core-developers/experts.rst:216
 msgid "tiran"
@@ -1000,55 +1041,55 @@ msgstr "tiran"
 
 #: ../../core-developers/experts.rst:217
 msgid "statistics"
-msgstr ""
+msgstr "statistics"
 
 #: ../../core-developers/experts.rst:217
 msgid "stevendaprano, rhettinger"
-msgstr ""
+msgstr "stevendaprano, rhettinger"
 
 #: ../../core-developers/experts.rst:218
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #: ../../core-developers/experts.rst:219
 msgid "stringprep"
-msgstr ""
+msgstr "stringprep"
 
 #: ../../core-developers/experts.rst:220
 msgid "struct"
-msgstr ""
+msgstr "struct"
 
 #: ../../core-developers/experts.rst:220
 msgid "mdickinson, meadori"
-msgstr ""
+msgstr "mdickinson, meadori"
 
 #: ../../core-developers/experts.rst:221
 msgid "subprocess"
-msgstr ""
+msgstr "subprocess"
 
 #: ../../core-developers/experts.rst:221
 msgid "astrand^ (inactive), giampaolo, gpshead*"
-msgstr ""
+msgstr "astrand^ (inativo), giampaolo, gpshead*"
 
 #: ../../core-developers/experts.rst:222
 msgid "sunau"
-msgstr ""
+msgstr "sunau"
 
 #: ../../core-developers/experts.rst:223
 msgid "symbol"
-msgstr ""
+msgstr "symbol"
 
 #: ../../core-developers/experts.rst:224
 msgid "symtable"
-msgstr ""
+msgstr "symtable"
 
 #: ../../core-developers/experts.rst:225
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 #: ../../core-developers/experts.rst:226
 msgid "sysconfig"
-msgstr ""
+msgstr "sysconfig"
 
 #: ../../core-developers/experts.rst:226
 msgid "FFY00"
@@ -1056,15 +1097,15 @@ msgstr "FFY00"
 
 #: ../../core-developers/experts.rst:227
 msgid "syslog"
-msgstr ""
+msgstr "syslog"
 
 #: ../../core-developers/experts.rst:228
 msgid "tabnanny"
-msgstr ""
+msgstr "tabnanny"
 
 #: ../../core-developers/experts.rst:229
 msgid "tarfile"
-msgstr ""
+msgstr "tarfile"
 
 #: ../../core-developers/experts.rst:229
 msgid "gustaebel"
@@ -1072,19 +1113,19 @@ msgstr "gustaebel"
 
 #: ../../core-developers/experts.rst:230
 msgid "telnetlib"
-msgstr ""
+msgstr "telnetlib"
 
 #: ../../core-developers/experts.rst:231
 msgid "tempfile"
-msgstr ""
+msgstr "tempfile"
 
 #: ../../core-developers/experts.rst:232
 msgid "termios"
-msgstr ""
+msgstr "termios"
 
 #: ../../core-developers/experts.rst:233
 msgid "test"
-msgstr ""
+msgstr "test"
 
 #: ../../core-developers/experts.rst:233 ../../core-developers/experts.rst:322
 msgid "ezio-melotti"
@@ -1092,39 +1133,39 @@ msgstr "ezio-melotti"
 
 #: ../../core-developers/experts.rst:234
 msgid "textwrap"
-msgstr ""
+msgstr "textwrap"
 
 #: ../../core-developers/experts.rst:235
 msgid "threading"
-msgstr ""
+msgstr "threading"
 
 #: ../../core-developers/experts.rst:235
 msgid "pitrou, gpshead"
-msgstr ""
+msgstr "pitrou, gpshead"
 
 #: ../../core-developers/experts.rst:236
 msgid "time"
-msgstr ""
+msgstr "time"
 
 #: ../../core-developers/experts.rst:237
 msgid "timeit"
-msgstr ""
+msgstr "timeit"
 
 #: ../../core-developers/experts.rst:238
 msgid "tkinter"
-msgstr ""
+msgstr "tkinter"
 
 #: ../../core-developers/experts.rst:238
 msgid "gpolo^, serhiy-storchaka"
-msgstr ""
+msgstr "gpolo^, serhiy-storchaka"
 
 #: ../../core-developers/experts.rst:239
 msgid "token"
-msgstr ""
+msgstr "token"
 
 #: ../../core-developers/experts.rst:240
 msgid "tokenize"
-msgstr ""
+msgstr "tokenize"
 
 #: ../../core-developers/experts.rst:240
 msgid "meadori"
@@ -1132,7 +1173,7 @@ msgstr "meadori"
 
 #: ../../core-developers/experts.rst:241
 msgid "trace"
-msgstr ""
+msgstr "trace"
 
 #: ../../core-developers/experts.rst:241
 msgid "abalkin"
@@ -1140,7 +1181,7 @@ msgstr "abalkin"
 
 #: ../../core-developers/experts.rst:242
 msgid "traceback"
-msgstr ""
+msgstr "traceback"
 
 #: ../../core-developers/experts.rst:242
 msgid "iritkatriel"
@@ -1148,7 +1189,7 @@ msgstr "iritkatriel"
 
 #: ../../core-developers/experts.rst:243
 msgid "tracemalloc"
-msgstr ""
+msgstr "tracemalloc"
 
 #: ../../core-developers/experts.rst:243
 msgid "vstinner"
@@ -1156,55 +1197,55 @@ msgstr "vstinner"
 
 #: ../../core-developers/experts.rst:244
 msgid "tty"
-msgstr ""
+msgstr "tty"
 
 #: ../../core-developers/experts.rst:245
 msgid "turtle"
-msgstr ""
+msgstr "turtle"
 
 #: ../../core-developers/experts.rst:245
 msgid "gregorlingl^, willingc"
-msgstr ""
+msgstr "gregorlingl^, willingc"
 
 #: ../../core-developers/experts.rst:246
 msgid "types"
-msgstr ""
+msgstr "types"
 
 #: ../../core-developers/experts.rst:247
 msgid "typing"
-msgstr ""
+msgstr "typing"
 
 #: ../../core-developers/experts.rst:247
 msgid "gvanrossum, Fidget-Spinner, JelleZijlstra*, AlexWaygood*"
-msgstr ""
+msgstr "gvanrossum, Fidget-Spinner, JelleZijlstra*, AlexWaygood*"
 
 #: ../../core-developers/experts.rst:248
 msgid "unicodedata"
-msgstr ""
+msgstr "unicodedata"
 
 #: ../../core-developers/experts.rst:248
 msgid "malemburg, ezio-melotti"
-msgstr ""
+msgstr "malemburg, ezio-melotti"
 
 #: ../../core-developers/experts.rst:249
 msgid "unittest"
-msgstr ""
+msgstr "unittest"
 
 #: ../../core-developers/experts.rst:249
 msgid "voidspace*, ezio-melotti, rbtcollins, gpshead"
-msgstr ""
+msgstr "voidspace*, ezio-melotti, rbtcollins, gpshead"
 
 #: ../../core-developers/experts.rst:250
 msgid "unittest.mock"
-msgstr ""
+msgstr "unittest.mock"
 
 #: ../../core-developers/experts.rst:250
 msgid "voidspace*"
-msgstr ""
+msgstr "voidspace*"
 
 #: ../../core-developers/experts.rst:251
 msgid "urllib"
-msgstr ""
+msgstr "urllib"
 
 #: ../../core-developers/experts.rst:251
 msgid "orsenthil"
@@ -1212,47 +1253,47 @@ msgstr "orsenthil"
 
 #: ../../core-developers/experts.rst:252
 msgid "uu"
-msgstr ""
+msgstr "uu"
 
 #: ../../core-developers/experts.rst:253
 msgid "uuid"
-msgstr ""
+msgstr "uuid"
 
 #: ../../core-developers/experts.rst:254
 msgid "venv"
-msgstr ""
+msgstr "venv"
 
 #: ../../core-developers/experts.rst:255
 msgid "warnings"
-msgstr ""
+msgstr "warnings"
 
 #: ../../core-developers/experts.rst:256
 msgid "wave"
-msgstr ""
+msgstr "wave"
 
 #: ../../core-developers/experts.rst:257
 msgid "weakref"
-msgstr ""
+msgstr "weakref"
 
 #: ../../core-developers/experts.rst:258
 msgid "webbrowser"
-msgstr ""
+msgstr "webbrowser"
 
 #: ../../core-developers/experts.rst:259
 msgid "winreg"
-msgstr ""
+msgstr "winreg"
 
 #: ../../core-developers/experts.rst:259
 msgid "stutzbach^"
-msgstr ""
+msgstr "stutzbach^"
 
 #: ../../core-developers/experts.rst:260
 msgid "winsound"
-msgstr ""
+msgstr "winsound"
 
 #: ../../core-developers/experts.rst:261
 msgid "wsgiref"
-msgstr ""
+msgstr "wsgiref"
 
 #: ../../core-developers/experts.rst:261
 msgid "pjenvey"
@@ -1260,55 +1301,55 @@ msgstr "pjenvey"
 
 #: ../../core-developers/experts.rst:262
 msgid "xdrlib"
-msgstr ""
+msgstr "xdrlib"
 
 #: ../../core-developers/experts.rst:263
 msgid "xml.dom"
-msgstr ""
+msgstr "xml.dom"
 
 #: ../../core-developers/experts.rst:264
 msgid "xml.dom.minidom"
-msgstr ""
+msgstr "xml.dom.minidom"
 
 #: ../../core-developers/experts.rst:265
 msgid "xml.dom.pulldom"
-msgstr ""
+msgstr "xml.dom.pulldom"
 
 #: ../../core-developers/experts.rst:266
 msgid "xml.etree"
-msgstr ""
+msgstr "xml.etree"
 
 #: ../../core-developers/experts.rst:266
 msgid "eliben*, scoder"
-msgstr ""
+msgstr "eliben*, scoder"
 
 #: ../../core-developers/experts.rst:267
 msgid "xml.parsers.expat"
-msgstr ""
+msgstr "xml.parsers.expat"
 
 #: ../../core-developers/experts.rst:268
 msgid "xml.sax"
-msgstr ""
+msgstr "xml.sax"
 
 #: ../../core-developers/experts.rst:269
 msgid "xml.sax.handler"
-msgstr ""
+msgstr "xml.sax.handler"
 
 #: ../../core-developers/experts.rst:270
 msgid "xml.sax.saxutils"
-msgstr ""
+msgstr "xml.sax.saxutils"
 
 #: ../../core-developers/experts.rst:271
 msgid "xml.sax.xmlreader"
-msgstr ""
+msgstr "xml.sax.xmlreader"
 
 #: ../../core-developers/experts.rst:272
 msgid "xmlrpc"
-msgstr ""
+msgstr "xmlrpc"
 
 #: ../../core-developers/experts.rst:273
 msgid "zipapp"
-msgstr ""
+msgstr "zipapp"
 
 #: ../../core-developers/experts.rst:273
 msgid "pfmoore"
@@ -1316,35 +1357,35 @@ msgstr "pfmoore"
 
 #: ../../core-developers/experts.rst:274
 msgid "zipfile"
-msgstr ""
+msgstr "zipfile"
 
 #: ../../core-developers/experts.rst:274
 msgid "alanmcintyre^, serhiy-storchaka, Yhg1s, gpshead"
-msgstr ""
+msgstr "alanmcintyre^, serhiy-storchaka, Yhg1s, gpshead"
 
 #: ../../core-developers/experts.rst:275
 msgid "zipimport"
-msgstr ""
+msgstr "zipimport"
 
 #: ../../core-developers/experts.rst:276
 msgid "zlib"
-msgstr ""
+msgstr "zlib"
 
 #: ../../core-developers/experts.rst:276
 msgid "Yhg1s, gpshead*"
-msgstr ""
+msgstr "Yhg1s, gpshead*"
 
 #: ../../core-developers/experts.rst:281
 msgid "Tools"
-msgstr ""
+msgstr "Ferramentas"
 
 #: ../../core-developers/experts.rst:284
 msgid "Tool"
-msgstr ""
+msgstr "Ferramenta"
 
 #: ../../core-developers/experts.rst:286
 msgid "Argument Clinic"
-msgstr ""
+msgstr "Clínica de Argumento"
 
 #: ../../core-developers/experts.rst:286 ../../core-developers/experts.rst:318
 msgid "larryhastings"
@@ -1352,71 +1393,71 @@ msgstr "larryhastings"
 
 #: ../../core-developers/experts.rst:287
 msgid "PEG Generator"
-msgstr ""
+msgstr "Gerador PEG (ou GASE)"
 
 #: ../../core-developers/experts.rst:287 ../../core-developers/experts.rst:349
 msgid "gvanrossum, pablogsal, lysnikolaou"
-msgstr ""
+msgstr "gvanrossum, pablogsal, lysnikolaou"
 
 #: ../../core-developers/experts.rst:292
 msgid "Platforms"
-msgstr ""
+msgstr "Plataformas"
 
 #: ../../core-developers/experts.rst:295
 msgid "Platform"
-msgstr ""
+msgstr "Plataforma"
 
 #: ../../core-developers/experts.rst:297
 msgid "AIX"
-msgstr ""
+msgstr "AIX"
 
 #: ../../core-developers/experts.rst:297
 msgid "David.Edelsohn^"
-msgstr ""
+msgstr "David.Edelsohn^"
 
 #: ../../core-developers/experts.rst:298
 msgid "Cygwin"
-msgstr ""
+msgstr "Cygwin"
 
 #: ../../core-developers/experts.rst:298
 msgid "jlt63^, stutzbach^"
-msgstr ""
+msgstr "jlt63^, stutzbach^"
 
 #: ../../core-developers/experts.rst:299
 msgid "FreeBSD"
-msgstr ""
+msgstr "FreeBSD"
 
 #: ../../core-developers/experts.rst:300
 msgid "HP-UX"
-msgstr ""
+msgstr "HP-UX"
 
 #: ../../core-developers/experts.rst:301
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../core-developers/experts.rst:302
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../core-developers/experts.rst:302
 msgid "ronaldoussoren, ned-deily"
-msgstr ""
+msgstr "ronaldoussoren, ned-deily"
 
 #: ../../core-developers/experts.rst:303
 msgid "NetBSD1"
-msgstr ""
+msgstr "NetBSD1"
 
 #: ../../core-developers/experts.rst:304
 msgid "OS2/EMX"
-msgstr ""
+msgstr "OS2/EMX"
 
 #: ../../core-developers/experts.rst:304
 msgid "aimacintyre^"
-msgstr ""
+msgstr "aimacintyre^"
 
 #: ../../core-developers/experts.rst:305
 msgid "Solaris/OpenIndiana"
-msgstr ""
+msgstr "Solaris/OpenIndiana"
 
 #: ../../core-developers/experts.rst:305
 msgid "jcea"
@@ -1424,129 +1465,131 @@ msgstr "jcea"
 
 #: ../../core-developers/experts.rst:306
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../core-developers/experts.rst:306
 msgid "tjguk, zware, zooba, pfmoore"
-msgstr ""
+msgstr "tjguk, zware, zooba, pfmoore"
 
 #: ../../core-developers/experts.rst:307
 msgid "JVM/Java"
-msgstr ""
+msgstr "JVM/Java"
 
 #: ../../core-developers/experts.rst:307
 msgid "frank.wierzbicki^"
-msgstr ""
+msgstr "frank.wierzbicki^"
 
 #: ../../core-developers/experts.rst:312
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Diversos"
 
 #: ../../core-developers/experts.rst:315
 msgid "Interest Area"
-msgstr ""
+msgstr "Área de Interesse"
 
 #: ../../core-developers/experts.rst:317
 msgid "algorithms"
-msgstr ""
+msgstr "algorithms"
 
 #: ../../core-developers/experts.rst:318
 msgid "argument clinic"
-msgstr ""
+msgstr "clínica de argumento"
 
 #: ../../core-developers/experts.rst:319
 msgid "ast/compiler"
-msgstr ""
+msgstr "ast/compilador"
 
 #: ../../core-developers/experts.rst:319
 msgid ""
 "benjaminp, brettcannon, 1st1, pablogsal, markshannon, isidentical, "
 "brandtbucher"
 msgstr ""
+"benjaminp, brettcannon, 1st1, pablogsal, markshannon, isidentical, "
+"brandtbucher"
 
 #: ../../core-developers/experts.rst:320
 msgid "autoconf/makefiles"
-msgstr ""
+msgstr "autoconf/makefiles"
 
 #: ../../core-developers/experts.rst:321
 msgid "bsd"
-msgstr ""
+msgstr "bsd"
 
 #: ../../core-developers/experts.rst:322
 msgid "issue tracker"
-msgstr ""
+msgstr "rastreador de problemas"
 
 #: ../../core-developers/experts.rst:323
 msgid "buildbots"
-msgstr ""
+msgstr "buildbots"
 
 #: ../../core-developers/experts.rst:323
 msgid "zware, pablogsal"
-msgstr ""
+msgstr "zware, pablogsal"
 
 #: ../../core-developers/experts.rst:324
 msgid "bytecode"
-msgstr ""
+msgstr "bytecode"
 
 #: ../../core-developers/experts.rst:324
 msgid "benjaminp, 1st1, markshannon, brandtbucher"
-msgstr ""
+msgstr "benjaminp, 1st1, markshannon, brandtbucher"
 
 #: ../../core-developers/experts.rst:325
 msgid "context managers"
-msgstr ""
+msgstr "gerenciadores de contexto"
 
 #: ../../core-developers/experts.rst:326
 msgid "core workflow"
-msgstr ""
+msgstr "fluxo de trabalho principal"
 
 #: ../../core-developers/experts.rst:326
 msgid "Mariatta, ezio-melotti, hugovk"
-msgstr ""
+msgstr "Mariatta, ezio-melotti, hugovk"
 
 #: ../../core-developers/experts.rst:327
 msgid "coverity scan"
-msgstr ""
+msgstr "coverity scan"
 
 #: ../../core-developers/experts.rst:327
 msgid "tiran, brettcannon, Yhg1s"
-msgstr ""
+msgstr "tiran, brettcannon, Yhg1s"
 
 #: ../../core-developers/experts.rst:328
 msgid "cryptography"
-msgstr ""
+msgstr "criptografia"
 
 #: ../../core-developers/experts.rst:328
 msgid "gpshead, dstufft"
-msgstr ""
+msgstr "gpshead, dstufft"
 
 #: ../../core-developers/experts.rst:329
 msgid "data formats"
-msgstr ""
+msgstr "formatos de dados"
 
 #: ../../core-developers/experts.rst:330
 msgid "database"
-msgstr ""
+msgstr "banco de dados"
 
 #: ../../core-developers/experts.rst:331
 msgid "devguide"
-msgstr ""
+msgstr "devguide"
 
 #: ../../core-developers/experts.rst:331
 msgid "merwok, ezio-melotti, willingc, Mariatta, hugovk"
-msgstr ""
+msgstr "merwok, ezio-melotti, willingc, Mariatta, hugovk"
 
 #: ../../core-developers/experts.rst:332
 msgid "documentation"
-msgstr ""
+msgstr "documentação"
 
 #: ../../core-developers/experts.rst:332
 msgid "ezio-melotti, merwok, JulienPalard, willingc, hugovk"
-msgstr ""
+msgstr "ezio-melotti, merwok, JulienPalard, willingc, hugovk"
 
 #: ../../core-developers/experts.rst:333
 msgid "emoji"
-msgstr ""
+msgstr "emoji"
 
 #: ../../core-developers/experts.rst:333
 msgid "Mariatta"
@@ -1554,182 +1597,188 @@ msgstr "Mariatta"
 
 #: ../../core-developers/experts.rst:334
 msgid "extension modules"
-msgstr ""
+msgstr "módulos de extensão"
 
 #: ../../core-developers/experts.rst:334
 msgid "encukou, ncoghlan"
-msgstr ""
+msgstr "encukou, ncoghlan"
 
 #: ../../core-developers/experts.rst:335
 msgid "filesystem"
-msgstr ""
+msgstr "sistema de arquivos"
 
 #: ../../core-developers/experts.rst:336
 msgid "f-strings"
-msgstr ""
+msgstr "f-strings"
 
 #: ../../core-developers/experts.rst:337
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../core-developers/experts.rst:338
 msgid "i18n"
-msgstr ""
+msgstr "i18n"
 
 #: ../../core-developers/experts.rst:338
 msgid "malemburg, merwok"
-msgstr ""
+msgstr "malemburg, merwok"
 
 #: ../../core-developers/experts.rst:339
 msgid "import machinery"
-msgstr ""
+msgstr "maquinaria de importação"
 
 #: ../../core-developers/experts.rst:339
 msgid "brettcannon, ncoghlan, ericsnowcurrently"
-msgstr ""
+msgstr "brettcannon, ncoghlan, ericsnowcurrently"
 
 #: ../../core-developers/experts.rst:340
 msgid "benjaminp, stutzbach^, gpshead"
-msgstr ""
+msgstr "benjaminp, stutzbach^, gpshead"
 
 #: ../../core-developers/experts.rst:342
 msgid "mathematics"
-msgstr ""
+msgstr "matemática"
 
 #: ../../core-developers/experts.rst:342
 msgid "mdickinson, malemburg, stutzbach^, rhettinger"
-msgstr ""
+msgstr "mdickinson, malemburg, stutzbach^, rhettinger"
 
 #: ../../core-developers/experts.rst:343
 msgid "memory management"
-msgstr ""
+msgstr "gerenciamento de memória"
 
 #: ../../core-developers/experts.rst:343
 msgid "tim-one, malemburg, Yhg1s"
-msgstr ""
+msgstr "tim-one, malemburg, Yhg1s"
 
 #: ../../core-developers/experts.rst:344
 msgid "memoryview"
-msgstr ""
+msgstr "memoryview"
 
 #: ../../core-developers/experts.rst:345
 msgid "networking"
-msgstr ""
+msgstr "rede"
 
 #: ../../core-developers/experts.rst:345
 msgid "giampaolo, gpshead"
-msgstr ""
+msgstr "giampaolo, gpshead"
 
 #: ../../core-developers/experts.rst:346
 msgid "object model"
-msgstr ""
+msgstr "modelo de objeto"
 
 #: ../../core-developers/experts.rst:346
 msgid "benjaminp, Yhg1s"
-msgstr ""
+msgstr "benjaminp, Yhg1s"
 
 #: ../../core-developers/experts.rst:347
 msgid "packaging"
-msgstr ""
+msgstr "empacotamento"
 
 #: ../../core-developers/experts.rst:347
 msgid "tarekziade, malemburg, alexis^, merwok, dstufft, pfmoore"
-msgstr ""
+msgstr "tarekziade, malemburg, alexis^, merwok, dstufft, pfmoore"
 
 #: ../../core-developers/experts.rst:348
 msgid "pattern matching"
-msgstr ""
+msgstr "correspondência de padrões"
 
 #: ../../core-developers/experts.rst:348
 msgid "brandtbucher*"
-msgstr ""
+msgstr "brandtbucher*"
 
 #: ../../core-developers/experts.rst:349
 msgid "peg parser"
-msgstr ""
+msgstr "analisador sintático gase"
 
 #: ../../core-developers/experts.rst:350
 msgid "performance"
-msgstr ""
+msgstr "desempenho"
 
 #: ../../core-developers/experts.rst:350
 msgid ""
 "brettcannon, vstinner, serhiy-storchaka, 1st1, rhettinger, markshannon, "
 "brandtbucher"
 msgstr ""
+"brettcannon, vstinner, serhiy-storchaka, 1st1, rhettinger, markshannon, "
+"brandtbucher"
 
 #: ../../core-developers/experts.rst:351
 msgid "pip"
-msgstr ""
+msgstr "pip"
 
 #: ../../core-developers/experts.rst:351
 msgid "ncoghlan, dstufft, pfmoore, Marcus.Smith^, pradyunsg"
-msgstr ""
+msgstr "ncoghlan, dstufft, pfmoore, Marcus.Smith^, pradyunsg"
 
 #: ../../core-developers/experts.rst:352
 msgid "py3 transition"
-msgstr ""
+msgstr "transição para py3"
 
 #: ../../core-developers/experts.rst:353
 msgid "release management"
-msgstr ""
+msgstr "gerenciamento de lançamentos"
 
 #: ../../core-developers/experts.rst:353
 msgid ""
 "tarekziade, malemburg, benjaminp, warsaw, gvanrossum, anthonybaxter^, "
 "merwok, ned-deily, birkenfeld, JulienPalard"
 msgstr ""
+"tarekziade, malemburg, benjaminp, warsaw, gvanrossum, anthonybaxter^, "
+"merwok, ned-deily, birkenfeld, JulienPalard"
 
 #: ../../core-developers/experts.rst:356
 msgid "str.format"
-msgstr ""
+msgstr "str.format"
 
 #: ../../core-developers/experts.rst:357
 msgid "testing"
-msgstr ""
+msgstr "testes"
 
 #: ../../core-developers/experts.rst:357
 msgid "voidspace, ezio-melotti"
-msgstr ""
+msgstr "voidspace, ezio-melotti"
 
 #: ../../core-developers/experts.rst:358
 msgid "test coverage"
-msgstr ""
+msgstr "cobertura de testes"
 
 #: ../../core-developers/experts.rst:359
 msgid "threads"
-msgstr ""
+msgstr "threads"
 
 #: ../../core-developers/experts.rst:360
 msgid "time and dates"
-msgstr ""
+msgstr "data e hora"
 
 #: ../../core-developers/experts.rst:360
 msgid "malemburg, abalkin, pganssle"
-msgstr ""
+msgstr "malemburg, abalkin, pganssle"
 
 #: ../../core-developers/experts.rst:361
 msgid "unicode"
-msgstr ""
+msgstr "unicode"
 
 #: ../../core-developers/experts.rst:361
 msgid "malemburg, ezio-melotti, benjaminp"
-msgstr ""
+msgstr "malemburg, ezio-melotti, benjaminp"
 
 #: ../../core-developers/experts.rst:362
 msgid "version control"
-msgstr ""
+msgstr "controle de versão"
 
 #: ../../core-developers/experts.rst:362
 msgid "merwok, ezio-melotti"
-msgstr ""
+msgstr "merwok, ezio-melotti"
 
 #: ../../core-developers/experts.rst:367
 msgid "Documentation Translations"
-msgstr ""
+msgstr "Traduções da documentação"
 
 #: ../../core-developers/experts.rst:369
 msgid ""
 "For a list of translators, see :ref:`this table about translations "
 "<translating>`."
 msgstr ""
+"Para uma lista de tradutores, veja :ref:`esta tabela sobre traduções "
+"<translating>`."
