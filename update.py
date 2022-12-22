@@ -8,7 +8,7 @@ from pathlib import Path
 from shutil import copytree, ignore_patterns, rmtree
 import argparse
 import subprocess
-import shutil
+import os
 
 
 def run(*args: str | Path, **kwargs) -> subprocess.CompletedProcess:
@@ -19,7 +19,7 @@ def run(*args: str | Path, **kwargs) -> subprocess.CompletedProcess:
 
 
 def create_parser() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description='Update translation files of Devguide')
+    parser = argparse.ArgumentParser(description='Update Devguide translation files')
     parser.add_argument(
         "-l",
         "--language",
@@ -47,17 +47,23 @@ def setup_repo(repo_path: Path, branch: str):
 if __name__ == "__main__":
     args = create_parser()
     setup_repo(args.devguide_repo, "main")
+    language_dir = Path(args.devguide_repo / 'locales' / args.language / 'LC_MESSAGES')
     rmtree(args.devguide_repo / "_build", ignore_errors=True)
     rmtree(args.devguide_repo / "locales", ignore_errors=True)
     run(
         *["sphinx-build", "-jauto", "-QDgettext_compact=0", "-bgettext", ".", "_build/pot"],
         cwd=args.devguide_repo
     )
-    copytree('.', args.devguide_repo / 'locales', ignore=ignore_patterns('devguide', '.*', __file__))
+    # copy files to inside devguide checkout to upd́ate, then copy the updated ones
+    os.makedirs(language_dir, exist_ok=True)
+    copytree(
+        '.', language_dir, ignore=ignore_patterns('devguide', '.*', 'venv', __file__),
+        dirs_exist_ok=True
+    )
     run(
         *["sphinx-intl", "update", "-dlocales", "-p_build/pot", "-l", args.language],
         cwd=args.devguide_repo
     )
-    copytree(args.devguide_repo / 'locales' / args.language / 'LC_MESSAGES', '.', dirs_exist_ok=True)
+    copytree(language_dir, '.', dirs_exist_ok=True)
     rmtree(args.devguide_repo / "_build")
     run("powrap", "-m")
