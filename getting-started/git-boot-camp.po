@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2022-12-22 12:16-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,7 +318,7 @@ msgstr ""
 #: ../../getting-started/git-boot-camp.rst:276
 msgid ""
 "The ``generated`` `attribute <https://git-scm.com/docs/gitattributes>`_ is "
-"defined in :file:`.gitattributes`, found in the repository root."
+"defined in :cpy-file:`.gitattributes`, found in the repository root."
 msgstr ""
 
 #: ../../getting-started/git-boot-camp.rst:282

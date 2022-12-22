@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2022-12-22 12:16-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgid ":file:`Lib/test/test_{<builtin>}.py`"
 msgstr ""
 
 #: ../../internals/exploring.rst:35
-msgid ":file:`Doc/library/stdtypes.rst`"
+msgid ":cpy-file:`Doc/library/stdtypes.rst`"
 msgstr ""
 
 #: ../../internals/exploring.rst:37
@@ -87,15 +87,15 @@ msgid "For builtin functions, the typical layout is:"
 msgstr ""
 
 #: ../../internals/exploring.rst:39
-msgid ":file:`Python/bltinmodule.c`"
+msgid ":cpy-file:`Python/bltinmodule.c`"
 msgstr ""
 
 #: ../../internals/exploring.rst:40
-msgid ":file:`Lib/test/test_builtin.py`"
+msgid ":cpy-file:`Lib/test/test_builtin.py`"
 msgstr ""
 
 #: ../../internals/exploring.rst:41
-msgid ":file:`Doc/library/functions.rst`"
+msgid ":cpy-file:`Doc/library/functions.rst`"
 msgstr ""
 
 #: ../../internals/exploring.rst:43
@@ -103,23 +103,23 @@ msgid "Some exceptions:"
 msgstr ""
 
 #: ../../internals/exploring.rst:45
-msgid "builtin type ``int`` is at :file:`Objects/longobject.c`"
+msgid "builtin type ``int`` is at :cpy-file:`Objects/longobject.c`"
 msgstr ""
 
 #: ../../internals/exploring.rst:46
-msgid "builtin type ``str`` is at :file:`Objects/unicodeobject.c`"
+msgid "builtin type ``str`` is at :cpy-file:`Objects/unicodeobject.c`"
 msgstr ""
 
 #: ../../internals/exploring.rst:47
-msgid "builtin module ``sys`` is at :file:`Python/sysmodule.c`"
+msgid "builtin module ``sys`` is at :cpy-file:`Python/sysmodule.c`"
 msgstr ""
 
 #: ../../internals/exploring.rst:48
-msgid "builtin module ``marshal`` is at :file:`Python/marshal.c`"
+msgid "builtin module ``marshal`` is at :cpy-file:`Python/marshal.c`"
 msgstr ""
 
 #: ../../internals/exploring.rst:49
-msgid "Windows-only module ``winreg`` is at :file:`PC/winreg.c`"
+msgid "Windows-only module ``winreg`` is at :cpy-file:`PC/winreg.c`"
 msgstr ""
 
 #: ../../internals/exploring.rst:53

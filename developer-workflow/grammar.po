@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2022-12-22 12:16-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../developer-workflow/grammar.rst:10
 msgid ""
-"There's more to changing Python's grammar than editing :file:`Grammar/python."
-"gram`.  Here's a checklist."
+"There's more to changing Python's grammar than editing :cpy-file:`Grammar/"
+"python.gram`.  Here's a checklist."
 msgstr ""
 
 #: ../../developer-workflow/grammar.rst:14
@@ -57,79 +57,79 @@ msgstr ""
 
 #: ../../developer-workflow/grammar.rst:28
 msgid ""
-":file:`Grammar/python.gram`: The grammar, with actions that build AST "
-"nodes.  After changing it, run ``make regen-pegen`` (or ``build.bat --"
-"regen`` on Windows), to regenerate :file:`Parser/parser.c`. (This runs "
-"Python's parser generator, ``Tools/peg_generator``)."
+":cpy-file:`Grammar/python.gram`: The grammar, with actions that build AST "
+"nodes. After changing it, run ``make regen-pegen`` (or ``build.bat --regen`` "
+"on Windows), to regenerate :cpy-file:`Parser/parser.c`. (This runs Python's "
+"parser generator, ``Tools/peg_generator``)."
 msgstr ""
 
 #: ../../developer-workflow/grammar.rst:33
 msgid ""
-":file:`Grammar/Tokens` is a place for adding new token types.  After "
-"changing it, run ``make regen-token`` to regenerate :file:`Include/token."
-"h`, :file:`Parser/token.c`, :file:`Lib/token.py` and :file:`Doc/library/"
-"token-list.inc`.  If you change both ``python.gram`` and ``Tokens``, run "
-"``make regen-token`` before ``make regen-pegen``. On Windows, ``build.bat --"
-"regen`` will regenerate both at the same time."
+":cpy-file:`Grammar/Tokens` is a place for adding new token types.  After "
+"changing it, run ``make regen-token`` to regenerate :cpy-file:`Include/token."
+"h`, :cpy-file:`Parser/token.c`, :cpy-file:`Lib/token.py` and :cpy-file:`Doc/"
+"library/token-list.inc`.  If you change both ``python.gram`` and ``Tokens``, "
+"run ``make regen-token`` before ``make regen-pegen``. On Windows, ``build."
+"bat --regen`` will regenerate both at the same time."
 msgstr ""
 
 #: ../../developer-workflow/grammar.rst:40
 msgid ""
-":file:`Parser/Python.asdl` may need changes to match the grammar.  Then run "
-"``make regen-ast`` to regenerate :file:`Include/Python-ast.h` and :file:"
-"`Python/Python-ast.c`."
+":cpy-file:`Parser/Python.asdl` may need changes to match the grammar. Then "
+"run ``make regen-ast`` to regenerate :cpy-file:`Include/Python-ast.h` and :"
+"cpy-file:`Python/Python-ast.c`."
 msgstr ""
 
-#: ../../developer-workflow/grammar.rst:43
+#: ../../developer-workflow/grammar.rst:44
 msgid ""
-":file:`Parser/tokenizer.c` contains the tokenization code.  This is where "
+":cpy-file:`Parser/tokenizer.c` contains the tokenization code. This is where "
 "you would add a new type of comment or string literal, for example."
 msgstr ""
 
-#: ../../developer-workflow/grammar.rst:46
+#: ../../developer-workflow/grammar.rst:47
 msgid ""
-":file:`Python/ast.c` will need changes to validate AST objects involved with "
-"the grammar change."
+":cpy-file:`Python/ast.c` will need changes to validate AST objects involved "
+"with the grammar change."
 msgstr ""
 
-#: ../../developer-workflow/grammar.rst:49
+#: ../../developer-workflow/grammar.rst:50
 msgid ""
-":file:`Python/ast_unparse.c` will need changes to unparse AST objects "
-"involved with the grammar change (\"unparsing\" is used to turn annotations "
-"into strings per :pep:`563`)."
-msgstr ""
-
-#: ../../developer-workflow/grammar.rst:52
-msgid "The :ref:`compiler` has its own page."
+":cpy-file:`Python/ast_unparse.c` will need changes to unparse AST involved "
+"with the grammar change (\"unparsing\" is used to turn annotations into "
+"strings per :pep:`563`)."
 msgstr ""
 
 #: ../../developer-workflow/grammar.rst:54
-msgid ""
-"``_Unparser`` in the :file:`Lib/ast.py` file may need changes to accommodate "
-"any modifications in the AST nodes."
+msgid "The :ref:`compiler` has its own page."
 msgstr ""
 
-#: ../../developer-workflow/grammar.rst:57
+#: ../../developer-workflow/grammar.rst:56
 msgid ""
-":file:`Doc/library/ast.rst` may need to be updated to reflect changes to AST "
-"nodes."
+"``_Unparser`` in the :cpy-file:`Lib/ast.py` file may need changes to "
+"accommodate any modifications in the AST nodes."
 msgstr ""
 
 #: ../../developer-workflow/grammar.rst:59
+msgid ""
+":cpy-file:`Doc/library/ast.rst` may need to be updated to reflect changes to "
+"AST nodes."
+msgstr ""
+
+#: ../../developer-workflow/grammar.rst:62
 msgid "Add some usage of your new syntax to ``test_grammar.py``."
 msgstr ""
 
-#: ../../developer-workflow/grammar.rst:61
+#: ../../developer-workflow/grammar.rst:64
 msgid "Certain changes may require tweaks to the library module :mod:`pyclbr`."
 msgstr ""
 
-#: ../../developer-workflow/grammar.rst:63
+#: ../../developer-workflow/grammar.rst:66
 msgid ""
-":file:`Lib/tokenize.py` needs changes to match changes to the tokenizer."
+":cpy-file:`Lib/tokenize.py` needs changes to match changes to the tokenizer."
 msgstr ""
 
-#: ../../developer-workflow/grammar.rst:65
+#: ../../developer-workflow/grammar.rst:68
 msgid ""
 "Documentation must be written! Specifically, one or more of the pages in :"
-"file:`Doc/reference/` will need to be updated."
+"cpy-file:`Doc/reference/` will need to be updated."
 msgstr ""
