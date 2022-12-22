@@ -7,17 +7,11 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.10"
-  jobs:
-    post_create_environment:
-      - git clone https://github.com/python/devguide ../devguide
-      - mkdir -p ../devguide/locales/pt_BR/LC_MESSAGES/
-      - cp -R ./ ../devguide/locales/pt_BR/LC_MESSAGES/
-
-# Build documentation in the docs/ directory with Sphinx
-sphinx:
-   configuration: ../devguide/conf.py
-
-# Optionally declare the Python requirements required to build your docs
-python:
-   install:
-   - requirements: ../devguide/requirements.txt
+  commands:
+    - rm -rf ../devguide/
+    - git clone https://github.com/python/devguide ../devguide
+    - mkdir -p ../devguide/locales/pt_BR/LC_MESSAGES/
+    - cp -R ./ ../devguide/locales/pt_BR/LC_MESSAGES/
+    - pip install -U pip
+    - pip install -U -r ../devguide/requirements.txt
+    - sphinx-build -c ../devguide/ -Dlanguage=pt_BR -Dgettext_compact=0 ../devguide/ _readthedocs/html
