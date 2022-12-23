@@ -37,9 +37,9 @@ Translation Stats
     - setup-building.po                2 / 140 (  1.0% translated)
     
     
-    # internals (1.97% done)
+    # internals (2.09% done)
     
-    - compiler.po                      0 / 197 (  0.0% translated)
+    - compiler.po                      0 / 167 (  0.0% translated)
     - exploring.po                     7 /  70 ( 10.0% translated)
     - garbage-collector.po             1 /  64 (  1.0% translated)
     - parser.po                        1 / 176 (  0.0% translated)
@@ -63,6 +63,6 @@ Translation Stats
     - triaging.po                      0 /  37 (  0.0% translated)
     
     
-    # TOTAL (45.08% done)
+    # TOTAL (42.67% done)
     
     
