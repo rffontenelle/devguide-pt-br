@@ -1,3 +1,4 @@
 # ignores possible directories in the root directory
 venv
 devguide
+.potodo/
