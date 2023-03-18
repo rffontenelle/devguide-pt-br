@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-22 12:16-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../triage/triage-team.rst:6
 msgid "Triage Team"
@@ -37,43 +37,27 @@ msgstr ""
 msgid "Responsibilities include:"
 msgstr ""
 
-#: ../../triage/triage-team.rst:21
-msgid "PR/issue management"
+#: ../../triage/triage-team.rst:19
+msgid "Classifying issues and PRs"
 msgstr ""
 
 #: ../../triage/triage-team.rst:20
-msgid "Reviewing PRs"
+msgid "Applying appropriate :ref:`labels <gh-labels>` to issues/PRs"
 msgstr ""
 
 #: ../../triage/triage-team.rst:21
-msgid "Assisting contributors"
-msgstr ""
-
-#: ../../triage/triage-team.rst:22
 msgid "Notifying appropriate core developers"
 msgstr ""
 
-#: ../../triage/triage-team.rst:27
-msgid "Applying appropriate labels to PRs/Issues"
+#: ../../triage/triage-team.rst:22
+msgid ":ref:`Reviewing PRs <reviewing-prs>`"
 msgstr ""
 
-#: ../../triage/triage-team.rst:24
-msgid "Skip news"
+#: ../../triage/triage-team.rst:23
+msgid "Assisting contributors"
 msgstr ""
 
 #: ../../triage/triage-team.rst:25
-msgid "Skip issue"
-msgstr ""
-
-#: ../../triage/triage-team.rst:26
-msgid "Good first issue"
-msgstr ""
-
-#: ../../triage/triage-team.rst:27
-msgid "Other categorizations"
-msgstr ""
-
-#: ../../triage/triage-team.rst:29
 msgid ""
 "Although triagers have the power to close PRs, they should generally not do "
 "so without first consulting a core developer. By having triagers and core "
@@ -82,7 +66,7 @@ msgid ""
 "PR is accepted or closed."
 msgstr ""
 
-#: ../../triage/triage-team.rst:34
+#: ../../triage/triage-team.rst:30
 msgid ""
 "Nonetheless, triagers should feel free to close a PR if they judge that the "
 "chance of the PR being merged would be exceedingly low, even if substantial "
@@ -90,42 +74,42 @@ msgid ""
 "following:"
 msgstr ""
 
-#: ../../triage/triage-team.rst:39
+#: ../../triage/triage-team.rst:35
 msgid "PRs proposing solely cosmetic changes"
 msgstr ""
 
-#: ../../triage/triage-team.rst:40
+#: ../../triage/triage-team.rst:36
 msgid "PRs proposing changes to deprecated modules"
 msgstr ""
 
-#: ../../triage/triage-team.rst:44
+#: ../../triage/triage-team.rst:40
 msgid "PRs that are no longer relevant. This includes:"
 msgstr ""
 
-#: ../../triage/triage-team.rst:42
+#: ../../triage/triage-team.rst:38
 msgid "PRs proposing fixes for bugs that can no longer be reproduced"
 msgstr ""
 
-#: ../../triage/triage-team.rst:43
+#: ../../triage/triage-team.rst:39
 msgid ""
 "PRs proposing changes that have been rejected by Python core developers "
 "elsewhere (e.g. in an issue or a PEP rejection notice)"
 msgstr ""
 
-#: ../../triage/triage-team.rst:46
+#: ../../triage/triage-team.rst:42
 msgid ""
 "If a triager has any doubt about whether to close a PR, they should consult "
 "a core developer before taking any action."
 msgstr ""
 
-#: ../../triage/triage-team.rst:49
+#: ../../triage/triage-team.rst:45
 msgid ""
-"Triagers can also make use of the ``invalid`` and ``stale`` labels to "
-"suggest that a PR may be suitable for closure. For more information, see "
-"the :ref:`GitHub PR labels <github-pr-labels>` section."
+"Triagers can also make use of the :gh-label:`pending` and :gh-label:`stale` "
+"labels to suggest that a PR may be suitable for closure. For more "
+"information, see the entries in the :ref:`labels-other` section."
 msgstr ""
 
-#: ../../triage/triage-team.rst:53
+#: ../../triage/triage-team.rst:49
 msgid ""
 "Note that it is of paramount importance to treat every contributor to the "
 "Python project kindly and with respect. Regardless of whether they're "
@@ -135,11 +119,11 @@ msgid ""
 "`PSF Code of Conduct`_."
 msgstr ""
 
-#: ../../triage/triage-team.rst:63
+#: ../../triage/triage-team.rst:59
 msgid "Becoming a member of the Python triage team"
 msgstr ""
 
-#: ../../triage/triage-team.rst:65
+#: ../../triage/triage-team.rst:61
 msgid ""
 "All Python core developers are welcome to invite a Python contributor to the "
 "Python triage team. Triagers will be responsible to handle not just issues, "
@@ -147,7 +131,7 @@ msgid ""
 "access to more repositories than just CPython."
 msgstr ""
 
-#: ../../triage/triage-team.rst:70
+#: ../../triage/triage-team.rst:66
 msgid ""
 "When you have consistently shown the ability to properly help triage issues "
 "without guidance, you may request that you be given the \"Triager\" role on "
@@ -162,7 +146,7 @@ msgid ""
 "own."
 msgstr ""
 
-#: ../../triage/triage-team.rst:82
+#: ../../triage/triage-team.rst:78
 msgid ""
 "Gaining the Triager role will allow you to set any value on any issue in the "
 "tracker, releasing you from the burden of having to ask others to set values "
@@ -171,7 +155,7 @@ msgid ""
 "lessen the workload for everyone by gaining your help."
 msgstr ""
 
-#: ../../triage/triage-team.rst:88
+#: ../../triage/triage-team.rst:84
 msgid ""
 "Any existing active contributor to the Python repository on GitHub can "
 "transition into becoming a Python triager. They can request this to any core "
@@ -184,7 +168,7 @@ msgid ""
 "are ready to do things entirely on your own."
 msgstr ""
 
-#: ../../triage/triage-team.rst:98
+#: ../../triage/triage-team.rst:94
 msgid ""
 "For every new triager, it would be great to announce them in the `Committers "
 "category <https://discuss.python.org/c/committers/5>`_ on the `Python "

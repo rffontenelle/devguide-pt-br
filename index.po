@@ -8,18 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: 2022-12-09 07:48-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language: pt_BR\n"
 "Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
 "net>\n"
-"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"Generated-By: Babel 2.11.0\n"
-"X-Generator: Gtranslator 42.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../index.rst:3
 msgid "Python Developer's Guide"
@@ -170,39 +169,31 @@ msgstr ""
 "Aqui estão alguns links que você provavelmente irá referenciar com "
 "frequência ao contribuir com o Python:"
 
-#: ../../index.rst:86 ../../index.rst:185
+#: ../../index.rst:86 ../../index.rst:184
 msgid "`Issue tracker`_"
 msgstr "`Rastreador de problemas`_"
 
-#: ../../index.rst:87 ../../index.rst:187
+#: ../../index.rst:87 ../../index.rst:186
 msgid "`Buildbot status`_"
 msgstr "`Status do Buildbot`_"
 
-#: ../../index.rst:88 ../../index.rst:122 ../../index.rst:192
+#: ../../index.rst:88 ../../index.rst:116 ../../index.rst:191
 msgid ":ref:`help`"
 msgstr ":ref:`help`"
 
-#: ../../index.rst:89 ../../index.rst:191
+#: ../../index.rst:89 ../../index.rst:190
 msgid "PEPs_ (Python Enhancement Proposals)"
 msgstr "PEPs_ (Python Enhancement Proposals)"
 
-#: ../../index.rst:90 ../../index.rst:127
+#: ../../index.rst:90 ../../index.rst:121
 msgid ":ref:`gitbootcamp`"
 msgstr ":ref:`gitbootcamp`"
 
-#: ../../index.rst:93
-msgid "Status of Python branches"
-msgstr "Status dos branches do Python"
-
 #: ../../index.rst:95
-msgid "Moved to :ref:`versions`"
-msgstr "Movido para :ref:`versions`"
-
-#: ../../index.rst:101
 msgid "Contributing"
 msgstr "Contribuindo"
 
-#: ../../index.rst:103
+#: ../../index.rst:97
 msgid ""
 "We encourage everyone to contribute to Python and that's why we have put up "
 "this developer's guide.  If you still have questions after reviewing the "
@@ -214,7 +205,7 @@ msgstr ""
 "deste guia, o grupo `Core Python Mentorship`_ está disponível para ajudar a "
 "guiar novos contribuidores durante o processo."
 
-#: ../../index.rst:108
+#: ../../index.rst:102
 msgid ""
 "A number of individuals from the Python community have contributed to a "
 "series of excellent guides at `Open Source Guides <https://opensource.guide/"
@@ -223,13 +214,13 @@ msgstr ""
 "Vários indivíduos da comunidade Python contribuíram para uma série de "
 "excelentes guias em `Open Source Guides <https://opensource.guide/>`_."
 
-#: ../../index.rst:111
+#: ../../index.rst:105
 msgid ""
 "Core developers and contributors alike will find the following guides useful:"
 msgstr ""
 "Os desenvolvedores *core* e colaboradores acharão úteis os seguintes guias:"
 
-#: ../../index.rst:113
+#: ../../index.rst:107
 msgid ""
 "`How to Contribute to Open Source <https://opensource.guide/how-to-"
 "contribute/>`_"
@@ -237,7 +228,7 @@ msgstr ""
 "`How to Contribute to Open Source <https://opensource.guide/how-to-"
 "contribute/>`_ (Como contribuir para o código aberto)"
 
-#: ../../index.rst:114
+#: ../../index.rst:108
 msgid ""
 "`Building Welcoming Communities <https://opensource.guide/building-community/"
 ">`_"
@@ -245,119 +236,119 @@ msgstr ""
 "`Building Welcoming Communities <https://opensource.guide/building-community/"
 ">`_ (Criando comunidades receptivas)"
 
-#: ../../index.rst:116
+#: ../../index.rst:110
 msgid "Guide for contributing to Python:"
 msgstr "Guia para contribuir com o Python:"
 
-#: ../../index.rst:119
+#: ../../index.rst:113
 msgid "Contributors"
 msgstr "Contribuidores"
 
-#: ../../index.rst:119
+#: ../../index.rst:113
 msgid "Documentarians"
 msgstr "Documentadores"
 
-#: ../../index.rst:119
+#: ../../index.rst:113
 msgid "Triagers"
 msgstr "Triagers"
 
-#: ../../index.rst:119
+#: ../../index.rst:113
 msgid "Core Developers"
 msgstr "Desenvolvedores core"
 
-#: ../../index.rst:121
+#: ../../index.rst:115
 msgid ":ref:`setup`"
 msgstr ":ref:`setup`"
 
-#: ../../index.rst:121
+#: ../../index.rst:115
 msgid ":ref:`docquality`"
 msgstr ":ref:`docquality`"
 
-#: ../../index.rst:121
+#: ../../index.rst:115
 msgid ":ref:`tracker`"
 msgstr ":ref:`tracker`"
 
-#: ../../index.rst:121
+#: ../../index.rst:115
 msgid ":ref:`responsibilities`"
 msgstr ":ref:`responsibilities`"
 
-#: ../../index.rst:122
+#: ../../index.rst:116
 msgid ":ref:`documenting`"
 msgstr ":ref:`documenting`"
 
-#: ../../index.rst:122
+#: ../../index.rst:116
 msgid ":ref:`triaging`"
 msgstr ":ref:`triaging`"
 
-#: ../../index.rst:122 ../../index.rst:193
+#: ../../index.rst:116 ../../index.rst:192
 msgid ":ref:`developers`"
 msgstr ":ref:`developers`"
 
-#: ../../index.rst:123
+#: ../../index.rst:117
 msgid ":ref:`pullrequest`"
 msgstr ":ref:`pullrequest`"
 
-#: ../../index.rst:123
+#: ../../index.rst:117
 msgid ":ref:`style-guide`"
 msgstr ":ref:`style-guide`"
 
-#: ../../index.rst:123
+#: ../../index.rst:117
 msgid ":ref:`helptriage`"
 msgstr ":ref:`helptriage`"
 
-#: ../../index.rst:123
+#: ../../index.rst:117
 msgid ":ref:`committing`"
 msgstr ":ref:`committing`"
 
-#: ../../index.rst:124
+#: ../../index.rst:118
 msgid ":ref:`runtests`"
 msgstr ":ref:`runtests`"
 
-#: ../../index.rst:124
+#: ../../index.rst:118
 msgid ":ref:`rst-primer`"
 msgstr ":ref:`rst-primer`"
 
-#: ../../index.rst:124 ../../index.rst:127 ../../index.rst:186
+#: ../../index.rst:118 ../../index.rst:121 ../../index.rst:185
 msgid ":ref:`experts`"
 msgstr ":ref:`experts`"
 
-#: ../../index.rst:124 ../../index.rst:128
+#: ../../index.rst:118 ../../index.rst:122
 msgid ":ref:`devcycle`"
 msgstr ":ref:`devcycle`"
 
-#: ../../index.rst:125
+#: ../../index.rst:119
 msgid ":ref:`fixingissues`"
 msgstr ":ref:`fixingissues`"
 
-#: ../../index.rst:125
+#: ../../index.rst:119
 msgid ":ref:`translating`"
 msgstr ":ref:`translating`"
 
-#: ../../index.rst:125
+#: ../../index.rst:119
 msgid ":ref:`labels`"
 msgstr ":ref:`labels`"
 
-#: ../../index.rst:125
+#: ../../index.rst:119
 msgid ":ref:`motivations`"
 msgstr ":ref:`motivations`"
 
-#: ../../index.rst:126
+#: ../../index.rst:120
 msgid ":ref:`communication`"
 msgstr ":ref:`communication`"
 
-#: ../../index.rst:126
+#: ../../index.rst:120
 msgid ":ref:`gh-faq`"
 msgstr ":ref:`gh-faq`"
 
-#: ../../index.rst:126
+#: ../../index.rst:120
 msgid ":ref:`office hour`"
 msgstr ":ref:`office hour`"
 
-#: ../../index.rst:127
+#: ../../index.rst:121
 msgid ":ref:`triage-team`"
 msgstr ":ref:`triage-team`"
 
-#: ../../index.rst:131
+#: ../../index.rst:125
 msgid ""
 "We **recommend** that the documents in this guide be read as needed. You can "
 "stop where you feel comfortable and begin contributing immediately without "
@@ -373,11 +364,11 @@ msgstr ""
 "assumindo que a documentação anterior foi lida, portanto, você pode achar "
 "necessário retroceder para preencher os conceitos e a terminologia ausentes."
 
-#: ../../index.rst:140
+#: ../../index.rst:134
 msgid "Proposing changes to Python itself"
 msgstr "Propondo mudanças no próprio Python"
 
-#: ../../index.rst:142
+#: ../../index.rst:136
 msgid ""
 "Improving Python's code, documentation and tests are ongoing tasks that are "
 "never going to be \"finished\", as Python operates as part of an ever-"
@@ -394,7 +385,7 @@ msgstr ""
 "definição de linguagem, uma ferramenta ainda melhor no kit de ferramentas de "
 "um desenvolvedor."
 
-#: ../../index.rst:149
+#: ../../index.rst:143
 msgid ""
 "While these kinds of change are much rarer than those described above, they "
 "do happen and that process is also described as part of this guide:"
@@ -403,19 +394,19 @@ msgstr ""
 "acima, eles acontecem e esse processo também é descrito como parte deste "
 "guia:"
 
-#: ../../index.rst:152
+#: ../../index.rst:146
 msgid ":ref:`stdlibchanges`"
 msgstr ":ref:`stdlibchanges`"
 
-#: ../../index.rst:153
+#: ../../index.rst:147
 msgid ":ref:`langchanges`"
 msgstr ":ref:`langchanges`"
 
-#: ../../index.rst:157
+#: ../../index.rst:151
 msgid "Other Interpreter Implementations"
 msgstr "Outras implementações de interpretador"
 
-#: ../../index.rst:159
+#: ../../index.rst:153
 msgid ""
 "This guide is specifically for contributing to the Python reference "
 "interpreter, also known as CPython (while most of the standard library is "
@@ -427,7 +418,7 @@ msgstr ""
 "da biblioteca padrão é escrita em Python, o núcleo do interpretador é "
 "escrito em C e se integra mais facilmente com os ecossistemas C e C++)."
 
-#: ../../index.rst:164
+#: ../../index.rst:158
 msgid ""
 "There are other Python implementations, each with a different focus.  Like "
 "CPython, they always have more things they would like to do than they have "
@@ -438,7 +429,7 @@ msgstr ""
 "desenvolvedores para trabalhar nelas. Alguns exemplos importantes que podem "
 "ser interessantes são:"
 
-#: ../../index.rst:168
+#: ../../index.rst:162
 msgid ""
 "PyPy_: A Python interpreter focused on high speed (JIT-compiled) operation "
 "on major platforms"
@@ -446,7 +437,7 @@ msgstr ""
 "PyPy_: Um interpretador Python focado em operação de alta velocidade "
 "(compilado por JIT) nas principais plataformas"
 
-#: ../../index.rst:170
+#: ../../index.rst:164
 msgid ""
 "Jython_: A Python interpreter focused on good integration with the Java "
 "Virtual Machine (JVM) environment"
@@ -454,7 +445,7 @@ msgstr ""
 "Jython_: Um interpretador Python focado em boa integração com o ambiente "
 "Java Virtual Machine (JVM)"
 
-#: ../../index.rst:172
+#: ../../index.rst:166
 msgid ""
 "IronPython_: A Python interpreter focused on good integration with the "
 "Common Language Runtime (CLR) provided by .NET and Mono"
@@ -462,7 +453,7 @@ msgstr ""
 "IronPython_: Um interpretador Python focado em boa integração com o Common "
 "Language Runtime (CLR) fornecido por .NET e Mono"
 
-#: ../../index.rst:174
+#: ../../index.rst:168
 msgid ""
 "Stackless_: A Python interpreter focused on providing lightweight "
 "microthreads while remaining largely compatible with CPython specific "
@@ -472,31 +463,44 @@ msgstr ""
 "permanecendo amplamente compatível com módulos de extensão específicos do "
 "CPython"
 
-#: ../../index.rst:180
+#: ../../index.rst:171
+msgid ""
+"MicroPython_: A tiny Python interpreter with small subset of the Python "
+"standard library that is optimised to run on microcontrollers and in "
+"constrained environments."
+msgstr ""
+
+#: ../../index.rst:174
+msgid ""
+"CircuitPython_: A fork of MicroPython designed to simplify experimenting and "
+"learning to code on low-cost microcontroller boards."
+msgstr ""
+
+#: ../../index.rst:179
 msgid "Key Resources"
 msgstr "Principais recursos"
 
-#: ../../index.rst:183
+#: ../../index.rst:182
 msgid "Coding style guides"
 msgstr "Guias de estilo de codificação"
 
-#: ../../index.rst:183
+#: ../../index.rst:182
 msgid ":PEP:`7` (Style Guide for C Code)"
 msgstr ":PEP:`7` (Guia de estilo para código em C)"
 
-#: ../../index.rst:184
+#: ../../index.rst:183
 msgid ":PEP:`8` (Style Guide for Python Code)"
 msgstr ":PEP:`8` (Guia de estilo para código em Python)"
 
-#: ../../index.rst:189
+#: ../../index.rst:188
 msgid "Source code"
 msgstr "Código-fonte"
 
-#: ../../index.rst:189
+#: ../../index.rst:188
 msgid "`Browse online <https://github.com/python/cpython/>`_"
 msgstr "`Acessar online <https://github.com/python/cpython/>`_"
 
-#: ../../index.rst:190
+#: ../../index.rst:189
 msgid ""
 "`Snapshot of the *main* branch <https://github.com/python/cpython/archive/"
 "main.zip>`_"
@@ -504,60 +508,60 @@ msgstr ""
 "`Snapshot do branch *main* <https://github.com/python/cpython/archive/main."
 "zip>`_"
 
-#: ../../index.rst:199
+#: ../../index.rst:198
 msgid "Additional Resources"
 msgstr "Recursos adicionais"
 
-#: ../../index.rst:201
+#: ../../index.rst:200
 msgid "Anyone can clone the sources for this guide.  See :ref:`devguide`."
 msgstr ""
 "Qualquer pessoa pode clonar os arquivos fonte deste guia. Veja :ref:"
 "`devguide`."
 
-#: ../../index.rst:207
+#: ../../index.rst:206
 msgid "Help with ..."
 msgstr "Ajudar com ..."
 
-#: ../../index.rst:204
+#: ../../index.rst:203
 msgid ":ref:`exploring`"
 msgstr ":ref:`exploring`"
 
-#: ../../index.rst:205
+#: ../../index.rst:204
 msgid ":ref:`grammar`"
 msgstr ":ref:`grammar`"
 
-#: ../../index.rst:206
+#: ../../index.rst:205
 msgid ":ref:`parser`"
 msgstr ":ref:`parser`"
 
-#: ../../index.rst:207
+#: ../../index.rst:206
 msgid ":ref:`compiler`"
 msgstr ":ref:`compiler`"
 
-#: ../../index.rst:208
+#: ../../index.rst:207
 msgid ":ref:`garbage_collector`"
 msgstr ":ref:`garbage_collector`"
 
-#: ../../index.rst:213
+#: ../../index.rst:212
 msgid "Tool support"
 msgstr "Suporte a ferramentas"
 
-#: ../../index.rst:210
+#: ../../index.rst:209
 msgid ":ref:`gdb`"
 msgstr ":ref:`gdb`"
 
-#: ../../index.rst:211
+#: ../../index.rst:210
 msgid ":ref:`clang`"
 msgstr ":ref:`clang`"
 
-#: ../../index.rst:212
+#: ../../index.rst:211
 msgid ""
 "Various tools with configuration files as found in the `Misc directory`_"
 msgstr ""
 "Várias ferramentas com arquivos de configuração encontrados no `diretório "
 "Misc`_"
 
-#: ../../index.rst:213
+#: ../../index.rst:212
 msgid ""
 "Information about editors and their configurations can be found in the `wiki "
 "<https://wiki.python.org/moin/PythonEditors>`_"
@@ -565,19 +569,19 @@ msgstr ""
 "Informações sobre editores e suas configurações podem ser encontradas na "
 "`wiki <https://wiki.python.org/moin/PythonEditors>`_"
 
-#: ../../index.rst:215
+#: ../../index.rst:214
 msgid "`python.org maintenance`_"
 msgstr "`Manutenção do python.org`_"
 
-#: ../../index.rst:217
+#: ../../index.rst:216
 msgid ":ref:`Search this guide <search>`"
 msgstr ":ref:`Pesquisar neste guia <search>`"
 
-#: ../../index.rst:221
+#: ../../index.rst:220
 msgid "Code of Conduct"
 msgstr "Código de conduta"
 
-#: ../../index.rst:222
+#: ../../index.rst:221
 msgid ""
 "Please note that all interactions on `Python Software Foundation <https://"
 "www.python.org/psf-landing/>`__-supported infrastructure is `covered "
@@ -598,6 +602,14 @@ msgstr ""
 "devem ser abertos, atenciosos e respeitosos com os outros, independentemente "
 "de sua posição dentro do projeto."
 
-#: ../../index.rst:235
+#: ../../index.rst:232
+msgid "Status of Python branches"
+msgstr "Status dos branches do Python"
+
+#: ../../index.rst:234
+msgid "Moved to :ref:`versions`"
+msgstr "Movido para :ref:`versions`"
+
+#: ../../index.rst:239
 msgid "Full Table of Contents"
 msgstr "Índice completo"

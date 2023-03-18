@@ -1,4 +1,5 @@
-# Brazilian Portuguese translation for core-developers/become-core-developer.po
+# Brazilian Portuguese translation for
+# core-developers/become-core-developer.po
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
@@ -8,17 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: 2022-12-12 15:28-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
 "Language: pt_BR\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"Generated-By: Babel 2.11.0\n"
-"X-Generator: Gtranslator 42.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../core-developers/become-core-developer.rst:6
 msgid "How to Become a Core Developer"
@@ -65,100 +65,129 @@ msgid "Gaining Commit Privileges"
 msgstr "Ganhando privilégios de fazer commit"
 
 #: ../../core-developers/become-core-developer.rst:28
-msgid "The steps to gaining commit privileges are:"
-msgstr "As etapas para obter privilégios de fazer commit são:"
-
-#: ../../core-developers/become-core-developer.rst:30
 msgid ""
-"A core developer starts a poll in the `Committers category`_ on the `Python "
-"Discourse`_ (``discuss.python.org``)"
+"After a candidate has demonstrated consistent contributions, commit "
+"privileges are granted through these steps:"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:31
+#, fuzzy
+msgid ""
+"A core developer (submitter, usually the mentor) starts a poll in the "
+"`Committers category`_ on the `Python Discourse`_ and cross-posts it to the "
+"`python-committers mailing list`_."
 msgstr ""
 "Um desenvolvedor core inicia uma votação na `categoria Committers`_ no "
 "`Python Discourse`_ (``discuss.python.org``)"
 
-#: ../../core-developers/become-core-developer.rst:33
+#: ../../core-developers/become-core-developer.rst:35
 msgid "Open for 7 days"
 msgstr "Aberta por 7 dias"
 
-#: ../../core-developers/become-core-developer.rst:34
+#: ../../core-developers/become-core-developer.rst:36
 msgid "Results shown upon close"
 msgstr "Resultados mostrados ao fechar"
 
-#: ../../core-developers/become-core-developer.rst:36
-msgid "The poll is announced on the `python-committers mailing list`_"
-msgstr "A votação é anunciada na lista de discussão `python-committers`_"
-
-#: ../../core-developers/become-core-developer.rst:37
+#: ../../core-developers/become-core-developer.rst:38
 msgid ""
-"Wait for the poll to close and see if the results confirm your membership as "
-"per the voting results required by :pep:`13`"
+"If the candidate receives at least two-thirds positive votes when the poll "
+"closes (as per :pep:`13`), the submitter `emails the steering council "
+"<mailto:steering-council@python.org>`_ with the candidate's email address "
+"requesting that the council either accept or reject the proposed membership."
 msgstr ""
-"Aguarde o encerramento da votação e veja se os resultados confirmam sua "
-"adesão de acordo com os resultados da votação exigidos pela :pep:`13`"
 
-#: ../../core-developers/become-core-developer.rst:39
+#: ../../core-developers/become-core-developer.rst:43
+#, fuzzy
 msgid ""
-"The person who nominated you emails the steering council with your email "
-"address and a request that the council either accept or reject the proposed "
-"membership"
-msgstr ""
-"A pessoa que indicou você envia um e-mail ao conselho diretor com seu "
-"endereço de e-mail e uma solicitação para que o conselho aceite ou rejeite a "
-"adesão proposta"
-
-#: ../../core-developers/become-core-developer.rst:42
-msgid ""
-"Assuming the steering council does not object, a member of the council will "
-"email you asking for:"
+"Assuming the steering council does not object, a member of the council or "
+"delegate (approver) will email the candidate:"
 msgstr ""
 "Supondo que o conselho diretor não se oponha, um membro do conselho enviará "
 "um e-mail a você solicitando:"
 
-#: ../../core-developers/become-core-developer.rst:45
-msgid "Account details as required by 🔒 https://github.com/python/voters/"
+#: ../../core-developers/become-core-developer.rst:46
+#, fuzzy
+msgid ""
+"A request for account details as required by `🔒 python/voters <https://"
+"github.com/python/voters>`_"
 msgstr ""
 "Detalhes da conta conforme exigido por 🔒 https://github.com/python/voters/"
 
-#: ../../core-developers/become-core-developer.rst:47
+#: ../../core-developers/become-core-developer.rst:48
+#, fuzzy
 msgid ""
-"Your preferred email address to subscribe to the python-committers mailing "
-"list with"
+"A request for the committer's preferred address for subscription to the "
+"`python-committers mailing list`_"
 msgstr ""
 "Seu endereço de e-mail preferido para se inscrever na lista de discussão "
 "python-committers com"
 
-#: ../../core-developers/become-core-developer.rst:49
+#: ../../core-developers/become-core-developer.rst:50
+#, fuzzy
 msgid ""
-"A reminder about the `Code of Conduct`_ and to report issues to the PSF "
-"Conduct WG"
+"A reminder about the `Code of Conduct`_ and guidance on reporting issues to "
+"the PSF Conduct WG"
 msgstr ""
 "Um lembrete sobre o `Código de Conduta`_ e para relatar problemas ao PSF "
 "Conduct WG (em português, grupo de trabalho de conduta da PSF)"
 
-#: ../../core-developers/become-core-developer.rst:52
+#: ../../core-developers/become-core-developer.rst:53
+#, fuzzy
 msgid ""
-"Once you have provided the pertinent details, your various new privileges "
-"will be turned on"
+"Once the candidate has provided the pertinent details, the approver will:"
 msgstr ""
 "Depois de fornecer os detalhes pertinentes, seus vários novos privilégios "
 "serão ativados"
 
-#: ../../core-developers/become-core-developer.rst:54
-msgid "Your details will be added to 🔒 https://github.com/python/voters/"
+#: ../../core-developers/become-core-developer.rst:55
+msgid "enable the various new privileges;"
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:56
+#, fuzzy
+msgid ""
+"add the new committer's details to `🔒 python/voters <https://github.com/"
+"python/voters>`_;"
 msgstr "Seus detalhes serão adicionados a 🔒 https://github.com/python/voters/"
 
-#: ../../core-developers/become-core-developer.rst:55
+#: ../../core-developers/become-core-developer.rst:58
+#, fuzzy
 msgid ""
-"They will update the devguide to publicly list your team membership at :ref:"
-"`developers`"
+"update the devguide to publicly list the new committer's team membership at :"
+"ref:`developers`;"
 msgstr ""
 "Eles atualizarão o guia de desenvolvimento para listar publicamente os "
 "membros de sua equipe em :ref:`developers`"
 
-#: ../../core-developers/become-core-developer.rst:57
-msgid ""
-"An announcement email by the steering council member handling your new "
-"membership will be sent to the Committers Discourse category"
+#: ../../core-developers/become-core-developer.rst:60
+msgid "send an announcement email to the Committers Discourse category."
 msgstr ""
-"Um e-mail de anúncio do membro do conselho diretor que está lidando com sua "
-"nova associação será enviado para a categoria Comitters do Discourse"
+
+#~ msgid "The steps to gaining commit privileges are:"
+#~ msgstr "As etapas para obter privilégios de fazer commit são:"
+
+#~ msgid "The poll is announced on the `python-committers mailing list`_"
+#~ msgstr "A votação é anunciada na lista de discussão `python-committers`_"
+
+#~ msgid ""
+#~ "Wait for the poll to close and see if the results confirm your membership "
+#~ "as per the voting results required by :pep:`13`"
+#~ msgstr ""
+#~ "Aguarde o encerramento da votação e veja se os resultados confirmam sua "
+#~ "adesão de acordo com os resultados da votação exigidos pela :pep:`13`"
+
+#~ msgid ""
+#~ "The person who nominated you emails the steering council with your email "
+#~ "address and a request that the council either accept or reject the "
+#~ "proposed membership"
+#~ msgstr ""
+#~ "A pessoa que indicou você envia um e-mail ao conselho diretor com seu "
+#~ "endereço de e-mail e uma solicitação para que o conselho aceite ou "
+#~ "rejeite a adesão proposta"
+
+#~ msgid ""
+#~ "An announcement email by the steering council member handling your new "
+#~ "membership will be sent to the Committers Discourse category"
+#~ msgstr ""
+#~ "Um e-mail de anúncio do membro do conselho diretor que está lidando com "
+#~ "sua nova associação será enviado para a categoria Comitters do Discourse"

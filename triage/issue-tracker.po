@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../triage/issue-tracker.rst:6
 msgid "Issue Tracker"
@@ -174,43 +174,94 @@ msgid ""
 "as appropriate). In particular, *what version of Python* you were using."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:88
-msgid "Understanding the issue's progress and status"
+#: ../../triage/issue-tracker.rst:87
+msgid ""
+"You can tag someone, with :samp:`@{username}` in a comment, if you think the "
+"issue should be brought to their attention. Use the :ref:`experts` to know "
+"who wants to be tagged or assigned for specific areas."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:90
+#: ../../triage/issue-tracker.rst:92
 msgid ""
-"There is a number of additional fields like **Assignees**, **Labels**, "
-"**Projects**, and **Milestone**. Those are filled by triagers and core "
-"developers, this is covered in the :ref:`triaging` page. You don't need to "
-"worry about those when reporting issues as a Python user."
+"There are a number of additional fields like **Assignees**, **Labels**, and "
+"**Projects**. Those are filled by triagers and core developers and are "
+"covered in the :ref:`triaging` page. You don't need to worry about those "
+"when reporting issues as a Python user."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:95
-msgid ""
-"You will automatically receive an update each time an action is taken on the "
-"bug, unless you changed your GitHub notification settings."
+#: ../../triage/issue-tracker.rst:98
+msgid "Adding special links"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:100
-msgid "Disagreement With a Resolution on the Issue Tracker"
+msgid ""
+"The following abbreviations can be used in a comment to generate a link:"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:102
+msgid ":samp:`GH-{NNN}`: to link to another issue or PR;"
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:103
+msgid ":samp:`PEP-{NNN}`: to link to a specific PEP;"
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:104
+msgid ":samp:`BPO-{NNN}`: to link to a bugs.python.org issue;"
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:106
+msgid "See also the `list of autolinks supported by GitHub <autolinks_>`_."
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:109
+msgid "Following issues"
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:111
+msgid ""
+"If you want to subscribe yourself to an issue, click the :guilabel:`🔔 "
+"Subscribe` button in the sidebar.  Similarly, if you were tagged by somebody "
+"else but decided this issue is not for you, click the :guilabel:`🔕 "
+"Unsubscribe` button in the sidebar.  Note that you are automatically "
+"subscribed to issues you created."
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:118
+msgid "Tracking dependencies and duplicates"
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:120
+msgid ""
+"It is possible to use `checklists`_ to track dependencies or, in case of "
+"meta-issues, to link to the other related issues."
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:123
+msgid ""
+"By writing :samp:`Duplicate of #{NNN}` in a comment, you can `mark issues "
+"and PRs as duplicates <duplicates_>`_."
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:128
+msgid "Disagreement With a Resolution on the Issue Tracker"
+msgstr ""
+
+#: ../../triage/issue-tracker.rst:130
 msgid ""
 "As humans, we will have differences of opinions from time to time. First and "
 "foremost, please be respectful that care, thought, and volunteer time went "
 "into the resolution."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:106
+#: ../../triage/issue-tracker.rst:134
 msgid ""
 "With this in mind, take some time to consider any comments made in "
 "association with the resolution of the issue. On reflection, the resolution "
 "steps may seem more reasonable than you initially thought."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:110
+#: ../../triage/issue-tracker.rst:138
 msgid ""
 "If you still feel the resolution is incorrect, then raise a thoughtful "
 "question on the `Core Development Discourse category`_. Further argument and "
@@ -218,17 +269,17 @@ msgid ""
 "developers is unlikely to win any converts."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:116
+#: ../../triage/issue-tracker.rst:144
 msgid ""
 "As a reminder, issues closed by a core developer have already been carefully "
 "considered. Please do not reopen a closed issue. An issue can be closed with "
 "reason either as ``complete`` or ``not planned``."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:122
+#: ../../triage/issue-tracker.rst:150
 msgid "`The Python issue tracker <issue tracker_>`_"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:123
+#: ../../triage/issue-tracker.rst:151
 msgid "Where to report issues about Python."
 msgstr ""

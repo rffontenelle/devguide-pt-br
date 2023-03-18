@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: 2022-12-12 22:57-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
 "Language: pt_BR\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"Generated-By: Babel 2.11.0\n"
-"X-Generator: Gtranslator 42.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../core-developers/developer-log.rst:5
 msgid "Developer Log"
@@ -53,6 +52,45 @@ msgstr "Data de saída"
 #: ../../core-developers/developer-log.rst:1
 msgid "Notes"
 msgstr "Observações"
+
+#: ../../core-developers/developers.csv:1
+msgid "Carl Meyer"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "carljm"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+#, fuzzy
+msgid "2023-02-28"
+msgstr "2022-02-02"
+
+#: ../../core-developers/developers.csv:1
+msgid "Pradyun Gedam"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "pradyunsg"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+#, fuzzy
+msgid "2023-01-30"
+msgstr "2021-07-30"
+
+#: ../../core-developers/developers.csv:1
+msgid "Shantanu Jain"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+msgid "hauntsaninja"
+msgstr ""
+
+#: ../../core-developers/developers.csv:1
+#, fuzzy
+msgid "2022-12-19"
+msgstr "2022-10-18"
 
 #: ../../core-developers/developers.csv:1
 msgid "Kumar Aditya"

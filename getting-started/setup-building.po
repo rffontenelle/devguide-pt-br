@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-22 12:16-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../getting-started/setup-building.rst:6
 msgid "Setup and Building"
@@ -518,32 +518,35 @@ msgid ""
 "``_ssl`` extension. One solution is to install these libraries from a third-"
 "party package manager, like Homebrew_ or MacPorts_, and then add the "
 "appropriate paths for the header and library files to your ``configure`` "
-"command.  For example,"
+"command."
 msgstr ""
 
 #: ../../getting-started/setup-building.rst:418
-msgid "with **Homebrew**::"
+msgid "For example, with **Homebrew**, install the dependencies::"
 msgstr ""
 
 #: ../../getting-started/setup-building.rst:422
-msgid "For Python 3.10 and newer::"
+msgid "Then, for Python 3.10 and newer, run ``configure``::"
 msgstr ""
 
 #: ../../getting-started/setup-building.rst:431
-msgid "For Python versions 3.9 through 3.7::"
+msgid "Or, for Python 3.7 through 3.9::"
 msgstr ""
 
 #: ../../getting-started/setup-building.rst:441
-#: ../../getting-started/setup-building.rst:455
-msgid "and ``make``::"
+msgid "And finally, run ``make``::"
 msgstr ""
 
 #: ../../getting-started/setup-building.rst:445
-msgid "or **MacPorts**::"
+msgid "Alternatively, with **MacPorts**::"
 msgstr ""
 
 #: ../../getting-started/setup-building.rst:449
 msgid "and ``configure``::"
+msgstr ""
+
+#: ../../getting-started/setup-building.rst:455
+msgid "and ``make``::"
 msgstr ""
 
 #: ../../getting-started/setup-building.rst:459
@@ -720,11 +723,11 @@ msgid ""
 "comment is needed for coding *in* Python, see :ref:`resources`."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:582
+#: ../../getting-started/setup-building.rst:583
 msgid "Directory structure"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:584
+#: ../../getting-started/setup-building.rst:585
 msgid ""
 "There are several top-level directories in the CPython source tree. Knowing "
 "what each one is meant to hold will help you find where a certain piece of "
@@ -732,131 +735,131 @@ msgid ""
 "exceptions to every rule."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:591
+#: ../../getting-started/setup-building.rst:592
 msgid "``Doc``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:590
+#: ../../getting-started/setup-building.rst:591
 msgid ""
 "The official documentation. This is what https://docs.python.org/ uses. See "
 "also :ref:`building-doc`."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:595
+#: ../../getting-started/setup-building.rst:596
 msgid "``Grammar``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:594
+#: ../../getting-started/setup-building.rst:595
 msgid ""
 "Contains the :abbr:`EBNF (Extended Backus-Naur Form)` grammar file for "
 "Python."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:598
+#: ../../getting-started/setup-building.rst:599
 msgid "``Include``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:598
+#: ../../getting-started/setup-building.rst:599
 msgid "Contains all interpreter-wide header files."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:601
+#: ../../getting-started/setup-building.rst:602
 msgid "``Lib``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:601
+#: ../../getting-started/setup-building.rst:602
 msgid "The part of the standard library implemented in pure Python."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:604
+#: ../../getting-started/setup-building.rst:605
 msgid "``Mac``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:604
+#: ../../getting-started/setup-building.rst:605
 msgid "Mac-specific code (e.g., using IDLE as a macOS application)."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:608
+#: ../../getting-started/setup-building.rst:609
 msgid "``Misc``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:607
+#: ../../getting-started/setup-building.rst:608
 msgid ""
 "Things that do not belong elsewhere. Typically this is varying kinds of "
 "developer-specific documentation."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:612
+#: ../../getting-started/setup-building.rst:613
 msgid "``Modules``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:611
+#: ../../getting-started/setup-building.rst:612
 msgid ""
 "The part of the standard library (plus some other code) that is implemented "
 "in C."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:615
+#: ../../getting-started/setup-building.rst:616
 msgid "``Objects``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:615
+#: ../../getting-started/setup-building.rst:616
 msgid "Code for all built-in types."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:618
+#: ../../getting-started/setup-building.rst:619
 msgid "``PC``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:618
+#: ../../getting-started/setup-building.rst:619
 msgid "Windows-specific code."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:622
+#: ../../getting-started/setup-building.rst:623
 msgid "``PCbuild``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:621
+#: ../../getting-started/setup-building.rst:622
 msgid ""
 "Build files for the version of MSVC currently used for the Windows "
 "installers provided on python.org."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:626
+#: ../../getting-started/setup-building.rst:627
 msgid "``Parser``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:625
+#: ../../getting-started/setup-building.rst:626
 msgid ""
 "Code related to the parser. The definition of the AST nodes is also kept "
 "here."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:631
+#: ../../getting-started/setup-building.rst:632
 msgid "``Programs``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:629
+#: ../../getting-started/setup-building.rst:630
 msgid ""
 "Source code for C executables, including the main function for the CPython "
 "interpreter (in versions prior to Python 3.5, these files are in the Modules "
 "directory)."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:635
+#: ../../getting-started/setup-building.rst:636
 msgid "``Python``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:634
+#: ../../getting-started/setup-building.rst:635
 msgid ""
 "The code that makes up the core CPython runtime. This includes the compiler, "
 "eval loop and various built-in modules."
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:639
+#: ../../getting-started/setup-building.rst:640
 msgid "``Tools``"
 msgstr ""
 
-#: ../../getting-started/setup-building.rst:638
+#: ../../getting-started/setup-building.rst:639
 msgid "Various tools that are (or have been) used to maintain Python."
 msgstr ""

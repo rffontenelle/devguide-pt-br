@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../internals/parser.rst:5
 msgid "Guide to the Parser"
@@ -157,8 +157,8 @@ msgid ""
 "`SyntaxError` is\"."
 msgstr ""
 
-#: ../../internals/parser.rst:96
-msgid "Consequences or the ordered choice operator"
+#: ../../internals/parser.rst:98
+msgid "Consequences of the ordered choice operator"
 msgstr ""
 
 #: ../../internals/parser.rst:100

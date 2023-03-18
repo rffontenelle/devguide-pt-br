@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../triage/triaging.rst:5
 msgid "Triaging an Issue"
@@ -69,15 +69,35 @@ msgid ""
 "etc), you can close it as \"not planned\"."
 msgstr ""
 
-#: ../../triage/triaging.rst:29
-msgid "Some of these fields can only be set/edited by core developers."
+#: ../../triage/triaging.rst:28
+msgid "Assignees"
 msgstr ""
 
-#: ../../triage/triaging.rst:35
+#: ../../triage/triaging.rst:30
+msgid ""
+"This field indicates who is expected to take the next step in resolving the "
+"issue."
+msgstr ""
+
+#: ../../triage/triaging.rst:33
+msgid ""
+"It is acceptable to assign an issue to someone if the issue cannot move "
+"forward without their help; e.g., they need to make a technical decision on "
+"how to proceed. Also consult the :ref:`experts` as certain stdlib modules "
+"should always be assigned to a specific person."
+msgstr ""
+
+#: ../../triage/triaging.rst:38
+msgid ""
+"Note that in order to assign an issue to someone, that person **must** be a "
+"team member, likely a triager or a core developer."
+msgstr ""
+
+#: ../../triage/triaging.rst:48
 msgid "Helping Triage Issues"
 msgstr ""
 
-#: ../../triage/triaging.rst:37
+#: ../../triage/triaging.rst:50
 msgid ""
 "Once you know your way around how Python's source files are structured and "
 "you are comfortable with the workflow, a great way to contribute is to help "
@@ -85,121 +105,121 @@ msgid ""
 "needed in order to effectively help triage."
 msgstr ""
 
-#: ../../triage/triaging.rst:42
+#: ../../triage/triaging.rst:55
 msgid ""
 "Around the clock, new issues are being opened on the :ref:`issue tracker "
 "<tracker>` and existing issues are being updated. Every issue needs to be "
 "triaged to make sure everything runs smoothly."
 msgstr ""
 
-#: ../../triage/triaging.rst:47
+#: ../../triage/triaging.rst:60
 msgid "Classifying Reports"
 msgstr ""
 
-#: ../../triage/triaging.rst:49
+#: ../../triage/triaging.rst:62
 msgid "For bugs, an issue needs to:"
 msgstr ""
 
-#: ../../triage/triaging.rst:51
+#: ../../triage/triaging.rst:64
 msgid "clearly explain the bug so it can be reproduced"
 msgstr ""
 
-#: ../../triage/triaging.rst:52
+#: ../../triage/triaging.rst:65
 msgid "include all relevant platform details"
 msgstr ""
 
-#: ../../triage/triaging.rst:53
+#: ../../triage/triaging.rst:66
 msgid "state what version(s) of Python are affected by the bug."
 msgstr ""
 
-#: ../../triage/triaging.rst:55
+#: ../../triage/triaging.rst:68
 msgid ""
 "These are things you can help with once you have experience developing for "
 "Python:"
 msgstr ""
 
-#: ../../triage/triaging.rst:58
+#: ../../triage/triaging.rst:71
 msgid ""
 "Try reproducing the bug: if it is not explained clearly enough for you to "
 "reproduce it, then there is a good chance a core developer won't be able to "
 "either."
 msgstr ""
 
-#: ../../triage/triaging.rst:61
+#: ../../triage/triaging.rst:74
 msgid ""
 "See if the issue happens on a different Python version: it is always helpful "
 "to know if a bug not only affects the in-development version of Python, but "
 "whether it also affects other versions in maintenance mode."
 msgstr ""
 
-#: ../../triage/triaging.rst:64
+#: ../../triage/triaging.rst:77
 msgid ""
 "Write a unit test: if the bug lacks a unit test that should end up in "
 "Python's test suite, having that written can be very helpful."
 msgstr ""
 
-#: ../../triage/triaging.rst:67
+#: ../../triage/triaging.rst:80
 msgid ""
 "This is all helpful as it allows members of the :ref:`triage team <triage-"
 "team>` to properly classify an issue so it can be handled by the right core "
 "developers in a timely fashion."
 msgstr ""
 
-#: ../../triage/triaging.rst:72
+#: ../../triage/triaging.rst:85
 msgid "Reviewing Pull Requests"
 msgstr ""
 
-#: ../../triage/triaging.rst:74
+#: ../../triage/triaging.rst:87
 msgid ""
 "If an issue has a linked pull request that has not been reviewed, you can "
 "help by making sure the pull request:"
 msgstr ""
 
-#: ../../triage/triaging.rst:77
+#: ../../triage/triaging.rst:90
 msgid "is a good solution to the problem it is trying to solve"
 msgstr ""
 
-#: ../../triage/triaging.rst:78
+#: ../../triage/triaging.rst:91
 msgid "follows the style guides (:pep:`7`, :pep:`8`, :ref:`style-guide`, etc.)"
 msgstr ""
 
-#: ../../triage/triaging.rst:79
+#: ../../triage/triaging.rst:92
 msgid "includes proper tests"
 msgstr ""
 
-#: ../../triage/triaging.rst:80
+#: ../../triage/triaging.rst:93
 msgid "includes proper documentation changes"
 msgstr ""
 
-#: ../../triage/triaging.rst:81
+#: ../../triage/triaging.rst:94
 msgid "includes a :ref:`NEWS entry <news-entry>` (if needed)"
 msgstr ""
 
-#: ../../triage/triaging.rst:82
+#: ../../triage/triaging.rst:95
 msgid ""
 "includes the author in ``Misc/ACKS``, either already or the patch adds them"
 msgstr ""
 
-#: ../../triage/triaging.rst:83
+#: ../../triage/triaging.rst:96
 msgid "doesn't have conflicts with the ``main`` branch"
 msgstr ""
 
-#: ../../triage/triaging.rst:85
+#: ../../triage/triaging.rst:98
 msgid ""
 "Doing all of this allows core developers and :ref:`triagers <triage-team>` "
 "to more quickly look for subtle issues that only people with extensive "
 "experience working on Python's code base will notice."
 msgstr ""
 
-#: ../../triage/triaging.rst:89
+#: ../../triage/triaging.rst:102
 msgid "See also :ref:`committing`."
 msgstr ""
 
-#: ../../triage/triaging.rst:92
+#: ../../triage/triaging.rst:105
 msgid "Finding an Issue You Can Help With"
 msgstr ""
 
-#: ../../triage/triaging.rst:94
+#: ../../triage/triaging.rst:107
 msgid ""
 "If you want to help with triaging, you might also want to search for issues "
 "in modules for which you have a working knowledge.  Search for the name of a "

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../internals/garbage-collector.rst:7
 msgid "Garbage Collector Design"
@@ -216,20 +216,20 @@ msgid ""
 "(implemented using the C API or inherited by a superclass) to know what "
 "objects are referenced by each container. After all the objects have been "
 "scanned, only the objects that have references from outside the “objects to "
-"scan” list will have ``gc_refs > 0``."
+"scan” list will have ``gc_ref > 0``."
 msgstr ""
 
 #: ../../internals/garbage-collector.rst:198
 msgid ""
-"Notice that having ``gc_refs == 0`` does not imply that the object is "
+"Notice that having ``gc_ref == 0`` does not imply that the object is "
 "unreachable. This is because another object that is reachable from the "
-"outside (``gc_refs > 0``) can still have references to it. For instance, the "
-"``link_2`` object in our example ended having ``gc_refs == 0`` but is "
+"outside (``gc_ref > 0``) can still have references to it. For instance, the "
+"``link_2`` object in our example ended having ``gc_ref == 0`` but is "
 "referenced still by the ``link_1`` object that is reachable from the "
 "outside. To obtain the set of objects that are really unreachable, the "
 "garbage collector re-scans the container objects using the ``tp_traverse`` "
 "slot; this time with a different traverse function that marks objects with "
-"``gc_refs == 0`` as \"tentatively unreachable\" and then moves them to the "
+"``gc_ref == 0`` as \"tentatively unreachable\" and then moves them to the "
 "tentatively unreachable list. The following image depicts the state of the "
 "lists in a moment when the GC processed the ``link_3`` and ``link_4`` "
 "objects but has not processed ``link_1`` and ``link_2`` yet."
@@ -237,27 +237,27 @@ msgstr ""
 
 #: ../../internals/garbage-collector.rst:212
 msgid ""
-"Then the GC scans the next ``link_1`` object. Because it has ``gc_refs == "
+"Then the GC scans the next ``link_1`` object. Because it has ``gc_ref == "
 "1``, the gc does not do anything special because it knows it has to be "
 "reachable (and is already in what will become the reachable list):"
 msgstr ""
 
 #: ../../internals/garbage-collector.rst:218
 msgid ""
-"When the GC encounters an object which is reachable (``gc_refs > 0``), it "
+"When the GC encounters an object which is reachable (``gc_ref > 0``), it "
 "traverses its references using the ``tp_traverse`` slot to find all the "
 "objects that are reachable from it, moving them to the end of the list of "
-"reachable objects (where they started originally) and setting its "
-"``gc_refs`` field to 1. This is what happens to ``link_2`` and ``link_3`` "
-"below as they are reachable from ``link_1``.  From the state in the previous "
-"image and after examining the objects referred to by ``link_1`` the GC knows "
-"that ``link_3`` is reachable after all, so it is moved back to the original "
-"list and its ``gc_refs`` field is set to 1 so that if the GC visits it "
-"again, it will know that it's reachable. To avoid visiting an object twice, "
-"the GC marks all objects that have already been visited once (by unsetting "
-"the ``PREV_MASK_COLLECTING`` flag) so that if an object that has already "
-"been processed is referenced by some other object, the GC does not process "
-"it twice."
+"reachable objects (where they started originally) and setting its ``gc_ref`` "
+"field to 1. This is what happens to ``link_2`` and ``link_3`` below as they "
+"are reachable from ``link_1``.  From the state in the previous image and "
+"after examining the objects referred to by ``link_1`` the GC knows that "
+"``link_3`` is reachable after all, so it is moved back to the original list "
+"and its ``gc_ref`` field is set to 1 so that if the GC visits it again, it "
+"will know that it's reachable. To avoid visiting an object twice, the GC "
+"marks all objects that have already been visited once (by unsetting the "
+"``PREV_MASK_COLLECTING`` flag) so that if an object that has already been "
+"processed is referenced by some other object, the GC does not process it "
+"twice."
 msgstr ""
 
 #: ../../internals/garbage-collector.rst:233
@@ -403,24 +403,29 @@ msgstr ""
 
 #: ../../internals/garbage-collector.rst:322
 msgid ""
-"Generations are collected when the number of objects that they contain "
-"reaches some predefined threshold, which is unique for each generation and "
-"is lower the older the generations are. These thresholds can be examined "
-"using the  ``gc.get_threshold`` function:"
+"In order to decide when to run, the collector keeps track of the number of "
+"object allocations and deallocations since the last collection. When the "
+"number of allocations minus the number of deallocations exceeds "
+"``threshold_0``, collection starts. Initially only generation 0 is examined. "
+"If generation 0 has been examined more than ``threshold_1`` times since "
+"generation 1 has been examined, then generation 1 is examined as well. With "
+"generation 2, things are a bit more complicated; see :ref:`gc-oldest-"
+"generation` for more information. These thresholds can be examined using "
+"the :func:`gc.get_threshold` function:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:334
+#: ../../internals/garbage-collector.rst:339
 msgid ""
 "The content of these generations can be examined using the ``gc."
 "get_objects(generation=NUM)`` function and collections can be triggered "
 "specifically in a generation by calling ``gc.collect(generation=NUM)``."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:374
+#: ../../internals/garbage-collector.rst:380
 msgid "Collecting the oldest generation"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:376
+#: ../../internals/garbage-collector.rst:382
 msgid ""
 "In addition to the various configurable thresholds, the GC only triggers a "
 "full collection of the oldest generation if the ratio ``long_lived_pending / "
@@ -440,11 +445,11 @@ msgid ""
 "but we do fewer and fewer of them\")."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:393
+#: ../../internals/garbage-collector.rst:399
 msgid "Optimization: reusing fields to save memory"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:395
+#: ../../internals/garbage-collector.rst:401
 msgid ""
 "In order to save memory, the two linked list pointers in every object with "
 "GC support are reused for several purposes. This is a common optimization "
@@ -464,14 +469,14 @@ msgid ""
 "the last 3 bits available."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:411
+#: ../../internals/garbage-collector.rst:417
 msgid ""
 "The CPython GC makes use of two fat pointers that correspond to the extra "
 "fields of ``PyGC_Head`` discussed in the `Memory layout and object "
 "structure`_ section:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:416
+#: ../../internals/garbage-collector.rst:422
 msgid ""
 "Because the presence of extra information, \"tagged\" or \"fat\" pointers "
 "cannot be dereferenced directly and the extra information must be stripped "
@@ -480,7 +485,7 @@ msgid ""
 "normally assume the pointers inside the lists are in a consistent state."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:423
+#: ../../internals/garbage-collector.rst:429
 msgid ""
 "The ``_gc_prev`` field is normally used as the \"previous\" pointer to "
 "maintain the doubly linked list but its lowest two bits are used to keep the "
@@ -488,11 +493,11 @@ msgid ""
 "collections, the only flag that can be present is "
 "``_PyGC_PREV_MASK_FINALIZED`` that indicates if an object has been already "
 "finalized. During collections ``_gc_prev`` is temporarily used for storing a "
-"copy of the reference count (``gc_refs``), in addition to two flags, and the "
+"copy of the reference count (``gc_ref``), in addition to two flags, and the "
 "GC linked list becomes a singly linked list until ``_gc_prev`` is restored."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:432
+#: ../../internals/garbage-collector.rst:438
 msgid ""
 "The ``_gc_next`` field is used as the \"next\" pointer to maintain the "
 "doubly linked list but during collection its lowest bit is used to keep the "
@@ -504,11 +509,11 @@ msgid ""
 "tricks (like the ``NEXT_MASK_UNREACHABLE`` flag) are employed."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:442
+#: ../../internals/garbage-collector.rst:448
 msgid "Optimization: delay tracking containers"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:444
+#: ../../internals/garbage-collector.rst:450
 msgid ""
 "Certain types of containers cannot participate in a reference cycle, and so "
 "do not need to be tracked by the garbage collector. Untracking these objects "
@@ -518,15 +523,15 @@ msgid ""
 "to untrack a container:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:451
+#: ../../internals/garbage-collector.rst:457
 msgid "When the container is created."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:452
+#: ../../internals/garbage-collector.rst:458
 msgid "When the container is examined by the garbage collector."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:454
+#: ../../internals/garbage-collector.rst:460
 msgid ""
 "As a general rule, instances of atomic types aren't tracked and instances of "
 "non-atomic types (containers, user-defined objects...) are.  However, some "
@@ -535,7 +540,7 @@ msgid ""
 "benefit from delayed tracking:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:460
+#: ../../internals/garbage-collector.rst:466
 msgid ""
 "Tuples containing only immutable objects (integers, strings etc, and "
 "recursively, tuples of immutable objects) do not need to be tracked. The "
@@ -549,7 +554,7 @@ msgid ""
 "tuple."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:470
+#: ../../internals/garbage-collector.rst:476
 msgid ""
 "Dictionaries containing only immutable objects also do not need to be "
 "tracked. Dictionaries are untracked when created. If a tracked item is "
@@ -558,7 +563,7 @@ msgid ""
 "collector will untrack any dictionaries whose contents are not tracked."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:476
+#: ../../internals/garbage-collector.rst:482
 msgid ""
 "The garbage collector module provides the Python function "
 "``is_tracked(obj)``, which returns the current tracking status of the "

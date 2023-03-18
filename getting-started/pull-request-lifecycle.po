@@ -1,4 +1,5 @@
-# Brazilian Portuguese translation for getting-started/pull-request-lifecycle.po
+# Brazilian Portuguese translation for
+# getting-started/pull-request-lifecycle.po
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
@@ -8,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../getting-started/pull-request-lifecycle.rst:7
 msgid "Lifecycle of a Pull Request"
@@ -344,8 +345,8 @@ msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:256
 msgid ""
-"Are there any whitespace problems in Python files? (using ``Tools/scripts/"
-"reindent.py``)"
+"Are there any whitespace problems in Python files? (using :cpy-file:`Tools/"
+"patchcheck/reindent.py`)"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:258
@@ -353,72 +354,70 @@ msgid "Are there any whitespace problems in C files?"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:259
-msgid ""
-"Are there any whitespace problems in the documentation? (using ``Tools/"
-"scripts/reindent-rst.py``)"
+msgid "Are there any whitespace problems in the documentation?"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:261
+#: ../../getting-started/pull-request-lifecycle.rst:260
 msgid "Has the documentation been updated?"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:262
+#: ../../getting-started/pull-request-lifecycle.rst:261
 msgid "Has the test suite been updated?"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:263
+#: ../../getting-started/pull-request-lifecycle.rst:262
 msgid ""
 "Has an entry under ``Misc/NEWS.d/next`` been added? (using `blurb-it "
 "<https://blurb-it.herokuapp.com/>`_, or the `blurb <https://pypi.org/project/"
 "blurb/>`_ tool)"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:266
+#: ../../getting-started/pull-request-lifecycle.rst:265
 msgid "Has ``Misc/ACKS`` been updated?"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:267
+#: ../../getting-started/pull-request-lifecycle.rst:266
 msgid "Has ``configure`` been regenerated, if necessary?"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:268
+#: ../../getting-started/pull-request-lifecycle.rst:267
 msgid "Has ``pyconfig.h.in`` been regenerated, if necessary?"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:270
+#: ../../getting-started/pull-request-lifecycle.rst:269
 msgid ""
 "The automated patch check doesn't actually *answer* all of these questions. "
 "Aside from the whitespace checks, the tool is a memory aid for the various "
 "elements that can go into making a complete patch."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:279
+#: ../../getting-started/pull-request-lifecycle.rst:278
 msgid "Making Good Commits"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:281
+#: ../../getting-started/pull-request-lifecycle.rst:280
 msgid ""
 "Each feature or bugfix should be addressed by a single pull request, and for "
 "each pull request there may be several commits.  In particular:"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:284
+#: ../../getting-started/pull-request-lifecycle.rst:283
 msgid ""
 "Do **not** fix more than one issue in the same commit (except, of course, if "
 "one code change fixes all of them)."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:286
+#: ../../getting-started/pull-request-lifecycle.rst:285
 msgid ""
 "Do **not** do cosmetic changes to unrelated code in the same commit as some "
 "feature/bugfix."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:289
+#: ../../getting-started/pull-request-lifecycle.rst:288
 msgid "Commit messages should follow the following structure::"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:296
+#: ../../getting-started/pull-request-lifecycle.rst:295
 msgid ""
 "The first line or sentence is meant to be a dense, to-the-point explanation "
 "of what the purpose of the commit is. The imperative form (used in the "
@@ -427,7 +426,7 @@ msgid ""
 "lines. Furthermore, the first line should not end in a period."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:302
+#: ../../getting-started/pull-request-lifecycle.rst:301
 msgid ""
 "If this is not enough detail for a commit, a new paragraph(s) can be added "
 "to explain in proper depth what has happened (detail should be good enough "
@@ -435,24 +434,24 @@ msgid ""
 "justification for the change)."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:307
+#: ../../getting-started/pull-request-lifecycle.rst:306
 msgid ""
 "Check :ref:`the git bootcamp <accepting-and-merging-a-pr>` for further "
 "instructions on how the commit message should look like when merging a pull "
 "request."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:312
+#: ../../getting-started/pull-request-lifecycle.rst:311
 msgid ""
 "`How to Write a Git Commit Message <https://cbea.ms/git-commit/>`_ is a nice "
 "article that describes how to write a good commit message."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:319
+#: ../../getting-started/pull-request-lifecycle.rst:318
 msgid "Licensing"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:321
+#: ../../getting-started/pull-request-lifecycle.rst:320
 msgid ""
 "To accept your change we must have your formal approval for distributing "
 "your work under the `PSF license`_.  Therefore, you need to sign a "
@@ -460,21 +459,21 @@ msgid ""
 "license your code for use with Python (you retain the copyright)."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:327
+#: ../../getting-started/pull-request-lifecycle.rst:326
 msgid ""
 "You only have to sign this document once, it will then apply to all your "
 "further contributions to Python."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:330
+#: ../../getting-started/pull-request-lifecycle.rst:329
 msgid "Here are the steps needed in order to sign the CLA:"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:332
+#: ../../getting-started/pull-request-lifecycle.rst:331
 msgid "Create a change and submit it as a pull request."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:334
+#: ../../getting-started/pull-request-lifecycle.rst:333
 msgid ""
 "When ``cpython-cla-bot`` comments on your pull request that commit authors "
 "are required to sign a Contributor License Agreement, click on the button in "
@@ -482,17 +481,17 @@ msgid ""
 "automatic."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:339
+#: ../../getting-started/pull-request-lifecycle.rst:338
 msgid ""
 "After signing, the comment by ``cpython-cla-bot`` will update to indicate "
 "that \"all commit authors signed the Contributor License Agreement."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:350
+#: ../../getting-started/pull-request-lifecycle.rst:349
 msgid "Submitting"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:352
+#: ../../getting-started/pull-request-lifecycle.rst:351
 msgid ""
 "Once you are satisfied with your work you will want to commit your changes "
 "to your branch. In general you can run ``git commit -a`` and that will "
@@ -500,17 +499,17 @@ msgid ""
 "outstanding."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:357
+#: ../../getting-started/pull-request-lifecycle.rst:356
 msgid ""
 "When all of your changes are committed (i.e. ``git status`` doesn't list "
 "anything), you will want to push your branch to your fork::"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:362
+#: ../../getting-started/pull-request-lifecycle.rst:361
 msgid "This will get your changes up to GitHub."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:364
+#: ../../getting-started/pull-request-lifecycle.rst:363
 msgid ""
 "Now you want to `create a pull request from your fork <https://docs.github."
 "com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-"
@@ -520,7 +519,7 @@ msgid ""
 "`` prefix in the pull request title and ``#NNNNN`` in the description."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:371
+#: ../../getting-started/pull-request-lifecycle.rst:370
 msgid ""
 "If this is a pull request for an unreported issue (assuming you already "
 "performed a search on the issue tracker for a pre-existing issue), create a "
@@ -529,7 +528,7 @@ msgid ""
 "reviewing your pull request because of lack of information."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:377
+#: ../../getting-started/pull-request-lifecycle.rst:376
 msgid ""
 "If this issue is so simple that there's no need for an issue to track any "
 "discussion of what the pull request is trying to solve (e.g. fixing a "
@@ -537,7 +536,7 @@ msgid ""
 "label added to it by someone with commit access."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:382
+#: ../../getting-started/pull-request-lifecycle.rst:381
 msgid ""
 "Your pull request may involve several commits as a result of addressing code "
 "review comments.  Please keep the commit history in the pull request intact "
@@ -547,11 +546,11 @@ msgid ""
 "addressed. The commits will be squashed when the pull request is merged."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:391
+#: ../../getting-started/pull-request-lifecycle.rst:390
 msgid "Converting an Existing Patch from b.p.o to GitHub"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:393
+#: ../../getting-started/pull-request-lifecycle.rst:392
 msgid ""
 "When a patch exists in the `issue tracker`_ that should be converted into a "
 "GitHub pull request, please first ask the original patch author to prepare "
@@ -566,15 +565,15 @@ msgid ""
 "multiple-authors>`_ on how to properly add the co-author info."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:404
+#: ../../getting-started/pull-request-lifecycle.rst:403
 msgid "See also :ref:`Applying a Patch to Git <git_from_patch>`."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:407
+#: ../../getting-started/pull-request-lifecycle.rst:409
 msgid "Reviewing"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:409
+#: ../../getting-started/pull-request-lifecycle.rst:411
 msgid ""
 "To begin with, please be patient! There are many more people submitting pull "
 "requests than there are people capable of reviewing your pull request. "
@@ -589,7 +588,7 @@ msgid ""
 "your pull request."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:422
+#: ../../getting-started/pull-request-lifecycle.rst:424
 msgid ""
 "When someone does manage to find the time to look at your pull request they "
 "will most likely make comments about how it can be improved (don't worry, "
@@ -599,11 +598,11 @@ msgid ""
 "satisfactory solution has emerged."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:433
+#: ../../getting-started/pull-request-lifecycle.rst:434
 msgid "How to Review a Pull Request"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:435
+#: ../../getting-started/pull-request-lifecycle.rst:436
 msgid ""
 "One of the bottlenecks in the Python development process is the lack of code "
 "reviews. If you browse the bug tracker, you will see that numerous issues "
@@ -618,13 +617,13 @@ msgid ""
 "tracker."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:448
+#: ../../getting-started/pull-request-lifecycle.rst:449
 msgid ""
 "If you have not already done so, get a copy of the CPython repository by "
 "following the :ref:`setup guide <setup>`, build it and run the tests."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:451
+#: ../../getting-started/pull-request-lifecycle.rst:452
 msgid ""
 "Check the bug tracker to see what steps are necessary to reproduce the issue "
 "and confirm that you can reproduce the issue in your version of the Python "
@@ -632,17 +631,17 @@ msgid ""
 "python inside the repository."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:456
+#: ../../getting-started/pull-request-lifecycle.rst:457
 msgid ""
 "Checkout and apply the pull request (Please refer to the instruction :ref:"
 "`git_pr`)"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:459
+#: ../../getting-started/pull-request-lifecycle.rst:460
 msgid "If the changes affect any C file, run the build again."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:461
+#: ../../getting-started/pull-request-lifecycle.rst:462
 msgid ""
 "Launch the Python REPL (the interactive shell prompt) and check if you can "
 "reproduce the issue. Now that the pull request has been applied, the issue "
@@ -652,7 +651,7 @@ msgid ""
 "issues that the author of the fix may have missed."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:468
+#: ../../getting-started/pull-request-lifecycle.rst:469
 msgid ""
 "If you have time, run the entire test suite. If you are pressed for time, "
 "run the tests for the module(s) where changes were applied. However, please "
@@ -660,44 +659,44 @@ msgid ""
 "should always make sure the entire test suite passes."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:474
+#: ../../getting-started/pull-request-lifecycle.rst:475
 msgid "Leaving a Pull Request Review on GitHub"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:476
+#: ../../getting-started/pull-request-lifecycle.rst:477
 msgid ""
 "When you review a pull request, you should provide additional details and "
 "context of your review process."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:479
+#: ../../getting-started/pull-request-lifecycle.rst:480
 msgid ""
 "Instead of simply \"approving\" the pull request, leave comments.  For "
 "example:"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:481
+#: ../../getting-started/pull-request-lifecycle.rst:482
 msgid ""
 "If you tested the PR, report the result and the system and version tested "
 "on, such as 'Windows 10', 'Ubuntu 16.4', or 'Mac High Sierra'."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:484
+#: ../../getting-started/pull-request-lifecycle.rst:485
 msgid "If you request changes, try to suggest how."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:486
+#: ../../getting-started/pull-request-lifecycle.rst:487
 msgid ""
 "Comment on what is \"good\" about the pull request, not just the \"bad\". "
 "Doing so will make it easier for the PR author to find the good in your "
 "comments."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:490
+#: ../../getting-started/pull-request-lifecycle.rst:491
 msgid "Dismissing Review from Another Core Developer"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:492
+#: ../../getting-started/pull-request-lifecycle.rst:493
 msgid ""
 "A core developer can dismiss another core developer's review if they "
 "confirmed that the requested changes have been made.  When a core developer "
@@ -705,11 +704,11 @@ msgid ""
 "looking after the PR, and their review should not be dismissed."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:499
+#: ../../getting-started/pull-request-lifecycle.rst:500
 msgid "Committing/Rejecting"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:501
+#: ../../getting-started/pull-request-lifecycle.rst:502
 msgid ""
 "Once your pull request has reached an acceptable state (and thus considered "
 "\"accepted\"), it will either be merged or rejected. If it is rejected, "
@@ -719,7 +718,7 @@ msgid ""
 "contributions."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:507
+#: ../../getting-started/pull-request-lifecycle.rst:508
 msgid ""
 "But if your pull request is merged it will then go into Python's :abbr:`VCS "
 "(version control system)` to be released with the next major release of "
@@ -727,11 +726,11 @@ msgid ""
 "the core developer doing the merge believes it is warranted."
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:515
+#: ../../getting-started/pull-request-lifecycle.rst:516
 msgid "Crediting"
 msgstr ""
 
-#: ../../getting-started/pull-request-lifecycle.rst:517
+#: ../../getting-started/pull-request-lifecycle.rst:518
 msgid ""
 "Non-trivial contributions are credited in the ``Misc/ACKS`` file (and, most "
 "often, in a contribution's news entry as well).  You may be asked to make "

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-22 12:16-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../documentation/start-documenting.rst:6
 msgid "Getting Started"
@@ -94,109 +94,125 @@ msgstr ""
 
 #: ../../documentation/start-documenting.rst:67
 msgid ""
-"The toolset used to build the docs is written in Python and is called "
-"Sphinx_. Sphinx is maintained separately and is not included in this tree.  "
-"Also needed are blurb_, a tool to create :file:`Misc/NEWS` on demand; and "
-"python-docs-theme_, the Sphinx theme for the Python documentation."
+"To build the documentation, follow the steps in one of the sections below. "
+"You can view the documentation after building the HTML by opening the file :"
+"file:`Doc/build/html/index.html` in a web browser."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:72
+#: ../../documentation/start-documenting.rst:73
 msgid ""
-"To build the documentation, follow the instructions from one of the sections "
-"below.  You can view the documentation after building the HTML by pointing a "
-"browser at the file :file:`Doc/build/html/index.html`."
+"The following instructions all assume your current working dir is the "
+"``Doc`` subdirectory in your :ref:`CPython repository clone <checkout>`. "
+"Make sure to switch to it with ``cd Doc`` if necessary."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:76
+#: ../../documentation/start-documenting.rst:81
+msgid "Create a virtual environment"
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:85
 msgid ""
-"You are expected to have installed the latest stable version of Sphinx_ and "
-"blurb_ on your system or in a virtualenv_ (which can be created using ``make "
-"venv``), so that the Makefile can find the ``sphinx-build`` command.  You "
-"can also specify the location of ``sphinx-build`` with the ``SPHINXBUILD`` :"
-"command:`make` variable."
+"**On Unix platforms** that support :program:`make` (including Linux, macOS "
+"and BSD), you can create a new :mod:`venv` with the required dependencies "
+"using::"
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:86
-msgid "Using make / make.bat"
-msgstr ""
-
-#: ../../documentation/start-documenting.rst:88
+#: ../../documentation/start-documenting.rst:91
 msgid ""
-"**On Unix**, run the following from the root of your :ref:`repository clone "
-"<checkout>` to build the output as HTML::"
+"Building the docs with :program:`make` will automatically use this "
+"environment without you having to activate it."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:95
+#: ../../documentation/start-documenting.rst:96
 msgid ""
-"or alternatively ``make -C Doc/ venv html``.  ``htmlview`` can be used "
-"instead of ``html`` to conveniently open the docs in a browser once the "
-"build completes."
+"**On Windows**, or if not using :program:`make`, `create a new virtual "
+"environment <venv-create_>`__ manually. Always be sure to `activate this "
+"environment <venv-activate_>`__ before building the documentation."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:99
+#: ../../documentation/start-documenting.rst:107
+msgid "Build using make / make.bat"
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:109
 msgid ""
-"You can also use ``make help`` to see a list of targets supported by :"
-"command:`make`.  Note that ``make check`` is automatically run when you "
-"submit a :ref:`pull request <pullrequest>`, so you should make sure that it "
-"runs without errors."
+"A Unix ``Makefile`` is provided, :cpy-file:`Doc/Makefile`, along with a :cpy-"
+"file:`Doc/make.bat` batch file for Windows that attempts to emulate it as "
+"closely as practical."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:104
+#: ../../documentation/start-documenting.rst:115
 msgid ""
-"**On Windows**, the :cpy-file:`Doc/make.bat` batchfile tries to emulate :"
-"command:`make` as closely as possible, but the venv target is not "
-"implemented, so you will probably want to make sure you are working in a "
-"virtual environment before proceeding, otherwise all dependencies will be "
-"automatically installed on your system."
+"The Windows ``make.bat`` batch file lacks a ``make venv`` target. Instead, "
+"it automatically installs any missing dependencies into the currently "
+"activated environment (or the base Python, if none). Make sure the "
+"environment you :ref:`created above <doc-create-venv-windows>` is `activated "
+"<venv-activate_>`__ before running ``make.bat``."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:110
+#: ../../documentation/start-documenting.rst:121
+msgid "To build the docs as HTML, run::"
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:125
 msgid ""
-"When ready, run the following from the root of your :ref:`repository clone "
-"<checkout>` to build the output as HTML::"
+"Substitute ``htmlview`` for ``html`` to open the docs in a web browser once "
+"the build completes."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:116
+#: ../../documentation/start-documenting.rst:128
 msgid ""
-"You can also use ``make help`` to see a list of targets supported by :cpy-"
-"file:`Doc/make.bat`."
+"To check the docs for common errors with `Sphinx Lint`_ (which is run on "
+"all :ref:`pull requests <pullrequest>`), use::"
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:119
-msgid "See also :cpy-file:`Doc/README.rst` for more information."
+#: ../../documentation/start-documenting.rst:133
+msgid "To list other supported :program:`make` targets, run::"
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:122
-msgid "Using sphinx-build"
+#: ../../documentation/start-documenting.rst:137
+msgid "See :cpy-file:`Doc/README.rst` for more information."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:124
+#: ../../documentation/start-documenting.rst:144
+msgid "Build using Sphinx directly"
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:146
 msgid ""
-"Sometimes we directly want to execute the sphinx-build tool instead of "
-"through ``make`` (although the latter is still the preferred way). In this "
-"case, you can use the following command line from the ``Doc`` directory "
-"(make sure to install Sphinx_, blurb_ and python-docs-theme_ packages from "
-"PyPI)::"
-msgstr ""
-
-#: ../../documentation/start-documenting.rst:131
-msgid ""
-"where ``<builder>`` is one of html, text, latex, or htmlhelp (for "
-"explanations see the make targets above)."
-msgstr ""
-
-#: ../../documentation/start-documenting.rst:143
-msgid "Style Guide"
-msgstr "Guia de estilo"
-
-#: ../../documentation/start-documenting.rst:145
-msgid "Moved to :doc:`style-guide`"
+"Advanced users may want to invoke Sphinx directly, to pass specialized "
+"options or to handle specific use cases."
 msgstr ""
 
 #: ../../documentation/start-documenting.rst:149
+msgid ""
+"Make sure the environment you :ref:`created above <doc-create-venv-windows>` "
+"is `activated <venv-activate_>`__. Then, install the documentation "
+"requirements, :cpy-file:`Doc/requirements.txt`. Using pip::"
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:156
+msgid "Finally, directly invoke Sphinx with::"
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:160
+msgid ""
+"To use a different `Sphinx builder`_, replace ``html`` above with the "
+"desired builder ``name``."
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:173
+msgid "Style Guide"
+msgstr "Guia de estilo"
+
+#: ../../documentation/start-documenting.rst:175
+msgid "Moved to :doc:`style-guide`"
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:179
 msgid "Translating"
 msgstr "Tradução"
 
-#: ../../documentation/start-documenting.rst:151
+#: ../../documentation/start-documenting.rst:181
 msgid "Moved to :doc:`translating`"
 msgstr ""

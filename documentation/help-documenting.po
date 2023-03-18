@@ -8,18 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-03-17 23:29-0300\n"
 "PO-Revision-Date: 2022-12-09 08:36-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language: pt_BR\n"
 "Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
 "net>\n"
-"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"Generated-By: Babel 2.11.0\n"
-"X-Generator: Gtranslator 42.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../documentation/help-documenting.rst:6
 msgid "Helping with Documentation"
@@ -98,14 +97,14 @@ msgstr ""
 "recente são recompilados uma vez por dia."
 
 #: ../../documentation/help-documenting.rst:38
+#, fuzzy
 msgid ""
 "If you would like to be more involved with documentation, consider "
 "subscribing to the `docs@python.org <https://mail.python.org/mailman3/lists/"
-"docs.python.org/>`_ mailing list. The `issue tracker`_ sends new "
-"documentation issues to this mailing list, and, less frequently, the list "
-"receives some directly mailed bug reports. The `docs-sig@python.org <https://"
-"mail.python.org/mailman/listinfo/doc-sig>`_ mailing list discusses the "
-"documentation toolchain, projects, and standards."
+"docs.python.org/>`_ mailing list and the `Documentation category on the "
+"Python Discourse <https://discuss.python.org/c/documentation/26>`_, where "
+"user issues are raised and documentation toolchain, projects, and standards "
+"are discussed."
 msgstr ""
 "Se você gostaria de se envolver mais com a documentação, considere se "
 "inscrever na lista de discussão `docs@python.org <https://mail.python.org/"
@@ -139,16 +138,18 @@ msgstr ""
 "pode:"
 
 #: ../../documentation/help-documenting.rst:55
+#, fuzzy
 msgid ""
-"check to see if there is a paperclip or `octocat`_ icon at the end of the "
-"issue's title column.  If there is, then someone has already created a pull "
-"request for the issue."
+"check to see if there is pull request icon to the right of the issue's "
+"title, or an open pull request listed under :guilabel:`Linked PRs` in the "
+"issue body. If there is, then someone has already created a pull request for "
+"the issue."
 msgstr ""
 "verificar se há um clipe de papel ou ícone `octocat`_ no final da coluna do "
 "título da edição. Se houver, alguém já criou uma solicitação pull para o "
 "problema."
 
-#: ../../documentation/help-documenting.rst:58
+#: ../../documentation/help-documenting.rst:59
 msgid ""
 "leave a comment on the issue saying you are going to try and create a pull "
 "request and roughly how long you think you will take to do so (this allows "
@@ -159,11 +160,11 @@ msgstr ""
 "lo (isso permite que outras pessoas assumam o problema se você esquecer ou "
 "perder o interesse)."
 
-#: ../../documentation/help-documenting.rst:61
+#: ../../documentation/help-documenting.rst:62
 msgid "submit a :ref:`pull request <pullrequest>` for the issue."
 msgstr "enviar uma :ref:`pull request <pullrequest>` para o problema."
 
-#: ../../documentation/help-documenting.rst:63
+#: ../../documentation/help-documenting.rst:64
 msgid ""
 "By following the steps in the :ref:`Quick Guide to Pull Requests "
 "<pullrequest-quickguide>`, you will learn the workflow for documentation "
@@ -173,11 +174,11 @@ msgstr ""
 "quickguide>`, você aprenderá o fluxo de trabalho para pull requests da "
 "documentação."
 
-#: ../../documentation/help-documenting.rst:71
+#: ../../documentation/help-documenting.rst:72
 msgid "Proofreading"
 msgstr "Revisando"
 
-#: ../../documentation/help-documenting.rst:73
+#: ../../documentation/help-documenting.rst:74
 msgid ""
 "While an issue filed on the `issue tracker`_ means there is a known issue "
 "somewhere, that does not mean there are not other issues lurking about in "
@@ -192,7 +193,7 @@ msgstr ""
 "operacional, geralmente pode revelar problemas (por exemplo, documentação "
 "que precisa ser atualizada para o Python 3)."
 
-#: ../../documentation/help-documenting.rst:79
+#: ../../documentation/help-documenting.rst:80
 msgid ""
 "If you decide to proofread, read a section of the documentation from start "
 "to finish, filing issues in the issue tracker for each major type of problem "
