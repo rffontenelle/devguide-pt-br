@@ -304,7 +304,7 @@ msgstr ""
 "Entradas no ``NEWS`` vão para o diretório ``Misc/NEWS.d`` como arquivos "
 "individuais. A entrada ``NEWS`` pode ser criada usando `blurb-it <https://"
 "blurb-it.herokuapp.com/>`_ ou a ferramenta `blurb <https://pypi.org/project/"
-"blurb/ >`_ e seu comando ``blurb add``."
+"blurb/>`_ e seu comando ``blurb add``."
 
 #: ../../core-developers/committing.rst:116
 msgid ""
