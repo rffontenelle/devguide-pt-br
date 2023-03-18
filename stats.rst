@@ -3,11 +3,6 @@ Translation Stats
 
 .. code-block::
     
-    # advanced-tools (98.50% done)
-    
-    - gdb.po                          47 /  49 ( 95.0% translated), 2 fuzzy
-    
-    
     # core-developers (87.61% done)
     
     - become-core-developer.po         7 /  19 ( 36.0% translated), 8 fuzzy
@@ -30,24 +25,15 @@ Translation Stats
     - stdlib.po                        0 /  28 (  0.0% translated)
     
     
-    # devguide-pt-br (98.32% done)
+    # documentation (38.25% done)
     
-    - index.po                        98 / 100 ( 98.0% translated)
-    
-    
-    # documentation (37.48% done)
-    
-    - help-documenting.po             19 /  21 ( 90.0% translated), 2 fuzzy
     - markup.po                        3 / 291 (  1.0% translated)
     - start-documenting.po             3 /  33 (  9.0% translated)
-    - translating.po                 101 / 103 ( 98.0% translated), 2 fuzzy
     
     
-    # getting-started (1.14% done)
+    # getting-started (35.91% done)
     
-    - fixing-issues.po                 0 /   3 (  0.0% translated)
     - getting-help.po                  2 /  27 (  7.0% translated)
-    - git-boot-camp.po                 0 / 150 (  0.0% translated)
     - pull-request-lifecycle.po        0 / 118 (  0.0% translated)
     - setup-building.po                2 / 141 (  1.0% translated)
     
@@ -79,6 +65,6 @@ Translation Stats
     - triaging.po                      0 /  40 (  0.0% translated)
     
     
-    # TOTAL (40.67% done)
+    # TOTAL (45.00% done)
     
     
