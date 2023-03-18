@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-17 23:29-0300\n"
-"PO-Revision-Date: 2022-12-12 23:33-0300\n"
+"PO-Revision-Date: 2023-03-18 09:09-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
 "Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
@@ -264,14 +264,12 @@ msgid "Turkish (tr)"
 msgstr "Turco (tr)"
 
 #: ../../documentation/translating.rst:76
-#, fuzzy
 msgid "`Ege Akman (@egeakman) <gh_egeakman_>`_"
-msgstr "`Ege Akman (@egeakman) <email_egeakman_>`_"
+msgstr "`Ege Akman (@egeakman) <gh_egeakman_>`_"
 
 #: ../../documentation/translating.rst:76
-#, fuzzy
 msgid "`GitHub <github_tr_>`_ `GH-Pages <gh_pages_tr_>`_ `Doc <doc_tr_>`_"
-msgstr "`GitHub <github_zh_tw_>`_ `Doc <doc_zh_tw_>`_"
+msgstr "`GitHub <github_tr_>`_ `GH-Pages <gh_pages_tr_>`_ `Doc <doc_tr_>`_"
 
 #: ../../documentation/translating.rst:80
 msgid "Ukrainian (uk)"
