@@ -54,7 +54,7 @@ With the environment ready, run:
 
 .. code-block:: sh
 
-    python update.py --devguide-repo=devguide
+    python update.py --devguide_repo=devguide
 
 Once the script is done, running ``git status`` should show the po files
 that were updated, and ``git diff`` should show the changes.
