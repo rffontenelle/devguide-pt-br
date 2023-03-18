@@ -2,16 +2,17 @@
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 22:51-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2023-03-18 08:39-0300\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../getting-started/fixing-issues.rst:6
 msgid "Fixing \"easy\" Issues (and Beyond)"
-msgstr ""
+msgstr "Corrigindo issues \"easy\" (e além)"
 
 #: ../../getting-started/fixing-issues.rst:8
 msgid ""
@@ -30,6 +31,13 @@ msgid ""
 "typically done at triage time it can turn out to be inaccurate, so do feel "
 "free to leave a comment if you think the classification no longer applies."
 msgstr ""
+"Quando você se sentir confortável o suficiente para querer ajudar a resolver "
+"problemas tentando criar um patch para consertar um problema, você pode "
+"começar olhando para os `issues \"easy\"`_. Esses issues *devem* ser aqueles "
+"em que não deve levar mais de um dia ou fim de semana para serem corrigidos. "
+"Mas, como a classificação \"easy\" geralmente é feita no momento da triagem, "
+"ela pode se tornar imprecisa, portanto, sinta-se à vontade para deixar um "
+"comentário se achar que a classificação não se aplica mais."
 
 #: ../../getting-started/fixing-issues.rst:15
 msgid ""
@@ -43,3 +51,12 @@ msgid ""
 "Regardless of why the issue is open, you can also always provide useful "
 "comments if you do attempt a fix, successful or not."
 msgstr ""
+"Para os verdadeiramente aventureiros em busca de um desafio, você pode "
+"procurar issues que não são considerados fáceis e tentar corrigi-los. Deve "
+"ser avisado, porém, que é bem possível que um bug que foi deixado em aberto "
+"tenha sido deixado nesse estado por causa da dificuldade em comparação com o "
+"benefício da correção. Também pode estar aberto porque nenhum consenso foi "
+"alcançado sobre como corrigir o problema (embora ter um patch que proponha "
+"uma correção possa mudar a maré da discussão para ajudar a encerrá-la). "
+"Independentemente do motivo pelo qual o problema está aberto, você sempre "
+"pode fornecer comentários úteis se tentar uma correção, com sucesso ou não."
