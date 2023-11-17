@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../internals/compiler.rst:5
-msgid "Compiler Design"
+msgid "Compiler design"
 msgstr ""
 
 #: ../../internals/compiler.rst:10
@@ -32,72 +32,88 @@ msgid ""
 msgstr ""
 
 #: ../../internals/compiler.rst:14
-msgid "Tokenize the source code (:cpy-file:`Parser/tokenizer.c`)"
+msgid "Tokenize the source code (:cpy-file:`Parser/tokenizer.c`)."
 msgstr ""
 
 #: ../../internals/compiler.rst:15
 msgid ""
 "Parse the stream of tokens into an Abstract Syntax Tree (:cpy-file:`Parser/"
-"parser.c`)"
+"parser.c`)."
 msgstr ""
 
 #: ../../internals/compiler.rst:17
-msgid "Transform AST into a Control Flow Graph (:cpy-file:`Python/compile.c`)"
+msgid ""
+"Transform AST into an instruction sequence (:cpy-file:`Python/compile.c`)."
 msgstr ""
 
 #: ../../internals/compiler.rst:18
 msgid ""
-"Emit bytecode based on the Control Flow Graph (:cpy-file:`Python/compile.c`)"
+"Construct a Control Flow Graph and apply optimizations to it (:cpy-file:"
+"`Python/flowgraph.c`)."
 msgstr ""
 
-#: ../../internals/compiler.rst:20
+#: ../../internals/compiler.rst:19
 msgid ""
-"The purpose of this document is to outline how these steps of the process "
-"work."
+"Emit bytecode based on the Control Flow Graph (:cpy-file:`Python/assemble."
+"c`)."
 msgstr ""
 
-#: ../../internals/compiler.rst:22
+#: ../../internals/compiler.rst:21
+msgid "This document outlines how these steps of the process work."
+msgstr ""
+
+#: ../../internals/compiler.rst:23
 msgid ""
-"This document does not touch on how parsing works beyond what is needed to "
-"explain what is needed for compilation.  It is also not exhaustive in terms "
-"of the how the entire system works.  You will most likely need to read some "
-"source to have an exact understanding of all details."
+"This document only describes parsing in enough depth to explain what is "
+"needed for understanding compilation.  This document provides a detailed, "
+"though not exhaustive, view of the how the entire system works.  You will "
+"most likely need to read some source code to have an exact understanding of "
+"all details."
 msgstr ""
 
-#: ../../internals/compiler.rst:29
+#: ../../internals/compiler.rst:30
 msgid "Parsing"
 msgstr ""
 
-#: ../../internals/compiler.rst:31
+#: ../../internals/compiler.rst:32
 msgid ""
 "As of Python 3.9, Python's parser is a PEG parser of a somewhat unusual "
-"design (since its input is a stream of tokens rather than a stream of "
-"characters as is more common with PEG parsers)."
+"design. It is unusual in the sense that the parser's input is a stream of "
+"tokens rather than a stream of characters which is more common with PEG "
+"parsers."
 msgstr ""
 
-#: ../../internals/compiler.rst:35
+#: ../../internals/compiler.rst:37
 msgid ""
 "The grammar file for Python can be found in :cpy-file:`Grammar/python."
 "gram`.  The definitions for literal tokens (such as ``:``, numbers, etc.) "
 "can be found in :cpy-file:`Grammar/Tokens`. Various C files, including :cpy-"
-"file:`Parser/parser.c` are generated from these (see :ref:`grammar`)."
+"file:`Parser/parser.c` are generated from these."
 msgstr ""
 
-#: ../../internals/compiler.rst:43
-msgid "Abstract Syntax Trees (AST)"
+#: ../../internals/compiler.rst:45
+msgid ":ref:`parser` for a detailed description of the parser."
+msgstr ""
+
+#: ../../internals/compiler.rst:47
+msgid ":ref:`grammar` for a detailed description of the grammar."
+msgstr ""
+
+#: ../../internals/compiler.rst:51
+msgid "Abstract syntax trees (AST)"
 msgstr ""
 
 #: ../../internals/compiler.rst:-1
 msgid "Green Tree Snakes"
 msgstr ""
 
-#: ../../internals/compiler.rst:49
+#: ../../internals/compiler.rst:57
 msgid ""
 "See also `Green Tree Snakes - the missing Python AST docs <https://"
 "greentreesnakes.readthedocs.io/en/latest/>`_ by Thomas Kluyver."
 msgstr ""
 
-#: ../../internals/compiler.rst:52
+#: ../../internals/compiler.rst:60
 msgid ""
 "The abstract syntax tree (AST) is a high-level representation of the program "
 "structure without the necessity of containing the source code; it can be "
@@ -106,13 +122,13 @@ msgid ""
 "Definition Language (ASDL) [Wang97]_."
 msgstr ""
 
-#: ../../internals/compiler.rst:58
+#: ../../internals/compiler.rst:66
 msgid ""
 "The definition of the AST nodes for Python is found in the file :cpy-file:"
 "`Parser/Python.asdl`."
 msgstr ""
 
-#: ../../internals/compiler.rst:61
+#: ../../internals/compiler.rst:69
 msgid ""
 "Each AST node (representing statements, expressions, and several specialized "
 "types, like list comprehensions and exception handlers) is defined by the "
@@ -121,13 +137,13 @@ msgid ""
 "is independent of its realization in any particular programming language."
 msgstr ""
 
-#: ../../internals/compiler.rst:68
+#: ../../internals/compiler.rst:76
 msgid ""
 "The following fragment of the Python ASDL construct demonstrates the "
 "approach and syntax::"
 msgstr ""
 
-#: ../../internals/compiler.rst:79
+#: ../../internals/compiler.rst:87
 msgid ""
 "The preceding example describes two different kinds of statements and an "
 "expression: function definitions, return statements, and yield expressions. "
@@ -135,7 +151,7 @@ msgid ""
 "the various kinds.  They all take arguments of various kinds and amounts."
 msgstr ""
 
-#: ../../internals/compiler.rst:84
+#: ../../internals/compiler.rst:92
 msgid ""
 "Modifiers on the argument type specify the number of values needed; ``?`` "
 "means it is optional, ``*`` means 0 or more, while no modifier means only "
@@ -145,25 +161,25 @@ msgid ""
 "arguments for *decorators*."
 msgstr ""
 
-#: ../../internals/compiler.rst:91
+#: ../../internals/compiler.rst:99
 msgid ""
 "Do notice that something like 'arguments', which is a node type, is "
 "represented as a single AST node and not as a sequence of nodes as with stmt "
 "as one might expect."
 msgstr ""
 
-#: ../../internals/compiler.rst:95
+#: ../../internals/compiler.rst:103
 msgid ""
 "All three kinds also have an 'attributes' argument; this is shown by the "
 "fact that 'attributes' lacks a '|' before it."
 msgstr ""
 
-#: ../../internals/compiler.rst:98
+#: ../../internals/compiler.rst:106
 msgid ""
 "The statement definitions above generate the following C structure type:"
 msgstr ""
 
-#: ../../internals/compiler.rst:124
+#: ../../internals/compiler.rst:132
 msgid ""
 "Also generated are a series of constructor functions that allocate (in this "
 "case) a ``stmt_ty`` struct with the appropriate initialization.  The "
@@ -172,23 +188,22 @@ msgid ""
 "and initializes the *name*, *args*, *body*, and *attributes* fields."
 msgstr ""
 
-#: ../../internals/compiler.rst:132
-msgid "Memory Management"
-msgstr ""
-
-#: ../../internals/compiler.rst:134
-msgid ""
-"Before discussing the actual implementation of the compiler, a discussion of "
-"how memory is handled is in order.  To make memory management simple, an "
-"arena is used.  This means that a memory is pooled in a single location for "
-"easy allocation and removal.  What this gives us is the removal of explicit "
-"memory deallocation.  Because memory allocation for all needed memory in the "
-"compiler registers that memory with the arena, a single call to free the "
-"arena is all that is needed to completely free all memory used by the "
-"compiler."
+#: ../../internals/compiler.rst:140
+msgid "Memory management"
 msgstr ""
 
 #: ../../internals/compiler.rst:142
+msgid ""
+"Before discussing the actual implementation of the compiler, a discussion of "
+"how memory is handled is in order.  To make memory management simple, an "
+"**arena** is used that pools memory in a single location for easy allocation "
+"and removal.  This enables the removal of explicit memory deallocation.  "
+"Because memory allocation for all needed memory in the compiler registers "
+"that memory with the arena, a single call to free the arena is all that is "
+"needed to completely free all memory used by the compiler."
+msgstr ""
+
+#: ../../internals/compiler.rst:150
 msgid ""
 "In general, unless you are working on the critical core of the compiler, "
 "memory management can be completely ignored.  But if you are working at "
@@ -197,7 +212,7 @@ msgid ""
 "`Include/internal/pycore_pyarena.h` or :cpy-file:`Python/pyarena.c`."
 msgstr ""
 
-#: ../../internals/compiler.rst:148
+#: ../../internals/compiler.rst:156
 msgid ""
 "``PyArena_New()`` will create a new arena.  The returned ``PyArena`` "
 "structure will store pointers to all memory given to it.  This does the "
@@ -206,14 +221,14 @@ msgid ""
 "only needs to be called in strategic areas where the compiler exits."
 msgstr ""
 
-#: ../../internals/compiler.rst:154
+#: ../../internals/compiler.rst:162
 msgid ""
 "As stated above, in general you should not have to worry about memory "
-"management when working on the compiler.  The technical details have been "
-"designed to be hidden from you for most cases."
+"management when working on the compiler.  The technical details of memory "
+"management have been designed to be hidden from you for most cases."
 msgstr ""
 
-#: ../../internals/compiler.rst:158
+#: ../../internals/compiler.rst:166
 msgid ""
 "The only exception comes about when managing a PyObject.  Since the rest of "
 "Python uses reference counting, there is extra support added to the arena to "
@@ -222,30 +237,30 @@ msgid ""
 "calling ``PyArena_AddPyObject()``."
 msgstr ""
 
-#: ../../internals/compiler.rst:166
-msgid "Source Code to AST"
+#: ../../internals/compiler.rst:174
+msgid "Source code to AST"
 msgstr ""
 
-#: ../../internals/compiler.rst:168
+#: ../../internals/compiler.rst:176
 msgid ""
 "The AST is generated from source code using the function "
 "``_PyParser_ASTFromString()`` or ``_PyParser_ASTFromFile()`` (from :cpy-file:"
 "`Parser/peg_api.c`) depending on the input type."
 msgstr ""
 
-#: ../../internals/compiler.rst:172
+#: ../../internals/compiler.rst:180
 msgid ""
 "After some checks, a helper function in :cpy-file:`Parser/parser.c` begins "
 "applying production rules on the source code it receives; converting source "
 "code to tokens and matching these tokens recursively to their corresponding "
-"rule.  The rule's corresponding rule function is called on every match.  "
-"These rule functions follow the format :samp:`xx_rule`.  Where *xx* is the "
-"grammar rule that the function handles and is automatically derived from :"
-"cpy-file:`Grammar/python.gram` :cpy-file:`Tools/peg_generator/pegen/"
+"rule.  The production rule's corresponding rule function is called on every "
+"match.  These rule functions follow the format :samp:`xx_rule`.  Where *xx* "
+"is the grammar rule that the function handles and is automatically derived "
+"from :cpy-file:`Grammar/python.gram` :cpy-file:`Tools/peg_generator/pegen/"
 "c_generator.py`."
 msgstr ""
 
-#: ../../internals/compiler.rst:181
+#: ../../internals/compiler.rst:189
 msgid ""
 "Each rule function in turn creates an AST node as it goes along.  It does "
 "this by allocating all the new nodes it needs, calling the proper AST node "
@@ -256,7 +271,7 @@ msgid ""
 "ends."
 msgstr ""
 
-#: ../../internals/compiler.rst:188
+#: ../../internals/compiler.rst:196
 msgid ""
 "The AST node creation helper functions have the name :samp:`_PyAST_{xx}` "
 "where *xx* is the AST node that the function creates.  These are defined by "
@@ -266,7 +281,7 @@ msgid ""
 "structs."
 msgstr ""
 
-#: ../../internals/compiler.rst:194
+#: ../../internals/compiler.rst:202
 msgid ""
 "To demonstrate everything explained so far, here's the rule function "
 "responsible for a simple named import statement such as ``import sys``.  "
@@ -275,7 +290,7 @@ msgid ""
 "explanation.  These comments may not be present in the actual code."
 msgstr ""
 
-#: ../../internals/compiler.rst:237
+#: ../../internals/compiler.rst:245
 msgid ""
 "To improve backtracking performance, some rules (chosen by applying a "
 "``(memo)`` flag in the grammar file) are memoized.  Each rule function "
@@ -283,7 +298,7 @@ msgid ""
 "continues in the manner stated in the previous paragraphs."
 msgstr ""
 
-#: ../../internals/compiler.rst:242
+#: ../../internals/compiler.rst:250
 msgid ""
 "There are macros for creating and using ``asdl_xx_seq *`` types, where *xx* "
 "is a type of the ASDL sequence.  Three main types are defined manually -- "
@@ -293,31 +308,31 @@ msgid ""
 "*`` types are as follows:"
 msgstr ""
 
-#: ../../internals/compiler.rst:249
+#: ../../internals/compiler.rst:257
 msgid "``_Py_asdl_generic_seq_new(Py_ssize_t, PyArena *)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:250
+#: ../../internals/compiler.rst:258
 msgid "Allocate memory for an ``asdl_generic_seq`` of the specified length"
 msgstr ""
 
-#: ../../internals/compiler.rst:251
+#: ../../internals/compiler.rst:259
 msgid "``_Py_asdl_identifier_seq_new(Py_ssize_t, PyArena *)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:252
+#: ../../internals/compiler.rst:260
 msgid "Allocate memory for an ``asdl_identifier_seq`` of the specified length"
 msgstr ""
 
-#: ../../internals/compiler.rst:254
+#: ../../internals/compiler.rst:262
 msgid "``_Py_asdl_int_seq_new(Py_ssize_t, PyArena *)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:254
+#: ../../internals/compiler.rst:262
 msgid "Allocate memory for an ``asdl_int_seq`` of the specified length"
 msgstr ""
 
-#: ../../internals/compiler.rst:256
+#: ../../internals/compiler.rst:264
 msgid ""
 "In addition to the three types mentioned above, some ASDL sequence types are "
 "automatically generated by :cpy-file:`Parser/asdl_c.py` and found in :cpy-"
@@ -325,84 +340,84 @@ msgid ""
 "defined and automatically generated ASDL sequence types are as follows:"
 msgstr ""
 
-#: ../../internals/compiler.rst:261
+#: ../../internals/compiler.rst:269
 msgid "``asdl_seq_GET(asdl_xx_seq *, int)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:262
+#: ../../internals/compiler.rst:270
 msgid "Get item held at a specific position in an ``asdl_xx_seq``"
 msgstr ""
 
-#: ../../internals/compiler.rst:264
+#: ../../internals/compiler.rst:272
 msgid "``asdl_seq_SET(asdl_xx_seq *, int, stmt_ty)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:264
+#: ../../internals/compiler.rst:272
 msgid "Set a specific index in an ``asdl_xx_seq`` to the specified value"
 msgstr ""
 
-#: ../../internals/compiler.rst:266
+#: ../../internals/compiler.rst:274
 msgid ""
 "Untyped counterparts exist for some of the typed macros.  These are useful "
 "when a function needs to manipulate a generic ASDL sequence:"
 msgstr ""
 
-#: ../../internals/compiler.rst:269
+#: ../../internals/compiler.rst:277
 msgid "``asdl_seq_GET_UNTYPED(asdl_seq *, int)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:270
+#: ../../internals/compiler.rst:278
 msgid "Get item held at a specific position in an ``asdl_seq``"
 msgstr ""
 
-#: ../../internals/compiler.rst:271
+#: ../../internals/compiler.rst:279
 msgid "``asdl_seq_SET_UNTYPED(asdl_seq *, int, stmt_ty)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:272
+#: ../../internals/compiler.rst:280
 msgid "Set a specific index in an ``asdl_seq`` to the specified value"
 msgstr ""
 
-#: ../../internals/compiler.rst:274
+#: ../../internals/compiler.rst:282
 msgid "``asdl_seq_LEN(asdl_seq *)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:274
+#: ../../internals/compiler.rst:282
 msgid "Return the length of an ``asdl_seq`` or ``asdl_xx_seq``"
 msgstr ""
 
-#: ../../internals/compiler.rst:276
+#: ../../internals/compiler.rst:284
 msgid ""
 "Note that typed macros and functions are recommended over their untyped "
 "counterparts.  Typed macros carry out checks in debug mode and aid debugging "
 "errors caused by incorrectly casting from ``void *``."
 msgstr ""
 
-#: ../../internals/compiler.rst:280
+#: ../../internals/compiler.rst:288
 msgid ""
 "If you are working with statements, you must also worry about keeping track "
 "of what line number generated the statement.  Currently the line number is "
 "passed as the last parameter to each ``stmt_ty`` function."
 msgstr ""
 
-#: ../../internals/compiler.rst:284
+#: ../../internals/compiler.rst:292
 msgid ""
 "The new PEG parser generates an AST directly without creating a parse tree. "
 "``Python/ast.c`` is now only used to validate the AST for debugging purposes."
 msgstr ""
 
-#: ../../internals/compiler.rst:289
+#: ../../internals/compiler.rst:297
 msgid ":pep:`617` (PEP 617 -- New PEG parser for CPython)"
 msgstr ""
 
-#: ../../internals/compiler.rst:293
-msgid "Control Flow Graphs"
+#: ../../internals/compiler.rst:301
+msgid "Control flow graphs"
 msgstr ""
 
-#: ../../internals/compiler.rst:295
+#: ../../internals/compiler.rst:303
 msgid ""
-"A *control flow graph* (often referenced by its acronym, CFG) is a directed "
-"graph that models the flow of a program.  A node of a CFG is not an "
+"A **control flow graph** (often referenced by its acronym, **CFG**) is a "
+"directed graph that models the flow of a program.  A node of a CFG is not an "
 "individual bytecode instruction, but instead represents a sequence of "
 "bytecode instructions that always execute sequentially. Each node is called "
 "a *basic block* and must always execute from start to finish, with a single "
@@ -412,11 +427,11 @@ msgid ""
 "at the start of its basic block."
 msgstr ""
 
-#: ../../internals/compiler.rst:306
+#: ../../internals/compiler.rst:314
 msgid "As an example, consider the following code snippet:"
 msgstr ""
 
-#: ../../internals/compiler.rst:317
+#: ../../internals/compiler.rst:325
 msgid ""
 "The ``x < 10`` guard is represented by its own basic block that compares "
 "``x`` with ``10`` and then ends in a conditional jump based on the result of "
@@ -427,7 +442,7 @@ msgid ""
 "points to the ``end()`` block."
 msgstr ""
 
-#: ../../internals/compiler.rst:325
+#: ../../internals/compiler.rst:333
 msgid ""
 "Note that more complex code in the guard, the ``if`` body, or the ``else`` "
 "body may be represented by multiple basic blocks. For instance, short-"
@@ -437,7 +452,7 @@ msgid ""
 "the truth value of y."
 msgstr ""
 
-#: ../../internals/compiler.rst:332
+#: ../../internals/compiler.rst:340
 msgid ""
 "CFGs are usually one step away from final code output.  Code is directly "
 "generated from the basic blocks (with jump targets adjusted based on the "
@@ -445,11 +460,11 @@ msgid ""
 "the edges."
 msgstr ""
 
-#: ../../internals/compiler.rst:339
-msgid "AST to CFG to Bytecode"
+#: ../../internals/compiler.rst:347
+msgid "AST to CFG to bytecode"
 msgstr ""
 
-#: ../../internals/compiler.rst:341
+#: ../../internals/compiler.rst:349
 msgid ""
 "With the AST created, the next step is to create the CFG. The first step is "
 "to convert the AST to Python bytecode without having jump targets resolved "
@@ -458,7 +473,7 @@ msgid ""
 "control flow represented by the edges of the CFG."
 msgstr ""
 
-#: ../../internals/compiler.rst:347
+#: ../../internals/compiler.rst:355
 msgid ""
 "Conversion is done in two passes.  The first creates the namespace "
 "(variables can be classified as local, free/cell for closures, or global).  "
@@ -466,7 +481,7 @@ msgid ""
 "calculates jump offsets for final output of bytecode."
 msgstr ""
 
-#: ../../internals/compiler.rst:352
+#: ../../internals/compiler.rst:360
 msgid ""
 "The conversion process is initiated by a call to the function "
 "``_PyAST_Compile()`` in :cpy-file:`Python/compile.c`.  This function does "
@@ -477,7 +492,7 @@ msgid ""
 "`Python/compile.c`."
 msgstr ""
 
-#: ../../internals/compiler.rst:360
+#: ../../internals/compiler.rst:368
 msgid ""
 "``_PySymtable_Build()`` begins by entering the starting code block for the "
 "AST (passed-in) and then calling the proper :samp:`symtable_visit_{xx}` "
@@ -487,7 +502,7 @@ msgid ""
 "``symtable_exit_block()``, respectively."
 msgstr ""
 
-#: ../../internals/compiler.rst:367
+#: ../../internals/compiler.rst:375
 msgid ""
 "Once the symbol table is created, it is time for CFG creation, whose code is "
 "in :cpy-file:`Python/compile.c`.  This is handled by several functions that "
@@ -502,7 +517,7 @@ msgid ""
 "being handled."
 msgstr ""
 
-#: ../../internals/compiler.rst:379
+#: ../../internals/compiler.rst:387
 msgid ""
 "When transforming an arbitrary AST node, use the ``VISIT()`` macro. The "
 "appropriate :samp:`compiler_visit_{xx}` function is called, based on the "
@@ -513,51 +528,51 @@ msgid ""
 "``VISIT_SLICE()`` just for handling slices."
 msgstr ""
 
-#: ../../internals/compiler.rst:387
+#: ../../internals/compiler.rst:395
 msgid "Emission of bytecode is handled by the following macros:"
 msgstr ""
 
-#: ../../internals/compiler.rst:389
+#: ../../internals/compiler.rst:397
 msgid "``ADDOP(struct compiler *, int)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:390
+#: ../../internals/compiler.rst:398
 msgid "add a specified opcode"
 msgstr ""
 
-#: ../../internals/compiler.rst:392
+#: ../../internals/compiler.rst:400
 msgid "``ADDOP_NOLINE(struct compiler *, int)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:392
+#: ../../internals/compiler.rst:400
 msgid ""
 "like ``ADDOP`` without a line number; used for artificial opcodes without no "
 "corresponding token in the source code"
 msgstr ""
 
-#: ../../internals/compiler.rst:395
+#: ../../internals/compiler.rst:403
 msgid "``ADDOP_IN_SCOPE(struct compiler *, int)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:395
+#: ../../internals/compiler.rst:403
 msgid ""
 "like ``ADDOP``, but also exits current scope; used for adding return value "
 "opcodes in lambdas and closures"
 msgstr ""
 
-#: ../../internals/compiler.rst:397
+#: ../../internals/compiler.rst:405
 msgid "``ADDOP_I(struct compiler *, int, Py_ssize_t)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:398
+#: ../../internals/compiler.rst:406
 msgid "add an opcode that takes an integer argument"
 msgstr ""
 
-#: ../../internals/compiler.rst:405
+#: ../../internals/compiler.rst:413
 msgid "``ADDOP_O(struct compiler *, int, PyObject *, TYPE)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:400
+#: ../../internals/compiler.rst:408
 msgid ""
 "add an opcode with the proper argument based on the position of the "
 "specified PyObject in PyObject sequence object, but with no handling of "
@@ -567,71 +582,71 @@ msgid ""
 "(``names`` or ``varnames``)"
 msgstr ""
 
-#: ../../internals/compiler.rst:407
+#: ../../internals/compiler.rst:415
 msgid "``ADDOP_N(struct compiler *, int, PyObject *, TYPE)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:408
+#: ../../internals/compiler.rst:416
 msgid "just like ``ADDOP_O``, but steals a reference to PyObject"
 msgstr ""
 
-#: ../../internals/compiler.rst:410
+#: ../../internals/compiler.rst:418
 msgid "``ADDOP_NAME(struct compiler *, int, PyObject *, TYPE)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:410
+#: ../../internals/compiler.rst:418
 msgid ""
 "just like ``ADDOP_O``, but name mangling is also handled; used for attribute "
 "loading or importing based on name"
 msgstr ""
 
-#: ../../internals/compiler.rst:413
+#: ../../internals/compiler.rst:421
 msgid "``ADDOP_LOAD_CONST(struct compiler *, PyObject *)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:413
+#: ../../internals/compiler.rst:421
 msgid ""
 "add the ``LOAD_CONST`` opcode with the proper argument based on the position "
 "of the specified PyObject in the consts table."
 msgstr ""
 
-#: ../../internals/compiler.rst:415
+#: ../../internals/compiler.rst:423
 msgid "``ADDOP_LOAD_CONST_NEW(struct compiler *, PyObject *)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:416
+#: ../../internals/compiler.rst:424
 msgid "just like ``ADDOP_LOAD_CONST_NEW``, but steals a reference to PyObject"
 msgstr ""
 
-#: ../../internals/compiler.rst:417
+#: ../../internals/compiler.rst:425
 msgid "``ADDOP_JUMP(struct compiler *, int, basicblock *)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:418
+#: ../../internals/compiler.rst:426
 msgid "create a jump to a basic block"
 msgstr ""
 
-#: ../../internals/compiler.rst:420
+#: ../../internals/compiler.rst:428
 msgid "``ADDOP_JUMP_NOLINE(struct compiler *, int, basicblock *)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:420
+#: ../../internals/compiler.rst:428
 msgid ""
 "like ``ADDOP_JUMP`` without a line number; used for artificial jumps without "
 "no corresponding token in the source code."
 msgstr ""
 
-#: ../../internals/compiler.rst:424
+#: ../../internals/compiler.rst:432
 msgid "``ADDOP_JUMP_COMPARE(struct compiler *, cmpop_ty)``"
 msgstr ""
 
-#: ../../internals/compiler.rst:423
+#: ../../internals/compiler.rst:431
 msgid ""
 "depending on the second argument, add an ``ADDOP_I`` with either an "
 "``IS_OP``, ``CONTAINS_OP``, or ``COMPARE_OP`` opcode."
 msgstr ""
 
-#: ../../internals/compiler.rst:426
+#: ../../internals/compiler.rst:434
 msgid ""
 "Several helper functions that will emit bytecode and are named :samp:"
 "`compiler_{xx}()` where *xx* is what the function helps with (``list``, "
@@ -640,44 +655,13 @@ msgid ""
 "context, emits the proper opcode to load, store, or delete the variable."
 msgstr ""
 
-#: ../../internals/compiler.rst:433
+#: ../../internals/compiler.rst:441
 msgid ""
 "As for handling the line number on which a statement is defined, this is "
 "handled by ``compiler_visit_stmt()`` and thus is not a worry."
 msgstr ""
 
-#: ../../internals/compiler.rst:436
-msgid ""
-"In addition to emitting bytecode based on the AST node, handling the "
-"creation of basic blocks must be done.  Below are the macros and functions "
-"used for managing basic blocks:"
-msgstr ""
-
-#: ../../internals/compiler.rst:441
-msgid "``NEXT_BLOCK(struct compiler *)``"
-msgstr ""
-
-#: ../../internals/compiler.rst:441
-msgid "create an implicit jump from the current block to the new block"
-msgstr ""
-
-#: ../../internals/compiler.rst:443
-msgid "``compiler_new_block(struct compiler *)``"
-msgstr ""
-
 #: ../../internals/compiler.rst:444
-msgid "create a block but don't use it (used for generating jumps)"
-msgstr ""
-
-#: ../../internals/compiler.rst:446
-msgid "``compiler_use_next_block(struct compiler *, basicblock *block)``"
-msgstr ""
-
-#: ../../internals/compiler.rst:446
-msgid "set a previously created block as a current block"
-msgstr ""
-
-#: ../../internals/compiler.rst:448
 msgid ""
 "Once the CFG is created, it must be flattened and then final emission of "
 "bytecode occurs.  Flattening is handled using a post-order depth-first "
@@ -686,129 +670,50 @@ msgid ""
 "by calling ``assemble()``."
 msgstr ""
 
-#: ../../internals/compiler.rst:456
-msgid "Introducing New Bytecode"
+#: ../../internals/compiler.rst:452
+msgid "Code objects"
 msgstr ""
 
-#: ../../internals/compiler.rst:458
-msgid ""
-"Sometimes a new feature requires a new opcode.  But adding new bytecode is "
-"not as simple as just suddenly introducing new bytecode in the AST -> "
-"bytecode step of the compiler.  Several pieces of code throughout Python "
-"depend on having correct information about what bytecode exists."
-msgstr ""
-
-#: ../../internals/compiler.rst:463
-msgid ""
-"First, you must choose a name and a unique identifier number.  The official "
-"list of bytecode can be found in :cpy-file:`Lib/opcode.py`.  If the opcode "
-"is to take an argument, it must be given a unique number greater than that "
-"assigned to ``HAVE_ARGUMENT`` (as found in :cpy-file:`Lib/opcode.py`)."
-msgstr ""
-
-#: ../../internals/compiler.rst:468
-msgid ""
-"Once the name/number pair has been chosen and entered in :cpy-file:`Lib/"
-"opcode.py`, you must also enter it into :cpy-file:`Doc/library/dis.rst`, and "
-"regenerate :cpy-file:`Include/opcode.h` and :cpy-file:`Python/opcode_targets."
-"h` by running ``make regen-opcode regen-opcode-targets``."
-msgstr ""
-
-#: ../../internals/compiler.rst:473
-msgid ""
-"With a new bytecode you must also change what is called the magic number "
-"for .pyc files.  The variable ``MAGIC_NUMBER`` in :cpy-file:`Lib/importlib/"
-"_bootstrap_external.py` contains the number. Changing this number will lead "
-"to all .pyc files with the old ``MAGIC_NUMBER`` to be recompiled by the "
-"interpreter on import.  Whenever ``MAGIC_NUMBER`` is changed, the ranges in "
-"the ``magic_values`` array in :cpy-file:`PC/launcher.c` must also be "
-"updated.  Changes to :cpy-file:`Lib/importlib/_bootstrap_external.py` will "
-"take effect only after running ``make regen-importlib``. Running this "
-"command before adding the new bytecode target to :cpy-file:`Python/ceval.c` "
-"will result in an error. You should only run ``make regen-importlib`` after "
-"the new bytecode target has been added."
-msgstr ""
-
-#: ../../internals/compiler.rst:485
-msgid ""
-"On Windows, running the ``./build.bat`` script will automatically regenerate "
-"the required files without requiring additional arguments."
-msgstr ""
-
-#: ../../internals/compiler.rst:488
-msgid ""
-"Finally, you need to introduce the use of the new bytecode.  Altering :cpy-"
-"file:`Python/compile.c` and :cpy-file:`Python/ceval.c` will be the primary "
-"places to change. You must add the case for a new opcode into the 'switch' "
-"statement in the ``stack_effect()`` function in :cpy-file:`Python/compile."
-"c`. If the new opcode has a jump target, you will need to update macros and "
-"'switch' statements in :cpy-file:`Python/compile.c`.  If it affects a "
-"control flow or the block stack, you may have to update the "
-"``frame_setlineno()`` function in :cpy-file:`Objects/frameobject.c`.  :cpy-"
-"file:`Lib/dis.py` may need an update if the new opcode interprets its "
-"argument in a special way (like ``FORMAT_VALUE`` or ``MAKE_FUNCTION``)."
-msgstr ""
-
-#: ../../internals/compiler.rst:499
-msgid ""
-"If you make a change here that can affect the output of bytecode that is "
-"already in existence and you do not change the magic number constantly, make "
-"sure to delete your old .py(c|o) files!  Even though you will end up "
-"changing the magic number if you change the bytecode, while you are "
-"debugging your work you will be changing the bytecode output without "
-"constantly bumping up the magic number.  This means you end up with stale ."
-"pyc files that will not be recreated. Running ``find . -name '*.py[co]' -"
-"exec rm -f '{}' +`` should delete all .pyc files you have, forcing new ones "
-"to be created and thus allow you test out your new bytecode properly.  Run "
-"``make regen-importlib`` for updating the bytecode of frozen importlib "
-"files.  You have to run ``make`` again after this for recompiling generated "
-"C files."
-msgstr ""
-
-#: ../../internals/compiler.rst:514
-msgid "Code Objects"
-msgstr ""
-
-#: ../../internals/compiler.rst:516
+#: ../../internals/compiler.rst:454
 msgid ""
 "The result of ``PyAST_CompileObject()`` is a ``PyCodeObject`` which is "
 "defined in :cpy-file:`Include/cpython/code.h`.  And with that you now have "
 "executable Python bytecode!"
 msgstr ""
 
-#: ../../internals/compiler.rst:520
+#: ../../internals/compiler.rst:458
 msgid ""
 "The code objects (byte code) are executed in :cpy-file:`Python/ceval.c`.  "
 "This file will also need a new case statement for the new opcode in the big "
 "switch statement in ``_PyEval_EvalFrameDefault()``."
 msgstr ""
 
-#: ../../internals/compiler.rst:526
-msgid "Important Files"
+#: ../../internals/compiler.rst:464
+msgid "Important files"
 msgstr ""
 
-#: ../../internals/compiler.rst:554
+#: ../../internals/compiler.rst:466
 msgid ":cpy-file:`Parser/`"
 msgstr ""
 
-#: ../../internals/compiler.rst:529
+#: ../../internals/compiler.rst:468
 msgid ":cpy-file:`Parser/Python.asdl`: ASDL syntax file."
 msgstr ""
 
-#: ../../internals/compiler.rst:531
+#: ../../internals/compiler.rst:470
 msgid ""
 ":cpy-file:`Parser/asdl.py`: Parser for ASDL definition files. Reads in an "
 "ASDL description and parses it into an AST that describes it."
 msgstr ""
 
-#: ../../internals/compiler.rst:534
+#: ../../internals/compiler.rst:473
 msgid ""
 ":cpy-file:`Parser/asdl_c.py`: Generate C code from an ASDL description. "
 "Generates :cpy-file:`Python/Python-ast.c` and :cpy-file:`Include/internal/"
 "pycore_ast.h`."
 msgstr ""
 
-#: ../../internals/compiler.rst:538
+#: ../../internals/compiler.rst:477
 msgid ""
 ":cpy-file:`Parser/parser.c`: The new PEG parser introduced in Python 3.9. "
 "Generated by :cpy-file:`Tools/peg_generator/pegen/c_generator.py` from the "
@@ -816,13 +721,13 @@ msgid ""
 "Rule functions for their corresponding production rules are found here."
 msgstr ""
 
-#: ../../internals/compiler.rst:544
+#: ../../internals/compiler.rst:483
 msgid ""
 ":cpy-file:`Parser/peg_api.c`: Contains high-level functions which are used "
 "by the interpreter to create an AST from source code."
 msgstr ""
 
-#: ../../internals/compiler.rst:547
+#: ../../internals/compiler.rst:486
 msgid ""
 ":cpy-file:`Parser/pegen.c`: Contains helper functions which are used by "
 "functions in :cpy-file:`Parser/parser.c` to construct the AST. Also contains "
@@ -830,18 +735,18 @@ msgid ""
 "code."
 msgstr ""
 
-#: ../../internals/compiler.rst:552
+#: ../../internals/compiler.rst:491
 msgid ""
 ":cpy-file:`Parser/pegen.h`: Header file for the corresponding :cpy-file:"
 "`Parser/pegen.c`. Also contains definitions of the ``Parser`` and ``Token`` "
 "structs."
 msgstr ""
 
-#: ../../internals/compiler.rst:586
+#: ../../internals/compiler.rst:495
 msgid ":cpy-file:`Python/`"
 msgstr ""
 
-#: ../../internals/compiler.rst:557
+#: ../../internals/compiler.rst:497
 msgid ""
 ":cpy-file:`Python/Python-ast.c`: Creates C structs corresponding to the ASDL "
 "types.  Also contains code for marshalling AST nodes (core ASDL types have "
@@ -851,7 +756,7 @@ msgid ""
 "value is set to the latest grammar change revision number."
 msgstr ""
 
-#: ../../internals/compiler.rst:565
+#: ../../internals/compiler.rst:505
 msgid ""
 ":cpy-file:`Python/asdl.c`: Contains code to handle the ASDL sequence type. "
 "Also has code to handle marshalling the core ASDL types, such as number and "
@@ -859,185 +764,180 @@ msgid ""
 "nodes."
 msgstr ""
 
-#: ../../internals/compiler.rst:570
+#: ../../internals/compiler.rst:510
 msgid ":cpy-file:`Python/ast.c`: Used for validating the AST."
 msgstr ""
 
-#: ../../internals/compiler.rst:572
+#: ../../internals/compiler.rst:512
 msgid ":cpy-file:`Python/ast_opt.c`: Optimizes the AST."
 msgstr ""
 
-#: ../../internals/compiler.rst:574
+#: ../../internals/compiler.rst:514
 msgid ""
 ":cpy-file:`Python/ast_unparse.c`: Converts the AST expression node back into "
 "a string (for string annotations)."
 msgstr ""
 
-#: ../../internals/compiler.rst:577
+#: ../../internals/compiler.rst:517
 msgid ":cpy-file:`Python/ceval.c`: Executes byte code (aka, eval loop)."
 msgstr ""
 
-#: ../../internals/compiler.rst:579
+#: ../../internals/compiler.rst:519
 msgid ":cpy-file:`Python/compile.c`: Emits bytecode based on the AST."
 msgstr ""
 
-#: ../../internals/compiler.rst:581
+#: ../../internals/compiler.rst:521
 msgid ":cpy-file:`Python/symtable.c`: Generates a symbol table from AST."
 msgstr ""
 
-#: ../../internals/compiler.rst:583
+#: ../../internals/compiler.rst:523
 msgid ""
 ":cpy-file:`Python/pyarena.c`: Implementation of the arena memory manager."
 msgstr ""
 
-#: ../../internals/compiler.rst:585
+#: ../../internals/compiler.rst:525
 msgid ""
 ":cpy-file:`Python/opcode_targets.h`: One of the files that must be modified "
 "if :cpy-file:`Lib/opcode.py` is."
 msgstr ""
 
-#: ../../internals/compiler.rst:613
+#: ../../internals/compiler.rst:528
 msgid ":cpy-file:`Include/`"
 msgstr ""
 
-#: ../../internals/compiler.rst:589
+#: ../../internals/compiler.rst:530
 msgid ""
 ":cpy-file:`Include/cpython/code.h`: Header file for :cpy-file:`Objects/"
 "codeobject.c`; contains definition of ``PyCodeObject``."
 msgstr ""
 
-#: ../../internals/compiler.rst:592
+#: ../../internals/compiler.rst:533
 msgid ""
 ":cpy-file:`Include/opcode.h`: One of the files that must be modified if :cpy-"
 "file:`Lib/opcode.py` is."
 msgstr ""
 
-#: ../../internals/compiler.rst:595
+#: ../../internals/compiler.rst:536
 msgid ""
 ":cpy-file:`Include/internal/pycore_ast.h`: Contains the actual definitions "
 "of the C structs as generated by :cpy-file:`Python/Python-ast.c`. "
 "\"Automatically generated by :cpy-file:`Parser/asdl_c.py`\"."
 msgstr ""
 
-#: ../../internals/compiler.rst:599
+#: ../../internals/compiler.rst:540
 msgid ""
 ":cpy-file:`Include/internal/pycore_asdl.h`: Header for the corresponding :"
 "cpy-file:`Python/ast.c`."
 msgstr ""
 
-#: ../../internals/compiler.rst:602
+#: ../../internals/compiler.rst:543
 msgid ""
 ":cpy-file:`Include/internal/pycore_ast.h`: Declares ``_PyAST_Validate()`` "
 "external (from :cpy-file:`Python/ast.c`)."
 msgstr ""
 
-#: ../../internals/compiler.rst:605
+#: ../../internals/compiler.rst:546
 msgid ""
 ":cpy-file:`Include/internal/pycore_symtable.h`: Header for :cpy-file:`Python/"
 "symtable.c`.  ``struct symtable`` and ``PySTEntryObject`` are defined here."
 msgstr ""
 
-#: ../../internals/compiler.rst:609
+#: ../../internals/compiler.rst:550
 msgid ""
 ":cpy-file:`Include/internal/pycore_parser.h`: Header for the corresponding :"
 "cpy-file:`Parser/peg_api.c`."
 msgstr ""
 
-#: ../../internals/compiler.rst:612
+#: ../../internals/compiler.rst:553
 msgid ""
 ":cpy-file:`Include/internal/pycore_pyarena.h`: Header file for the "
 "corresponding :cpy-file:`Python/pyarena.c`."
 msgstr ""
 
-#: ../../internals/compiler.rst:621
+#: ../../internals/compiler.rst:556
 msgid ":cpy-file:`Objects/`"
 msgstr ""
 
-#: ../../internals/compiler.rst:616
+#: ../../internals/compiler.rst:558
 msgid ""
 ":cpy-file:`Objects/codeobject.c`: Contains PyCodeObject-related code "
 "(originally in :cpy-file:`Python/compile.c`)."
 msgstr ""
 
-#: ../../internals/compiler.rst:619
+#: ../../internals/compiler.rst:561
 msgid ""
 ":cpy-file:`Objects/frameobject.c`: Contains the ``frame_setlineno()`` "
 "function which should determine whether it is allowed to make a jump between "
 "two points in a bytecode."
 msgstr ""
 
-#: ../../internals/compiler.rst:630
+#: ../../internals/compiler.rst:565
 msgid ":cpy-file:`Lib/`"
 msgstr ""
 
-#: ../../internals/compiler.rst:624
+#: ../../internals/compiler.rst:567
 msgid ""
 ":cpy-file:`Lib/opcode.py`: Master list of bytecode; if this file is modified "
-"you must modify several other files accordingly (see \"`Introducing New "
-"Bytecode`_\")"
+"you must modify several other files accordingly"
 msgstr ""
 
-#: ../../internals/compiler.rst:628
+#: ../../internals/compiler.rst:570
 msgid ""
 ":cpy-file:`Lib/importlib/_bootstrap_external.py`: Home of the magic number "
 "(named ``MAGIC_NUMBER``) for bytecode versioning."
 msgstr ""
 
-#: ../../internals/compiler.rst:633
-msgid "Known Compiler-related Experiments"
+#: ../../internals/compiler.rst:575
+msgid "Objects"
 msgstr ""
 
-#: ../../internals/compiler.rst:635
+#: ../../internals/compiler.rst:577
+msgid ":cpy-file:`Objects/locations.md`: Describes the location table"
+msgstr ""
+
+#: ../../internals/compiler.rst:578
+msgid ":cpy-file:`Objects/frame_layout.md`: Describes the frame stack"
+msgstr ""
+
+#: ../../internals/compiler.rst:579
 msgid ""
-"This section lists known experiments involving the compiler (including "
-"bytecode)."
+":cpy-file:`Objects/object_layout.md`: Descibes object layout for 3.11 and "
+"later"
 msgstr ""
 
-#: ../../internals/compiler.rst:638
+#: ../../internals/compiler.rst:580
 msgid ""
-"Skip Montanaro presented a paper at a Python workshop on a peephole "
-"optimizer [#skip-peephole]_."
+":cpy-file:`Objects/exception_handling_notes.txt`: Exception handling notes"
 msgstr ""
 
-#: ../../internals/compiler.rst:641
+#: ../../internals/compiler.rst:584
+msgid "Specializing Adaptive Interpreter"
+msgstr ""
+
+#: ../../internals/compiler.rst:586
 msgid ""
-"Michael Hudson has a non-active SourceForge project named Bytecodehacks "
-"[#Bytecodehacks]_ that provides functionality for playing with bytecode "
-"directly."
+"Adding a specializing, adaptive interpreter to CPython will bring "
+"significant performance improvements. These documents provide more "
+"information:"
 msgstr ""
 
-#: ../../internals/compiler.rst:645
+#: ../../internals/compiler.rst:589
+msgid ":pep:`659`: Specializing Adaptive Interpreter"
+msgstr ""
+
+#: ../../internals/compiler.rst:590
 msgid ""
-"An opcode to combine the functionality of ``LOAD_ATTR``/``CALL_FUNCTION`` "
-"was created named ``CALL_ATTR`` [#CALL_ATTR]_.  Currently only works for "
-"classic classes and for new-style classes rough benchmarking showed an "
-"actual slowdown thanks to having to support both classic and new-style "
-"classes."
+":cpy-file:`Python/adaptive.md`: Adding or extending a family of adaptive "
+"instructions"
 msgstr ""
 
-#: ../../internals/compiler.rst:653
+#: ../../internals/compiler.rst:594
 msgid "References"
 msgstr ""
 
-#: ../../internals/compiler.rst:655
+#: ../../internals/compiler.rst:596
 msgid ""
 "Daniel C. Wang, Andrew W. Appel, Jeff L. Korn, and Chris S. Serra.  `The "
 "Zephyr Abstract Syntax Description Language.`_ In Proceedings of the "
 "Conference on Domain-Specific Languages, pp. 213--227, 1997."
-msgstr ""
-
-#: ../../internals/compiler.rst:663
-msgid ""
-"Skip Montanaro's Peephole Optimizer Paper (https://legacy.python.org/"
-"workshops/1998-11/proceedings/papers/montanaro/montanaro.html)"
-msgstr ""
-
-#: ../../internals/compiler.rst:666
-msgid ""
-"Bytecodehacks Project (https://bytecodehacks.sourceforge.net/bch-docs/bch/"
-"index.html)"
-msgstr ""
-
-#: ../../internals/compiler.rst:669
-msgid "CALL_ATTR opcode (https://bugs.python.org/issue709744)"
 msgstr ""

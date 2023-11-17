@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../getting-started/pull-request-lifecycle.rst:7
-msgid "Lifecycle of a Pull Request"
+msgid "Lifecycle of a pull request"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:12
@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:23
-msgid "Quick Guide"
+msgid "Quick guide"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:25
@@ -110,7 +110,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:74
-msgid "Step-by-step Guide"
+msgid "Step-by-step guide"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:76
@@ -189,7 +189,7 @@ msgstr ""
 #: ../../getting-started/pull-request-lifecycle.rst:134
 msgid ""
 "If you have made local changes that have not been pushed to your fork and "
-"there are merge conflicts, git will warn you about this and enter conflict "
+"there are merge conflicts, Git will warn you about this and enter conflict "
 "resolution mode. See :ref:`resolving-merge-conflicts` below."
 msgstr ""
 
@@ -207,7 +207,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:156
-msgid "Resolving Merge Conflicts"
+msgid "Resolving merge conflicts"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:158
@@ -225,7 +225,7 @@ msgstr ""
 #: ../../getting-started/pull-request-lifecycle.rst:167
 msgid ""
 "Edit the affected files and bring them to their intended final state. Make "
-"sure to remove the special \"conflict markers\" inserted by git."
+"sure to remove the special \"conflict markers\" inserted by Git."
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:170
@@ -234,7 +234,7 @@ msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:175
 msgid ""
-"When running the final command, git may open an editor for writing a commit "
+"When running the final command, Git may open an editor for writing a commit "
 "message. It is usually okay to leave that as-is and close the editor."
 msgstr ""
 
@@ -245,7 +245,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:185
-msgid "Making Good PRs"
+msgid "Making good PRs"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:187
@@ -332,7 +332,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:244
-msgid "On *UNIX* (including macOS)::"
+msgid "On *Unix* (including macOS)::"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:248
@@ -392,7 +392,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:278
-msgid "Making Good Commits"
+msgid "Making good commits"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:280
@@ -436,7 +436,7 @@ msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:306
 msgid ""
-"Check :ref:`the git bootcamp <accepting-and-merging-a-pr>` for further "
+"Check :ref:`the Git bootcamp <accepting-and-merging-a-pr>` for further "
 "instructions on how the commit message should look like when merging a pull "
 "request."
 msgstr ""
@@ -547,7 +547,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:390
-msgid "Converting an Existing Patch from b.p.o to GitHub"
+msgid "Converting an existing patch from b.p.o to GitHub"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:392
@@ -582,7 +582,7 @@ msgid ""
 "review pull requests and no one is employed to look at pull requests). If "
 "your pull request has not received any notice from reviewers (i.e., no "
 "comment made) after one month, first \"ping\" the issue on the `issue "
-"tracker`_ to remind the nosy list that the pull request needs a review. If "
+"tracker`_ to remind the subscribers that the pull request needs a review. If "
 "you don't get a response within a week after pinging the issue, you can post "
 "on the `Core Development Discourse category`_ to ask for someone to review "
 "your pull request."
@@ -599,7 +599,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:434
-msgid "How to Review a Pull Request"
+msgid "How to review a pull request"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:436
@@ -660,7 +660,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:475
-msgid "Leaving a Pull Request Review on GitHub"
+msgid "Leaving a pull request review on GitHub"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:477
@@ -693,7 +693,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:491
-msgid "Dismissing Review from Another Core Developer"
+msgid "Dismissing review from another core developer"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:493
@@ -705,7 +705,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:500
-msgid "Committing/Rejecting"
+msgid "Committing/rejecting"
 msgstr ""
 
 #: ../../getting-started/pull-request-lifecycle.rst:502

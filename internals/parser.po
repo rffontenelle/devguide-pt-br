@@ -8,32 +8,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../internals/parser.rst:5
-msgid "Guide to the Parser"
+msgid "Guide to the parser"
 msgstr ""
 
-#: ../../internals/parser.rst
-msgid "Author"
-msgstr ""
-
-#: ../../internals/parser.rst:7
-msgid "Pablo Galindo Salgado"
-msgstr "Pablo Galindo Salgado"
-
-#: ../../internals/parser.rst:12
+#: ../../internals/parser.rst:10
 msgid "Abstract"
 msgstr ""
 
-#: ../../internals/parser.rst:14
+#: ../../internals/parser.rst:12
 msgid ""
 "The Parser in CPython is currently a `PEG (Parser Expression Grammar) "
 "<https://en.wikipedia.org/wiki/Parsing_expression_grammar>`_ parser.  The "
@@ -50,11 +42,11 @@ msgid ""
 "parser."
 msgstr ""
 
-#: ../../internals/parser.rst:28
-msgid "How PEG Parsers Work"
+#: ../../internals/parser.rst:26
+msgid "How PEG parsers work"
 msgstr ""
 
-#: ../../internals/parser.rst:32
+#: ../../internals/parser.rst:30
 msgid ""
 "A PEG (Parsing Expression Grammar) grammar (like the current one) differs "
 "from a context-free grammar in that the way it is written more closely "
@@ -63,7 +55,7 @@ msgid ""
 "when writing::"
 msgstr ""
 
-#: ../../internals/parser.rst:39
+#: ../../internals/parser.rst:37
 msgid ""
 "a context-free-grammar parser (like an LL(1) parser) will generate "
 "constructions that given an input string will *deduce* which alternative "
@@ -73,7 +65,7 @@ msgid ""
 "makes the choice operator not commutative."
 msgstr ""
 
-#: ../../internals/parser.rst:45
+#: ../../internals/parser.rst:43
 msgid ""
 "Unlike LL(1) parsers, PEG-based parsers cannot be ambiguous: if a string "
 "parses, it has exactly one valid parse tree. This means that a PEG-based "
@@ -81,7 +73,7 @@ msgid ""
 "parsers and with context-free grammars in general."
 msgstr ""
 
-#: ../../internals/parser.rst:50
+#: ../../internals/parser.rst:48
 msgid ""
 "PEG parsers are usually constructed as a recursive descent parser in which "
 "every rule in the grammar corresponds to a function in the program "
@@ -91,18 +83,18 @@ msgid ""
 "yields one of the following results:"
 msgstr ""
 
-#: ../../internals/parser.rst:56
+#: ../../internals/parser.rst:54
 msgid ""
 "A \"success\" result. This result indicates that the expression can be "
 "parsed by that rule and the function may optionally move forward or consume "
 "one or more characters of the input string supplied to it."
 msgstr ""
 
-#: ../../internals/parser.rst:59
+#: ../../internals/parser.rst:57
 msgid "A \"failure\" result, in which case no input is consumed."
 msgstr ""
 
-#: ../../internals/parser.rst:61
+#: ../../internals/parser.rst:59
 msgid ""
 "Notice that \"failure\" results do not imply that the program is incorrect, "
 "nor do they necessarily mean that the parsing has failed. Since the choice "
@@ -120,11 +112,11 @@ msgid ""
 "table-based."
 msgstr ""
 
-#: ../../internals/parser.rst:77
+#: ../../internals/parser.rst:75
 msgid "Key ideas"
 msgstr ""
 
-#: ../../internals/parser.rst:80
+#: ../../internals/parser.rst:78
 msgid ""
 "Don't try to reason about a PEG grammar in the same way you would to with an "
 "EBNF or context free grammar. PEG is optimized to describe **how** input "
@@ -134,41 +126,41 @@ msgid ""
 "immediately obvious from the grammar)."
 msgstr ""
 
-#: ../../internals/parser.rst:86
+#: ../../internals/parser.rst:84
 msgid "Alternatives are ordered ( ``A | B`` is not the same as ``B | A`` )."
 msgstr ""
 
-#: ../../internals/parser.rst:87
+#: ../../internals/parser.rst:85
 msgid ""
 "If a rule returns a failure, it doesn't mean that the parsing has failed, it "
 "just means \"try something else\"."
 msgstr ""
 
-#: ../../internals/parser.rst:89
+#: ../../internals/parser.rst:87
 msgid ""
 "By default PEG parsers run in exponential time, which can be optimized to "
 "linear by using memoization."
 msgstr ""
 
-#: ../../internals/parser.rst:91
+#: ../../internals/parser.rst:89
 msgid ""
 "If parsing fails completely (no rule succeeds in parsing all the input "
 "text), the PEG parser doesn't have a concept of \"where the :exc:"
 "`SyntaxError` is\"."
 msgstr ""
 
-#: ../../internals/parser.rst:98
+#: ../../internals/parser.rst:96
 msgid "Consequences of the ordered choice operator"
 msgstr ""
 
-#: ../../internals/parser.rst:100
+#: ../../internals/parser.rst:98
 msgid ""
 "Although PEG may look like EBNF, its meaning is quite different. The fact "
 "that in PEG parsers alternatives are ordered (which is at the core of how "
 "PEG parsers work) has deep consequences, other than removing ambiguity."
 msgstr ""
 
-#: ../../internals/parser.rst:104
+#: ../../internals/parser.rst:102
 msgid ""
 "If a rule has two alternatives and the first of them succeeds, the second "
 "one is **not** attempted even if the caller rule fails to parse the rest of "
@@ -177,7 +169,7 @@ msgid ""
 "individual character): ::"
 msgstr ""
 
-#: ../../internals/parser.rst:112
+#: ../../internals/parser.rst:110
 msgid ""
 "In a regular EBNF grammar, both rules specify the language ``{aa, aaa}`` but "
 "in PEG, one of these two rules accepts the string ``aaa`` but not the string "
@@ -191,19 +183,19 @@ msgid ""
 "final ``a``. Again, the second alternative of ``'aa'|'a'`` is not tried."
 msgstr ""
 
-#: ../../internals/parser.rst:126
+#: ../../internals/parser.rst:124
 msgid ""
 "The effects of ordered choice, such as the ones illustrated above, may be "
 "hidden by many levels of rules."
 msgstr ""
 
-#: ../../internals/parser.rst:128
+#: ../../internals/parser.rst:126
 msgid ""
 "For this reason, writing rules where an alternative is contained in the next "
 "one is in almost all cases a mistake, for example: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:135
+#: ../../internals/parser.rst:133
 msgid ""
 "In this example, the second alternative will never be tried because the "
 "first one will succeed first (even if the input string has an ``'else' "
@@ -211,166 +203,166 @@ msgid ""
 "order: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:143
+#: ../../internals/parser.rst:141
 msgid ""
 "In this case, if the input string doesn't have an ``'else' block``, the "
 "first alternative will fail and the second will be attempted without said "
 "part."
 msgstr ""
 
-#: ../../internals/parser.rst:147
+#: ../../internals/parser.rst:145
 msgid "Syntax"
 msgstr ""
 
-#: ../../internals/parser.rst:149
+#: ../../internals/parser.rst:147
 msgid "The grammar consists of a sequence of rules of the form: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:153
+#: ../../internals/parser.rst:151
 msgid ""
 "Optionally, a type can be included right after the rule name, which "
 "specifies the return type of the C or Python function corresponding to the "
 "rule: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:159
+#: ../../internals/parser.rst:157
 msgid ""
 "If the return type is omitted, then a ``void *`` is returned in C and an "
 "``Any`` in Python."
 msgstr ""
 
-#: ../../internals/parser.rst:163
-msgid "Grammar Expressions"
+#: ../../internals/parser.rst:161
+msgid "Grammar expressions"
 msgstr ""
 
-#: ../../internals/parser.rst:166
+#: ../../internals/parser.rst:164
 msgid "``# comment``"
 msgstr ""
 
-#: ../../internals/parser.rst:168
+#: ../../internals/parser.rst:166
 msgid "Python-style comments."
 msgstr ""
 
-#: ../../internals/parser.rst:171
+#: ../../internals/parser.rst:169
 msgid "``e1 e2``"
 msgstr ""
 
-#: ../../internals/parser.rst:173
+#: ../../internals/parser.rst:171
 msgid "Match ``e1``, then match ``e2``."
 msgstr ""
 
-#: ../../internals/parser.rst:180
+#: ../../internals/parser.rst:178
 msgid "``e1 | e2``"
 msgstr ""
 
-#: ../../internals/parser.rst:182
+#: ../../internals/parser.rst:180
 msgid "Match ``e1`` or ``e2``."
 msgstr ""
 
-#: ../../internals/parser.rst:184
+#: ../../internals/parser.rst:182
 msgid ""
 "The first alternative can also appear on the line after the rule name for "
 "formatting purposes. In that case, a \\| must be used before the first "
 "alternative, like so:"
 msgstr ""
 
-#: ../../internals/parser.rst:195
+#: ../../internals/parser.rst:193
 msgid "``( e )``"
 msgstr ""
 
-#: ../../internals/parser.rst:197
+#: ../../internals/parser.rst:195
 msgid "Match ``e``."
 msgstr ""
 
-#: ../../internals/parser.rst:203
+#: ../../internals/parser.rst:201
 msgid ""
 "A slightly more complex and useful example includes using the grouping "
 "operator together with the repeat operators:"
 msgstr ""
 
-#: ../../internals/parser.rst:211
+#: ../../internals/parser.rst:209
 msgid "``[ e ] or e?``"
 msgstr ""
 
-#: ../../internals/parser.rst:213
+#: ../../internals/parser.rst:211
 msgid "Optionally match ``e``."
 msgstr ""
 
-#: ../../internals/parser.rst:219
+#: ../../internals/parser.rst:217
 msgid ""
 "A more useful example includes defining that a trailing comma is optional:"
 msgstr ""
 
-#: ../../internals/parser.rst:227
+#: ../../internals/parser.rst:225
 msgid "``e*``"
 msgstr ""
 
-#: ../../internals/parser.rst:229
+#: ../../internals/parser.rst:227
 msgid "Match zero or more occurrences of ``e``."
 msgstr ""
 
-#: ../../internals/parser.rst:236
+#: ../../internals/parser.rst:234
 msgid "``e+``"
 msgstr ""
 
-#: ../../internals/parser.rst:238
+#: ../../internals/parser.rst:236
 msgid "Match one or more occurrences of ``e``."
 msgstr ""
 
-#: ../../internals/parser.rst:245
+#: ../../internals/parser.rst:243
 msgid "``s.e+``"
 msgstr ""
 
-#: ../../internals/parser.rst:247
+#: ../../internals/parser.rst:245
 msgid ""
 "Match one or more occurrences of ``e``, separated by ``s``. The generated "
 "parse tree does not include the separator. This is otherwise identical to "
 "``(e (s e)*)``."
 msgstr ""
 
-#: ../../internals/parser.rst:256
+#: ../../internals/parser.rst:254
 msgid "``&e``"
 msgstr ""
 
-#: ../../internals/parser.rst:260
+#: ../../internals/parser.rst:258
 msgid "Succeed if ``e`` can be parsed, without consuming any input."
 msgstr ""
 
-#: ../../internals/parser.rst:263
+#: ../../internals/parser.rst:261
 msgid "``!e``"
 msgstr ""
 
-#: ../../internals/parser.rst:267
+#: ../../internals/parser.rst:265
 msgid "Fail if ``e`` can be parsed, without consuming any input."
 msgstr ""
 
-#: ../../internals/parser.rst:269
+#: ../../internals/parser.rst:267
 msgid ""
 "An example taken from the Python grammar specifies that a primary consists "
 "of an atom, which is not followed by a ``.`` or a ``(`` or a ``[``:"
 msgstr ""
 
-#: ../../internals/parser.rst:278
+#: ../../internals/parser.rst:276
 msgid "``~``"
 msgstr ""
 
-#: ../../internals/parser.rst:280
+#: ../../internals/parser.rst:278
 msgid ""
 "Commit to the current alternative, even if it fails to parse (this is called "
 "the \"cut\")."
 msgstr ""
 
-#: ../../internals/parser.rst:287
+#: ../../internals/parser.rst:285
 msgid ""
 "In this example, if a left parenthesis is parsed, then the other alternative "
 "won’t be considered, even if some_rule or ``)`` fail to be parsed."
 msgstr ""
 
-#: ../../internals/parser.rst:292
+#: ../../internals/parser.rst:290
 msgid "Left recursion"
 msgstr ""
 
-#: ../../internals/parser.rst:294
+#: ../../internals/parser.rst:292
 msgid ""
 "PEG parsers normally do not support left recursion but CPython's parser "
 "generator implements a technique similar to the one described in Medeiros et "
@@ -380,26 +372,26 @@ msgid ""
 "rules that involve indirect left-recursion like::"
 msgstr ""
 
-#: ../../internals/parser.rst:305
+#: ../../internals/parser.rst:303
 msgid "and \"hidden left-recursion\" like::"
 msgstr ""
 
-#: ../../internals/parser.rst:310
-msgid "Variables in the Grammar"
+#: ../../internals/parser.rst:308
+msgid "Variables in the grammar"
 msgstr ""
 
-#: ../../internals/parser.rst:312
+#: ../../internals/parser.rst:310
 msgid ""
 "A sub-expression can be named by preceding it with an identifier and an "
 "``=`` sign. The name can then be used in the action (see below), like "
 "this: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:318
+#: ../../internals/parser.rst:316
 msgid "Grammar actions"
 msgstr ""
 
-#: ../../internals/parser.rst:322
+#: ../../internals/parser.rst:320
 msgid ""
 "To avoid the intermediate steps that obscure the relationship between the "
 "grammar and the AST generation the PEG parser allows directly generating AST "
@@ -415,7 +407,7 @@ msgid ""
 "generate the grammar tree as a result of the parsing."
 msgstr ""
 
-#: ../../internals/parser.rst:335
+#: ../../internals/parser.rst:333
 msgid ""
 "In the specific case of the PEG grammar for Python, having actions allows "
 "directly describing how the AST is composed in the grammar itself, making it "
@@ -425,35 +417,35 @@ msgid ""
 "grammar."
 msgstr ""
 
-#: ../../internals/parser.rst:341
+#: ../../internals/parser.rst:339
 msgid ""
 "To indicate these actions each alternative can be followed by the action "
 "code inside curly-braces, which specifies the return value of the "
 "alternative::"
 msgstr ""
 
-#: ../../internals/parser.rst:348
+#: ../../internals/parser.rst:346
 msgid "If the action is omitted, a default action is generated:"
 msgstr ""
 
-#: ../../internals/parser.rst:350
+#: ../../internals/parser.rst:348
 msgid "If there's a single name in the rule, it gets returned."
 msgstr ""
 
-#: ../../internals/parser.rst:352
+#: ../../internals/parser.rst:350
 msgid ""
 "If there is more than one name in the rule, a collection with all parsed "
 "expressions gets returned (the type of the collection will be different in C "
 "and Python)."
 msgstr ""
 
-#: ../../internals/parser.rst:356
+#: ../../internals/parser.rst:354
 msgid ""
 "This default behaviour is primarily made for very simple situations and for "
 "debugging purposes."
 msgstr ""
 
-#: ../../internals/parser.rst:361
+#: ../../internals/parser.rst:359
 msgid ""
 "It's important that the actions don't mutate any AST nodes that are passed "
 "into them via variables referring to other rules. The reason for mutation "
@@ -463,19 +455,19 @@ msgid ""
 "new copy of the node and change that."
 msgstr ""
 
-#: ../../internals/parser.rst:368
+#: ../../internals/parser.rst:366
 msgid ""
 "The full meta-grammar for the grammars supported by the PEG generator is:"
 msgstr ""
 
-#: ../../internals/parser.rst:459
+#: ../../internals/parser.rst:457
 msgid ""
 "As an illustrative example this simple grammar file allows directly "
 "generating a full parser that can parse simple arithmetic expressions and "
 "that returns a valid C-based Python AST:"
 msgstr ""
 
-#: ../../internals/parser.rst:486
+#: ../../internals/parser.rst:484
 msgid ""
 "Here ``EXTRA`` is a macro that expands to ``start_lineno, start_col_offset, "
 "end_lineno, end_col_offset, p->arena``, those being variables automatically "
@@ -483,15 +475,15 @@ msgid ""
 "for the parser."
 msgstr ""
 
-#: ../../internals/parser.rst:491
+#: ../../internals/parser.rst:489
 msgid "A similar grammar written to target Python AST objects:"
 msgstr ""
 
-#: ../../internals/parser.rst:518
+#: ../../internals/parser.rst:516
 msgid "Pegen"
 msgstr ""
 
-#: ../../internals/parser.rst:520
+#: ../../internals/parser.rst:518
 msgid ""
 "Pegen is the parser generator used in CPython to produce the final PEG "
 "parser used by the interpreter. It is the program that can be used to read "
@@ -499,14 +491,14 @@ msgid ""
 "the final C parser. It contains the following pieces:"
 msgstr ""
 
-#: ../../internals/parser.rst:524
+#: ../../internals/parser.rst:522
 msgid ""
 "A parser generator that can read a grammar file and produce a PEG parser "
 "written in Python or C that can parse said grammar. The generator is located "
 "at :cpy-file:`Tools/peg_generator/pegen`."
 msgstr ""
 
-#: ../../internals/parser.rst:526
+#: ../../internals/parser.rst:524
 msgid ""
 "A PEG meta-grammar that automatically generates a Python parser that is used "
 "for the parser generator itself (this means that there are no manually-"
@@ -514,45 +506,45 @@ msgid ""
 "peg_generator/pegen/metagrammar.gram`."
 msgstr ""
 
-#: ../../internals/parser.rst:529
+#: ../../internals/parser.rst:527
 msgid ""
 "A generated parser (using the parser generator) that can directly produce C "
 "and Python AST objects."
 msgstr ""
 
-#: ../../internals/parser.rst:531
+#: ../../internals/parser.rst:529
 msgid ""
 "The source code for Pegen lives at :cpy-file:`Tools/peg_generator/pegen` but "
 "normally all typical commands to interact with the parser generator are "
 "executed from the main makefile."
 msgstr ""
 
-#: ../../internals/parser.rst:535
+#: ../../internals/parser.rst:533
 msgid "How to regenerate the parser"
 msgstr ""
 
-#: ../../internals/parser.rst:537
+#: ../../internals/parser.rst:535
 msgid ""
 "Once you have made the changes to the grammar files, to regenerate the ``C`` "
 "parser (the one used by the interpreter) just execute: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:542
+#: ../../internals/parser.rst:540
 msgid ""
 "using the :cpy-file:`!Makefile` in the main directory.  If you are on "
 "Windows you can use the Visual Studio project files to regenerate the parser "
 "or to execute: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:547
+#: ../../internals/parser.rst:545
 msgid "The generated parser file is located at :cpy-file:`Parser/parser.c`."
 msgstr ""
 
-#: ../../internals/parser.rst:550
+#: ../../internals/parser.rst:548
 msgid "How to regenerate the meta-parser"
 msgstr ""
 
-#: ../../internals/parser.rst:552
+#: ../../internals/parser.rst:550
 msgid ""
 "The meta-grammar (the grammar that describes the grammar for the grammar "
 "files themselves) is located at :cpy-file:`Tools/peg_generator/pegen/"
@@ -562,68 +554,68 @@ msgid ""
 "that parses the grammar files). To do so just execute: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:560
+#: ../../internals/parser.rst:558
 msgid ""
 "If you are on Windows you can use the Visual Studio project files to "
 "regenerate the parser or to execute: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:567
+#: ../../internals/parser.rst:565
 msgid "Grammatical elements and rules"
 msgstr ""
 
-#: ../../internals/parser.rst:569
+#: ../../internals/parser.rst:567
 msgid "Pegen has some special grammatical elements and rules:"
 msgstr ""
 
-#: ../../internals/parser.rst:571
+#: ../../internals/parser.rst:569
 msgid "Strings with single quotes (') (e.g. ``'class'``) denote KEYWORDS."
 msgstr ""
 
-#: ../../internals/parser.rst:572
+#: ../../internals/parser.rst:570
 msgid ""
 "Strings with double quotes (\") (e.g. ``\"match\"``) denote SOFT KEYWORDS."
 msgstr ""
 
-#: ../../internals/parser.rst:573
+#: ../../internals/parser.rst:571
 msgid ""
-"Upper case names (e.g. ``NAME``) denote tokens in the :cpy-file:`Grammar/"
+"Uppercase names (e.g. ``NAME``) denote tokens in the :cpy-file:`Grammar/"
 "Tokens` file."
 msgstr ""
 
-#: ../../internals/parser.rst:574
+#: ../../internals/parser.rst:572
 msgid ""
 "Rule names starting with ``invalid_`` are used for specialized syntax errors."
 msgstr ""
 
-#: ../../internals/parser.rst:576
+#: ../../internals/parser.rst:574
 msgid "These rules are NOT used in the first pass of the parser."
 msgstr ""
 
-#: ../../internals/parser.rst:577
+#: ../../internals/parser.rst:575
 msgid ""
 "Only if the first pass fails to parse, a second pass including the invalid "
 "rules will be executed."
 msgstr ""
 
-#: ../../internals/parser.rst:579
+#: ../../internals/parser.rst:577
 msgid ""
 "If the parser fails in the second phase with a generic syntax error, the "
 "location of the generic failure of the first pass will be used (this avoids "
 "reporting incorrect locations due to the invalid rules)."
 msgstr ""
 
-#: ../../internals/parser.rst:582
+#: ../../internals/parser.rst:580
 msgid ""
 "The order of the alternatives involving invalid rules matter (like any rule "
 "in PEG)."
 msgstr ""
 
-#: ../../internals/parser.rst:586
+#: ../../internals/parser.rst:584
 msgid "Tokenization"
 msgstr ""
 
-#: ../../internals/parser.rst:588
+#: ../../internals/parser.rst:586
 msgid ""
 "It is common among PEG parser frameworks that the parser does both the "
 "parsing and the tokenization, but this does not happen in Pegen. The reason "
@@ -635,37 +627,37 @@ msgid ""
 "useful even today."
 msgstr ""
 
-#: ../../internals/parser.rst:595
+#: ../../internals/parser.rst:593
 msgid ""
 "The list of tokens (all uppercase names in the grammar) that you can use can "
 "be found in the :cpy-file:`Grammar/Tokens` file. If you change this file to "
 "add new tokens, make sure to regenerate the files by executing: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:600
+#: ../../internals/parser.rst:598
 msgid ""
 "If you are on Windows you can use the Visual Studio project files to "
 "regenerate the tokens or to execute: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:604
+#: ../../internals/parser.rst:602
 msgid ""
 "How tokens are generated and the rules governing this is completely up to "
 "the tokenizer (:cpy-file:`Parser/tokenizer.c`) and the parser just receives "
 "tokens from it."
 msgstr ""
 
-#: ../../internals/parser.rst:608
+#: ../../internals/parser.rst:606
 msgid "Memoization"
 msgstr ""
 
-#: ../../internals/parser.rst:610
+#: ../../internals/parser.rst:608
 msgid ""
 "As described previously, to avoid exponential time complexity in the parser, "
 "memoization is used."
 msgstr ""
 
-#: ../../internals/parser.rst:612
+#: ../../internals/parser.rst:610
 msgid ""
 "The C parser used by Python is highly optimized and memoization can be "
 "expensive both in memory and time. Although the memory cost is obvious (the "
@@ -676,19 +668,19 @@ msgid ""
 "``memo`` after the rule name (and type, if present): ::"
 msgstr ""
 
-#: ../../internals/parser.rst:621
+#: ../../internals/parser.rst:619
 msgid ""
 "By selectively turning on memoization for a handful of rules, the parser "
 "becomes faster and uses less memory."
 msgstr ""
 
-#: ../../internals/parser.rst:624
+#: ../../internals/parser.rst:622
 msgid ""
 "Left-recursive rules always use memoization, since the implementation of "
 "left-recursion depends on it."
 msgstr ""
 
-#: ../../internals/parser.rst:626
+#: ../../internals/parser.rst:624
 msgid ""
 "To know if a new rule needs memoization or not, benchmarking is required "
 "(comparing execution times and memory usage of some considerably big files "
@@ -698,22 +690,22 @@ msgid ""
 "information) but it needs to be manually activated."
 msgstr ""
 
-#: ../../internals/parser.rst:634
+#: ../../internals/parser.rst:632
 msgid "Automatic variables"
 msgstr ""
 
-#: ../../internals/parser.rst:636
+#: ../../internals/parser.rst:634
 msgid ""
 "To make writing actions easier, Pegen injects some automatic variables in "
 "the namespace available when writing actions. In the C parser, some of these "
 "automatic variable names are:"
 msgstr ""
 
-#: ../../internals/parser.rst:639
+#: ../../internals/parser.rst:637
 msgid "``p``: The parser structure."
 msgstr ""
 
-#: ../../internals/parser.rst:640
+#: ../../internals/parser.rst:638
 msgid ""
 "``EXTRA``: This is a macro that expands to ``(_start_lineno, "
 "_start_col_offset, _end_lineno, _end_col_offset, p->arena)``, which is "
@@ -722,18 +714,18 @@ msgid ""
 "location information of the current token."
 msgstr ""
 
-#: ../../internals/parser.rst:645
-msgid "Hard and Soft keywords"
+#: ../../internals/parser.rst:643
+msgid "Hard and soft keywords"
 msgstr ""
 
-#: ../../internals/parser.rst:648
+#: ../../internals/parser.rst:646
 msgid ""
 "In the grammar files, keywords are defined using **single quotes** (e.g. "
 "``'class'``) while soft keywords are defined using **double quotes** (e.g. "
 "``\"match\"``)."
 msgstr ""
 
-#: ../../internals/parser.rst:651
+#: ../../internals/parser.rst:649
 msgid ""
 "There are two kinds of keywords allowed in pegen grammars: *hard* and *soft* "
 "keywords. The difference between hard and soft keywords is that hard "
@@ -743,13 +735,13 @@ msgid ""
 "fail:"
 msgstr ""
 
-#: ../../internals/parser.rst:670
+#: ../../internals/parser.rst:668
 msgid ""
 "While soft keywords don't have this limitation if used in a context other "
 "the one where they are defined as keywords:"
 msgstr ""
 
-#: ../../internals/parser.rst:678
+#: ../../internals/parser.rst:676
 msgid ""
 "The ``match`` and ``case`` keywords are soft keywords, so that they are "
 "recognized as keywords at the beginning of a match statement or case block "
@@ -757,15 +749,15 @@ msgid ""
 "argument names."
 msgstr ""
 
-#: ../../internals/parser.rst:682
+#: ../../internals/parser.rst:680
 msgid "You can get a list of all keywords defined in the grammar from Python:"
 msgstr ""
 
-#: ../../internals/parser.rst:693
+#: ../../internals/parser.rst:691
 msgid "as well as soft keywords:"
 msgstr ""
 
-#: ../../internals/parser.rst:702
+#: ../../internals/parser.rst:700
 msgid ""
 "Soft keywords can be a bit challenging to manage as they can be accepted in "
 "places you don't intend to, given how the order alternatives behave in PEG "
@@ -774,11 +766,11 @@ msgid ""
 "them in places where there is not a lot of alternatives."
 msgstr ""
 
-#: ../../internals/parser.rst:709
+#: ../../internals/parser.rst:707
 msgid "Error handling"
 msgstr ""
 
-#: ../../internals/parser.rst:711
+#: ../../internals/parser.rst:709
 msgid ""
 "When a pegen-generated parser detects that an exception is raised, it will "
 "**automatically stop parsing**, no matter what the current state of the "
@@ -790,18 +782,18 @@ msgid ""
 "parser uses to report custom syntax error messages."
 msgstr ""
 
-#: ../../internals/parser.rst:721
+#: ../../internals/parser.rst:719
 msgid ""
 "Tokenizer errors are normally reported by raising exceptions but some "
 "special tokenizer errors such as unclosed parenthesis will be reported only "
 "after the parser finishes without returning anything."
 msgstr ""
 
-#: ../../internals/parser.rst:726
-msgid "How Syntax errors are reported"
+#: ../../internals/parser.rst:724
+msgid "How syntax errors are reported"
 msgstr ""
 
-#: ../../internals/parser.rst:728
+#: ../../internals/parser.rst:726
 msgid ""
 "As described previously in the :ref:`how PEG parsers work section <how-peg-"
 "parsers-work>`, PEG parsers don't have a defined concept of where errors "
@@ -811,7 +803,7 @@ msgid ""
 "an error in the grammar."
 msgstr ""
 
-#: ../../internals/parser.rst:735
+#: ../../internals/parser.rst:733
 msgid ""
 "To report generic syntax errors, pegen uses a common heuristic in PEG "
 "parsers: the location of *generic* syntax errors is reported in the furthest "
@@ -820,14 +812,14 @@ msgid ""
 "but no exception has been raised."
 msgstr ""
 
-#: ../../internals/parser.rst:742
+#: ../../internals/parser.rst:740
 msgid ""
 "Positive and negative lookaheads will try to match a token so they will "
 "affect the location of generic syntax errors. Use them carefully at "
 "boundaries between rules."
 msgstr ""
 
-#: ../../internals/parser.rst:746
+#: ../../internals/parser.rst:744
 msgid ""
 "As the Python grammar was primordially written as an LL(1) grammar, this "
 "heuristic has an extremely high success rate, but some PEG features can have "
@@ -835,7 +827,7 @@ msgid ""
 "and :ref:`negative lookaheads <peg-negative-lookahead>`."
 msgstr ""
 
-#: ../../internals/parser.rst:751
+#: ../../internals/parser.rst:749
 msgid ""
 "To generate more precise syntax errors, custom rules are used. This is a "
 "common practice also in context free grammars: the parser will try to accept "
@@ -847,7 +839,7 @@ msgid ""
 "the rules) so the generated parser acts in two phases:"
 msgstr ""
 
-#: ../../internals/parser.rst:759
+#: ../../internals/parser.rst:757
 msgid ""
 "The first phase will try to parse the input stream without taking into "
 "account rules that start with the ``invalid_`` prefix. If the parsing "
@@ -855,7 +847,7 @@ msgid ""
 "attempted."
 msgstr ""
 
-#: ../../internals/parser.rst:763
+#: ../../internals/parser.rst:761
 msgid ""
 "If the first phase failed, a second parsing attempt is done including the "
 "rules that start with an ``invalid_`` prefix. By design this attempt "
@@ -867,30 +859,30 @@ msgid ""
 "stop anyway."
 msgstr ""
 
-#: ../../internals/parser.rst:771
+#: ../../internals/parser.rst:769
 msgid "When defining invalid rules:"
 msgstr ""
 
-#: ../../internals/parser.rst:773
+#: ../../internals/parser.rst:771
 msgid ""
 "Make sure all custom invalid rules raise :exc:`SyntaxError` exceptions (or a "
 "subclass of it)."
 msgstr ""
 
-#: ../../internals/parser.rst:774
+#: ../../internals/parser.rst:772
 msgid ""
 "Make sure **all** invalid rules start with the ``invalid_`` prefix to not "
 "impact performance of parsing correct Python code."
 msgstr ""
 
-#: ../../internals/parser.rst:776
+#: ../../internals/parser.rst:774
 msgid ""
 "Make sure the parser doesn't behave differently for regular rules when you "
 "introduce invalid rules (see the :ref:`how PEG parsers work section <how-peg-"
 "parsers-work>` for more information)."
 msgstr ""
 
-#: ../../internals/parser.rst:779
+#: ../../internals/parser.rst:777
 msgid ""
 "You can find a collection of macros to raise specialized syntax errors in "
 "the :cpy-file:`Parser/pegen.h` header file. These macros allow also to "
@@ -898,14 +890,14 @@ msgid ""
 "tracebacks that will be displayed when the error is reported."
 msgstr ""
 
-#: ../../internals/parser.rst:785
+#: ../../internals/parser.rst:783
 msgid ""
 "A good way to test if an invalid rule will be triggered when you expect is "
 "to test if introducing a syntax error **after** valid code triggers the rule "
 "or not. For example: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:790
+#: ../../internals/parser.rst:788
 msgid ""
 "Should trigger the syntax error in the ``$`` character. If your rule is not "
 "correctly defined this won't happen. For example, if you try to define a "
@@ -913,7 +905,7 @@ msgid ""
 "message and you define it as: ::"
 msgstr ""
 
-#: ../../internals/parser.rst:796
+#: ../../internals/parser.rst:794
 msgid ""
 "This will **seem** to work because the parser will correctly parse "
 "``print(something)`` because it is valid code and the second phase will "
@@ -924,11 +916,11 @@ msgid ""
 "there instead of the ``$`` character."
 msgstr ""
 
-#: ../../internals/parser.rst:803
+#: ../../internals/parser.rst:801
 msgid "Generating AST objects"
 msgstr ""
 
-#: ../../internals/parser.rst:805
+#: ../../internals/parser.rst:803
 msgid ""
 "The output of the C parser used by CPython that is generated by the :cpy-"
 "file:`Grammar/python.gram` grammar file is a Python AST object (using C "
@@ -943,7 +935,7 @@ msgid ""
 "the generated tree."
 msgstr ""
 
-#: ../../internals/parser.rst:817
+#: ../../internals/parser.rst:815
 msgid ""
 "Actions must **never** be used to accept or reject rules. It may be tempting "
 "in some situations to write a very generic rule and then check the generated "
@@ -953,7 +945,7 @@ msgid ""
 "Python implementations to adapt the grammar to their own needs."
 msgstr ""
 
-#: ../../internals/parser.rst:824
+#: ../../internals/parser.rst:822
 msgid ""
 "As a general rule, if an action spawns multiple lines or requires something "
 "more complicated than a single expression of C code, is normally better to "
@@ -962,53 +954,53 @@ msgid ""
 "grammar."
 msgstr ""
 
-#: ../../internals/parser.rst:829
+#: ../../internals/parser.rst:827
 msgid ""
 "If the parsing succeeds, the parser **must** return a **valid** AST object."
 msgstr ""
 
-#: ../../internals/parser.rst:832
+#: ../../internals/parser.rst:830
 msgid "Testing"
 msgstr ""
 
-#: ../../internals/parser.rst:834
+#: ../../internals/parser.rst:832
 msgid ""
 "There are three files that contain tests for the grammar and the parser:"
 msgstr ""
 
-#: ../../internals/parser.rst:836
+#: ../../internals/parser.rst:834
 msgid ":cpy-file:`Lib/test/test_grammar.py`"
 msgstr ""
 
-#: ../../internals/parser.rst:837
+#: ../../internals/parser.rst:835
 msgid ":cpy-file:`Lib/test/test_syntax.py`"
 msgstr ""
 
-#: ../../internals/parser.rst:838
+#: ../../internals/parser.rst:836
 msgid ":cpy-file:`Lib/test/test_exceptions.py`"
 msgstr ""
 
-#: ../../internals/parser.rst:840
+#: ../../internals/parser.rst:838
 msgid ""
 "Check the contents of these files to know which is the best place to place "
 "new tests depending on the nature of the new feature you are adding."
 msgstr ""
 
-#: ../../internals/parser.rst:843
+#: ../../internals/parser.rst:841
 msgid ""
 "Tests for the parser generator itself can be found in the :cpy-file:`Lib/"
 "test/test_peg_generator` directory."
 msgstr ""
 
-#: ../../internals/parser.rst:847
+#: ../../internals/parser.rst:845
 msgid "Debugging generated parsers"
 msgstr ""
 
-#: ../../internals/parser.rst:850
+#: ../../internals/parser.rst:848
 msgid "Making experiments"
 msgstr ""
 
-#: ../../internals/parser.rst:852
+#: ../../internals/parser.rst:850
 msgid ""
 "As the generated C parser is the one used by Python, this means that if "
 "something goes wrong when adding some new rules to the grammar you cannot "
@@ -1017,7 +1009,7 @@ msgid ""
 "experiments."
 msgstr ""
 
-#: ../../internals/parser.rst:856
+#: ../../internals/parser.rst:854
 msgid ""
 "For this reason it is a good idea to experiment first by generating a Python "
 "parser. To do this, you can go to the :cpy-file:`Tools/peg_generator/` "
@@ -1025,23 +1017,23 @@ msgid ""
 "by executing:"
 msgstr ""
 
-#: ../../internals/parser.rst:863
+#: ../../internals/parser.rst:861
 msgid ""
 "This will generate a file called :file:`parse.py` in the same directory that "
 "you can use to parse some input:"
 msgstr ""
 
-#: ../../internals/parser.rst:869
+#: ../../internals/parser.rst:867
 msgid ""
 "As the generated :file:`parse.py` file is just Python code, you can modify "
 "it and add breakpoints to debug or better understand some complex situations."
 msgstr ""
 
-#: ../../internals/parser.rst:874
+#: ../../internals/parser.rst:872
 msgid "Verbose mode"
 msgstr ""
 
-#: ../../internals/parser.rst:876
+#: ../../internals/parser.rst:874
 msgid ""
 "When Python is compiled in debug mode (by adding ``--with-pydebug`` when "
 "running the configure step in Linux or by adding ``-d`` when calling the :"
@@ -1051,76 +1043,79 @@ msgid ""
 "bit hard to understand at first."
 msgstr ""
 
-#: ../../internals/parser.rst:883
+#: ../../internals/parser.rst:881
 msgid ""
 "When activating verbose mode in the Python parser, it is better to not use "
 "interactive mode as it can be much harder to understand, because interactive "
 "mode involves some special steps compared to regular parsing."
 msgstr ""
 
-#: ../../internals/parser.rst:886
+#: ../../internals/parser.rst:884
 msgid ""
 "To activate verbose mode you can add the ``-d`` flag when executing Python:"
 msgstr ""
 
-#: ../../internals/parser.rst:892
+#: ../../internals/parser.rst:890
 msgid ""
 "This will print **a lot** of output to ``stderr`` so is probably better to "
 "dump it to a file for further analysis. The output consists of trace lines "
-"with the following structure:"
+"with the following structure::"
 msgstr ""
 
 #: ../../internals/parser.rst:895
-msgid ""
-"<indentation> ('>'|'-'|'+'|'!') <rule_name>[<token_location>]: "
-"<alternative> ..."
-msgstr ""
-
-#: ../../internals/parser.rst:897
 msgid ""
 "Every line is indented by a different amount (``<indentation>``) depending "
 "on how deep the call stack is. The next character marks the type of the "
 "trace:"
 msgstr ""
 
-#: ../../internals/parser.rst:900
+#: ../../internals/parser.rst:898
 msgid "``>`` indicates that a rule is going to be attempted to be parsed."
 msgstr ""
 
-#: ../../internals/parser.rst:901
+#: ../../internals/parser.rst:899
 msgid "``-`` indicates that a rule has failed to be parsed."
 msgstr ""
 
-#: ../../internals/parser.rst:902
+#: ../../internals/parser.rst:900
 msgid "``+`` indicates that a rule has been parsed correctly."
 msgstr ""
 
-#: ../../internals/parser.rst:903
+#: ../../internals/parser.rst:901
 msgid ""
 "``!`` indicates that an exception or an error has been detected and the "
 "parser is unwinding."
 msgstr ""
 
-#: ../../internals/parser.rst:905
+#: ../../internals/parser.rst:903
 msgid ""
-"The <token_location> part indicates the current index in the token array, "
-"the <rule_name> part indicates what rule is being parsed and the "
-"<alternative> part indicates what alternative within that rule is being "
+"The ``<token_location>`` part indicates the current index in the token "
+"array, the ``<rule_name>`` part indicates what rule is being parsed and the "
+"``<alternative>`` part indicates what alternative within that rule is being "
 "attempted."
 msgstr ""
 
-#: ../../internals/parser.rst:911
+#: ../../internals/parser.rst:910
 msgid "References"
 msgstr ""
 
-#: ../../internals/parser.rst:913
+#: ../../internals/parser.rst:912
 msgid "Ford, Bryan https://pdos.csail.mit.edu/~baford/packrat/thesis/"
 msgstr ""
 
-#: ../../internals/parser.rst:916
+#: ../../internals/parser.rst:915
 msgid "Medeiros et al. https://arxiv.org/pdf/1207.0443.pdf"
 msgstr ""
 
-#: ../../internals/parser.rst:919
+#: ../../internals/parser.rst:918
 msgid "Warth et al. http://web.cs.ucla.edu/~todd/research/pepm08.pdf"
 msgstr ""
+
+#: ../../internals/parser.rst:922
+msgid "Document history"
+msgstr ""
+
+#: ../../internals/parser.rst:925
+#, fuzzy
+msgid "Pablo Galindo Salgado - Original author"
+msgstr "Pablo Galindo Salgado"

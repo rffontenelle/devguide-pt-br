@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../getting-started/getting-help.rst:5
-msgid "Where to Get Help"
+msgid "Where to get help"
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:7
@@ -53,7 +53,7 @@ msgid "`Core Development`_ for most general questions and help"
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:28
-msgid "`Ideas`_ to discuss new ideas for the Python"
+msgid "`Ideas`_ to discuss new ideas for the Python language"
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:29
@@ -66,7 +66,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:43
-msgid "Mailing Lists"
+msgid "Mailing lists"
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:45
@@ -101,7 +101,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:77
-msgid "Core Mentorship"
+msgid "Core mentorship"
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:79
@@ -115,7 +115,7 @@ msgid ""
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:92
-msgid "Core Developers Office Hours"
+msgid "Core developers office hours"
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:94
@@ -157,7 +157,7 @@ msgid "Schedule at https://calendly.com/zware"
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:109
-msgid "File a Bug"
+msgid "File a bug"
 msgstr ""
 
 #: ../../getting-started/getting-help.rst:111

@@ -8,32 +8,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../internals/garbage-collector.rst:7
-msgid "Garbage Collector Design"
+msgid "Garbage collector design"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst
-msgid "Author"
-msgstr ""
-
-#: ../../internals/garbage-collector.rst:9
-msgid "Pablo Galindo Salgado"
-msgstr "Pablo Galindo Salgado"
-
-#: ../../internals/garbage-collector.rst:14
+#: ../../internals/garbage-collector.rst:12
 msgid "Abstract"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:16
+#: ../../internals/garbage-collector.rst:14
 msgid ""
 "The main garbage collection algorithm used by CPython is reference counting. "
 "The basic idea is that CPython counts how many different places there are "
@@ -48,13 +40,13 @@ msgid ""
 "also has a reference to the object when called):"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:39
+#: ../../internals/garbage-collector.rst:37
 msgid ""
 "The main problem with the reference counting scheme is that it does not "
 "handle reference cycles. For instance, consider this code:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:50
+#: ../../internals/garbage-collector.rst:48
 msgid ""
 "In this example, ``container`` holds a reference to itself, so even when we "
 "remove our reference to it (the variable \"container\") the reference count "
@@ -66,22 +58,22 @@ msgid ""
 "is also a form of garbage collection."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:59
+#: ../../internals/garbage-collector.rst:57
 msgid "Memory layout and object structure"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:61
+#: ../../internals/garbage-collector.rst:59
 msgid ""
 "Normally the C structure supporting a regular Python object looks as follows:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:73
+#: ../../internals/garbage-collector.rst:71
 msgid ""
 "In order to support the garbage collector, the memory layout of objects is "
 "altered to accommodate extra information **before** the normal layout:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:90
+#: ../../internals/garbage-collector.rst:88
 msgid ""
 "In this way the object can be treated as a normal python object and when the "
 "extra information associated to the GC is needed the previous fields can be "
@@ -89,7 +81,7 @@ msgid ""
 "*)(the_object)-1)`."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:94
+#: ../../internals/garbage-collector.rst:92
 msgid ""
 "As is explained later in the `Optimization: reusing fields to save memory`_ "
 "section, these two extra fields are normally used to keep doubly linked "
@@ -99,7 +91,7 @@ msgid ""
 "doubly linked list structure is not needed as a memory optimization."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:101
+#: ../../internals/garbage-collector.rst:99
 msgid ""
 "Doubly linked lists are used because they efficiently support most "
 "frequently required operations.  In general, the collection of all objects "
@@ -117,7 +109,7 @@ msgid ""
 "GC is running."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:112
+#: ../../internals/garbage-collector.rst:110
 msgid ""
 "Specific APIs are offered to allocate, deallocate, initialize, track, and "
 "untrack objects with GC support. These APIs can be found in the `Garbage "
@@ -125,7 +117,7 @@ msgid ""
 "html>`_."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:116
+#: ../../internals/garbage-collector.rst:114
 msgid ""
 "Apart from this object structure, the type object for objects supporting "
 "garbage collection must include the ``Py_TPFLAGS_HAVE_GC`` in its "
@@ -135,11 +127,11 @@ msgid ""
 "``tp_clear`` implementation must also be provided."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:124
+#: ../../internals/garbage-collector.rst:122
 msgid "Identifying reference cycles"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:126
+#: ../../internals/garbage-collector.rst:124
 msgid ""
 "The algorithm that CPython uses to detect those reference cycles is "
 "implemented in the ``gc`` module. The garbage collector **only focuses** on "
@@ -150,33 +142,33 @@ msgid ""
 "interpreter create cycles everywhere. Some notable examples:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:134
+#: ../../internals/garbage-collector.rst:132
 msgid ""
 "Exceptions contain traceback objects that contain a list of frames that "
 "contain the exception itself."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:136
+#: ../../internals/garbage-collector.rst:134
 msgid ""
 "Module-level functions reference the module's dict (which is needed to "
 "resolve globals), which in turn contains entries for the module-level "
 "functions."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:138
+#: ../../internals/garbage-collector.rst:136
 msgid ""
 "Instances have references to their class which itself references its module, "
 "and the module contains references to everything that is inside (and maybe "
 "other modules) and this can lead back to the original instance."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:141
+#: ../../internals/garbage-collector.rst:139
 msgid ""
 "When representing data structures like graphs, it is very typical for them "
 "to have internal links to themselves."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:144
+#: ../../internals/garbage-collector.rst:142
 msgid ""
 "To correctly dispose of these objects once they become unreachable, they "
 "need to be identified first.  Inside the function that identifies cycles, "
@@ -184,14 +176,14 @@ msgid ""
 "scanned, and the other will contain all objects \"tentatively\" unreachable."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:149
+#: ../../internals/garbage-collector.rst:147
 msgid ""
 "To understand how the algorithm works, let’s take the case of a circular "
 "linked list which has one link referenced by a variable ``A``, and one self-"
 "referencing object which is completely unreachable:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:176
+#: ../../internals/garbage-collector.rst:174
 msgid ""
 "When the GC starts, it has all the container objects it wants to scan on the "
 "first linked list. The objective is to move all the unreachable objects. "
@@ -199,7 +191,7 @@ msgid ""
 "move the unreachable as this involves fewer pointer updates."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:181
+#: ../../internals/garbage-collector.rst:179
 msgid ""
 "Every object that supports garbage collection will have an extra reference "
 "count field initialized to the reference count (``gc_ref`` in the figures) "
@@ -208,7 +200,7 @@ msgid ""
 "the interpreter will not modify the real reference count field."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:189
+#: ../../internals/garbage-collector.rst:187
 msgid ""
 "The GC then iterates over all containers in the first list and decrements by "
 "one the ``gc_ref`` field of any other object that container is referencing.  "
@@ -219,7 +211,7 @@ msgid ""
 "scan” list will have ``gc_ref > 0``."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:198
+#: ../../internals/garbage-collector.rst:196
 msgid ""
 "Notice that having ``gc_ref == 0`` does not imply that the object is "
 "unreachable. This is because another object that is reachable from the "
@@ -235,14 +227,14 @@ msgid ""
 "objects but has not processed ``link_1`` and ``link_2`` yet."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:212
+#: ../../internals/garbage-collector.rst:210
 msgid ""
 "Then the GC scans the next ``link_1`` object. Because it has ``gc_ref == "
 "1``, the gc does not do anything special because it knows it has to be "
 "reachable (and is already in what will become the reachable list):"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:218
+#: ../../internals/garbage-collector.rst:216
 msgid ""
 "When the GC encounters an object which is reachable (``gc_ref > 0``), it "
 "traverses its references using the ``tp_traverse`` slot to find all the "
@@ -260,7 +252,7 @@ msgid ""
 "twice."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:233
+#: ../../internals/garbage-collector.rst:231
 msgid ""
 "Notice that an object that was marked as \"tentatively unreachable\" and was "
 "later moved back to the reachable list will be visited again by the garbage "
@@ -271,7 +263,7 @@ msgid ""
 "and can thus be garbage collected."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:240
+#: ../../internals/garbage-collector.rst:238
 msgid ""
 "Pragmatically, it's important to note that no recursion is required by any "
 "of this, and neither does it in any other way require additional memory "
@@ -280,18 +272,18 @@ msgid ""
 "objects themselves contain all the storage the GC algorithms require."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:247
+#: ../../internals/garbage-collector.rst:245
 msgid "Why moving unreachable objects is better"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:249
+#: ../../internals/garbage-collector.rst:247
 msgid ""
 "It sounds logical to move the unreachable objects under the premise that "
 "most objects are usually reachable, until you think about it: the reason it "
 "pays isn't actually obvious."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:253
+#: ../../internals/garbage-collector.rst:251
 msgid ""
 "Suppose we create objects A, B, C in that order. They appear in the young "
 "generation in the same order. If B points to A, and C to B, and C is "
@@ -300,7 +292,7 @@ msgid ""
 "reachable object from the outside is C."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:258
+#: ../../internals/garbage-collector.rst:256
 msgid ""
 "When the next step of the algorithm finds A, A is moved to the unreachable "
 "list. The same for B when it's first encountered. Then C is traversed, B is "
@@ -308,7 +300,7 @@ msgid ""
 "moved back to the reachable list."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:263
+#: ../../internals/garbage-collector.rst:261
 msgid ""
 "So instead of not moving at all, the reachable objects B and A are each "
 "moved twice. Why is this a win? A straightforward algorithm to move the "
@@ -320,18 +312,18 @@ msgid ""
 "be higher is the first time the chain is scanned."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:272
+#: ../../internals/garbage-collector.rst:270
 msgid "Destroying unreachable objects"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:274
+#: ../../internals/garbage-collector.rst:272
 msgid ""
 "Once the GC knows the list of unreachable objects, a very delicate process "
 "starts with the objective of completely destroying these objects. Roughly, "
 "the process follows these steps in order:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:278
+#: ../../internals/garbage-collector.rst:276
 msgid ""
 "Handle and clean weak references (if any). If an object that is in the "
 "unreachable set is going to be destroyed and has weak references with "
@@ -347,38 +339,38 @@ msgid ""
 "weak reference is going away first."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:290
+#: ../../internals/garbage-collector.rst:288
 msgid ""
 "If an object has legacy finalizers (``tp_del`` slot) move them to the ``gc."
 "garbage`` list."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:292
+#: ../../internals/garbage-collector.rst:290
 msgid ""
 "Call the finalizers (``tp_finalize`` slot) and mark the objects as already "
 "finalized to avoid calling them twice if they resurrect or if other "
 "finalizers have removed the object first."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:295
+#: ../../internals/garbage-collector.rst:293
 msgid ""
 "Deal with resurrected objects. If some objects have been resurrected, the GC "
 "finds the new subset of objects that are still unreachable by running the "
 "cycle detection algorithm again and continues with them."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:298
+#: ../../internals/garbage-collector.rst:296
 msgid ""
 "Call the ``tp_clear`` slot of every object so all internal links are broken "
 "and the reference counts fall to 0, triggering the destruction of all "
 "unreachable objects."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:303
+#: ../../internals/garbage-collector.rst:301
 msgid "Optimization: generations"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:305
+#: ../../internals/garbage-collector.rst:303
 msgid ""
 "In order to limit the time each garbage collection takes, the GC uses a "
 "popular optimization: generations. The main idea behind this concept is the "
@@ -389,7 +381,7 @@ msgid ""
 "it will become unreachable."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:312
+#: ../../internals/garbage-collector.rst:310
 msgid ""
 "To take advantage of this fact, all container objects are segregated into "
 "three spaces/generations. Every new object starts in the first generation "
@@ -401,7 +393,7 @@ msgid ""
 "generation (generation 2) where it will be surveyed the least often."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:322
+#: ../../internals/garbage-collector.rst:320
 msgid ""
 "In order to decide when to run, the collector keeps track of the number of "
 "object allocations and deallocations since the last collection. When the "
@@ -414,18 +406,18 @@ msgid ""
 "the :func:`gc.get_threshold` function:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:339
+#: ../../internals/garbage-collector.rst:337
 msgid ""
 "The content of these generations can be examined using the ``gc."
 "get_objects(generation=NUM)`` function and collections can be triggered "
 "specifically in a generation by calling ``gc.collect(generation=NUM)``."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:380
+#: ../../internals/garbage-collector.rst:378
 msgid "Collecting the oldest generation"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:382
+#: ../../internals/garbage-collector.rst:380
 msgid ""
 "In addition to the various configurable thresholds, the GC only triggers a "
 "full collection of the oldest generation if the ratio ``long_lived_pending / "
@@ -445,11 +437,11 @@ msgid ""
 "but we do fewer and fewer of them\")."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:399
+#: ../../internals/garbage-collector.rst:397
 msgid "Optimization: reusing fields to save memory"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:401
+#: ../../internals/garbage-collector.rst:399
 msgid ""
 "In order to save memory, the two linked list pointers in every object with "
 "GC support are reused for several purposes. This is a common optimization "
@@ -469,14 +461,14 @@ msgid ""
 "the last 3 bits available."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:417
+#: ../../internals/garbage-collector.rst:415
 msgid ""
 "The CPython GC makes use of two fat pointers that correspond to the extra "
 "fields of ``PyGC_Head`` discussed in the `Memory layout and object "
 "structure`_ section:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:422
+#: ../../internals/garbage-collector.rst:420
 msgid ""
 "Because the presence of extra information, \"tagged\" or \"fat\" pointers "
 "cannot be dereferenced directly and the extra information must be stripped "
@@ -485,7 +477,7 @@ msgid ""
 "normally assume the pointers inside the lists are in a consistent state."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:429
+#: ../../internals/garbage-collector.rst:427
 msgid ""
 "The ``_gc_prev`` field is normally used as the \"previous\" pointer to "
 "maintain the doubly linked list but its lowest two bits are used to keep the "
@@ -497,7 +489,7 @@ msgid ""
 "GC linked list becomes a singly linked list until ``_gc_prev`` is restored."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:438
+#: ../../internals/garbage-collector.rst:436
 msgid ""
 "The ``_gc_next`` field is used as the \"next\" pointer to maintain the "
 "doubly linked list but during collection its lowest bit is used to keep the "
@@ -509,11 +501,11 @@ msgid ""
 "tricks (like the ``NEXT_MASK_UNREACHABLE`` flag) are employed."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:448
+#: ../../internals/garbage-collector.rst:446
 msgid "Optimization: delay tracking containers"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:450
+#: ../../internals/garbage-collector.rst:448
 msgid ""
 "Certain types of containers cannot participate in a reference cycle, and so "
 "do not need to be tracked by the garbage collector. Untracking these objects "
@@ -523,15 +515,15 @@ msgid ""
 "to untrack a container:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:457
+#: ../../internals/garbage-collector.rst:455
 msgid "When the container is created."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:458
+#: ../../internals/garbage-collector.rst:456
 msgid "When the container is examined by the garbage collector."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:460
+#: ../../internals/garbage-collector.rst:458
 msgid ""
 "As a general rule, instances of atomic types aren't tracked and instances of "
 "non-atomic types (containers, user-defined objects...) are.  However, some "
@@ -540,7 +532,7 @@ msgid ""
 "benefit from delayed tracking:"
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:466
+#: ../../internals/garbage-collector.rst:464
 msgid ""
 "Tuples containing only immutable objects (integers, strings etc, and "
 "recursively, tuples of immutable objects) do not need to be tracked. The "
@@ -554,7 +546,7 @@ msgid ""
 "tuple."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:476
+#: ../../internals/garbage-collector.rst:474
 msgid ""
 "Dictionaries containing only immutable objects also do not need to be "
 "tracked. Dictionaries are untracked when created. If a tracked item is "
@@ -563,10 +555,19 @@ msgid ""
 "collector will untrack any dictionaries whose contents are not tracked."
 msgstr ""
 
-#: ../../internals/garbage-collector.rst:482
+#: ../../internals/garbage-collector.rst:480
 msgid ""
 "The garbage collector module provides the Python function "
 "``is_tracked(obj)``, which returns the current tracking status of the "
 "object. Subsequent garbage collections may change the tracking status of the "
 "object."
 msgstr ""
+
+#: ../../internals/garbage-collector.rst:500
+msgid "Document History"
+msgstr ""
+
+#: ../../internals/garbage-collector.rst:503
+#, fuzzy
+msgid "Pablo Galindo Salgado - Original Author"
+msgstr "Pablo Galindo Salgado"

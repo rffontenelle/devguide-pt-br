@@ -8,24 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-22 12:16-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: 2023-03-18 08:39-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
 "Language: pt_BR\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../getting-started/git-boot-camp.rst:5
-msgid "Git Bootcamp and Cheat Sheet"
+#, fuzzy
+msgid "Git bootcamp and cheat sheet"
 msgstr "Git Bootcamp e Página de Dicas"
 
 #: ../../getting-started/git-boot-camp.rst:11
+#, fuzzy
 msgid ""
 "This section provides instructions on common tasks in CPython's workflow. "
-"It's designed to assist new contributors who have some familiarity with git "
+"It's designed to assist new contributors who have some familiarity with Git "
 "and GitHub."
 msgstr ""
 "Esta seção fornece instruções sobre tarefas comuns no fluxo de trabalho do "
@@ -33,10 +36,11 @@ msgstr ""
 "alguma familiaridade com git e GitHub."
 
 #: ../../getting-started/git-boot-camp.rst:15
+#, fuzzy
 msgid ""
-"If you are new to git and GitHub, please become comfortable with these "
+"If you are new to Git and GitHub, please become comfortable with these "
 "instructions before submitting a pull request. As there are several ways to "
-"accomplish these tasks using git and GitHub, this section reflects one "
+"accomplish these tasks using Git and GitHub, this section reflects one "
 "method suitable for new contributors. Experienced contributors may desire a "
 "different approach."
 msgstr ""
@@ -55,9 +59,10 @@ msgstr ""
 "relevantes para o fluxo de trabalho do CPython."
 
 #: ../../getting-started/git-boot-camp.rst:26
+#, fuzzy
 msgid ""
-"Setting up git aliases for common tasks can be useful to you. You can get "
-"more information about that in `git documentation <https://git-scm.com/book/"
+"Setting up Git aliases for common tasks can be useful to you. You can get "
+"more information about that in `Git documentation <https://git-scm.com/book/"
 "en/v2/Git-Basics-Git-Aliases>`_"
 msgstr ""
 "A configuração de aliases git para tarefas comuns pode ser útil para você. "
@@ -65,7 +70,8 @@ msgstr ""
 "git-scm.com/book/en/v2/Git-Basics-Git-Aliases>`_ (em inglês)."
 
 #: ../../getting-started/git-boot-camp.rst:33
-msgid "Forking CPython GitHub Repository"
+#, fuzzy
+msgid "Forking CPython GitHub repository"
 msgstr "Fazendo fork do repositório GitHub do CPython"
 
 #: ../../getting-started/git-boot-camp.rst:35
@@ -97,7 +103,8 @@ msgstr ""
 "cpython."
 
 #: ../../getting-started/git-boot-camp.rst:48
-msgid "Cloning a Forked CPython Repository"
+#, fuzzy
+msgid "Cloning a forked CPython repository"
 msgstr "Clonando o repositório fork do CPython"
 
 #: ../../getting-started/git-boot-camp.rst:50
@@ -115,7 +122,8 @@ msgid "You can also use SSH-based or HTTPS-based URLs."
 msgstr "Você também pode usar URLs baseados em SSH ou HTTPS."
 
 #: ../../getting-started/git-boot-camp.rst:62
-msgid "Configure the Remotes"
+#, fuzzy
+msgid "Configure the remotes"
 msgstr "Configurar os controles remotos"
 
 #: ../../getting-started/git-boot-camp.rst:67
@@ -132,7 +140,8 @@ msgstr ""
 "para enviar sempre para ``origin``::"
 
 #: ../../getting-started/git-boot-camp.rst:77
-msgid "Listing the Remote Repositories"
+#, fuzzy
+msgid "Listing the remote repositories"
 msgstr "Listando os repositórios remotos"
 
 #: ../../getting-started/git-boot-camp.rst:79
@@ -165,7 +174,8 @@ msgstr ""
 "alterações para ``main`` do remoto ``upstream``."
 
 #: ../../getting-started/git-boot-camp.rst:102
-msgid "Setting Up Your Name and Email Address"
+#, fuzzy
+msgid "Setting up your name and email address"
 msgstr "Configurando seu nome e endereço de e-mail"
 
 #: ../../getting-started/git-boot-camp.rst:109
@@ -192,7 +202,8 @@ msgstr ""
 "alterações com finais de linha incorretos::"
 
 #: ../../getting-started/git-boot-camp.rst:124
-msgid "Creating and Switching Branches"
+#, fuzzy
+msgid "Creating and switching branches"
 msgstr "Criando e alternando branches"
 
 #: ../../getting-started/git-boot-camp.rst:127
@@ -237,7 +248,8 @@ msgstr ""
 "trabalhar na versão 2.7 do remoto ``upstream``::"
 
 #: ../../getting-started/git-boot-camp.rst:163
-msgid "Deleting Branches"
+#, fuzzy
+msgid "Deleting branches"
 msgstr "Excluindo branches"
 
 #: ../../getting-started/git-boot-camp.rst:165
@@ -253,7 +265,8 @@ msgid "You may specify more than one branch for deletion."
 msgstr "Você pode especificar mais de uma ramificação para exclusão."
 
 #: ../../getting-started/git-boot-camp.rst:178
-msgid "Renaming Branch"
+#, fuzzy
+msgid "Renaming branch"
 msgstr "Renomeando branches"
 
 #: ../../getting-started/git-boot-camp.rst:180
@@ -265,6 +278,7 @@ msgstr ""
 "``main`` após o lançamento do Python 3.10b1."
 
 #: ../../getting-started/git-boot-camp.rst:183
+#, fuzzy
 msgid ""
 "If you have a fork on GitHub (as described in :ref:`fork-cpython`) that was "
 "created before the rename, you should visit the GitHub page for your fork to "
@@ -272,7 +286,7 @@ msgid ""
 "provide you with a dialog for this. If it doesn't (or the dialog was already "
 "dismissed), you can rename the branch in your fork manually `by following "
 "these GitHub instructions <https://github.com/github/renaming#renaming-"
-"existing-branches>`__"
+"existing-branches>`__."
 msgstr ""
 "Se você tiver um fork no GitHub (conforme descrito em :ref:`fork-cpython`) "
 "que foi criado antes da renomeação, você deve visitar a página do GitHub do "
@@ -308,7 +322,8 @@ msgstr ""
 "caso, você pode renomear sua filial local da seguinte maneira::"
 
 #: ../../getting-started/git-boot-camp.rst:213
-msgid "Staging and Committing Files"
+#, fuzzy
+msgid "Staging and committing files"
 msgstr "Preparando e fazendo commit de arquivos"
 
 #: ../../getting-started/git-boot-camp.rst:215
@@ -325,7 +340,8 @@ msgstr ""
 "Para fazer commit dos arquivos que foram preparados (feito na etapa 2):"
 
 #: ../../getting-started/git-boot-camp.rst:231
-msgid "Reverting Changes"
+#, fuzzy
+msgid "Reverting changes"
 msgstr "Revertendo mudanças"
 
 #: ../../getting-started/git-boot-camp.rst:233
@@ -342,7 +358,8 @@ msgstr ""
 "qualquer que seja a origem::"
 
 #: ../../getting-started/git-boot-camp.rst:243
-msgid "Stashing Changes"
+#, fuzzy
+msgid "Stashing changes"
 msgstr "Fazendo stash das alterações"
 
 #: ../../getting-started/git-boot-camp.rst:245
@@ -356,7 +373,8 @@ msgid "To re-apply the last stashed change::"
 msgstr "Para reaplicar a última alteração guardada::"
 
 #: ../../getting-started/git-boot-camp.rst:256
-msgid "Comparing Changes"
+#, fuzzy
+msgid "Comparing changes"
 msgstr "Comparando alterações"
 
 #: ../../getting-started/git-boot-camp.rst:258
@@ -388,7 +406,8 @@ msgstr ""
 "definido em :cpy-file:`.gitattributes`, encontrado na raiz do repositório."
 
 #: ../../getting-started/git-boot-camp.rst:282
-msgid "Pushing Changes"
+#, fuzzy
+msgid "Pushing changes"
 msgstr "Fazendo push das alterações"
 
 #: ../../getting-started/git-boot-camp.rst:284
@@ -400,7 +419,8 @@ msgstr ""
 "request, você precisará enviá-las para o repositório remoto."
 
 #: ../../getting-started/git-boot-camp.rst:293
-msgid "Creating a Pull Request"
+#, fuzzy
+msgid "Creating a pull request"
 msgstr "Criando uma pull request"
 
 #: ../../getting-started/git-boot-camp.rst:297
@@ -438,7 +458,8 @@ msgstr ""
 "<Título da PR>``."
 
 #: ../../getting-started/git-boot-camp.rst:312
-msgid "Linking to Issues and Pull Requests"
+#, fuzzy
+msgid "Linking to issues and pull requests"
 msgstr "Vinculando a issues e pull requests"
 
 #: ../../getting-started/git-boot-camp.rst:314
@@ -475,7 +496,8 @@ msgstr ""
 "resolver e encerrar o problema."
 
 #: ../../getting-started/git-boot-camp.rst:331
-msgid "Updating your CPython Fork"
+#, fuzzy
+msgid "Updating your CPython fork"
 msgstr "Atualizando seu fork do CPython"
 
 #: ../../getting-started/git-boot-camp.rst:333
@@ -525,9 +547,10 @@ msgid "Solution::"
 msgstr "Solução"
 
 #: ../../getting-started/git-boot-camp.rst:352
+#, fuzzy
 msgid ""
 "For the above commands to work, please follow the instructions found in the :"
-"ref:`checkout` section"
+"ref:`checkout` section."
 msgstr ""
 "Para que os comandos acima funcionem, siga as instruções encontradas na "
 "seção :ref:`checkout`"
@@ -594,7 +617,8 @@ msgstr ""
 "merge-conflicts/resolving-a-merge-conflict-using-the-command-line>`_"
 
 #: ../../getting-started/git-boot-camp.rst:382
-msgid "Applying a Patch to Git"
+#, fuzzy
+msgid "Applying a patch to Git"
 msgstr "Aplicando um patch ao Git"
 
 #: ../../getting-started/git-boot-camp.rst:386
@@ -658,7 +682,8 @@ msgid "Push the changes and open a pull request."
 msgstr "Faça das alterações e abra uma pull request."
 
 #: ../../getting-started/git-boot-camp.rst:425
-msgid "Downloading Other's Patches"
+#, fuzzy
+msgid "Downloading other's patches"
 msgstr "Baixando patches dos outros"
 
 #: ../../getting-started/git-boot-camp.rst:429
@@ -671,9 +696,10 @@ msgstr ""
 "Antes de mesclá-la, você deseja poder testar suas alterações localmente."
 
 #: ../../getting-started/git-boot-camp.rst:432
+#, fuzzy
 msgid ""
 "If you've got `GitHub CLI <https://cli.github.com>`_ or `hub <https://hub."
-"github.com>`_ installed, you can simply do::"
+"github.com>`_ installed, you can do::"
 msgstr ""
 "Se você tem `GitHub CLI <https://cli.github.com>`_ ou `hub <https://hub."
 "github.com>`_ instalado, você pode simplesmente fazer::"
@@ -710,46 +736,56 @@ msgstr ""
 "pode obter uma cópia local de uma pull request da seguinte forma::"
 
 #: ../../getting-started/git-boot-camp.rst:461
-msgid "Accepting and Merging a Pull Request"
+#, fuzzy
+msgid "Accepting and merging a pull request"
 msgstr "Aceitando e mesclando uma solicitação pull"
 
 #: ../../getting-started/git-boot-camp.rst:463
-msgid "Pull requests can be accepted and merged by a Python Core Developer."
-msgstr ""
-"As solicitações pull podem ser aceitas e mescladas por um Python Core "
-"Developer."
-
-#: ../../getting-started/git-boot-camp.rst:465
 msgid ""
-"At the bottom of the pull request page, click the ``Squash and merge`` "
-"button."
+"Pull requests can be accepted and merged by a Python Core Developer. You can "
+"read more about what to look for before accepting a change :ref:`here "
+"<committing>`."
 msgstr ""
-"Na parte inferior da página de pull request, clique no botão ``Squash and "
-"merge``."
 
-#: ../../getting-started/git-boot-camp.rst:468
+#: ../../getting-started/git-boot-camp.rst:467
 msgid ""
-"Replace the reference to GitHub pull request ``#NNNN`` with ``GH-NNNN``. If "
-"the title is too long, the pull request number can be added to the message "
-"body."
+"All pull requests have required checks that need to pass before a change can "
+"be merged. At any point, a core developer can schedule an automatic merge of "
+"the change by clicking the gray ``Enable auto-merge (squash)`` button. You "
+"will find it at the bottom of the pull request page. The auto-merge will "
+"only happen if all the required checks pass, but the PR does not need to "
+"have been approved for a successful auto-merge to take place."
 msgstr ""
-"Substitua a referência à pull request do GitHub ``#NNNN`` por ``GH-NNNN``. "
-"Se o título for muito longo, o número da solicitação pull pode ser "
-"adicionado ao corpo da mensagem."
 
-#: ../../getting-started/git-boot-camp.rst:472
-msgid "Adjust and clean up the commit message."
+#: ../../getting-started/git-boot-camp.rst:475
+msgid ""
+"If all required checks are already finished on a PR you're reviewing, in "
+"place of the gray ``Enable auto-merge`` button you will find a green "
+"``Squash and merge`` button."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:479
+#, fuzzy
+msgid "In either case, adjust and clean up the commit message."
 msgstr "Ajuste e limpe a mensagem de commit."
 
-#: ../../getting-started/git-boot-camp.rst:474
-msgid "Example of good commit message::"
+#: ../../getting-started/git-boot-camp.rst:481
+#, fuzzy
+msgid "Here's an example of a **good** commit message::"
 msgstr "Exemplo de mensagem de commit boa::"
 
-#: ../../getting-started/git-boot-camp.rst:481
-msgid "Example of bad commit message::"
+#: ../../getting-started/git-boot-camp.rst:488
+#, fuzzy
+msgid "Here's an example of a **bad** commit message::"
 msgstr "Exemplo de mensagem de commit ruim::"
 
-#: ../../getting-started/git-boot-camp.rst:491
+#: ../../getting-started/git-boot-camp.rst:497
+msgid ""
+"The bad example contains bullet points that are a direct effect of the PR "
+"life cycle, while being irrelevant to the final change."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:501
 msgid ""
 "`How to Write a Git Commit Message <https://cbea.ms/git-commit/>`_ is a nice "
 "article describing how to write a good commit message."
@@ -757,15 +793,51 @@ msgstr ""
 "`How to Write a Git Commit Message <https://cbea.ms/git-commit/>`_ é um bom "
 "artigo (em inglês) que descreve como escrever uma boa mensagem de commit."
 
-#: ../../getting-started/git-boot-camp.rst:494
-msgid "Press the ``Confirm squash and merge`` button."
+#: ../../getting-started/git-boot-camp.rst:504
+#, fuzzy
+msgid "Finally, press the ``Confirm squash and merge`` button."
 msgstr "Pressione o botão ``Confirm squash and merge``"
 
-#: ../../getting-started/git-boot-camp.rst:497
-msgid "Backporting Merged Changes"
+#: ../../getting-started/git-boot-camp.rst:507
+msgid "Cancelling an automatic merge"
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:509
+msgid ""
+"If you notice a problem with a pull request that was accepted and where auto-"
+"merge was enabled, you can still cancel the workflow before GitHub "
+"automatically merges the change."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:513
+msgid ""
+"Press the gray \"Disable auto-merge\" button on the bottom of the pull "
+"request page to disable automatic merging entirely. This is the recommended "
+"approach."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:517
+msgid ""
+"To pause automatic merging, apply the \"DO-NOT-MERGE\" label to the PR or "
+"submit a review requesting changes. The latter will put an \"awaiting "
+"changes\" label on the PR, which pauses the auto-merge similarly to \"DO-NOT-"
+"MERGE\". After the author submits a fix and re-requests review, you can "
+"resume the auto-merge process either by submitting an approving review or by "
+"dismissing your previous review that requested changes."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:524
+msgid ""
+"Note that pushing new changes after the auto-merge flow was enabled does "
+"**NOT** stop it."
+msgstr ""
+
+#: ../../getting-started/git-boot-camp.rst:528
+#, fuzzy
+msgid "Backporting merged changes"
 msgstr "Fazendo backport de alterações mescladas"
 
-#: ../../getting-started/git-boot-camp.rst:499
+#: ../../getting-started/git-boot-camp.rst:530
 msgid ""
 "A pull request may need to be backported into one of the maintenance "
 "branches after it has been accepted and merged into ``main``.  It is usually "
@@ -776,7 +848,7 @@ msgstr ""
 "indicado pelo rótulo ``precisa de backport para X.Y`` na própria pull "
 "request."
 
-#: ../../getting-started/git-boot-camp.rst:503
+#: ../../getting-started/git-boot-camp.rst:534
 msgid ""
 "Use the utility script `cherry_picker.py <https://github.com/python/cherry-"
 "picker>`_ from the `core-workflow  <https://github.com/python/core-"
@@ -786,7 +858,7 @@ msgstr ""
 "picker>`_ do repositório `core-workflow <https://github.com/python/core-"
 "workflow>`_ para backport do commit."
 
-#: ../../getting-started/git-boot-camp.rst:508
+#: ../../getting-started/git-boot-camp.rst:539
 msgid ""
 "The commit hash for backporting is the squashed commit that was merged to "
 "the ``main`` branch.  On the merged pull request, scroll to the bottom of "
@@ -796,7 +868,7 @@ msgstr ""
 "branch ``main``. Na solicitação pull mesclada, role até a parte inferior da "
 "página. Encontre o evento que diz algo como::"
 
-#: ../../getting-started/git-boot-camp.rst:514
+#: ../../getting-started/git-boot-camp.rst:545
 msgid ""
 "By following the link to ``<commit_sha1>``, you will get the full commit "
 "hash."
@@ -804,15 +876,16 @@ msgstr ""
 "Seguindo o link para ``<commit_sha1>``, você obterá o hash completo do "
 "commit."
 
-#: ../../getting-started/git-boot-camp.rst:516
+#: ../../getting-started/git-boot-camp.rst:547
+#, fuzzy
 msgid ""
-"Alternatively, the commit hash can also be obtained by the following git "
+"Alternatively, the commit hash can also be obtained by the following Git "
 "commands:"
 msgstr ""
 "Como alternativa, o hash de confirmação também pode ser obtido pelos "
 "seguintes comandos git:"
 
-#: ../../getting-started/git-boot-camp.rst:524
+#: ../../getting-started/git-boot-camp.rst:555
 msgid ""
 "The above commands will print out the hash of the commit containing "
 "``\"gh-12345\"`` as part of the commit message."
@@ -820,7 +893,7 @@ msgstr ""
 "Os comandos acima imprimirão o hash do commit contendo ``\"gh-12345\"`` como "
 "parte da mensagem do commit."
 
-#: ../../getting-started/git-boot-camp.rst:527
+#: ../../getting-started/git-boot-camp.rst:558
 msgid ""
 "When formatting the commit message for a backport commit: leave the original "
 "one as is and delete the number of the backport pull request."
@@ -828,19 +901,20 @@ msgstr ""
 "Ao formatar a mensagem de confirmação para uma confirmação de backport: "
 "deixe a original como está e exclua o número da solicitação pull de backport."
 
-#: ../../getting-started/git-boot-camp.rst:530
+#: ../../getting-started/git-boot-camp.rst:561
 msgid "Example of good backport commit message::"
 msgstr "Exemplo de uma mensagem de commit de backport boa::"
 
-#: ../../getting-started/git-boot-camp.rst:539
+#: ../../getting-started/git-boot-camp.rst:570
 msgid "Example of bad backport commit message::"
 msgstr "Exemplo de uma mensagem de commit de backport ruim::"
 
-#: ../../getting-started/git-boot-camp.rst:547
-msgid "Editing a Pull Request Prior to Merging"
+#: ../../getting-started/git-boot-camp.rst:578
+#, fuzzy
+msgid "Editing a pull request prior to merging"
 msgstr "Editando uma pull request antes da mesclá-la"
 
-#: ../../getting-started/git-boot-camp.rst:549
+#: ../../getting-started/git-boot-camp.rst:580
 msgid ""
 "When a pull request submitter has enabled the `Allow edits from "
 "maintainers`_ option, Python Core Developers may decide to make any "
@@ -855,11 +929,11 @@ msgstr ""
 "quando as alterações restantes são itens de contabilidade, como atualização "
 "de ``Misc/ACKS``."
 
-#: ../../getting-started/git-boot-camp.rst:557
+#: ../../getting-started/git-boot-camp.rst:588
 msgid "To edit an open pull request that targets ``main``:"
 msgstr "Para editar uma pull request aberta que tenha como alvo ``main``:"
 
-#: ../../getting-started/git-boot-camp.rst:559
+#: ../../getting-started/git-boot-camp.rst:590
 msgid ""
 "In the pull request page, under the description, there is some information "
 "about the contributor's forked CPython repository and branch name that will "
@@ -869,15 +943,15 @@ msgstr ""
 "o repositório fork do CPython do contribuidor e o nome do branch que serão "
 "úteis mais tarde::"
 
-#: ../../getting-started/git-boot-camp.rst:564
+#: ../../getting-started/git-boot-camp.rst:595
 msgid "Fetch the pull request, using the :ref:`git pr <git_pr>` alias::"
 msgstr "Obtenha a solicitação pull, usando o alias :ref:`git pr <git_pr>`::"
 
-#: ../../getting-started/git-boot-camp.rst:568
+#: ../../getting-started/git-boot-camp.rst:599
 msgid "This will checkout the contributor's branch at ``<pr_number>``."
 msgstr "Isso fará o checkout do branch do contribuidor em ``<pr_number>``."
 
-#: ../../getting-started/git-boot-camp.rst:570
+#: ../../getting-started/git-boot-camp.rst:601
 msgid ""
 "Make and commit your changes on the branch.  For example, merge in changes "
 "made to ``main`` since the PR was submitted (any merge commits will be "
@@ -888,20 +962,20 @@ msgstr ""
 "de mesclagem será removido pelo ``Squash and Merge`` posterior ao aceitar a "
 "alteração):"
 
-#: ../../getting-started/git-boot-camp.rst:581
+#: ../../getting-started/git-boot-camp.rst:612
 msgid "Push the changes back to the contributor's PR branch::"
 msgstr ""
 "Faça o push das alterações de volta para o branch da PR do colaborador::"
 
-#: ../../getting-started/git-boot-camp.rst:585
+#: ../../getting-started/git-boot-camp.rst:616
 msgid "Optionally, :ref:`delete the PR branch <deleting_branches>`."
 msgstr "Opcionalmente, :ref:`exclua o branch da PR <deleting_branches>`."
 
-#: ../../getting-started/git-boot-camp.rst:589
+#: ../../getting-started/git-boot-camp.rst:620
 msgid "GitHub CLI"
 msgstr "GitHub CLI"
 
-#: ../../getting-started/git-boot-camp.rst:591
+#: ../../getting-started/git-boot-camp.rst:622
 msgid ""
 "`GitHub CLI <https://cli.github.com>`_ is a command-line interface that "
 "allows you to create, update, and check GitHub issues and pull requests."
@@ -909,7 +983,7 @@ msgstr ""
 "`GitHub CLI <https://cli.github.com>`_ é uma interface de linha de comando "
 "que permite criar, atualizar e verificar issues e pull requests do GitHub."
 
-#: ../../getting-started/git-boot-camp.rst:595
+#: ../../getting-started/git-boot-camp.rst:626
 msgid ""
 "You can install GitHub CLI `by following these instructions <https://github."
 "com/cli/cli#installation>`_. After installing, you need to authenticate::"
@@ -917,22 +991,43 @@ msgstr ""
 "Você pode instalar o GitHub CLI `seguindo estas instruções <https://github."
 "com/cli/cli#installation>`_. Após a instalação, você precisa autenticar::"
 
-#: ../../getting-started/git-boot-camp.rst:601
+#: ../../getting-started/git-boot-camp.rst:632
 msgid "Examples of useful commands:"
 msgstr "Exemplos de comandos úteis:"
 
-#: ../../getting-started/git-boot-camp.rst:603
+#: ../../getting-started/git-boot-camp.rst:634
 msgid "Create a PR::"
 msgstr "Criar um PR::"
 
-#: ../../getting-started/git-boot-camp.rst:607
+#: ../../getting-started/git-boot-camp.rst:638
 msgid "Check out another PR::"
 msgstr "Fazer checkout de outra PR::"
 
-#: ../../getting-started/git-boot-camp.rst:611
+#: ../../getting-started/git-boot-camp.rst:642
 msgid "Set ``ssh`` as the Git protocol::"
 msgstr "Definir ``ssh`` como o protocolo Git::"
 
-#: ../../getting-started/git-boot-camp.rst:615
+#: ../../getting-started/git-boot-camp.rst:646
 msgid "Set the browser::"
 msgstr "Definir o navegador::"
+
+#~ msgid "Pull requests can be accepted and merged by a Python Core Developer."
+#~ msgstr ""
+#~ "As solicitações pull podem ser aceitas e mescladas por um Python Core "
+#~ "Developer."
+
+#~ msgid ""
+#~ "At the bottom of the pull request page, click the ``Squash and merge`` "
+#~ "button."
+#~ msgstr ""
+#~ "Na parte inferior da página de pull request, clique no botão ``Squash and "
+#~ "merge``."
+
+#~ msgid ""
+#~ "Replace the reference to GitHub pull request ``#NNNN`` with ``GH-NNNN``. "
+#~ "If the title is too long, the pull request number can be added to the "
+#~ "message body."
+#~ msgstr ""
+#~ "Substitua a referência à pull request do GitHub ``#NNNN`` por ``GH-"
+#~ "NNNN``. Se o título for muito longo, o número da solicitação pull pode "
+#~ "ser adicionado ao corpo da mensagem."

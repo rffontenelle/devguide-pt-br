@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: 2022-12-09 08:39-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
 "Language: pt_BR\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"Generated-By: Babel 2.11.0\n"
-"X-Generator: Gtranslator 42.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../documentation/devguide.rst:5
 msgid "Helping with the Developer's Guide"
@@ -88,9 +87,25 @@ msgid "in the checkout directory.  On Windows use:"
 msgstr "no diretório de checkout. No Windows use:"
 
 #: ../../documentation/devguide.rst:45
+msgid "You will find the generated files in ``_build/html``."
+msgstr ""
+
+#: ../../documentation/devguide.rst:47
 msgid ""
-"You will find the generated files in ``_build/html`` or, if you use ``make "
-"htmlview``, the docs will be opened in a browser once the build completes.  "
+"Replace ``html`` with ``htmlview`` to open the docs in a web browser once "
+"the build completes."
+msgstr ""
+
+#: ../../documentation/devguide.rst:49
+msgid ""
+"Replace ``html`` with ``htmllive`` to rebuild the docs, start a local "
+"server, and automatically reload the page in your browser when you make "
+"changes to reST files (Unix only)."
+msgstr ""
+
+#: ../../documentation/devguide.rst:53
+#, fuzzy
+msgid ""
 "Note that ``make check`` runs automatically when you submit a :ref:`pull "
 "request <pullrequest>`.  You may wish to run ``make check`` and ``make "
 "linkcheck`` to make sure that it runs without errors."

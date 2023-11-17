@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../triage/labels.rst:6
-msgid "GitHub Labels"
+msgid "GitHub labels"
 msgstr ""
 
 #: ../../triage/labels.rst:8
@@ -105,35 +105,11 @@ msgid ""
 "`doctest`."
 msgstr ""
 
-#: ../../triage/labels.rst:59
-msgid "Expert labels"
-msgstr ""
-
-#: ../../triage/labels.rst:61
-msgid ""
-"These labels are used to specify the area of expertise required to address "
-"the issue/PR.  This includes both specific modules/packages and generic "
-"interest areas."
-msgstr ""
-
-#: ../../triage/labels.rst:65
-msgid ""
-"Adding these labels is also a way to notify the relevant experts, since they "
-"are encouraged to subscribe to them.  Depending on the label, this might "
-"also automatically add the issue to a GitHub project."
-msgstr ""
-
-#: ../../triage/labels.rst:69
-msgid ""
-"You can see the `full list of expert labels on GitHub <https://github.com/"
-"python/cpython/labels?q=expert>`_."
-msgstr ""
-
-#: ../../triage/labels.rst:74
+#: ../../triage/labels.rst:58
 msgid "OS labels"
 msgstr ""
 
-#: ../../triage/labels.rst:76
+#: ../../triage/labels.rst:60
 msgid ""
 "These labels are used to specify which operating systems are affected. Since "
 "most issues either affect all systems or are specific to Unix, the only "
@@ -141,42 +117,66 @@ msgid ""
 "label:`OS-freebsd`."
 msgstr ""
 
-#: ../../triage/labels.rst:83
-msgid "Version labels"
+#: ../../triage/labels.rst:70
+msgid "Topic labels"
+msgstr ""
+
+#: ../../triage/labels.rst:72
+msgid ""
+"These labels are used to denote the specific topic area, if any, of the "
+"issue/PR.  This includes both specific modules/packages and generic interest "
+"areas."
+msgstr ""
+
+#: ../../triage/labels.rst:76
+msgid ""
+"Adding these labels is also a way to notify the relevant experts, since they "
+"are encouraged to subscribe to them.  Depending on the label, this might "
+"also automatically add the issue to a GitHub project."
+msgstr ""
+
+#: ../../triage/labels.rst:80
+msgid ""
+"You can see the `full list of topic labels on GitHub <https://github.com/"
+"python/cpython/labels?q=topic>`_."
 msgstr ""
 
 #: ../../triage/labels.rst:85
+msgid "Version labels"
+msgstr ""
+
+#: ../../triage/labels.rst:87
 msgid ""
 "These labels are used to indicate which versions of Python are affected. The "
 "available version labels (with the form :samp:`3.{N}`) are updated whenever "
 "new major releases are created or retired."
 msgstr ""
 
-#: ../../triage/labels.rst:89
+#: ../../triage/labels.rst:91
 msgid ""
 "See also :ref:`the branch status page <branchstatus>` for a list of active "
 "branches."
 msgstr ""
 
-#: ../../triage/labels.rst:99
+#: ../../triage/labels.rst:101
 msgid "Other labels"
 msgstr ""
 
-#: ../../triage/labels.rst:101
+#: ../../triage/labels.rst:103
 msgid ":gh-label:`triaged`: for issue has been accepted as valid by a triager."
 msgstr ""
 
-#: ../../triage/labels.rst:102
+#: ../../triage/labels.rst:104
 msgid ":gh-label:`easy`: for issues that are considered easy."
 msgstr ""
 
-#: ../../triage/labels.rst:103
+#: ../../triage/labels.rst:105
 msgid ""
 ":gh-label:`build`/:gh-label:`performance`: for issues related to the build "
 "process or performance, respectively."
 msgstr ""
 
-#: ../../triage/labels.rst:105
+#: ../../triage/labels.rst:107
 msgid ""
 ":gh-label:`release-blocker`/:gh-label:`deferred-blocker`: for issues/PRs "
 "that, unless fixed, will hold the current or next release respectively. "
@@ -186,37 +186,31 @@ msgid ""
 "as appropriate."
 msgstr ""
 
-#: ../../triage/labels.rst:111
+#: ../../triage/labels.rst:113
 msgid ""
 ":gh-label:`pending`: for issues/PRs that will be closed unless further "
 "feedback is provided."
 msgstr ""
 
-#: ../../triage/labels.rst:113
+#: ../../triage/labels.rst:115
 msgid ":gh-label:`stale`: for issues/PRs that have been inactive for a while."
 msgstr ""
 
-#: ../../triage/labels.rst:114
+#: ../../triage/labels.rst:116
 msgid ""
 ":gh-label:`sprint`: for easier filtering of issues/PRs being worked on "
 "during official sprints."
 msgstr ""
 
-#: ../../triage/labels.rst:122
+#: ../../triage/labels.rst:124
 msgid "Labels specific to PRs"
 msgstr ""
 
-#: ../../triage/labels.rst:124
+#: ../../triage/labels.rst:126
 msgid ""
 "The following labels only apply to :ref:`Pull Requests <pullrequest>`. They "
 "are either set automatically by bots, or added by humans to trigger specific "
 "bot behaviors."
-msgstr ""
-
-#: ../../triage/labels.rst:128
-msgid ""
-":gh-label:`automerge`: for automatically merging PRs approved by a core dev "
-"once all CI checks pass."
 msgstr ""
 
 #: ../../triage/labels.rst:130

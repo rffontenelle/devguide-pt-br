@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../testing/run-write-tests.rst:6
-msgid "Running and Writing Tests"
+msgid "Running and writing tests"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:10
+#: ../../testing/run-write-tests.rst:18
 msgid ""
 "This document assumes you are working from an :ref:`in-development "
 "<indevbranch>` checkout of Python. If you are not then some things presented "
@@ -29,26 +29,22 @@ msgid ""
 "earlier versions of Python."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:16
+#: ../../testing/run-write-tests.rst:24
 msgid "Running"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:18
+#: ../../testing/run-write-tests.rst:26
 msgid ""
 "The shortest, simplest way of running the test suite is the following "
 "command from the root directory of your checkout (after you have :ref:`built "
-"Python <compiling>`)::"
+"Python <compiling>`):"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:24
-msgid ""
-"You may need to change this command as follows throughout this section. On :"
-"ref:`most <mac-python.exe>` macOS systems, replace :file:`./python` with :"
-"file:`./python.exe`.  On Windows, use :file:`python.bat`.  If using Python "
-"2.7, replace ``test`` with ``test.regrtest``."
+#: ../../testing/run-write-tests.rst:42
+msgid "This works on :ref:`most <mac-python.exe>` macOS systems."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:29
+#: ../../testing/run-write-tests.rst:50
 msgid ""
 "This will run the majority of tests, but exclude a small portion of them; "
 "these excluded tests use special kinds of resources: for example, accessing "
@@ -56,64 +52,64 @@ msgid ""
 "on your desktop.  They are disabled by default so that running the test "
 "suite is not too intrusive.  To enable some of these additional tests (and "
 "for other flags which can help debug various issues such as reference "
-"leaks), read the help text::"
+"leaks), read the help text:"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:39
+#: ../../testing/run-write-tests.rst:76
 msgid ""
 "If you want to run a single test file, simply specify the test file name "
 "(without the extension) as an argument.  You also probably want to enable "
-"verbose mode (using ``-v``), so that individual failures are detailed::"
+"verbose mode (using ``-v``), so that individual failures are detailed:"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:45
+#: ../../testing/run-write-tests.rst:98
 msgid ""
 "To run a single test case, use the ``unittest`` module, providing the import "
-"path to the test case::"
+"path to the test case:"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:50
+#: ../../testing/run-write-tests.rst:119
 msgid ""
 "Some test modules also support direct invocation, which might be useful for "
-"IDEs and local debugging::"
+"IDEs and local debugging:"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:55
+#: ../../testing/run-write-tests.rst:140
 msgid "But, there are several important notes:"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:57
+#: ../../testing/run-write-tests.rst:142
 msgid ""
 "This way of running tests exists only for local developer needs and is "
 "discouraged for anything else"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:59
+#: ../../testing/run-write-tests.rst:144
 msgid ""
 "Some modules do not support it at all. One example is ``test_importlib``. In "
 "other words: if some module does not have ``unittest.main()``, then most "
 "likely it does not support direct invocation."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:63
+#: ../../testing/run-write-tests.rst:148
 msgid ""
 "If you have a multi-core or multi-CPU machine, you can enable parallel "
-"testing using several Python processes so as to speed up things::"
+"testing using several Python processes so as to speed up things:"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:68
+#: ../../testing/run-write-tests.rst:169
 msgid ""
 "If you are running a version of Python prior to 3.3 you must specify the "
 "number of processes to run simultaneously (e.g. ``-j2``)."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:73
+#: ../../testing/run-write-tests.rst:174
 msgid ""
 "Finally, if you want to run tests under a more strenuous set of settings, "
-"you can run ``test`` as::"
+"you can run ``test`` as:"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:78
+#: ../../testing/run-write-tests.rst:195
 msgid ""
 "The various extra flags passed to Python cause it to be much stricter about "
 "various things (the ``-Wd`` flag should be ``-W error`` at some point, but "
@@ -127,7 +123,7 @@ msgid ""
 "as to not skip tests requiring, e.g., Internet access."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:89
+#: ../../testing/run-write-tests.rst:206
 msgid ""
 "To check for reference leaks (only needed if you modified C code), use the "
 "``-R`` flag.  For example, ``-R 3:2`` will first run the test 3 times to "
@@ -135,7 +131,7 @@ msgid ""
 "there are any leaks."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:94
+#: ../../testing/run-write-tests.rst:211
 msgid ""
 "You can also execute the ``Tools/scripts/run_tests.py`` script as  found in "
 "a CPython checkout. The script tries to balance speed with thoroughness. But "
@@ -143,11 +139,51 @@ msgid ""
 "shown above."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:101
-msgid "Unexpected Skips"
+#: ../../testing/run-write-tests.rst:217
+msgid "Locale support"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:103
+#: ../../testing/run-write-tests.rst:219
+msgid ""
+"Some tests require specific locales to run successfully. These locales are "
+"often non-default, non-English, non-UTF-8 locales. If a necessary locale is "
+"unavailable, the test is skipped or runs in the dry-run mode. Additional "
+"locales that you may find helpful to set up on developer's machines or "
+"buildbots include:"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:225
+msgid "``en_US`` (``en_US.utf8``, ``en_US.iso88591``) --- the standard default"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:226
+msgid ""
+"``de_DE`` (``de_DE.UTF-8``) or ``fr_FR`` (``fr_FR.utf8``, ``fr_FR."
+"iso88591``, ``fr_FR.iso885915@euro``) --- common non-English locales"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:228
+msgid ""
+"``tr_TR`` (``tr_TR.iso88599``) --- Turkish has different rules for upper/"
+"lower cases of \"i\" and \"I\"."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:230
+msgid "``ps_AF`` --- used in ``test_decimal``"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:232
+msgid ""
+"On Linux and macOS, the ``locale`` command can be used to list available "
+"locales and change the settings. Environment variables ``LANG`` and those "
+"prefixed with ``LC_`` can be used to set the locale."
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:237
+msgid "Unexpected skips"
+msgstr ""
+
+#: ../../testing/run-write-tests.rst:239
 msgid ""
 "Sometimes when running the test suite, you will see \"unexpected skips\" "
 "reported. These represent cases where an entire test module has been "
@@ -155,7 +191,7 @@ msgid ""
 "executed on that platform."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:108
+#: ../../testing/run-write-tests.rst:244
 msgid ""
 "Often, the cause is that an optional module hasn't been built due to missing "
 "build dependencies. In these cases, the missing module reported when the "
@@ -163,18 +199,18 @@ msgid ""
 "when :ref:`compiling`."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:113
+#: ../../testing/run-write-tests.rst:249
 msgid ""
 "In other cases, the skip message should provide enough detail to help figure "
 "out and resolve the cause of the problem (for example, the default security "
 "settings on some platforms will disallow some tests)"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:119
+#: ../../testing/run-write-tests.rst:255
 msgid "Writing"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:121
+#: ../../testing/run-write-tests.rst:257
 msgid ""
 "Writing tests for Python is much like writing tests for your own code. Tests "
 "need to be thorough, fast, isolated, consistently repeatable, and as simple "
@@ -183,7 +219,7 @@ msgid ""
 "includes tests has a ``test_`` prefix."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:127
+#: ../../testing/run-write-tests.rst:263
 msgid ""
 "One difference with ordinary testing is that you are encouraged to rely on "
 "the :py:mod:`test.support` module. It contains various helpers that are "
@@ -193,27 +229,27 @@ msgid ""
 "library."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:133
+#: ../../testing/run-write-tests.rst:269
 msgid ""
 "When you are adding tests to an existing test file, it is also recommended "
 "that you study the other tests in that file; it will teach you which "
 "precautions you have to take to make your tests robust and portable."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:137
+#: ../../testing/run-write-tests.rst:273
 msgid "For tests of the C API, see Tests sections in :ref:`c-api`."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:141
+#: ../../testing/run-write-tests.rst:277
 msgid "Benchmarks"
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:143
+#: ../../testing/run-write-tests.rst:279
 msgid ""
 "Benchmarking is useful to test that a change does not degrade performance."
 msgstr ""
 
-#: ../../testing/run-write-tests.rst:145
+#: ../../testing/run-write-tests.rst:281
 msgid ""
 "`The Python Benchmark Suite <https://github.com/python/pyperformance>`_ has "
 "a collection of benchmarks for all Python implementations. Documentation "

@@ -8,17 +8,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../documentation/start-documenting.rst:6
-msgid "Getting Started"
+#, fuzzy
+msgid "Getting started"
 msgstr "Primeiros passos"
 
 #: ../../documentation/start-documenting.rst:10
@@ -156,63 +157,71 @@ msgstr ""
 
 #: ../../documentation/start-documenting.rst:125
 msgid ""
-"Substitute ``htmlview`` for ``html`` to open the docs in a web browser once "
+"Replace ``html`` with ``htmlview`` to open the docs in a web browser once "
 "the build completes."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:128
+#: ../../documentation/start-documenting.rst:127
+msgid ""
+"Replace ``html`` with ``htmllive`` to rebuild the docs, start a local "
+"server, and automatically reload the page in your browser when you make "
+"changes to reST files (Unix only)."
+msgstr ""
+
+#: ../../documentation/start-documenting.rst:131
 msgid ""
 "To check the docs for common errors with `Sphinx Lint`_ (which is run on "
 "all :ref:`pull requests <pullrequest>`), use::"
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:133
+#: ../../documentation/start-documenting.rst:136
 msgid "To list other supported :program:`make` targets, run::"
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:137
+#: ../../documentation/start-documenting.rst:140
 msgid "See :cpy-file:`Doc/README.rst` for more information."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:144
+#: ../../documentation/start-documenting.rst:147
 msgid "Build using Sphinx directly"
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:146
+#: ../../documentation/start-documenting.rst:149
 msgid ""
 "Advanced users may want to invoke Sphinx directly, to pass specialized "
 "options or to handle specific use cases."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:149
+#: ../../documentation/start-documenting.rst:152
 msgid ""
 "Make sure the environment you :ref:`created above <doc-create-venv-windows>` "
 "is `activated <venv-activate_>`__. Then, install the documentation "
 "requirements, :cpy-file:`Doc/requirements.txt`. Using pip::"
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:156
+#: ../../documentation/start-documenting.rst:159
 msgid "Finally, directly invoke Sphinx with::"
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:160
+#: ../../documentation/start-documenting.rst:163
 msgid ""
 "To use a different `Sphinx builder`_, replace ``html`` above with the "
 "desired builder ``name``."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:173
-msgid "Style Guide"
+#: ../../documentation/start-documenting.rst:176
+#, fuzzy
+msgid "Style guide"
 msgstr "Guia de estilo"
 
-#: ../../documentation/start-documenting.rst:175
-msgid "Moved to :doc:`style-guide`"
+#: ../../documentation/start-documenting.rst:178
+msgid "Moved to :doc:`style-guide`."
 msgstr ""
 
-#: ../../documentation/start-documenting.rst:179
+#: ../../documentation/start-documenting.rst:182
 msgid "Translating"
 msgstr "Tradução"
 
-#: ../../documentation/start-documenting.rst:181
-msgid "Moved to :doc:`translating`"
+#: ../../documentation/start-documenting.rst:184
+msgid "Moved to :doc:`translating`."
 msgstr ""

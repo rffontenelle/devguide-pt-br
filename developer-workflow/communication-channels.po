@@ -1,4 +1,5 @@
-# Brazilian Portuguese translation for developer-workflow/communication-channels.po
+# Brazilian Portuguese translation for
+# developer-workflow/communication-channels.po
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
@@ -8,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../developer-workflow/communication-channels.rst:6
-msgid "Following Python's Development"
+msgid "Following Python's development"
 msgstr ""
 
 #: ../../developer-workflow/communication-channels.rst:8
@@ -42,7 +43,7 @@ msgid ""
 msgstr ""
 
 #: ../../developer-workflow/communication-channels.rst:28
-msgid "Mailing Lists"
+msgid "Mailing lists"
 msgstr ""
 
 #: ../../developer-workflow/communication-channels.rst:30
@@ -135,15 +136,14 @@ msgstr ""
 #: ../../developer-workflow/communication-channels.rst:93
 msgid ""
 "The Committers category is often used for announcements and notifications. "
-"It is also the designated venue for the core developer promotion votes (as "
-"the Discourse equivalent of the `python-committers`_ mailing list)."
+"It is also the designated venue for the core developer promotion votes."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:98
+#: ../../developer-workflow/communication-channels.rst:97
 msgid "Tutorials for new users"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:100
+#: ../../developer-workflow/communication-channels.rst:99
 msgid ""
 "To start a topic or participate in any discussions in the forum, sign up and "
 "create an account using an email address or GitHub account. You can do so by "
@@ -151,7 +151,7 @@ msgid ""
 "`Discourse`_ main page."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:105
+#: ../../developer-workflow/communication-channels.rst:104
 msgid ""
 "The Python Discourse `Quick Start <https://discuss.python.org/t/python-"
 "discourse-quick-start/116>`_ compiled by `Carol Willing <https://discuss."
@@ -159,7 +159,7 @@ msgid ""
 "Python Discourse."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:109
+#: ../../developer-workflow/communication-channels.rst:108
 msgid ""
 "We recommend new users getting familiarised with the forum by going through "
 "Discobot tutorials. These tutorials can be activated by replying to a "
@@ -167,27 +167,27 @@ msgid ""
 "and Messages in your user account."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:113
+#: ../../developer-workflow/communication-channels.rst:112
 msgid ""
 "Click on your personal account found on the top right hand corner of the "
 "page."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:114
+#: ../../developer-workflow/communication-channels.rst:113
 msgid ""
 "The dropdown menu will show four different icons: 🔔 (Notifications), 🔖 "
 "(Bookmarks), ✉️ (Messages), and 👤 (Preferences)."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:116
+#: ../../developer-workflow/communication-channels.rst:115
 msgid "Select either Notifications or Messages."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:117
+#: ../../developer-workflow/communication-channels.rst:116
 msgid "Open the \"Greetings!\" message sent by Discobot to start the tutorial."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:119
+#: ../../developer-workflow/communication-channels.rst:118
 msgid ""
 "Ensure that you read through the `Python Code of Conduct <https://discuss."
 "python.org/faq>`_. We are to be open, considerate and respectful to all "
@@ -198,11 +198,11 @@ msgid ""
 "<https://discuss.python.org/groups/admins>`_ groups in a message."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:130
+#: ../../developer-workflow/communication-channels.rst:129
 msgid "Reading topics"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:131
+#: ../../developer-workflow/communication-channels.rst:130
 msgid ""
 "Click a topic title and read down the list of replies in chronological "
 "order, following links or previewing replies and quotes as you go. Use your "
@@ -211,15 +211,15 @@ msgid ""
 "smaller screens, select the bottom progress bar to expand it."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:139
+#: ../../developer-workflow/communication-channels.rst:138
 msgid "Notifications"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:142
-msgid "Following categories (Category notifications)"
+#: ../../developer-workflow/communication-channels.rst:141
+msgid "Following categories (category notifications)"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:144
+#: ../../developer-workflow/communication-channels.rst:143
 msgid ""
 "Notifications can be set for individual categories and topics. To change any "
 "of these defaults, you can either go to your user preferences, or visit the "
@@ -228,7 +228,7 @@ msgid ""
 "button."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:149
+#: ../../developer-workflow/communication-channels.rst:148
 msgid ""
 "Clicking on the Notification control 🔔 will show a drop-down panel with 5 "
 "different options: Watching, Tracking, Watching First Post, Normal, and "
@@ -236,11 +236,11 @@ msgid ""
 "be notified if someone mentions your @name or replies to you."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:155
-msgid "Following individual threads (Topic notifications)"
+#: ../../developer-workflow/communication-channels.rst:154
+msgid "Following individual threads (topic notifications)"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:157
+#: ../../developer-workflow/communication-channels.rst:156
 msgid ""
 "To follow any individual topics or threads, you can adjust your "
 "notifications through the notification button 🔔 found on the right of the "
@@ -249,11 +249,11 @@ msgid ""
 "updated reply from that particular thread."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:164
+#: ../../developer-workflow/communication-channels.rst:163
 msgid "Customising notifications on user preference"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:166
+#: ../../developer-workflow/communication-channels.rst:165
 msgid ""
 "To get a bird's eye view of all your customised notifications, you can go to "
 "`Preferences of your account <https://discuss.python.org/my/preferences/"
@@ -261,11 +261,11 @@ msgid ""
 "users, and tags."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:171
+#: ../../developer-workflow/communication-channels.rst:170
 msgid "Enabling mailing list mode"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:173
+#: ../../developer-workflow/communication-channels.rst:172
 msgid ""
 "In mailing list mode, you will receive one email per post, as happens with "
 "traditional mailing lists. This is desirable if you prefer to interact via "
@@ -274,11 +274,11 @@ msgid ""
 "preferences/emails>`_, check \"Enable mailing list mode\" and save changes."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:189
+#: ../../developer-workflow/communication-channels.rst:188
 msgid "Discord (private chat server)"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:191
+#: ../../developer-workflow/communication-channels.rst:190
 msgid ""
 "For more real-time discussions, the core development team have a private "
 "Discord server available. Core developers, Steering Council members, "
@@ -287,20 +287,20 @@ msgid ""
 "communications occur on the mailing lists and Discourse forums."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:197
+#: ../../developer-workflow/communication-channels.rst:196
 msgid ""
 "For core developers, a long lived multiple use invitation link for this "
 "server can be found in the private core developer only section of the "
 "Discourse forum."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:200
+#: ../../developer-workflow/communication-channels.rst:199
 msgid ""
 "For triagers and documentarians joining the Discord server, a single use "
 "invitation link should be generated and sent to them directly."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:203
+#: ../../developer-workflow/communication-channels.rst:202
 msgid ""
 "When first joining the server, new users will only have access to the "
 "``#welcome`` and ``#rules-and-info`` channels. To link their Discord ID with "
@@ -312,7 +312,7 @@ msgid ""
 "by an existing member of the Discord server."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:211
+#: ../../developer-workflow/communication-channels.rst:210
 msgid ""
 "As a private, non-archived, forum, final decisions on design and development "
 "questions should not be made on Discord. Any conclusions from Discord "
@@ -321,18 +321,18 @@ msgid ""
 "depend on the specific discussion)."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:217
+#: ../../developer-workflow/communication-channels.rst:216
 msgid ""
 "Note: existing Discord users may want to right click on their username in "
 "the automatic Discord welcome message and choose \"Edit Server Profile\" in "
 "order to set a specific `Server Nickname`_"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:226
+#: ../../developer-workflow/communication-channels.rst:225
 msgid "IRC"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:228
+#: ../../developer-workflow/communication-channels.rst:227
 msgid ""
 "Some core developers still participate in the ``#python-dev`` IRC channel on "
 "``irc.libera.chat``. This is not a place to ask for help with Python, but to "
@@ -340,22 +340,22 @@ msgid ""
 "dev-notifs`` channel for bots notifications."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:235
+#: ../../developer-workflow/communication-channels.rst:234
 msgid "Blogs"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:237
+#: ../../developer-workflow/communication-channels.rst:236
 msgid ""
 "Several core developers are active bloggers and discuss Python's development "
 "that way. You can find their blogs (and various other developers who use "
 "Python) at https://planetpython.org/."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:243
-msgid "Setting Expectations for Open Source Participation"
+#: ../../developer-workflow/communication-channels.rst:242
+msgid "Setting expectations for open source participation"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:245
+#: ../../developer-workflow/communication-channels.rst:244
 msgid ""
 "Burn-out is common in open source due to a misunderstanding of what users, "
 "contributors, and maintainers should expect from each other. Brett Cannon "
@@ -364,17 +364,43 @@ msgid ""
 "other in order to make open source pleasant for everyone involved."
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:251
-msgid "Additional Repositories"
+#: ../../developer-workflow/communication-channels.rst:250
+msgid "Additional repositories"
 msgstr ""
 
-#: ../../developer-workflow/communication-channels.rst:253
-msgid ""
-"`Python Core Workflow`_ hosts the codebase for tools such as "
-"`cherry_picker`_ and `blurb`_."
+#: ../../developer-workflow/communication-channels.rst:252
+msgid "`Python Core Workflow`_ hosts the codebase for tools such as `blurb`_."
+msgstr ""
+
+#: ../../developer-workflow/communication-channels.rst:254
+msgid "Other core workflow tools are:"
 msgstr ""
 
 #: ../../developer-workflow/communication-channels.rst:256
+msgid "`cherry_picker`_ (`PyPI`_)"
+msgstr ""
+
+#: ../../developer-workflow/communication-channels.rst:257
+msgid "`bedevere`_"
+msgstr ""
+
+#: ../../developer-workflow/communication-channels.rst:258
+msgid "`blurb_it`_"
+msgstr ""
+
+#: ../../developer-workflow/communication-channels.rst:259
+msgid "`miss-islington`_"
+msgstr ""
+
+#: ../../developer-workflow/communication-channels.rst:260
+msgid "`cla-bot`_"
+msgstr ""
+
+#: ../../developer-workflow/communication-channels.rst:261
+msgid "`cpython-emailer-webhook`_"
+msgstr ""
+
+#: ../../developer-workflow/communication-channels.rst:263
 msgid ""
 "Python `Performance Benchmark`_ project is intended to be an authoritative "
 "source of benchmarks for all Python implementations."

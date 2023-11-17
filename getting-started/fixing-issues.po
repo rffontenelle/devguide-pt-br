@@ -8,18 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: 2023-03-18 08:39-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
 "Language: pt_BR\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../getting-started/fixing-issues.rst:6
-msgid "Fixing \"easy\" Issues (and Beyond)"
+#, fuzzy
+msgid "Fixing \"easy\" issues (and beyond)"
 msgstr "Corrigindo issues \"easy\" (e além)"
 
 #: ../../getting-started/fixing-issues.rst:8

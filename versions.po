@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: 2022-12-09 07:29-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
@@ -17,17 +17,20 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../versions.rst:6
-msgid "Status of Python Versions"
+#, fuzzy
+msgid "Status of Python versions"
 msgstr "Status das versões do Python"
 
 #: ../../versions.rst:8
+#, fuzzy
 msgid ""
-"The main branch is currently the future Python 3.12, and is the only branch "
-"that accepts new features.  The latest release for each Python version can "
-"be found on the `download page <https://www.python.org/downloads/>`_."
+"The ``main`` branch is currently the future Python 3.13, and is the only "
+"branch that accepts new features.  The latest release for each Python "
+"version can be found on the `download page <https://www.python.org/downloads/"
+">`_."
 msgstr ""
 "O branch principal é atualmente o futuro Python 3.12, e é o único branch que "
 "aceita novos recursos. O lançamento mais recente para cada versão do Python "
@@ -35,11 +38,13 @@ msgstr ""
 ">`_."
 
 #: ../../versions.rst:14
-msgid "Python Release Cycle"
+#, fuzzy
+msgid "Python release cycle"
 msgstr "Ciclo de lançamentos do Python"
 
 #: ../../versions.rst:20
-msgid "Supported Versions"
+#, fuzzy
+msgid "Supported versions"
 msgstr "Versões suportadas"
 
 #: ../../versions.rst:22
@@ -47,11 +52,13 @@ msgid "Dates shown in *italic* are scheduled and can be adjusted."
 msgstr "As datas mostradas em *itálico* são agendadas e podem ser ajustadas."
 
 #: ../../versions.rst:33
-msgid "Unsupported Versions"
+#, fuzzy
+msgid "Unsupported versions"
 msgstr "Versões não suportadas"
 
 #: ../../versions.rst:42
-msgid "Status Key"
+#, fuzzy
+msgid "Status key"
 msgstr "Chave do status"
 
 #: ../../versions.rst
@@ -110,7 +117,10 @@ msgstr ""
 "enviada para ela."
 
 #: ../../versions.rst:53
-msgid "See also the :ref:`devcycle` page for more information about branches."
+#, fuzzy
+msgid ""
+"See also the :ref:`devcycle` page for more information about branches and "
+"backporting."
 msgstr ""
 "Veja também a página :ref:`devcycle` para mais informações sobre branches."
 

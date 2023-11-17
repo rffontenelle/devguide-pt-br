@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../testing/new-buildbot-worker.rst:6
-msgid "New Buildbot Workers"
+msgid "New buildbot workers"
 msgstr ""
 
 #: ../../testing/new-buildbot-worker.rst:10
@@ -51,7 +51,7 @@ msgstr ""
 msgid ""
 "As for what kind of buildbot to run...take a look at our `current fleet "
 "<https://buildbot.python.org/all/>`_.  Pretty much anything that isn't on "
-"that list would be interesting: different Linux/UNIX distributions, "
+"that list would be interesting: different Linux/Unix distributions, "
 "different versions of the various OSes, other OSes if you or someone are "
 "prepared to make the test suite actually pass on that new OS.  Even if you "
 "only want to run an OS that's already on our list there may be utility in "
@@ -77,22 +77,23 @@ msgstr ""
 #: ../../testing/new-buildbot-worker.rst:48
 msgid ""
 "In order to set up the buildbot software, you will need to obtain an "
-"identifier and password for your worker so it can join the fleet.  Email "
-"python-buildbots@python.org to discuss adding your worker and to obtain the "
-"needed workername and password.  You can do some of the steps that follow "
-"before having the credentials, but it is easiest to have them before the "
-"\"buildbot worker\" step below."
+"identifier and password for your worker so it can join the fleet.  Open an "
+"issue in the `configuration repository <https://github.com/python/"
+"buildmaster-config/issues/new/choose>`_ to discuss adding your worker and to "
+"obtain the needed workername and password.  You can do some of the steps "
+"that follow before having the credentials, but it is easiest to have them "
+"before the \"buildbot worker\" step below."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:57
+#: ../../testing/new-buildbot-worker.rst:58
 msgid "Setting up the buildbot worker"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:60
+#: ../../testing/new-buildbot-worker.rst:61
 msgid "Conventional always-on machines"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:62
+#: ../../testing/new-buildbot-worker.rst:63
 msgid ""
 "You need a recent version of the `buildbot <https://buildbot.net/>`_ "
 "software, and you will probably want a separate 'buildbot' user to run the "
@@ -103,12 +104,12 @@ msgid ""
 "appropriate if you choose that path."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:70
-#: ../../testing/new-buildbot-worker.rst:113
+#: ../../testing/new-buildbot-worker.rst:71
+#: ../../testing/new-buildbot-worker.rst:114
 msgid "For Linux:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:72
+#: ../../testing/new-buildbot-worker.rst:73
 msgid ""
 "If your package manager provides the buildbot worker software, that is "
 "probably the best way to install it; it may create the buildbot user for "
@@ -116,67 +117,67 @@ msgid ""
 "buildbot-worker``."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:76
+#: ../../testing/new-buildbot-worker.rst:77
 msgid "Create a ``buildbot`` user (using, eg: ``useradd``) if necessary."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:77
-#: ../../testing/new-buildbot-worker.rst:83
+#: ../../testing/new-buildbot-worker.rst:78
+#: ../../testing/new-buildbot-worker.rst:84
 msgid "Log in as the buildbot user."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:79
+#: ../../testing/new-buildbot-worker.rst:80
 msgid "For Mac:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:81
+#: ../../testing/new-buildbot-worker.rst:82
 msgid ""
 "Create a buildbot user using the OS/X control panel user admin.  It should "
 "be a \"standard\" user."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:84
+#: ../../testing/new-buildbot-worker.rst:85
 msgid ""
 "Install the buildbot worker [#]_ by running ``pip install buildbot-worker``."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:86
-#: ../../testing/new-buildbot-worker.rst:171
+#: ../../testing/new-buildbot-worker.rst:87
+#: ../../testing/new-buildbot-worker.rst:172
 msgid "For Windows:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:88
+#: ../../testing/new-buildbot-worker.rst:89
 msgid "Create a buildbot user as a \"standard\" user."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:89
+#: ../../testing/new-buildbot-worker.rst:90
 msgid "Install the latest version of Python from python.org."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:90
+#: ../../testing/new-buildbot-worker.rst:91
 msgid "Open a Command Prompt."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:91
+#: ../../testing/new-buildbot-worker.rst:92
 msgid ""
 "Execute ``python -m pip install pypiwin32 buildbot-worker`` (note that "
 "``python.exe`` is not added to ``PATH`` by default, making the ``python`` "
 "command accessible is left as an exercise for the user)."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:95
+#: ../../testing/new-buildbot-worker.rst:96
 msgid ""
 "In a terminal window for the buildbot user, issue the following commands "
 "(you can put the ``buildarea`` wherever you want to)::"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:101
+#: ../../testing/new-buildbot-worker.rst:102
 msgid ""
 "(Note that on Windows, the ``buildbot-worker`` command will be in the :file:"
 "`Scripts` directory of your Python installation.)"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:104
+#: ../../testing/new-buildbot-worker.rst:105
 msgid ""
 "Once this initial worker setup completes, you should edit the files "
 "``buildarea/info/admin`` and ``buildarea/info/host`` to provide your contact "
@@ -185,51 +186,51 @@ msgid ""
 "information about the builders running on your worker."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:110
+#: ../../testing/new-buildbot-worker.rst:111
 msgid ""
 "You will also want to make sure that the worker is started when the machine "
 "reboots:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:115
+#: ../../testing/new-buildbot-worker.rst:116
 msgid "Add the following line to ``/etc/crontab``::"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:119
+#: ../../testing/new-buildbot-worker.rst:120
 msgid ""
 "Note that we use ``restart`` rather than ``start`` in case a crash has left "
 "a ``twistd.pid`` file behind."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:122
+#: ../../testing/new-buildbot-worker.rst:123
 msgid "For OSX:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:124
+#: ../../testing/new-buildbot-worker.rst:125
 msgid "Create a bin directory for your buildbot user::"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:128
+#: ../../testing/new-buildbot-worker.rst:129
 msgid ""
 "Place the following script, named ``run_worker.sh``, into that directory::"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:136
+#: ../../testing/new-buildbot-worker.rst:137
 msgid ""
 "If you use pip with Apple's system python, add '/System' to the front of the "
 "path to the Python bin directory."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:139
+#: ../../testing/new-buildbot-worker.rst:140
 msgid ""
 "Place a file with the following contents into ``/Library/LaunchDaemons``:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:169
+#: ../../testing/new-buildbot-worker.rst:170
 msgid "The recommended name for the file is ``net.buildbot.worker``."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:173
+#: ../../testing/new-buildbot-worker.rst:174
 msgid ""
 "Add a Scheduled Task to run ``buildbot-worker start buildarea`` as the "
 "buildbot user \"when the computer starts up\".  It is best to provide "
@@ -238,25 +239,25 @@ msgid ""
 "that contains the :file:`buildarea` directory."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:179
+#: ../../testing/new-buildbot-worker.rst:180
 msgid ""
 "Alternatively (note: don't do both!), set up the worker service as described "
 "in the `buildbot documentation <https://docs.buildbot.net/current/manual/"
 "installation/requirements.html#windows-support>`_."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:183
+#: ../../testing/new-buildbot-worker.rst:184
 msgid "To start the worker running for your initial testing, you can do::"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:187
+#: ../../testing/new-buildbot-worker.rst:188
 msgid ""
 "Then you can either wait for someone to make a commit, or you can pick a "
 "builder associated with your worker from the `list of builders <https://"
 "buildbot.python.org/all/>`_ and force a build."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:191
+#: ../../testing/new-buildbot-worker.rst:192
 msgid ""
 "In any case you should initially monitor builds on your builders to make "
 "sure the tests are passing and to resolve any platform issues that may be "
@@ -266,55 +267,65 @@ msgid ""
 msgstr ""
 
 #: ../../testing/new-buildbot-worker.rst:199
+msgid ""
+"If your buildbot worker is disconnecting regularly, it may be a symptom of "
+"the default ``keepalive`` value (``600`` for 10 minutes) being `set <https://"
+"docs.buildbot.net/latest/manual/installation/worker.html#cmdoption-buildbot-"
+"worker-create-worker-keepalive>`_ too high. You can change it to a lower "
+"value (e.g. ``180`` for 3 minutes) in the ``buildbot.tac`` file found in "
+"your build area."
+msgstr ""
+
+#: ../../testing/new-buildbot-worker.rst:207
 msgid "Latent workers"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:201
+#: ../../testing/new-buildbot-worker.rst:209
 msgid ""
 "We also support running `latent workers <http://docs.buildbot.net/current/"
 "manual/configuration/workers.html#latent-workers>`_ on the AWS EC2 service.  "
 "To set up such a worker:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:205
+#: ../../testing/new-buildbot-worker.rst:213
 msgid ""
 "Start an instance of your chosen base AMI and set it up as a conventional "
 "worker."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:207
+#: ../../testing/new-buildbot-worker.rst:215
 msgid ""
 "After the instance is fully set up as a conventional worker (including "
 "worker name and password, and admin and host information), create an AMI "
 "from the instance and stop the instance."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:210
+#: ../../testing/new-buildbot-worker.rst:218
 msgid ""
 "Contact the buildmaster administrator who gave you your worker name and "
 "password and give them the following information:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:213
+#: ../../testing/new-buildbot-worker.rst:221
 msgid "Instance size (such as ``m4.large``)"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:214
+#: ../../testing/new-buildbot-worker.rst:222
 msgid "Full region specification (such as ``us-west-2``)"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:215
+#: ../../testing/new-buildbot-worker.rst:223
 msgid "AMI ID (such as ``ami-1234beef``)"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:216
+#: ../../testing/new-buildbot-worker.rst:224
 msgid ""
 "An Access Key ID and Access Key.  It is recommended to set up a separate IAM "
 "user with full access to EC2 and provide the access key information for that "
 "user rather than for your main account."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:220
+#: ../../testing/new-buildbot-worker.rst:228
 msgid ""
 "The buildmaster cannot guarantee that it will always shut down your "
 "instance(s), so it is recommended to periodically check and make sure there "
@@ -325,7 +336,7 @@ msgid ""
 "that the master be restarted."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:228
+#: ../../testing/new-buildbot-worker.rst:236
 msgid ""
 "Latent workers should also be updated periodically to include operating "
 "system or other software updates, but when to do such maintenance is largely "
@@ -333,7 +344,7 @@ msgid ""
 "doing such updates:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:233
+#: ../../testing/new-buildbot-worker.rst:241
 msgid ""
 "Start an instance from your existing AMI, do updates on that instance, and "
 "save a new AMI from the updated instance.  Note that (especially for Windows "
@@ -342,23 +353,23 @@ msgid ""
 "the new AMI."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:238
+#: ../../testing/new-buildbot-worker.rst:246
 msgid ""
 "Create an entirely new setup from a newer base AMI using your existing "
 "worker name and password."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:241
+#: ../../testing/new-buildbot-worker.rst:249
 msgid ""
 "Whichever way you choose to update your AMI, you'll need to provide the "
 "buildmaster administrators with the new AMI ID."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:246
+#: ../../testing/new-buildbot-worker.rst:254
 msgid "Buildbot worker operation"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:248
+#: ../../testing/new-buildbot-worker.rst:256
 msgid ""
 "Most of the time, running a worker is a \"set and forget\" operation, "
 "depending on the level of involvement you want to have in resolving bugs "
@@ -368,7 +379,7 @@ msgid ""
 "of any fleet-wide issues."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:255
+#: ../../testing/new-buildbot-worker.rst:263
 msgid ""
 "Necessary tasks include, obviously, keeping the buildbot running.  Currently "
 "the system for notifying buildbot owners when their workers go offline is "
@@ -380,7 +391,7 @@ msgid ""
 "it."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:263
+#: ../../testing/new-buildbot-worker.rst:271
 msgid ""
 "We currently do not have a minimum version requirement for the worker "
 "software.  However, this is something we will probably establish as we tune "
@@ -389,7 +400,7 @@ msgid ""
 "buildbots@python.org``."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:268
+#: ../../testing/new-buildbot-worker.rst:276
 msgid ""
 "The most interesting extra involvement is when your worker reveals a unique "
 "or almost-unique problem:  a test that is failing on your system but not on "
@@ -399,11 +410,11 @@ msgid ""
 "experiments to try to resolve the issue."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:277
-msgid "Required Ports"
+#: ../../testing/new-buildbot-worker.rst:285
+msgid "Required ports"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:279
+#: ../../testing/new-buildbot-worker.rst:287
 msgid ""
 "The worker operates as a *client* to the *buildmaster*.  This means that all "
 "network connections are *outbound*.  This is true also for the network tests "
@@ -415,138 +426,138 @@ msgid ""
 "since this table was last vetted):"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:289
+#: ../../testing/new-buildbot-worker.rst:297
 msgid "Port"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:289
+#: ../../testing/new-buildbot-worker.rst:297
 msgid "Host"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:289
+#: ../../testing/new-buildbot-worker.rst:297
 msgid "Description"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:291
+#: ../../testing/new-buildbot-worker.rst:299
 msgid "20, 21"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:291
+#: ../../testing/new-buildbot-worker.rst:299
 msgid "ftp.debian.org"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:291
+#: ../../testing/new-buildbot-worker.rst:299
 msgid "test_urllib2net"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:292
+#: ../../testing/new-buildbot-worker.rst:300
 msgid "53"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:292
+#: ../../testing/new-buildbot-worker.rst:300
 msgid "your DNS server"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:292
+#: ../../testing/new-buildbot-worker.rst:300
 msgid "test_socket, and others implicitly"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:293
+#: ../../testing/new-buildbot-worker.rst:301
 msgid "80"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:293
+#: ../../testing/new-buildbot-worker.rst:301
 msgid "python.org example.com"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:293
+#: ../../testing/new-buildbot-worker.rst:301
 msgid "(several tests)"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:295
+#: ../../testing/new-buildbot-worker.rst:303
 msgid "119"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:295
+#: ../../testing/new-buildbot-worker.rst:303
 msgid "news.gmane.org"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:295
+#: ../../testing/new-buildbot-worker.rst:303
 msgid "test_nntplib"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:296
+#: ../../testing/new-buildbot-worker.rst:304
 msgid "443"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:296
+#: ../../testing/new-buildbot-worker.rst:304
 msgid "(various)"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:296
+#: ../../testing/new-buildbot-worker.rst:304
 msgid "test_ssl"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:297
+#: ../../testing/new-buildbot-worker.rst:305
 msgid "465"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:297
-#: ../../testing/new-buildbot-worker.rst:298
+#: ../../testing/new-buildbot-worker.rst:305
+#: ../../testing/new-buildbot-worker.rst:306
 msgid "smtp.gmail.com"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:297
-#: ../../testing/new-buildbot-worker.rst:298
+#: ../../testing/new-buildbot-worker.rst:305
+#: ../../testing/new-buildbot-worker.rst:306
 msgid "test_smtpnet"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:298
+#: ../../testing/new-buildbot-worker.rst:306
 msgid "587"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:299
+#: ../../testing/new-buildbot-worker.rst:307
 msgid "9020"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:299
+#: ../../testing/new-buildbot-worker.rst:307
 msgid "python.org"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:299
+#: ../../testing/new-buildbot-worker.rst:307
 msgid "connection to buildmaster"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:302
+#: ../../testing/new-buildbot-worker.rst:310
 msgid ""
 "Many tests will also create local TCP sockets and connect to them, usually "
 "using either ``localhost`` or ``127.0.0.1``."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:307
-msgid "Required Resources"
+#: ../../testing/new-buildbot-worker.rst:315
+msgid "Required resources"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:309
+#: ../../testing/new-buildbot-worker.rst:317
 msgid ""
 "Based on the last time we did a `survey <https://mail.python.org/pipermail/"
 "python-dev/2012-March/117978.html>`_ on buildbot requirements, the "
 "recommended resource allocations for a python buildbot are at least:"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:314
+#: ../../testing/new-buildbot-worker.rst:322
 msgid "2 CPUs"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:315
+#: ../../testing/new-buildbot-worker.rst:323
 msgid "512 MB RAM"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:316
+#: ../../testing/new-buildbot-worker.rst:324
 msgid "30 GB free disk space"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:318
+#: ../../testing/new-buildbot-worker.rst:326
 msgid ""
 "The bigmem tests won't run in this configuration, since they require "
 "substantially more memory, but these resources should be sufficient to "
@@ -554,11 +565,11 @@ msgid ""
 "of the test suite."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:325
-msgid "Security Considerations"
+#: ../../testing/new-buildbot-worker.rst:333
+msgid "Security considerations"
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:327
+#: ../../testing/new-buildbot-worker.rst:335
 msgid ""
 "We only allow builds to be triggered against commits to the `CPython "
 "repository on GitHub <https://github.com/python/cpython>`_. This means that "
@@ -574,7 +585,7 @@ msgid ""
 "policy."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:339
+#: ../../testing/new-buildbot-worker.rst:347
 msgid ""
 "Code runs differently as privileged and unprivileged users.  We would love "
 "to have builders running as privileged accounts, but security considerations "
@@ -584,7 +595,7 @@ msgid ""
 "buildbot that runs python as root."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:346
+#: ../../testing/new-buildbot-worker.rst:354
 msgid ""
 "Note that the above is a summary of a `discussion <https://mail.python.org/"
 "pipermail/python-dev/2011-October/113935.html>`_ on python-dev about "
@@ -593,7 +604,7 @@ msgid ""
 "point of reference."
 msgstr ""
 
-#: ../../testing/new-buildbot-worker.rst:352
+#: ../../testing/new-buildbot-worker.rst:360
 msgid ""
 "If the buildbot is going to do Framework builds, it is better to use the "
 "Apple-shipped Python so as to avoid any chance of the buildbot picking up "

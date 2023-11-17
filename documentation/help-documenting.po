@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: 2023-03-18 09:18-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
@@ -17,10 +17,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../documentation/help-documenting.rst:6
-msgid "Helping with Documentation"
+#, fuzzy
+msgid "Helping with documentation"
 msgstr "Ajudando com documentação"
 
 #: ../../documentation/help-documenting.rst:8
@@ -62,7 +63,8 @@ msgstr ""
 "<documenting>`."
 
 #: ../../documentation/help-documenting.rst:24
-msgid "Python Documentation"
+#, fuzzy
+msgid "Python documentation"
 msgstr "Documentação do Python"
 
 #: ../../documentation/help-documenting.rst:26
@@ -96,15 +98,21 @@ msgstr ""
 "recente são recompilados uma vez por dia."
 
 #: ../../documentation/help-documenting.rst:38
+#, fuzzy
 msgid ""
 "If you would like to be more involved with documentation, consider "
-"subscribing to the `docs@python.org <https://mail.python.org/mailman3/lists/"
-"docs.python.org/>`_ mailing list and the `Documentation category on the "
-"Python Discourse <https://discuss.python.org/c/documentation/26>`_, where "
-"user issues are raised and documentation toolchain, projects, and standards "
-"are discussed."
+"subscribing to the `Documentation category on the Python Discourse <https://"
+"discuss.python.org/c/documentation/26>`_ and the `docs@python.org <https://"
+"mail.python.org/mailman3/lists/docs.python.org/>`_ mailing list where user "
+"issues are raised and documentation toolchain, projects, and standards are "
+"discussed."
 msgstr ""
-"Se você gostaria de se envolver mais com a documentação, considere se inscrever na lista de discussão `docs@python.org <https://mail.python.org/mailman3/lists/docs.python.org/>`_ e na `categoria Documentation no Python Discourse <https://discuss.python.org/c/documentation/26>`_, onde problemas de usuários são levantados e cadeia de ferramentas, projetos e padrões de documentação são discutidas."
+"Se você gostaria de se envolver mais com a documentação, considere se "
+"inscrever na lista de discussão `docs@python.org <https://mail.python.org/"
+"mailman3/lists/docs.python.org/>`_ e na `categoria Documentation no Python "
+"Discourse <https://discuss.python.org/c/documentation/26>`_, onde problemas "
+"de usuários são levantados e cadeia de ferramentas, projetos e padrões de "
+"documentação são discutidas."
 
 #: ../../documentation/help-documenting.rst:47
 msgid "Helping with documentation issues"
@@ -135,7 +143,9 @@ msgid ""
 "issue body. If there is, then someone has already created a pull request for "
 "the issue."
 msgstr ""
-"verificar se há um ícone de pull request à direita do título do issue, ou um pull request aberto listado em :guilabel:`Linked PRs` no corpo do problema. Se houver, então alguém já criou um pull request para o issue."
+"verificar se há um ícone de pull request à direita do título do issue, ou um "
+"pull request aberto listado em :guilabel:`Linked PRs` no corpo do problema. "
+"Se houver, então alguém já criou um pull request para o issue."
 
 #: ../../documentation/help-documenting.rst:59
 msgid ""

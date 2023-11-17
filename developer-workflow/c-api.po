@@ -8,21 +8,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-22 12:16-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../developer-workflow/c-api.rst:5
 msgid "Changing Python's C API"
 msgstr ""
 
 #: ../../developer-workflow/c-api.rst:7
-msgid "The C API is divided into three sections:"
+msgid "The C API is divided into these tiers:"
 msgstr ""
 
 #: ../../developer-workflow/c-api.rst:9
@@ -34,60 +34,71 @@ msgstr ""
 
 #: ../../developer-workflow/c-api.rst:12
 msgid ""
-"The public C API, available when ``Python.h`` is included normally. Ideally "
-"declared in ``Include/cpython/``."
+"The Unstable C API, identified by the ``PyUnstable_`` name prefix. Ideally "
+"declared in :cpy-file:`Include/cpython/` along with the general public API."
 msgstr ""
 
 #: ../../developer-workflow/c-api.rst:14
 msgid ""
-"The Limited API, available with ``Py_LIMITED_API`` defined. Ideally declared "
-"directly under ``Include/``."
+"The “general” public C API, available when :cpy-file:`Include/Python.h` is "
+"included normally. Ideally declared in ``Include/cpython/``."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:17
+#: ../../developer-workflow/c-api.rst:16
 msgid ""
-"Each section has higher stability & maintenance requirements, and you will "
-"need to think about more issues when you add or change definitions in it."
+"The Limited C API, available with :c:macro:`Py_LIMITED_API` defined. Ideally "
+"declared directly under ``Include/``."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:20
+#: ../../developer-workflow/c-api.rst:19
+msgid ""
+"Each tier has different stability and maintenance requirements to consider "
+"when you add or change definitions in it."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:22
 msgid ""
 "The compatibility guarantees for public C API are explained in the user "
 "documentation, ``Doc/c-api/stable.rst`` (:ref:`python:stable`)."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:25
+#: ../../developer-workflow/c-api.rst:27
 msgid "The internal API"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:27
+#: ../../developer-workflow/c-api.rst:29
 msgid ""
 "Internal API is defined in ``Include/internal/`` and is only available for "
 "building CPython itself, as indicated by a macro like ``Py_BUILD_CORE``."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:30
+#: ../../developer-workflow/c-api.rst:32
 msgid ""
 "While internal API can be changed at any time, it's still good to keep it "
-"stable: other API or other CPython developers may depend on it."
+"stable: other API or other CPython developers may depend on it. For users, "
+"internal API is sometimes the best workaround for a thorny problem --- "
+"though those use cases should be discussed on the `C API Discourse category "
+"<https://discuss.python.org/c/30>`_ or an issue so we can try to find a "
+"supported way to serve them."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:34
+#: ../../developer-workflow/c-api.rst:41
 msgid "With PyAPI_FUNC or PyAPI_DATA"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:36
+#: ../../developer-workflow/c-api.rst:43
 msgid ""
 "Functions or structures in ``Include/internal/`` defined with ``PyAPI_FUNC`` "
 "or ``PyAPI_DATA`` are internal functions which are exposed only for specific "
-"use cases like debuggers and profilers."
+"use cases like debuggers and profilers. Ideally, these should be migrated to "
+"the :ref:`unstable-capi`."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:42
+#: ../../developer-workflow/c-api.rst:50
 msgid "With the extern keyword"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:44
+#: ../../developer-workflow/c-api.rst:52
 msgid ""
 "Functions in ``Include/internal/`` defined with the ``extern`` keyword *must "
 "not and can not* be used outside the CPython code base.  Only built-in "
@@ -95,97 +106,142 @@ msgid ""
 "can use such functions."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:49
+#: ../../developer-workflow/c-api.rst:57
 msgid ""
 "When in doubt, new internal C functions should be defined in ``Include/"
 "internal`` using the ``extern`` keyword."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:53
+#: ../../developer-workflow/c-api.rst:61
 msgid "Private names"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:55
+#: ../../developer-workflow/c-api.rst:63
 msgid ""
 "Any API named with a leading underscore is also considered internal. There "
-"are two main use cases for using such names rather than putting the "
-"definition in ``Include/internal/`` (or directly in a ``.c`` file):"
+"is currently only one main use case for using such names rather than putting "
+"the definition in :cpy-file:`Include/internal/` (or directly in a ``.c`` "
+"file):"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:59
+#: ../../developer-workflow/c-api.rst:67
 msgid ""
-"Internal helpers for other public API; users should not use these directly;"
+"Internal helpers for other public APIs, which users should not call directly."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:60
+#: ../../developer-workflow/c-api.rst:69
 msgid ""
-"“Provisional” API, included in a Python release to test real-world usage of "
-"new API. Such names should be renamed when stabilized; preferably with a "
-"macro aliasing the old name to the new one. See :pep:`\"Finalizing the API\" "
-"in PEP 590 <590#finalizing-the-api>` for an example."
+"Note that historically, underscores were used for APIs that are better "
+"served by the :ref:`unstable-capi`:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:66
-msgid "Internal API Tests"
+#: ../../developer-workflow/c-api.rst:72
+msgid ""
+"“provisional” APIs, included in a Python release to test real-world usage of "
+"new APIs;"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:68
+#: ../../developer-workflow/c-api.rst:74
+msgid "APIs for very specialized uses like JIT compilers."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:78
+msgid "Internal API tests"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:80
 msgid ""
 "C tests for the internal C API live in ``Modules/_testinternalcapi.c``. "
 "Functions named ``test_*`` are used as tests directly. Python parts of the "
 "tests live in various places in ``Lib/test``."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:76
+#: ../../developer-workflow/c-api.rst:88
 msgid "Public C API"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:78
+#: ../../developer-workflow/c-api.rst:90
 msgid ""
 "CPython's public C API is available when ``Python.h`` is included normally "
 "(that is, without defining macros to select the other variants)."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:81
+#: ../../developer-workflow/c-api.rst:93
 msgid ""
 "It should be defined in ``Include/cpython/`` (unless part of the Limited "
 "API, see below)."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:84
-msgid "Guidelines for expanding/changing the public API:"
+#: ../../developer-workflow/c-api.rst:99
+msgid "Guidelines for expanding/changing the public API"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:86
+#: ../../developer-workflow/c-api.rst:101
 msgid ""
 "Make sure the new API follows reference counting conventions. (Following "
 "them makes the API easier to reason about, and easier use in other Python "
 "implementations.)"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:90
+#: ../../developer-workflow/c-api.rst:105
 msgid "Functions *must not* steal references"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:91
+#: ../../developer-workflow/c-api.rst:106
 msgid "Functions *must not* return borrowed references"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:92
+#: ../../developer-workflow/c-api.rst:107
 msgid "Functions returning references *must* return a strong reference"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:94
+#: ../../developer-workflow/c-api.rst:109
 msgid ""
 "Make sure the ownership rules and lifetimes of all applicable struct fields, "
 "arguments and return values are well defined."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:99
-msgid "C API Tests"
+#: ../../developer-workflow/c-api.rst:112
+msgid ""
+"Functions returning ``PyObject *`` must return a valid pointer on success, "
+"and ``NULL`` with an exception raised on error. Most other API must return "
+"``-1`` with an exception raised on error, and ``0`` on success."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:101
+#: ../../developer-workflow/c-api.rst:117
+msgid ""
+"APIs with lesser and greater results must return ``0`` for the lesser "
+"result, and ``1`` for the greater result. Consider a lookup function with a "
+"three-way return:"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:121
+msgid "``return -1``: internal error or API misuse; exception raised"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:122
+msgid "``return 0``: lookup succeeded; no item was found"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:123
+msgid "``return 1``: lookup succeeded; item was found"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:125
+msgid ""
+"Please start a public discussion if these guidelines won't work for your API."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:129
+msgid ""
+"By *return value*, we mean the value returned by the *C return statement*."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:132
+msgid "C API tests"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:134
 msgid ""
 "Tests for the public C API live in the ``_testcapi`` module. Functions named "
 "``test_*`` are used as tests directly. Tests that need Python code (or are "
@@ -193,108 +249,301 @@ msgid ""
 "cpy-file:`Lib/test/test_capi`."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:106
+#: ../../developer-workflow/c-api.rst:139
 msgid ""
 "Due to its size, the ``_testcapi`` module is defined in several source "
 "files. To add a new set of tests (or extract a set out of the monolithic :"
 "cpy-file:`Modules/_testcapimodule.c`):"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:111
+#: ../../developer-workflow/c-api.rst:144
 msgid "Create a C file named ``Modules/_testcapi/yourfeature.c``"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:113
+#: ../../developer-workflow/c-api.rst:146
 msgid "The file should define a module as usual, except:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:115
+#: ../../developer-workflow/c-api.rst:148
 msgid "Instead of ``<Python.h>``, include ``\"parts.h\"``."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:116
+#: ../../developer-workflow/c-api.rst:149
 msgid ""
 "Instead of ``PyInit_modname``, define a ``_PyTestCapi_Init_yourfeature`` "
 "function that *takes* the ``_testcapi`` module and adds functions/classes to "
 "it. (You can use ``PyModule_AddFunctions`` to add functions.)"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:120
+#: ../../developer-workflow/c-api.rst:153
 msgid ""
 "Add the ``_PyTestCapi_Init_*`` function to ``Modules/_testcapi/parts.h``"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:122
+#: ../../developer-workflow/c-api.rst:155
 msgid ""
 "Call the ``_PyTestCapi_Init_*`` from ``PyInit__testcapi`` in ``Modules/"
 "_testcapimodule.c``."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:125
+#: ../../developer-workflow/c-api.rst:158
 msgid ""
 "Add the new C file to :cpy-file:`Modules/Setup.stdlib.in`, :cpy-file:"
 "`PCbuild/_testcapi.vcxproj` and :cpy-file:`PCbuild/_testcapi.vcxproj."
 "filters`, alongside the other ``_testcapi/*.c`` entries."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:130
+#: ../../developer-workflow/c-api.rst:163
 msgid ""
 "Note that all ``Modules/_testcapi/*.c`` sources initialize the same module, "
 "so be careful about name collisions."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:133
+#: ../../developer-workflow/c-api.rst:166
 msgid ""
 "When moving existing tests, feel free to replace ``TestError`` with "
 "``PyExc_AssertionError`` unless actually testing custom exceptions."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:138
+#: ../../developer-workflow/c-api.rst:173
+msgid "Unstable C API"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:175
+msgid ""
+"The unstable C API tier is meant for extensions that need tight integration "
+"with the interpreter, like debuggers and JIT compilers. Users of this tier "
+"may need to change their code with every minor release."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:179
+msgid "In many ways, this tier is like the general C API:"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:181
+msgid "it's available when ``Python.h`` is included normally,"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:182
+msgid "it should be defined  in :cpy-file:`Include/cpython/`,"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:183
+msgid "it requires tests, so we don't break it unintentionally"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:184
+msgid ""
+"it requires docs, so both we and the users, can agree on the expected "
+"behavior,"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:186
+msgid "it is tested and documented in the same way."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:188
+msgid "The differences are:"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:190
+msgid ""
+"Names of functions structs, macros, etc. start with the ``PyUnstable_`` "
+"prefix. This defines what's in the unstable tier."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:192
+msgid ""
+"The unstable API can change in minor versions, without any deprecation "
+"period."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:194
+msgid ""
+"A stability note appears in the docs. This happens automatically, based on "
+"the name (via :cpy-file:`Doc/tools/extensions/c_annotations.py`)."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:198
+msgid ""
+"Despite being “unstable”, there are rules to make sure third-party code can "
+"use this API reliably:"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:201
+msgid ""
+"Changes and removals can be done in minor releases (:samp:`3.{x}.0`, "
+"including Alphas and Betas for :samp:`3.{x}.0`)."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:203
+msgid ""
+"Adding a new unstable API *for an existing feature* is allowed even after "
+"Beta feature freeze, up until the first Release Candidate. Consensus on the "
+"`Core Development Discourse <https://discuss.python.org/c/core-dev/23>`_ is "
+"needed in the Beta period."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:207
+msgid ""
+"Backwards-incompatible changes should make existing C callers fail to "
+"compile. For example, arguments should be added/removed, or a function "
+"should be renamed."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:210
+msgid ""
+"When moving an API into or out of the Unstable tier, the old name should "
+"continue to be available (but deprecated) until an incompatible change is "
+"made. In other words, while we're allowed to break calling code, we "
+"shouldn't break it *unnecessarily*."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:217
+msgid "Moving an API from the public tier to Unstable"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:219
+msgid ""
+"Expose the API under its new name, with the ``PyUnstable_`` prefix. The "
+"``PyUnstable_`` prefix must be used for all symbols (functions, macros, "
+"variables, etc.)."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:222
+msgid ""
+"Make the old name an alias (e.g. a ``static inline`` function calling the "
+"new function)."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:224
+msgid "Deprecate the old name, typically using :c:macro:`Py_DEPRECATED`."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:225
+msgid "Announce the change in the \"What's New\"."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:227
+msgid ""
+"The old name should continue to be available until an incompatible change is "
+"made. Per Python’s backwards compatibility policy (:pep:`387`), this "
+"deprecation needs to last at least two releases (modulo Steering Council "
+"exceptions)."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:232
+msgid ""
+"The rules are relaxed for APIs that were introduced in Python versions "
+"before 3.12, when the official Unstable tier was added. You can make an "
+"incompatible change (and remove the old name) as if the function was already "
+"part of the Unstable tier for APIs introduced before Python 3.12 that are "
+"either:"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:238
+msgid "Documented to be less stable than default."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:239
+msgid "Named with a leading underscore."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:242
+msgid "Moving an API from the private tier to unstable"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:244
+msgid "Expose the API under its new name, with the ``PyUnstable_`` prefix."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:245
+msgid ""
+"If the old name is documented, or widely used externally, make it an alias "
+"and deprecate it (typically with :c:macro:`Py_DEPRECATED`). It should "
+"continue to be available until an incompatible change is made, as if it was "
+"previously public."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:250
+msgid ""
+"This applies even to underscored names. Python wasn't always strict with the "
+"leading underscore."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:252
+#: ../../developer-workflow/c-api.rst:260
+msgid "Announce the change in What's New."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:255
+msgid "Moving an API from unstable to public"
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:257
+msgid "Expose the API under its new name, without the ``PyUnstable_`` prefix."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:258
+msgid ""
+"Make the old ``PyUnstable_*`` name be an alias (e.g. a ``static inline`` "
+"function calling the new function)."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:262
+msgid ""
+"The old name should remain available until the new public name is deprecated "
+"or removed. There's no need to deprecate the old name (it was unstable to "
+"begin with), but there's also no need to break working code just because "
+"some function is now ready for a wider audience."
+msgstr ""
+
+#: ../../developer-workflow/c-api.rst:270
 msgid "Limited API"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:140
+#: ../../developer-workflow/c-api.rst:272
 msgid ""
 "The Limited API is a subset of the C API designed to guarantee ABI stability "
 "across Python 3 versions. Defining the macro ``Py_LIMITED_API`` will limit "
 "the exposed API to this subset."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:145
+#: ../../developer-workflow/c-api.rst:277
 msgid "No changes that break the Stable ABI are allowed."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:147
+#: ../../developer-workflow/c-api.rst:279
 msgid ""
 "The Limited API should be defined in ``Include/``, excluding the ``cpython`` "
 "and ``internal`` subdirectories."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:152
+#: ../../developer-workflow/c-api.rst:284
 msgid "Guidelines for changing the Limited API, and removing items from it"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:154
+#: ../../developer-workflow/c-api.rst:286
 msgid ""
 "While the *Stable ABI*  must not be broken, the existing Limited API can be "
 "changed, and items can be removed from it, if:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:157
+#: ../../developer-workflow/c-api.rst:289
 msgid "the Backwards Compatibility Policy (:pep:`387`) is followed, and"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:158
+#: ../../developer-workflow/c-api.rst:290
 msgid ""
 "the Stable ABI is not broken -- that is, extensions compiled with Limited "
 "API of older versions of Python continue to work on newer versions of Python."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:162
+#: ../../developer-workflow/c-api.rst:294
 msgid "This is tricky to do and requires careful thought. Some examples:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:165
+#: ../../developer-workflow/c-api.rst:297
 msgid ""
 "Functions, structs etc. accessed by macros in *any version* of the Limited "
 "API are part of the Stable ABI, even if they are named with an underscore. "
@@ -302,19 +551,19 @@ msgid ""
 "implementation may change, though.)"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:169
+#: ../../developer-workflow/c-api.rst:301
 msgid ""
 "Structs members cannot be rearranged if they were part of any version of the "
 "Limited API."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:171
+#: ../../developer-workflow/c-api.rst:303
 msgid ""
 "If the Limited API allows users to allocate a struct directly, its size must "
 "not change."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:173
+#: ../../developer-workflow/c-api.rst:305
 msgid ""
 "Exported symbols (functions and data) must continue to be available as "
 "exported symbols. Specifically, a function can only be converted to a "
@@ -323,183 +572,185 @@ msgid ""
 "`redefinition`_ in 3.10."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:182
+#: ../../developer-workflow/c-api.rst:314
 msgid ""
 "It is possible to remove items marked as part of the Stable ABI, but only if "
 "there was no way to use them in any past version of the Limited API."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:187
+#: ../../developer-workflow/c-api.rst:321
 msgid "Guidelines for adding to the Limited API"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:189
-msgid "Guidelines for the general :ref:`public-capi` apply."
+#: ../../developer-workflow/c-api.rst:323
+msgid ""
+"Guidelines for the general :ref:`public-capi` apply. See :ref:`public-api-"
+"guidelines`."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:191
+#: ../../developer-workflow/c-api.rst:326
 msgid ""
 "New Limited API should only be defined if ``Py_LIMITED_API`` is set to the "
 "version the API was added in or higher. (See below for the proper ``#if`` "
 "guard.)"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:195
+#: ../../developer-workflow/c-api.rst:330
 msgid ""
 "All parameter types, return values, struct members, etc. need to be part of "
 "the Limited API."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:198
+#: ../../developer-workflow/c-api.rst:333
 msgid ""
 "Functions that deal with ``FILE*`` (or other types with ABI portability "
 "issues) should not be added."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:201
+#: ../../developer-workflow/c-api.rst:336
 msgid "Think twice when defining macros."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:203
+#: ../../developer-workflow/c-api.rst:338
 msgid "Macros should not expose implementation details"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:204
+#: ../../developer-workflow/c-api.rst:339
 msgid ""
 "Functions must be exported as actual functions, not (only) as functions-like "
 "macros."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:206
+#: ../../developer-workflow/c-api.rst:341
 msgid ""
 "If possible, avoid macros. This makes the Limited API more usable in "
 "languages that don't use the C preprocessor."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:209
+#: ../../developer-workflow/c-api.rst:344
 msgid "Please start a public discussion before expanding the Limited API"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:211
+#: ../../developer-workflow/c-api.rst:346
 msgid ""
 "The Limited API and must follow standard C, not just features of currently "
 "supported platforms. The exact C dialect is described in :pep:`7`."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:214
+#: ../../developer-workflow/c-api.rst:349
 msgid ""
 "Documentation examples (and more generally: the intended use of the API) "
 "should also follow standard C."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:216
+#: ../../developer-workflow/c-api.rst:351
 msgid ""
 "In particular, do not cast a function pointer to ``void*`` (a data pointer) "
 "or vice versa."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:219
+#: ../../developer-workflow/c-api.rst:354
 msgid "Think about ease of use for the user."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:221
+#: ../../developer-workflow/c-api.rst:356
 msgid ""
 "In C, ease of use itself is not very important; what is useful is reducing "
 "boilerplate code needed to use the API. Bugs like to hide in boiler plates."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:225
+#: ../../developer-workflow/c-api.rst:360
 msgid ""
 "If a function will be often called with specific value for an argument, "
 "consider making it default (used when ``NULL`` is passed in)."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:227
+#: ../../developer-workflow/c-api.rst:362
 msgid "The Limited API needs to be well documented."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:229
+#: ../../developer-workflow/c-api.rst:364
 msgid "Think about future extensions"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:231
+#: ../../developer-workflow/c-api.rst:366
 msgid ""
 "If it's possible that future Python versions will need to add a new field to "
 "your struct, make sure it can be done."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:233
+#: ../../developer-workflow/c-api.rst:368
 msgid ""
 "Make as few assumptions as possible about implementation details that might "
 "change in future CPython versions or differ across C API implementations. "
 "The most important CPython-specific implementation details involve:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:238
+#: ../../developer-workflow/c-api.rst:373
 msgid "The GIL"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:239
+#: ../../developer-workflow/c-api.rst:374
 msgid ":ref:`Garbage collection <gc>`"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:240
+#: ../../developer-workflow/c-api.rst:375
 msgid "Memory layout of PyObject, lists/tuples and other structures"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:242
+#: ../../developer-workflow/c-api.rst:377
 msgid ""
 "If following these guidelines would hurt performance, add a fast function "
 "(or macro) to the non-limited API and a stable equivalent to the Limited API."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:246
+#: ../../developer-workflow/c-api.rst:381
 msgid ""
 "If anything is unclear, or you have a good reason to break the guidelines, "
 "consider discussing the change at the `capi-sig`_ mailing list."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:252
+#: ../../developer-workflow/c-api.rst:387
 msgid "Adding a new definition to the Limited API"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:254
+#: ../../developer-workflow/c-api.rst:389
 msgid ""
 "Add the declaration to a header file directly under ``Include/``, into a "
 "block guarded with the following:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:261
+#: ../../developer-workflow/c-api.rst:396
 msgid ""
 "with the ``yy`` corresponding to the target CPython version, e.g. "
 "``0x030A0000`` for Python 3.10."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:263
+#: ../../developer-workflow/c-api.rst:398
 msgid "Append an entry to the Stable ABI manifest, ``Misc/stable_abi.toml``"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:264
+#: ../../developer-workflow/c-api.rst:399
 msgid ""
 "Regenerate the autogenerated files using ``make regen-limited-abi``. On "
 "platforms without ``make``, run this command directly:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:271
+#: ../../developer-workflow/c-api.rst:406
 msgid ""
 "Build Python and check the using ``make check-limited-abi``. On platforms "
 "without ``make``, run this command directly:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:278
+#: ../../developer-workflow/c-api.rst:413
 msgid "Add tests -- see below."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:282
-msgid "Limited API Tests"
+#: ../../developer-workflow/c-api.rst:417
+msgid "Limited API tests"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:284
+#: ../../developer-workflow/c-api.rst:419
 msgid ""
 "Since Limited API is a subset of the C API, there's no need to test the "
 "behavior of individual functions. Rather, the tests could verify that some "
@@ -508,38 +759,38 @@ msgid ""
 "older Limited API/Stable ABI versions."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:290
+#: ../../developer-workflow/c-api.rst:425
 msgid "To add a test file:"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:292
+#: ../../developer-workflow/c-api.rst:427
 msgid ""
 "Add a C file ``Modules/_testcapi/yourfeature_limited.c``. If that file "
 "already exists but its ``Py_LIMITED_API`` version is too low, add a version "
 "postfix, e.g. ``yourfeature_limited_3_12.c`` for Python 3.12+."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:295
+#: ../../developer-workflow/c-api.rst:430
 msgid "``#define Py_LIMITED_API`` to the minimum limited API version needed."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:296
+#: ../../developer-workflow/c-api.rst:431
 msgid "``#include \"parts.h\"`` after the ``Py_LIMITED_API`` definition"
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:297
+#: ../../developer-workflow/c-api.rst:432
 msgid ""
 "Enclose the entire rest of the file in ``#ifdef LIMITED_API_AVAILABLE``, so "
 "it's skipped on incompatible builds."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:299
+#: ../../developer-workflow/c-api.rst:434
 msgid ""
 "Follow the general instructions for `C API tests`_. All additions go in the "
 "sections guarded by ``#ifdef LIMITED_API_AVAILABLE``."
 msgstr ""
 
-#: ../../developer-workflow/c-api.rst:302
+#: ../../developer-workflow/c-api.rst:437
 msgid ""
 "Use the ``test.support.requires_limited_api`` decorator for Python tests in "
 "``Lib/test``, so they're skipped on incompatible builds."

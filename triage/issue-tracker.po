@@ -8,21 +8,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../triage/issue-tracker.rst:6
-msgid "Issue Tracker"
+msgid "Issue tracker"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:10
-msgid "Using the Issue Tracker"
+msgid "Using the issue tracker"
 msgstr ""
 
 #: ../../triage/issue-tracker.rst:12
@@ -40,14 +40,14 @@ msgstr ""
 
 #: ../../triage/issue-tracker.rst:20
 msgid ""
-"Python used to use a dedicated `Roundup`_ instance as its issue tracker. "
-"That old bug tracker was hosted under the domain ``bugs.python.org`` "
-"(sometimes called ``bpo`` for short). Currently a read-only version is still "
-"available on that domain for historical purposes. All ``bpo`` data has been "
-"migrated to the current `issue tracker`_ on GitHub."
+"Prior to moving the issue tracker to GitHub, Python used to use a dedicated "
+"`Roundup`_ instance as its issue tracker. That `old bug tracker`_ was hosted "
+"under the domain ``bugs.python.org`` (sometimes called ``bpo`` for short). A "
+"read-only version is available on that domain for historical purposes. All "
+"``bpo`` data has been migrated to the current `issue tracker`_ on GitHub."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:26
+#: ../../triage/issue-tracker.rst:27
 msgid ""
 "If you're familiar with ``bpo`` and would like to learn more about GitHub "
 "issues, please read this page, and the :ref:`triaging` page as they provide "
@@ -55,38 +55,38 @@ msgid ""
 "some of the more popular questions."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:32
+#: ../../triage/issue-tracker.rst:33
 msgid "Checking if a bug already exists"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:34
+#: ../../triage/issue-tracker.rst:35
 msgid ""
 "The first step before filing an issue report is to see whether the problem "
 "has already been reported.  Checking if the problem is an existing issue "
 "will:"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:37
+#: ../../triage/issue-tracker.rst:38
 msgid ""
 "help you see if the problem has already been resolved or has been fixed for "
 "the next release"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:39
+#: ../../triage/issue-tracker.rst:40
 msgid "save time for you and the developers"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:40
+#: ../../triage/issue-tracker.rst:41
 msgid "help you learn what needs to be done to fix it"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:41
+#: ../../triage/issue-tracker.rst:42
 msgid ""
 "determine if additional information, such as how to replicate the issue, is "
 "needed"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:44
+#: ../../triage/issue-tracker.rst:45
 msgid ""
 "To see if an issue already exists, search the bug database using the search "
 "box above the list of bugs on the issues page. A form-based `advanced "
@@ -94,11 +94,11 @@ msgid ""
 "query you need."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:49
+#: ../../triage/issue-tracker.rst:50
 msgid "Reporting an issue"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:51
+#: ../../triage/issue-tracker.rst:52
 msgid ""
 "If the problem you're reporting is not already in the `issue tracker`_, you "
 "can report it using the green \"New issue\" button on the right of the "
@@ -106,47 +106,47 @@ msgid ""
 "GitHub, it will ask you to do so now."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:56
+#: ../../triage/issue-tracker.rst:57
 msgid ""
 "First you need to select what kind of problem you want to report. The "
 "available choices are:"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:59
+#: ../../triage/issue-tracker.rst:60
 msgid "**Bug report**: an existing feature isn't working as expected;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:60
+#: ../../triage/issue-tracker.rst:61
 msgid ""
 "**Documentation**: there is missing, invalid, or misleading documentation;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:61
+#: ../../triage/issue-tracker.rst:62
 msgid "**Enhancement**: suggest a new feature for Python;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:62
+#: ../../triage/issue-tracker.rst:63
 msgid "**Performance**: something should work faster;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:63
+#: ../../triage/issue-tracker.rst:64
 msgid ""
 "**Security**: there is a specific kind of weakness open to exploitation "
 "through the points of vulnerability;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:65
+#: ../../triage/issue-tracker.rst:66
 msgid "**Tests**: something is wrong with CPython's suite of regression tests;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:66
+#: ../../triage/issue-tracker.rst:67
 msgid ""
 "**Discuss**: you'd like to learn more about Python, discuss ideas for "
 "possible changes to future Python versions, track core development "
 "discussions, or join a specific special-interest group."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:70
+#: ../../triage/issue-tracker.rst:71
 msgid ""
 "Depending on your choice, a dedicated form template will appear. In "
 "particular, you'll notice that the last button actually takes you to the "
@@ -154,17 +154,17 @@ msgid ""
 "discussions take place."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:75
+#: ../../triage/issue-tracker.rst:76
 msgid "The submission form has only two fields that you need to fill:"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:77
+#: ../../triage/issue-tracker.rst:78
 msgid ""
 "in the **Title** field, enter a *very* short description of the problem; "
 "less than ten words is good;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:79
+#: ../../triage/issue-tracker.rst:80
 msgid ""
 "in the **Write** field, describe the problem in detail using hints from the "
 "template that was put in that field for you. Be sure to include what you "
@@ -174,14 +174,14 @@ msgid ""
 "as appropriate). In particular, *what version of Python* you were using."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:87
+#: ../../triage/issue-tracker.rst:88
 msgid ""
 "You can tag someone, with :samp:`@{username}` in a comment, if you think the "
 "issue should be brought to their attention. Use the :ref:`experts` to know "
 "who wants to be tagged or assigned for specific areas."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:92
+#: ../../triage/issue-tracker.rst:93
 msgid ""
 "There are a number of additional fields like **Assignees**, **Labels**, and "
 "**Projects**. Those are filled by triagers and core developers and are "
@@ -189,36 +189,36 @@ msgid ""
 "when reporting issues as a Python user."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:98
+#: ../../triage/issue-tracker.rst:99
 msgid "Adding special links"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:100
+#: ../../triage/issue-tracker.rst:101
 msgid ""
 "The following abbreviations can be used in a comment to generate a link:"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:102
+#: ../../triage/issue-tracker.rst:103
 msgid ":samp:`GH-{NNN}`: to link to another issue or PR;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:103
+#: ../../triage/issue-tracker.rst:104
 msgid ":samp:`PEP-{NNN}`: to link to a specific PEP;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:104
+#: ../../triage/issue-tracker.rst:105
 msgid ":samp:`BPO-{NNN}`: to link to a bugs.python.org issue;"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:106
+#: ../../triage/issue-tracker.rst:107
 msgid "See also the `list of autolinks supported by GitHub <autolinks_>`_."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:109
+#: ../../triage/issue-tracker.rst:110
 msgid "Following issues"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:111
+#: ../../triage/issue-tracker.rst:112
 msgid ""
 "If you want to subscribe yourself to an issue, click the :guilabel:`🔔 "
 "Subscribe` button in the sidebar.  Similarly, if you were tagged by somebody "
@@ -227,41 +227,41 @@ msgid ""
 "subscribed to issues you created."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:118
+#: ../../triage/issue-tracker.rst:119
 msgid "Tracking dependencies and duplicates"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:120
+#: ../../triage/issue-tracker.rst:121
 msgid ""
 "It is possible to use `checklists`_ to track dependencies or, in case of "
 "meta-issues, to link to the other related issues."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:123
+#: ../../triage/issue-tracker.rst:124
 msgid ""
 "By writing :samp:`Duplicate of #{NNN}` in a comment, you can `mark issues "
 "and PRs as duplicates <duplicates_>`_."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:128
-msgid "Disagreement With a Resolution on the Issue Tracker"
+#: ../../triage/issue-tracker.rst:129
+msgid "Disagreement with a resolution on the issue tracker"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:130
+#: ../../triage/issue-tracker.rst:131
 msgid ""
 "As humans, we will have differences of opinions from time to time. First and "
 "foremost, please be respectful that care, thought, and volunteer time went "
 "into the resolution."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:134
+#: ../../triage/issue-tracker.rst:135
 msgid ""
 "With this in mind, take some time to consider any comments made in "
 "association with the resolution of the issue. On reflection, the resolution "
 "steps may seem more reasonable than you initially thought."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:138
+#: ../../triage/issue-tracker.rst:139
 msgid ""
 "If you still feel the resolution is incorrect, then raise a thoughtful "
 "question on the `Core Development Discourse category`_. Further argument and "
@@ -269,17 +269,17 @@ msgid ""
 "developers is unlikely to win any converts."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:144
+#: ../../triage/issue-tracker.rst:145
 msgid ""
 "As a reminder, issues closed by a core developer have already been carefully "
 "considered. Please do not reopen a closed issue. An issue can be closed with "
 "reason either as ``complete`` or ``not planned``."
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:150
+#: ../../triage/issue-tracker.rst:151
 msgid "`The Python issue tracker <issue tracker_>`_"
 msgstr ""
 
-#: ../../triage/issue-tracker.rst:151
+#: ../../triage/issue-tracker.rst:152
 msgid "Where to report issues about Python."
 msgstr ""

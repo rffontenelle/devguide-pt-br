@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 22:51-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../core-developers/responsibilities.rst:5
 msgid "Responsibilities"
@@ -79,7 +79,7 @@ msgid ""
 msgstr ""
 
 #: ../../core-developers/responsibilities.rst:48
-msgid "Communication Channels and Bug Notifications"
+msgid "Communication channels and bug notifications"
 msgstr ""
 
 #: ../../core-developers/responsibilities.rst:50
@@ -99,7 +99,7 @@ msgid ""
 msgstr ""
 
 #: ../../core-developers/responsibilities.rst:63
-msgid "Sign a Contributor Agreement"
+msgid "Sign a contributor agreement"
 msgstr ""
 
 #: ../../core-developers/responsibilities.rst:65
@@ -120,7 +120,7 @@ msgid ""
 msgstr ""
 
 #: ../../core-developers/responsibilities.rst:81
-msgid "Pull Request merging"
+msgid "Pull request merging"
 msgstr ""
 
 #: ../../core-developers/responsibilities.rst:83

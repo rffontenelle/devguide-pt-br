@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: 2022-12-12 15:28-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
@@ -18,14 +18,16 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../core-developers/become-core-developer.rst:6
-msgid "How to Become a Core Developer"
+#, fuzzy
+msgid "How to become a core developer"
 msgstr "Como se tornar um desenvolvedor core"
 
 #: ../../core-developers/become-core-developer.rst:9
-msgid "What it Takes"
+#, fuzzy
+msgid "What it takes"
 msgstr "O que é preciso"
 
 #: ../../core-developers/become-core-developer.rst:11
@@ -61,7 +63,8 @@ msgstr ""
 "descrito em :pep:`13`."
 
 #: ../../core-developers/become-core-developer.rst:26
-msgid "Gaining Commit Privileges"
+#, fuzzy
+msgid "Gaining commit privileges"
 msgstr "Ganhando privilégios de fazer commit"
 
 #: ../../core-developers/become-core-developer.rst:28
@@ -74,21 +77,22 @@ msgstr ""
 #, fuzzy
 msgid ""
 "A core developer (submitter, usually the mentor) starts a poll in the "
-"`Committers category`_ on the `Python Discourse`_ and cross-posts it to the "
-"`python-committers mailing list`_."
+"`Committers category`_ on the `Python Discourse`_."
 msgstr ""
 "Um desenvolvedor core inicia uma votação na `categoria Committers`_ no "
 "`Python Discourse`_ (``discuss.python.org``)"
 
-#: ../../core-developers/become-core-developer.rst:35
-msgid "Open for 7 days"
+#: ../../core-developers/become-core-developer.rst:34
+#, fuzzy
+msgid "open for 7 days"
 msgstr "Aberta por 7 dias"
 
-#: ../../core-developers/become-core-developer.rst:36
-msgid "Results shown upon close"
+#: ../../core-developers/become-core-developer.rst:35
+#, fuzzy
+msgid "results shown upon close"
 msgstr "Resultados mostrados ao fechar"
 
-#: ../../core-developers/become-core-developer.rst:38
+#: ../../core-developers/become-core-developer.rst:37
 msgid ""
 "If the candidate receives at least two-thirds positive votes when the poll "
 "closes (as per :pep:`13`), the submitter `emails the steering council "
@@ -96,7 +100,7 @@ msgid ""
 "requesting that the council either accept or reject the proposed membership."
 msgstr ""
 
-#: ../../core-developers/become-core-developer.rst:43
+#: ../../core-developers/become-core-developer.rst:42
 #, fuzzy
 msgid ""
 "Assuming the steering council does not object, a member of the council or "
@@ -105,33 +109,24 @@ msgstr ""
 "Supondo que o conselho diretor não se oponha, um membro do conselho enviará "
 "um e-mail a você solicitando:"
 
-#: ../../core-developers/become-core-developer.rst:46
+#: ../../core-developers/become-core-developer.rst:45
 #, fuzzy
 msgid ""
 "A request for account details as required by `🔒 python/voters <https://"
-"github.com/python/voters>`_"
+"github.com/python/voters>`_."
 msgstr ""
 "Detalhes da conta conforme exigido por 🔒 https://github.com/python/voters/"
 
-#: ../../core-developers/become-core-developer.rst:48
-#, fuzzy
-msgid ""
-"A request for the committer's preferred address for subscription to the "
-"`python-committers mailing list`_"
-msgstr ""
-"Seu endereço de e-mail preferido para se inscrever na lista de discussão "
-"python-committers com"
-
-#: ../../core-developers/become-core-developer.rst:50
+#: ../../core-developers/become-core-developer.rst:47
 #, fuzzy
 msgid ""
 "A reminder about the `Code of Conduct`_ and guidance on reporting issues to "
-"the PSF Conduct WG"
+"the PSF Conduct WG."
 msgstr ""
 "Um lembrete sobre o `Código de Conduta`_ e para relatar problemas ao PSF "
 "Conduct WG (em português, grupo de trabalho de conduta da PSF)"
 
-#: ../../core-developers/become-core-developer.rst:53
+#: ../../core-developers/become-core-developer.rst:50
 #, fuzzy
 msgid ""
 "Once the candidate has provided the pertinent details, the approver will:"
@@ -139,28 +134,33 @@ msgstr ""
 "Depois de fornecer os detalhes pertinentes, seus vários novos privilégios "
 "serão ativados"
 
-#: ../../core-developers/become-core-developer.rst:55
-msgid "enable the various new privileges;"
+#: ../../core-developers/become-core-developer.rst:52
+msgid "Enable the various new privileges."
 msgstr ""
 
-#: ../../core-developers/become-core-developer.rst:56
+#: ../../core-developers/become-core-developer.rst:53
+msgid "Remove the new committer from the triage team, if applicable."
+msgstr ""
+
+#: ../../core-developers/become-core-developer.rst:54
 #, fuzzy
 msgid ""
-"add the new committer's details to `🔒 python/voters <https://github.com/"
-"python/voters>`_;"
+"Add their details to `🔒 python/voters <https://github.com/python/voters>`_."
 msgstr "Seus detalhes serão adicionados a 🔒 https://github.com/python/voters/"
 
-#: ../../core-developers/become-core-developer.rst:58
+#: ../../core-developers/become-core-developer.rst:55
 #, fuzzy
 msgid ""
-"update the devguide to publicly list the new committer's team membership at :"
-"ref:`developers`;"
+"Update the devguide to publicly list their team membership at :ref:"
+"`developers`."
 msgstr ""
 "Eles atualizarão o guia de desenvolvimento para listar publicamente os "
 "membros de sua equipe em :ref:`developers`"
 
-#: ../../core-developers/become-core-developer.rst:60
-msgid "send an announcement email to the Committers Discourse category."
+#: ../../core-developers/become-core-developer.rst:57
+msgid ""
+"Send an announcement email to the `Committers Discourse category <https://"
+"discuss.python.org/c/committers/5>`_."
 msgstr ""
 
 #~ msgid "The steps to gaining commit privileges are:"
@@ -191,3 +191,10 @@ msgstr ""
 #~ msgstr ""
 #~ "Um e-mail de anúncio do membro do conselho diretor que está lidando com "
 #~ "sua nova associação será enviado para a categoria Comitters do Discourse"
+
+#~ msgid ""
+#~ "A request for the committer's preferred address for subscription to the "
+#~ "`python-committers mailing list`_"
+#~ msgstr ""
+#~ "Seu endereço de e-mail preferido para se inscrever na lista de discussão "
+#~ "python-committers com"

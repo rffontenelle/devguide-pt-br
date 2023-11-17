@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../triage/triaging.rst:5
-msgid "Triaging an Issue"
+msgid "Triaging an issue"
 msgstr ""
 
 #: ../../triage/triaging.rst:7
@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 
 #: ../../triage/triaging.rst:12
-msgid "Checklist for Triaging"
+msgid "Checklist for triaging"
 msgstr ""
 
 #: ../../triage/triaging.rst:14
@@ -66,7 +66,7 @@ msgstr ""
 #: ../../triage/triaging.rst:24
 msgid ""
 "If the issue is clearly invalid (unrelated to CPython, duplicate, spam, "
-"etc), you can close it as \"not planned\"."
+"etc), you can use GitHub's \"Close as not planned\" option."
 msgstr ""
 
 #: ../../triage/triaging.rst:28
@@ -94,7 +94,7 @@ msgid ""
 msgstr ""
 
 #: ../../triage/triaging.rst:48
-msgid "Helping Triage Issues"
+msgid "Helping triage issues"
 msgstr ""
 
 #: ../../triage/triaging.rst:50
@@ -113,7 +113,7 @@ msgid ""
 msgstr ""
 
 #: ../../triage/triaging.rst:60
-msgid "Classifying Reports"
+msgid "Classifying reports"
 msgstr ""
 
 #: ../../triage/triaging.rst:62
@@ -166,7 +166,7 @@ msgid ""
 msgstr ""
 
 #: ../../triage/triaging.rst:85
-msgid "Reviewing Pull Requests"
+msgid "Reviewing pull requests"
 msgstr ""
 
 #: ../../triage/triaging.rst:87
@@ -216,7 +216,7 @@ msgid "See also :ref:`committing`."
 msgstr ""
 
 #: ../../triage/triaging.rst:105
-msgid "Finding an Issue You Can Help With"
+msgid "Finding an issue you can help with"
 msgstr ""
 
 #: ../../triage/triaging.rst:107

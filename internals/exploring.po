@@ -8,132 +8,125 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-22 12:16-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../internals/exploring.rst:5
-msgid "Exploring the Internals"
+msgid "CPython source code"
 msgstr ""
 
 #: ../../internals/exploring.rst:7
 msgid ""
-"This is a quick guide for people who are interested in learning more about "
-"CPython's internals. It provides a summary of the source code structure and "
-"contains references to resources providing a more in-depth view."
+"This section gives an overview of CPython's code structure and provides a "
+"summary of file locations for modules and built-ins."
 msgstr ""
 
-#: ../../internals/exploring.rst:13
-msgid "CPython Source Code Layout"
+#: ../../internals/exploring.rst:12
+msgid "Source code layout"
 msgstr ""
 
-#: ../../internals/exploring.rst:15
-msgid ""
-"This guide gives an overview of CPython's code structure. It serves as a "
-"summary of file locations for modules and builtins."
+#: ../../internals/exploring.rst:14
+msgid "For a Python :term:`module`, the typical layout is:"
 msgstr ""
 
-#: ../../internals/exploring.rst:18
-msgid "For Python modules, the typical layout is:"
-msgstr ""
-
-#: ../../internals/exploring.rst:20
+#: ../../internals/exploring.rst:16
 msgid ":file:`Lib/{<module>}.py`"
 msgstr ""
 
-#: ../../internals/exploring.rst:21
+#: ../../internals/exploring.rst:17
 msgid ":file:`Modules/_{<module>}.c` (if there's also a C accelerator module)"
 msgstr ""
 
-#: ../../internals/exploring.rst:22 ../../internals/exploring.rst:28
+#: ../../internals/exploring.rst:18 ../../internals/exploring.rst:24
 msgid ":file:`Lib/test/test_{<module>}.py`"
 msgstr ""
 
-#: ../../internals/exploring.rst:23 ../../internals/exploring.rst:29
+#: ../../internals/exploring.rst:19 ../../internals/exploring.rst:25
 msgid ":file:`Doc/library/{<module>}.rst`"
 msgstr ""
 
-#: ../../internals/exploring.rst:25
-msgid "For extension-only modules, the typical layout is:"
+#: ../../internals/exploring.rst:21
+msgid "For an :term:`extension module`, the typical layout is:"
 msgstr ""
 
-#: ../../internals/exploring.rst:27
+#: ../../internals/exploring.rst:23
 msgid ":file:`Modules/{<module>}module.c`"
 msgstr ""
 
-#: ../../internals/exploring.rst:31
-msgid "For builtin types, the typical layout is:"
+#: ../../internals/exploring.rst:27
+msgid "For :ref:`bltin-types`, the typical layout is:"
 msgstr ""
 
-#: ../../internals/exploring.rst:33
+#: ../../internals/exploring.rst:29
 msgid ":file:`Objects/{<builtin>}object.c`"
 msgstr ""
 
-#: ../../internals/exploring.rst:34
+#: ../../internals/exploring.rst:30
 msgid ":file:`Lib/test/test_{<builtin>}.py`"
 msgstr ""
 
-#: ../../internals/exploring.rst:35
+#: ../../internals/exploring.rst:31
 msgid ":cpy-file:`Doc/library/stdtypes.rst`"
 msgstr ""
 
-#: ../../internals/exploring.rst:37
-msgid "For builtin functions, the typical layout is:"
+#: ../../internals/exploring.rst:33
+msgid "For :ref:`built-in-funcs`, the typical layout is:"
 msgstr ""
 
-#: ../../internals/exploring.rst:39
+#: ../../internals/exploring.rst:35
 msgid ":cpy-file:`Python/bltinmodule.c`"
 msgstr ""
 
-#: ../../internals/exploring.rst:40
+#: ../../internals/exploring.rst:36
 msgid ":cpy-file:`Lib/test/test_builtin.py`"
 msgstr ""
 
-#: ../../internals/exploring.rst:41
+#: ../../internals/exploring.rst:37
 msgid ":cpy-file:`Doc/library/functions.rst`"
 msgstr ""
 
+#: ../../internals/exploring.rst:39
+msgid "Some exceptions to these layouts are:"
+msgstr ""
+
+#: ../../internals/exploring.rst:41
+msgid "built-in type ``int`` is at :cpy-file:`Objects/longobject.c`"
+msgstr ""
+
+#: ../../internals/exploring.rst:42
+msgid "built-in type ``str`` is at :cpy-file:`Objects/unicodeobject.c`"
+msgstr ""
+
 #: ../../internals/exploring.rst:43
-msgid "Some exceptions:"
+msgid "built-in module ``sys`` is at :cpy-file:`Python/sysmodule.c`"
+msgstr ""
+
+#: ../../internals/exploring.rst:44
+msgid "built-in module ``marshal`` is at :cpy-file:`Python/marshal.c`"
 msgstr ""
 
 #: ../../internals/exploring.rst:45
-msgid "builtin type ``int`` is at :cpy-file:`Objects/longobject.c`"
-msgstr ""
-
-#: ../../internals/exploring.rst:46
-msgid "builtin type ``str`` is at :cpy-file:`Objects/unicodeobject.c`"
-msgstr ""
-
-#: ../../internals/exploring.rst:47
-msgid "builtin module ``sys`` is at :cpy-file:`Python/sysmodule.c`"
-msgstr ""
-
-#: ../../internals/exploring.rst:48
-msgid "builtin module ``marshal`` is at :cpy-file:`Python/marshal.c`"
-msgstr ""
-
-#: ../../internals/exploring.rst:49
 msgid "Windows-only module ``winreg`` is at :cpy-file:`PC/winreg.c`"
 msgstr ""
 
-#: ../../internals/exploring.rst:53
-msgid "Additional References"
+#: ../../internals/exploring.rst:49
+msgid "Additional references"
+msgstr ""
+
+#: ../../internals/exploring.rst:51
+msgid ""
+"The CPython code base is constantly changing and evolving. Here's a sample "
+"of references about CPython's architecture aimed at building your "
+"understanding of CPython internals and its evolution:"
 msgstr ""
 
 #: ../../internals/exploring.rst:55
-msgid ""
-"For over 20 years the CPython code base has been changing and evolving. "
-"Here's a sample of resources about the architecture of CPython aimed at "
-"building your understanding of both the 2.x and 3.x versions of CPython:"
-msgstr ""
-
-#: ../../internals/exploring.rst:60
 msgid "**Current references**"
 msgstr ""
 
@@ -245,7 +238,7 @@ msgstr ""
 msgid "3.8"
 msgstr "3.8"
 
-#: ../../internals/exploring.rst:71
+#: ../../internals/exploring.rst:66
 msgid "**Historical references**"
 msgstr ""
 

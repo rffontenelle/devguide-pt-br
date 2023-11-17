@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: 2022-12-12 17:35-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
@@ -17,10 +17,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../core-developers/committing.rst:4
-msgid "Accepting Pull Requests"
+#, fuzzy
+msgid "Accepting pull requests"
 msgstr "Aceitando pull requests"
 
 #: ../../core-developers/committing.rst:8
@@ -468,22 +469,24 @@ msgid "Seeing active branches"
 msgstr "Vendo branches ativos"
 
 #: ../../core-developers/committing.rst:191
+#, fuzzy
 msgid ""
 "If you use ``git branch``, then you will see a :ref:`list of branches "
 "<branchstatus>`. The only branch that receives new features is ``main``, the "
 "in-development branch. The other branches receive only bug fixes or security "
-"fixes."
+"fixes. In almost all cases the fixes should first originate on ``main`` and "
+"then be ported back to older branches."
 msgstr ""
 "Se você usar ``git branch``, então você verá uma :ref:`lista de branches "
 "<branchstatus>`. O único branch que recebe novos recursos é ``main``, o "
 "branch em desenvolvimento. Os outros branches recebem apenas correções de "
 "bugs ou correções de segurança."
 
-#: ../../core-developers/committing.rst:200
+#: ../../core-developers/committing.rst:201
 msgid "Backporting changes to an older version"
 msgstr "Fazendo backport de alterações para uma versão mais antiga"
 
-#: ../../core-developers/committing.rst:202
+#: ../../core-developers/committing.rst:203
 msgid ""
 "If it is determined that a pull request needs to be backported into one or "
 "more of the maintenance branches, then a core developer can apply the label "
@@ -493,7 +496,7 @@ msgstr ""
 "dos branches de manutenção, então um desenvolvedor principal pode aplicar o "
 "rótulo ``needs backport to X.Y`` à pull request."
 
-#: ../../core-developers/committing.rst:206
+#: ../../core-developers/committing.rst:207
 msgid ""
 "After the pull request has been merged, miss-islington (bot) will first try "
 "to do the backport automatically. If miss-islington is unable to do it, then "
@@ -507,7 +510,7 @@ msgstr ""
 "procurar fazer o backport por conta própria, usando o backport gerado por "
 "cherry_picker.py_ como ponto de partida."
 
-#: ../../core-developers/committing.rst:212
+#: ../../core-developers/committing.rst:213
 msgid ""
 "You can get the commit hash from the original pull request, or you can use "
 "``git log`` on the ``main`` branch. To display the 10 most recent commit "
@@ -517,7 +520,7 @@ msgstr ""
 "log`` no branch ``main``. Para exibir os 10 hashes de commit mais recentes e "
 "sua primeira linha do commit, use o seguinte comando::"
 
-#: ../../core-developers/committing.rst:220
+#: ../../core-developers/committing.rst:221
 msgid ""
 "You can prefix the backport pull request with the branch, and reference the "
 "pull request number from ``main``. Here is an example::"
@@ -525,7 +528,7 @@ msgstr ""
 "Você pode prefixar o pull request do backport com o branch, e referenciar o "
 "número do pull request de ``main``. Aqui está um exemplo::"
 
-#: ../../core-developers/committing.rst:225
+#: ../../core-developers/committing.rst:226
 msgid ""
 "Here \"gh-12345\" is the GitHub *issue* number, and \"GH-NNNN\" is the "
 "number of the original *pull request*. Note that cherry_picker.py_ adds the "
@@ -535,7 +538,7 @@ msgstr ""
 "do *pull request* original. Observe que cherry_picker.py_ adiciona o prefixo "
 "do branch automaticamente."
 
-#: ../../core-developers/committing.rst:229
+#: ../../core-developers/committing.rst:230
 msgid ""
 "Once the backport pull request has been created, remove the ``needs backport "
 "to X.Y`` label from the original pull request. (Only core developers and "
@@ -547,11 +550,11 @@ msgstr ""
 "cores e membros da equipe de triagem, a :ref:`Python Triage Team <triage-"
 "team>`, podem aplicar rótulos às pull requests do GitHub)."
 
-#: ../../core-developers/committing.rst:238
+#: ../../core-developers/committing.rst:239
 msgid "Reverting a merged pull request"
 msgstr "Revertendo uma pull request mesclada"
 
-#: ../../core-developers/committing.rst:240
+#: ../../core-developers/committing.rst:241
 msgid ""
 "To revert a merged pull request, press the ``Revert`` button at the bottom "
 "of the pull request. That will bring up the page to create a new pull "
@@ -565,7 +568,7 @@ msgstr ""
 "branch no repositório principal do CPython. Exclua o branch assim que a pull "
 "request for mesclada."
 
-#: ../../core-developers/committing.rst:246
+#: ../../core-developers/committing.rst:247
 msgid ""
 "Always include the reason for reverting the commit to help others understand "
 "why it was done. The reason should be included as part of the commit "

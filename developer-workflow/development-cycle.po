@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 23:29-0300\n"
+"POT-Creation-Date: 2023-11-17 11:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../developer-workflow/development-cycle.rst:5
-msgid "Development Cycle"
+msgid "Development cycle"
 msgstr ""
 
 #: ../../developer-workflow/development-cycle.rst:7
@@ -132,13 +132,22 @@ msgstr ""
 #: ../../developer-workflow/development-cycle.rst:79
 msgid ""
 "The only changes allowed to occur in a maintenance branch without debate are "
-"bug fixes.  Also, a general rule for maintenance branches is that "
-"compatibility must not be broken at any point between sibling micro releases "
-"(3.5.1, 3.5.2, etc.).  For both rules, only rare exceptions are accepted and "
-"**must** be discussed first."
+"bug fixes, test improvements, and edits to the documentation. Also, a "
+"general rule for maintenance branches is that compatibility must not be "
+"broken at any point between sibling micro releases (3.5.1, 3.5.2, etc.).  "
+"For both rules, only rare exceptions are accepted and **must** be discussed "
+"first."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:85
+#: ../../developer-workflow/development-cycle.rst:86
+msgid ""
+"Backporting changes reduces the risk of future conflicts. For documentation, "
+"it increases the visibility of improvements, since most readers access the "
+"`stable documentation <https://docs.python.org/3/>`__ rather than the "
+"`development documentation <https://docs.python.org/dev/>`__."
+msgstr ""
+
+#: ../../developer-workflow/development-cycle.rst:91
 msgid ""
 "A new maintenance branch is normally created when the next feature release "
 "cycle reaches feature freeze, i.e. at its first beta pre-release. From that "
@@ -146,7 +155,7 @@ msgid ""
 "x.0), and subsequent bugfix releases are merged to that maintenance branch."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:91
+#: ../../developer-workflow/development-cycle.rst:97
 msgid ""
 "Sometime following the final release (3.x.0), the maintenance branch for the "
 "previous minor version will go into :ref:`security mode <secbranch>`, "
@@ -156,17 +165,17 @@ msgid ""
 "the release of 3.5.1."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:101
+#: ../../developer-workflow/development-cycle.rst:107
 msgid "Security branches"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:103
+#: ../../developer-workflow/development-cycle.rst:109
 msgid ""
 "A branch less than 5 years old but no longer in bugfix mode is a security "
 "branch."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:106
+#: ../../developer-workflow/development-cycle.rst:112
 msgid ""
 "The only changes made to a security branch are those fixing issues "
 "exploitable by attackers such as crashes, privilege escalation and, "
@@ -177,7 +186,7 @@ msgid ""
 "successfully before releasing."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:113
+#: ../../developer-workflow/development-cycle.rst:119
 msgid ""
 "Commits to security branches are to be coordinated with the release manager "
 "for the corresponding feature version, as listed in the :ref:`branchstatus`. "
@@ -188,11 +197,11 @@ msgid ""
 "release."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:123
+#: ../../developer-workflow/development-cycle.rst:129
 msgid "End-of-life branches"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:125
+#: ../../developer-workflow/development-cycle.rst:131
 msgid ""
 "The code base for a release cycle which has reached end-of-life status is "
 "frozen and no longer has a branch in the repo.  The final state of the end-"
@@ -200,33 +209,33 @@ msgid ""
 "branch, e.g. ``3.3`` or ``2.6``."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:130
+#: ../../developer-workflow/development-cycle.rst:136
 msgid ""
 "The :ref:`versions` page contains list of active and end-of-life branches."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:132
+#: ../../developer-workflow/development-cycle.rst:138
 msgid ""
 "The latest release for each Python version can be found on the `download "
 "page <https://www.python.org/downloads/>`_."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:138
+#: ../../developer-workflow/development-cycle.rst:144
 msgid "Stages"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:140
+#: ../../developer-workflow/development-cycle.rst:146
 msgid ""
 "Based on what stage the :ref:`in-development <indevbranch>` version of "
 "Python is in, the responsibilities of a core developer change in regards to "
 "commits to the :abbr:`VCS (version control system)`."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:146
+#: ../../developer-workflow/development-cycle.rst:152
 msgid "Pre-alpha"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:148
+#: ../../developer-workflow/development-cycle.rst:154
 msgid ""
 "The branch is in this stage when no official release has been done since the "
 "latest final release.  There are no special restrictions placed on commits, "
@@ -234,11 +243,11 @@ msgid ""
 "breaking the buildbots)."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:156
+#: ../../developer-workflow/development-cycle.rst:162
 msgid "Alpha"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:158
+#: ../../developer-workflow/development-cycle.rst:164
 msgid ""
 "Alpha releases typically serve as a reminder to core developers that they "
 "need to start getting in changes that change semantics or add something to "
@@ -246,11 +255,11 @@ msgid ""
 "restrictions are in place while in alpha."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:166
+#: ../../developer-workflow/development-cycle.rst:172
 msgid "Beta"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:168
+#: ../../developer-workflow/development-cycle.rst:174
 msgid ""
 "After a first beta release is published, no new features are accepted.  Only "
 "bug fixes and improvements to documentation and tests can now be committed. "
@@ -259,23 +268,23 @@ msgid ""
 "alpha and beta releases."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:174
+#: ../../developer-workflow/development-cycle.rst:180
 msgid ""
 "Being in beta can be viewed much like being in RC_ but without the extra "
 "overhead of needing commit reviews."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:177
+#: ../../developer-workflow/development-cycle.rst:183
 msgid ""
 "Please see the note in the `In-development (main) branch`_ section above for "
 "new information about the creation of the 3.5 maintenance branch during beta."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:184
+#: ../../developer-workflow/development-cycle.rst:190
 msgid "Release Candidate (RC)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:186
+#: ../../developer-workflow/development-cycle.rst:192
 msgid ""
 "A branch preparing for an RC release can only have bugfixes applied that "
 "have been reviewed by other core developers.  Generally, these issues must "
@@ -284,46 +293,46 @@ msgid ""
 "since stability is the strongest concern at this point."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:192
+#: ../../developer-workflow/development-cycle.rst:198
 msgid ""
 "While the goal is to have no code changes between a RC and a final release, "
 "there may be a need for final documentation or test fixes. Any such proposed "
 "changes should be discussed first with the release manager."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:196
+#: ../../developer-workflow/development-cycle.rst:202
 msgid ""
 "You **cannot** skip the peer review during an RC, no matter how small! Even "
 "if it is a simple copy-and-paste change, **everything** requires peer review "
 "from a core developer."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:203
+#: ../../developer-workflow/development-cycle.rst:209
 msgid "Final"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:205
+#: ../../developer-workflow/development-cycle.rst:211
 msgid ""
 "When a final release is being cut, only the release manager (RM) can make "
 "changes to the branch.  After the final release is published, the full :ref:"
 "`development cycle <stages>` starts again for the next minor version."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:211
-msgid "Repository Administration"
+#: ../../developer-workflow/development-cycle.rst:217
+msgid "Repository administration"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:213
+#: ../../developer-workflow/development-cycle.rst:219
 msgid ""
 "The source code is currently hosted on `GitHub <https://github.com/python/"
 "cpython>`_ in the `Python organization <https://github.com/python/>`_."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:217
-msgid "Organization Repository Policy"
+#: ../../developer-workflow/development-cycle.rst:223
+msgid "Organization repository policy"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:219
+#: ../../developer-workflow/development-cycle.rst:225
 msgid ""
 "Within the `GitHub Python organization <https://github.com/python/>`_, "
 "repositories are expected to relate to the Python language, the CPython "
@@ -331,20 +340,20 @@ msgid ""
 "workflow. This includes, for example:"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:224
+#: ../../developer-workflow/development-cycle.rst:230
 msgid ""
 "The reference implementation of Python and related repositories (i.e. "
 "`CPython <https://github.com/python/cpython>`_)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:225
+#: ../../developer-workflow/development-cycle.rst:231
 msgid ""
 "Tooling and support around CPython development (e.g. `pyperformance <https://"
 "github.com/python/pyperformance>`_, `Bedevere <https://github.com/python/"
 "bedevere>`_)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:226
+#: ../../developer-workflow/development-cycle.rst:232
 msgid ""
 "Helpers and backports for Python/CPython features (e.g. `typing_extensions "
 "<https://github.com/python/typing_extensions>`_, `typeshed <https://github."
@@ -352,35 +361,35 @@ msgid ""
 "`pythoncapi-compat <https://github.com/python/pythoncapi-compat>`_)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:227
+#: ../../developer-workflow/development-cycle.rst:233
 msgid ""
 "Organization-related repositories (e.g. the `Code of Conduct <https://github."
 "com/python/pycon-code-of-conduct>`_, `.github <https://github.com/python/."
 "github>`_)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:228
+#: ../../developer-workflow/development-cycle.rst:234
 msgid ""
 "Documentation and websites for all the above (e.g. `python.org repository "
 "<https://github.com/python/pythondotorg>`_, `PEPs <https://github.com/python/"
 "peps>`_, `Devguide <https://github.com/python/devguide>`_, docs translations)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:229
+#: ../../developer-workflow/development-cycle.rst:235
 msgid ""
 "Infrastructure for all the above (e.g. `docsbuild-scripts <https://github."
 "com/python/docsbuild-scripts>`_, `buildmaster-config <https://github.com/"
 "python/buildmaster-config>`_)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:230
+#: ../../developer-workflow/development-cycle.rst:236
 msgid ""
 "Discussions and notes around official development-related processes and "
 "events (e.g. `steering-council <https://github.com/python/steering-"
 "council>`_, `core-sprint <https://github.com/python/core-sprint>`_)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:232
+#: ../../developer-workflow/development-cycle.rst:238
 msgid ""
 "Before adding a new repository to the organization, open a discussion to "
 "seek consensus in the `Committers Discourse category <https://discuss.python."
@@ -389,13 +398,13 @@ msgid ""
 "permission."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:237
+#: ../../developer-workflow/development-cycle.rst:243
 msgid ""
 "Note that several repositories remain in the organization for historic "
 "reasons, and would probably not be appropriate to add today."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:240
+#: ../../developer-workflow/development-cycle.rst:246
 msgid ""
 "Generally, new repositories should start their life under personal GitHub "
 "accounts or other GitHub orgs. It is relatively easy to move a repository to "
@@ -406,7 +415,7 @@ msgid ""
 "github.com/python/redistributor-guide>`_)."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:248
+#: ../../developer-workflow/development-cycle.rst:254
 msgid ""
 "General-use tools and libraries (e.g. `mypy <https://github.com/python/"
 "mypy>`_ or `Black <https://github.com/psf/black>`_) should also be developed "
@@ -417,11 +426,11 @@ msgid ""
 "compat>`_)."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:258
-msgid "Organization Owner Policy"
+#: ../../developer-workflow/development-cycle.rst:264
+msgid "Organization owner policy"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:260
+#: ../../developer-workflow/development-cycle.rst:266
 msgid ""
 "The GitHub Organization Owner role allows for full management of all aspects "
 "of the Python organization. Allowing for visibility and management of all "
@@ -434,7 +443,7 @@ msgid ""
 "Python Language, Community, and Infrastructure."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:270
+#: ../../developer-workflow/development-cycle.rst:276
 msgid ""
 "The Executive Director of the Python Software Foundation delegates authority "
 "on GitHub Organization Owner Status to Ee Durbin - Python Software "
@@ -443,108 +452,108 @@ msgid ""
 "and Python Software Foundation Staff as fallback."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:276
-#: ../../developer-workflow/development-cycle.rst:325
+#: ../../developer-workflow/development-cycle.rst:282
+#: ../../developer-workflow/development-cycle.rst:331
 msgid ""
 "Inactive or unreachable members may be removed with or without notice. "
 "Members who no longer necessitate this level of access will be removed with "
 "notice."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:279
+#: ../../developer-workflow/development-cycle.rst:285
 msgid ""
 "Multi-Factor Authentication must be enabled by the user in order to remain "
 "an Owner of the Python Organization."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:285
-msgid "Current Owners"
+#: ../../developer-workflow/development-cycle.rst:291
+msgid "Current owners"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:288
-#: ../../developer-workflow/development-cycle.rst:335
+#: ../../developer-workflow/development-cycle.rst:294
+#: ../../developer-workflow/development-cycle.rst:341
 msgid "Name"
 msgstr "Nome"
 
-#: ../../developer-workflow/development-cycle.rst:288
-#: ../../developer-workflow/development-cycle.rst:335
+#: ../../developer-workflow/development-cycle.rst:294
+#: ../../developer-workflow/development-cycle.rst:341
 msgid "Role"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:288
-#: ../../developer-workflow/development-cycle.rst:335
+#: ../../developer-workflow/development-cycle.rst:294
+#: ../../developer-workflow/development-cycle.rst:341
 msgid "GitHub Username"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:290
+#: ../../developer-workflow/development-cycle.rst:296
 msgid "Benjamin Peterson"
 msgstr "Benjamin Peterson"
 
-#: ../../developer-workflow/development-cycle.rst:290
-#: ../../developer-workflow/development-cycle.rst:292
-#: ../../developer-workflow/development-cycle.rst:294
+#: ../../developer-workflow/development-cycle.rst:296
+#: ../../developer-workflow/development-cycle.rst:298
+#: ../../developer-workflow/development-cycle.rst:300
 msgid "Infrastructure Staff"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:290
+#: ../../developer-workflow/development-cycle.rst:296
 msgid "benjaminp"
 msgstr "benjaminp"
 
-#: ../../developer-workflow/development-cycle.rst:292
+#: ../../developer-workflow/development-cycle.rst:298
 msgid "Noah Kantrowitz"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:292
+#: ../../developer-workflow/development-cycle.rst:298
 msgid "coderanger"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:294
+#: ../../developer-workflow/development-cycle.rst:300
 msgid "Donald Stufft"
 msgstr "Donald Stufft"
 
-#: ../../developer-workflow/development-cycle.rst:294
+#: ../../developer-workflow/development-cycle.rst:300
 msgid "dstufft"
 msgstr "dstufft"
 
-#: ../../developer-workflow/development-cycle.rst:296
+#: ../../developer-workflow/development-cycle.rst:302
 msgid "Ee Durbin"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:296
+#: ../../developer-workflow/development-cycle.rst:302
 msgid "PSF Director of Infrastructure"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:296
+#: ../../developer-workflow/development-cycle.rst:302
 msgid "ewdurbin"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:298
+#: ../../developer-workflow/development-cycle.rst:304
 msgid "Van Lindberg"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:298
+#: ../../developer-workflow/development-cycle.rst:304
 msgid "PSF General Counsel"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:298
+#: ../../developer-workflow/development-cycle.rst:304
 msgid "VanL"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:300
-#: ../../developer-workflow/development-cycle.rst:340
+#: ../../developer-workflow/development-cycle.rst:306
+#: ../../developer-workflow/development-cycle.rst:346
 msgid "Łukasz Langa"
 msgstr "Łukasz Langa"
 
-#: ../../developer-workflow/development-cycle.rst:300
+#: ../../developer-workflow/development-cycle.rst:306
 msgid "CPython Developer in Residence"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:300
-#: ../../developer-workflow/development-cycle.rst:340
+#: ../../developer-workflow/development-cycle.rst:306
+#: ../../developer-workflow/development-cycle.rst:346
 msgid "ambv"
 msgstr "ambv"
 
-#: ../../developer-workflow/development-cycle.rst:303
+#: ../../developer-workflow/development-cycle.rst:309
 msgid ""
 "Certain actions (blocking spam accounts, inviting new users, adjusting "
 "organization-level settings) can only `be performed`_ by owners of the "
@@ -552,11 +561,11 @@ msgid ""
 "be mentioned to request assistance from an organization owner."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:311
-msgid "Repository Administrator Role Policy"
+#: ../../developer-workflow/development-cycle.rst:317
+msgid "Repository administrator role policy"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:313
+#: ../../developer-workflow/development-cycle.rst:319
 msgid ""
 "The Administrator role on the repository allows for managing all aspects "
 "including collaborators, access control, integrations, webhooks, and branch "
@@ -572,107 +581,107 @@ msgid ""
 "workflow projects."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:328
+#: ../../developer-workflow/development-cycle.rst:334
 msgid ""
 "Multi-Factor Authentication must be enabled by the user in order to remain "
 "an Administrator of the repository."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:332
-msgid "Current Administrators"
+#: ../../developer-workflow/development-cycle.rst:338
+msgid "Current administrators"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:337
+#: ../../developer-workflow/development-cycle.rst:343
 msgid "Pablo Galindo"
 msgstr "Pablo Galindo"
 
-#: ../../developer-workflow/development-cycle.rst:337
+#: ../../developer-workflow/development-cycle.rst:343
 msgid "Python 3.10 and 3.11 Release Manager, Maintainer of buildbot.python.org"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:337
+#: ../../developer-workflow/development-cycle.rst:343
 msgid "pablogsal"
 msgstr "pablogsal"
 
-#: ../../developer-workflow/development-cycle.rst:340
+#: ../../developer-workflow/development-cycle.rst:346
 msgid ""
 "Python 3.8 and 3.9 Release Manager, PSF CPython Developer in Residence "
 "2021-2022"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:343
+#: ../../developer-workflow/development-cycle.rst:349
 msgid "Ned Deily"
 msgstr "Ned Deily"
 
-#: ../../developer-workflow/development-cycle.rst:343
+#: ../../developer-workflow/development-cycle.rst:349
 msgid "Python 3.6 and 3.7 Release Manager"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:343
+#: ../../developer-workflow/development-cycle.rst:349
 msgid "ned-deily"
 msgstr "ned-deily"
 
-#: ../../developer-workflow/development-cycle.rst:345
+#: ../../developer-workflow/development-cycle.rst:351
 msgid "Larry Hastings"
 msgstr "Larry Hastings"
 
-#: ../../developer-workflow/development-cycle.rst:345
+#: ../../developer-workflow/development-cycle.rst:351
 msgid "Retired Release Manager (for Python 3.4 and 3.5)"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:345
+#: ../../developer-workflow/development-cycle.rst:351
 msgid "larryhastings"
 msgstr "larryhastings"
 
-#: ../../developer-workflow/development-cycle.rst:347
+#: ../../developer-workflow/development-cycle.rst:353
 msgid "Berker Peksag"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:347
+#: ../../developer-workflow/development-cycle.rst:353
 msgid "Maintainer of bpo-linkify and cpython-emailer-webhook"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:347
+#: ../../developer-workflow/development-cycle.rst:353
 msgid "berkerpeksag"
 msgstr "berkerpeksag"
 
-#: ../../developer-workflow/development-cycle.rst:349
+#: ../../developer-workflow/development-cycle.rst:355
 msgid "Brett Cannon"
 msgstr "Brett Cannon"
 
-#: ../../developer-workflow/development-cycle.rst:349
+#: ../../developer-workflow/development-cycle.rst:355
 msgid "brettcannon"
 msgstr "brettcannon"
 
-#: ../../developer-workflow/development-cycle.rst:351
+#: ../../developer-workflow/development-cycle.rst:357
 msgid "Ezio Melotti"
 msgstr "Ezio Melotti"
 
-#: ../../developer-workflow/development-cycle.rst:351
+#: ../../developer-workflow/development-cycle.rst:357
 msgid "Maintainer of bugs.python.org GitHub webhook integration"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:351
+#: ../../developer-workflow/development-cycle.rst:357
 msgid "ezio-melotti"
 msgstr "ezio-melotti"
 
-#: ../../developer-workflow/development-cycle.rst:353
+#: ../../developer-workflow/development-cycle.rst:359
 msgid "Mariatta Wijaya"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:353
+#: ../../developer-workflow/development-cycle.rst:359
 msgid "Maintainer of bedevere, blurb_it and miss-islington"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:353
+#: ../../developer-workflow/development-cycle.rst:359
 msgid "Mariatta"
 msgstr "Mariatta"
 
-#: ../../developer-workflow/development-cycle.rst:357
-msgid "Repository Release Manager Role Policy"
+#: ../../developer-workflow/development-cycle.rst:363
+msgid "Repository release manager role policy"
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:359
+#: ../../developer-workflow/development-cycle.rst:365
 msgid ""
 "Release Managers for :ref:`in-development <indevbranch>`, :ref:`maintenance "
 "<maintbranch>`, and :ref:`security mode <secbranch>` Python releases are "
@@ -682,7 +691,7 @@ msgid ""
 "of repository administrators) to merge changes to that branch."
 msgstr ""
 
-#: ../../developer-workflow/development-cycle.rst:366
+#: ../../developer-workflow/development-cycle.rst:372
 msgid ""
 "Multi-Factor Authentication must be enabled by the user in order to retain "
 "access as a Release Manager of the branch."
