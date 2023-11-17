@@ -28,11 +28,12 @@ How to set up the environment
     python3 -mvenv venv
     source venv/bin/activate
 
-3. Clone the repository of the devguide:
+3. Prepare the devguide repository, which is a submodule of this one:
 
 .. code-block:: sh
 
-    git clone https://github.com/python/devguide
+    git submodule init
+    git submodule update
 
 4. (optional) Update pip:
 
@@ -43,7 +44,7 @@ How to set up the environment
 5. Install dependencies:
 
 .. code-block:: sh
-    
+
     pip install -U powrap sphinx-intl -r devguide/requirements.txt
 
 

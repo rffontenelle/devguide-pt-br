@@ -1,0 +1,3 @@
+[submodule "devguide"]
+	path = devguide
+	url = https://github.com/python/devguide
