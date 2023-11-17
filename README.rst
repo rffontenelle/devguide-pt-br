@@ -45,7 +45,7 @@ How to set up the environment
 
 .. code-block:: sh
 
-    pip install -U powrap sphinx-intl -r devguide/requirements.txt
+    pip install -U -r requirements.txt -r devguide/requirements.txt
 
 
 Updating translations
