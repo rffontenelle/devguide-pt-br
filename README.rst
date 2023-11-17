@@ -79,3 +79,17 @@ Then build the documentation:
     sphinx-build -c devguide/ -Dlanguage=pt_BR -Dgettext_compact=0 devguide/ _build
 
 See the directory *_built/* for the HTML documentation.
+
+
+Maintenance
+~~~~~~~~~~~
+
+Pages could have been deleted in the upstream, so translation files might be useless in this repo.
+
+After updating translations, one can list the obsolete files using the following command from the repository root directory:
+
+.. code-block:: sh
+
+    for file in $(ls *.po **/*.po); do [ ! -f "devguide/locales/pt_BR/LC_MESSAGES/$file" ] && echo "$file"; done
+
+If no file is obsolete, no output is emitted.
