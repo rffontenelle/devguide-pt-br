@@ -27,7 +27,7 @@ def stats(po_dir: str, output_file: str, begin_text=DEFAULT_TEXT) -> str:
     formatted_text = ''
     try:
         todo_text = subprocess.run(
-            ['potodo', '-p', args.podir], encoding="UTF-8", check=True,
+            ['potodo', '-p', args.podir, '-e', 'devguide/', '-e', 'venv/'], encoding="UTF-8", check=True,
             stdout=subprocess.PIPE).stdout.replace('\n', '\n    ')
         formatted_text = f"{begin_text}{todo_text}"
     except (FileNotFoundError, subprocess.CalledProcessError) as error:
