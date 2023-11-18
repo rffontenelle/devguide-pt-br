@@ -2,25 +2,25 @@
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-17 11:38-0300\n"
-"PO-Revision-Date: 2022-12-09 08:28-0300\n"
+"PO-Revision-Date: 2023-11-18 09:54-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
 "Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
+"X-Generator: Gtranslator 45.2\n"
 
 #: ../../documentation/style-guide.rst:5
-#, fuzzy
 msgid "Style guide"
 msgstr "Guia de estilo"
 
@@ -131,13 +131,12 @@ msgstr ""
 "usar o estilo dominante no novo título da seção."
 
 #: ../../documentation/style-guide.rst:58
-#, fuzzy
 msgid ""
 "Sentences that start with a word for which specific rules require starting "
 "it with a lowercase letter should be avoided."
 msgstr ""
-"Devem ser evitadas as frases que começam com uma palavra cujas regras "
-"específicas exigem que comece com uma letra minúscula."
+"Devem ser evitadas frases que comecem com uma palavra para a qual regras "
+"específicas exijam que seja iniciada com uma letra minúscula."
 
 #: ../../documentation/style-guide.rst:63
 msgid ""
@@ -215,7 +214,6 @@ msgid "reST"
 msgstr "reST"
 
 #: ../../documentation/style-guide.rst:93
-#, fuzzy
 msgid ""
 "For \"reStructuredText,\" an easy to read, plaintext markup syntax used to "
 "produce Python documentation.  When spelled out, it is always one word and "
@@ -249,7 +247,6 @@ msgstr ""
 "anos 1970."
 
 #: ../../documentation/style-guide.rst:106
-#, fuzzy
 msgid "Affirmative tone"
 msgstr "Tome afirmativo"
 
@@ -308,7 +305,6 @@ msgstr ""
 "tempo hábil."
 
 #: ../../documentation/style-guide.rst:131
-#, fuzzy
 msgid "Economy of expression"
 msgstr "Economia de expressão"
 
@@ -335,7 +331,6 @@ msgstr ""
 "usar do que realmente é."
 
 #: ../../documentation/style-guide.rst:142
-#, fuzzy
 msgid "Security considerations (and other concerns)"
 msgstr "Considerações de segurança (e outras preocupações)"
 
@@ -384,7 +379,6 @@ msgstr ""
 "de repetidos para cada afetado interface."
 
 #: ../../documentation/style-guide.rst:163
-#, fuzzy
 msgid "Code examples"
 msgstr "Exemplos de códigos"
 
@@ -427,7 +421,6 @@ msgstr ""
 "colar exemplos para que possam experimentar variações."
 
 #: ../../documentation/style-guide.rst:181
-#, fuzzy
 msgid "Code equivalents"
 msgstr "Equivalentes de código"
 
