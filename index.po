@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-17 11:38-0300\n"
-"PO-Revision-Date: 2023-03-18 09:05-0300\n"
+"PO-Revision-Date: 2023-11-18 10:35-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
 "Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
+"X-Generator: Gtranslator 45.2\n"
 
 #: ../../index.rst:3
 msgid "Python Developer's Guide"
@@ -36,7 +37,6 @@ msgstr ""
 "contribuições ao Python!"
 
 #: ../../index.rst:23
-#, fuzzy
 msgid "Quick reference"
 msgstr "Referência rápida"
 
@@ -69,10 +69,9 @@ msgstr ""
 
 #: ../../index.rst:38
 msgid "Build Python:"
-msgstr ""
+msgstr "Construindo o Python:"
 
 #: ../../index.rst:58
-#, fuzzy
 msgid ""
 "See also :ref:`more detailed instructions <compiling>`, :ref:`how to install "
 "and build dependencies <build-dependencies>`, and the platform-specific "
@@ -81,22 +80,21 @@ msgid ""
 msgstr ""
 "Veja também :ref:`instruções mais detalhadas <compiling>`, :ref:`como "
 "instalar e compilar dependências <build-dependencies>`, e as páginas "
-"específicas da plataforma para :ref:`UNIX <unix-compiling>`, :ref:`macOS` e :"
+"específicas da plataforma para :ref:`Unix <unix-compiling>`, :ref:`macOS` e :"
 "ref:`Windows <windows-compiling>`."
 
 #: ../../index.rst:63
-#, fuzzy
 msgid ":ref:`Run the tests <runtests>`:"
-msgstr ":ref:`Execute os testes <runtests>`::"
+msgstr ":ref:`Execute os testes <runtests>`:"
 
 #: ../../index.rst:77
-#, fuzzy
 msgid ""
 "Note: :ref:`Most <mac-python.exe>` macOS systems use :file:`./python.exe` in "
 "order to avoid filename conflicts with the ``Python`` directory."
 msgstr ""
-"Na :ref:`maioria <mac-python.exe>` dos sistemas macOS, substitua :file:`./"
-"python` por :file:`./python.exe`. No Windows, use :file:`python.bat`."
+"Nota: a :ref:`maioria <mac-python.exe>` dos sistemas macOS usam :file:`./"
+"python.exe` para evitar conflito de nomes de arquivos com o diretório "
+"``Python``."
 
 #: ../../index.rst:87
 msgid "Create a new branch where your work for the issue will go, e.g.::"
@@ -115,15 +113,12 @@ msgstr ""
 "erros de digitação) não exigem que um relatório de problema seja criado."
 
 #: ../../index.rst:95
-#, fuzzy
 msgid "Once you fixed the issue, run the tests, and the patchcheck:"
-msgstr ""
-"Depois de corrigir o problema, execute os testes, execute ``make "
-"patchcheck`` e, se tudo estiver ok, faça o commit."
+msgstr "Assim que você corrigir o problema, execute os testes e patchcheck:"
 
 #: ../../index.rst:115
 msgid "If everything is ok, commit."
-msgstr ""
+msgstr "Se tudo estiver bem, faça o commit."
 
 #: ../../index.rst:117
 msgid ""
@@ -136,7 +131,6 @@ msgstr ""
 "na descrição do pull request. Por exemplo::"
 
 #: ../../index.rst:123
-#, fuzzy
 msgid ""
 "Add a News entry into the ``Misc/NEWS.d`` directory as individual file. The "
 "news entry can be created by using `blurb-it <https://blurb-it.herokuapp.com/"
@@ -145,10 +139,11 @@ msgid ""
 "github.com/python/core-workflow/tree/main/blurb>`_."
 msgstr ""
 "Adicione uma entrada News no diretório ``Misc/NEWS.d`` como arquivo "
-"individual. A entrada de notícias pode ser criada usando `blurb-it <https://"
+"individual. A entrada de notícia pode ser criada usando `blurb-it <https://"
 "blurb-it.herokuapp.com/>`_ ou a ferramenta `blurb <https://pypi.org/project/"
 "blurb/>`_ e seu comando ``blurb add``. Por favor, leia mais sobre ``blurb`` "
-"em :ref:`documentação <documenting>`."
+"em seu `repositório <https://github.com/python/core-workflow/tree/main/"
+"blurb>`_."
 
 #: ../../index.rst:131
 msgid ""
@@ -161,7 +156,6 @@ msgstr ""
 "deste guia."
 
 #: ../../index.rst:136
-#, fuzzy
 msgid "Quick links"
 msgstr "Links rápidos"
 
@@ -341,9 +335,8 @@ msgid ":ref:`communication`"
 msgstr ":ref:`communication`"
 
 #: ../../index.rst:175
-#, fuzzy
 msgid ":ref:`devguide`"
-msgstr ":ref:`style-guide`"
+msgstr ":ref:`devguide`"
 
 #: ../../index.rst:175
 msgid ":ref:`gh-faq`"
@@ -412,7 +405,6 @@ msgid ":ref:`langchanges`"
 msgstr ":ref:`langchanges`"
 
 #: ../../index.rst:206
-#, fuzzy
 msgid "Other interpreter implementations"
 msgstr "Outras implementações de interpretador"
 
@@ -493,7 +485,6 @@ msgstr ""
 "de baixo custo."
 
 #: ../../index.rst:234
-#, fuzzy
 msgid "Key resources"
 msgstr "Principais recursos"
 
@@ -526,7 +517,6 @@ msgstr ""
 "zip>`_"
 
 #: ../../index.rst:259
-#, fuzzy
 msgid "Additional resources"
 msgstr "Recursos adicionais"
 
@@ -596,7 +586,6 @@ msgid ":ref:`Search this guide <search>`"
 msgstr ":ref:`Pesquisar neste guia <search>`"
 
 #: ../../index.rst:283
-#, fuzzy
 msgid "Code of conduct"
 msgstr "Código de conduta"
 
@@ -630,7 +619,6 @@ msgid "Moved to :ref:`versions`"
 msgstr "Movido para :ref:`versions`"
 
 #: ../../index.rst:302
-#, fuzzy
 msgid "Full table of contents"
 msgstr "Índice completo"
 
