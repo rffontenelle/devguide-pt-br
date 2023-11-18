@@ -42,9 +42,8 @@ Translation Stats
     - index.po                         0 /   1 (  0.0% translated).
     
     
-    # documentation (33.08% done)
+    # documentation (32.30% done)
     
-    - devguide.po                      8 /  12 ( 66.0% translated), 1 fuzzy.
     - help-documenting.po             18 /  21 ( 85.0% translated), 3 fuzzy.
     - markup.po                        2 / 299 (  0.0% translated), 1 fuzzy.
     - start-documenting.po             1 /  34 (  2.0% translated), 2 fuzzy.
@@ -92,6 +91,6 @@ Translation Stats
     - triaging.po                      0 /  40 (  0.0% translated).
     
     
-    # TOTAL (33.34% done)
+    # TOTAL (33.25% done)
     
     
