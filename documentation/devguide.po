@@ -2,22 +2,23 @@
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-17 11:38-0300\n"
-"PO-Revision-Date: 2022-12-09 08:39-0300\n"
+"PO-Revision-Date: 2023-11-18 09:49-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
 "Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
+"X-Generator: Gtranslator 45.2\n"
 
 #: ../../documentation/devguide.rst:5
 msgid "Helping with the Developer's Guide"
@@ -78,7 +79,7 @@ msgstr ""
 "Para compilar o devguide, algumas dependências adicionais são necessárias "
 "(mais importante, `Sphinx`_), e a maneira padrão de instalar dependências em "
 "projetos Python é criar um virtualenv e, em seguida, instalar dependências "
-"de um arquivo ``requirements.txt`` . Para sua conveniência, tudo isso é "
+"de um arquivo ``requirements.txt``. Para sua conveniência, tudo isso é "
 "*automatizado para você*. Para compilar o devguide em um sistema semelhante "
 "ao Unix, use::"
 
@@ -88,13 +89,15 @@ msgstr "no diretório de checkout. No Windows use:"
 
 #: ../../documentation/devguide.rst:45
 msgid "You will find the generated files in ``_build/html``."
-msgstr ""
+msgstr "Você vai encontrar os arquivos gerados em ``_build/html``."
 
 #: ../../documentation/devguide.rst:47
 msgid ""
 "Replace ``html`` with ``htmlview`` to open the docs in a web browser once "
 "the build completes."
 msgstr ""
+"Substitua ``html`` com ``htmlview`` para abrir a documentação em um "
+"navegador web assim que a compilação concluir."
 
 #: ../../documentation/devguide.rst:49
 msgid ""
@@ -102,17 +105,15 @@ msgid ""
 "server, and automatically reload the page in your browser when you make "
 "changes to reST files (Unix only)."
 msgstr ""
+"Substitua ``html`` com ``htmllive`` para recompilar a documentação, iniciar "
+"um servidor local e automaticamente recarregar a página em seu navegador "
+"quando você fizer alterações aos arquivos reST (Unix apenas)."
 
 #: ../../documentation/devguide.rst:53
-#, fuzzy
 msgid ""
 "Note that ``make check`` runs automatically when you submit a :ref:`pull "
 "request <pullrequest>`.  You may wish to run ``make check`` and ``make "
 "linkcheck`` to make sure that it runs without errors."
 msgstr ""
-"Você encontrará os arquivos gerados em ``_build/html`` ou, se você usar "
-"``make htmlview``, os documentos serão abertos em um navegador assim que a "
-"compilação for concluída. Observe que ``make check`` é executado "
-"automaticamente quando você envia uma :ref:`pull request <pullrequest>`. "
-"Você pode querer executar ``make check`` e ``make linkcheck`` para ter "
-"certeza de que será executado sem erros."
+"Observe que ``make check`` é executado automaticamente quando você envia "
+"uma :ref:`pull request <pullrequest>`."
