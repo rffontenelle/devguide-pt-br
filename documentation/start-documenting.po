@@ -2,23 +2,25 @@
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-17 11:38-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2023-11-18 10:12-0300\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 45.2\n"
 
 #: ../../documentation/start-documenting.rst:6
-#, fuzzy
 msgid "Getting started"
 msgstr "Primeiros passos"
 
@@ -30,6 +32,11 @@ msgid ""
 "custom directives and using a toolset named `Sphinx`_ to post-process the "
 "HTML output."
 msgstr ""
+"A linguagem Python possui um corpo substancial de documentação, grande parte "
+"dela contribuída por vários autores. A marcação usada para a documentação do "
+"Python é `reStructuredText`_, desenvolvida pelo projeto `docutils`_, "
+"alterada por diretivas personalizadas e usando um conjunto de ferramentas "
+"chamado `Sphinx`_ para pós-processar a saída HTML."
 
 #: ../../documentation/start-documenting.rst:15
 msgid ""
@@ -37,6 +44,9 @@ msgid ""
 "written using the :ref:`reStructuredText format <markup>` and contained in "
 "the :ref:`CPython Git repository <setup>`."
 msgstr ""
+"A documentação em formato HTML, PDF ou EPUB é gerada a partir de arquivos de "
+"texto escritos no :ref:`formato reStructuredText <markup>` e contidos no :"
+"ref:`repositório CPython Git <setup>`."
 
 #: ../../documentation/start-documenting.rst:23
 msgid ""
@@ -45,10 +55,15 @@ msgid ""
 "contributions are more than welcome as well.  Send an e-mail to docs@python."
 "org or open an issue on the :ref:`tracker <reporting-bugs>`."
 msgstr ""
+"Se você estiver interessado em contribuir com a documentação do Python, não "
+"há necessidade de escrever reStructuredText se você não quiser; "
+"contribuições em texto simples também são mais que bem-vindas. Envie um e-"
+"mail para docs@python.org ou abra um relatório de problema no :ref:"
+"`rastreador <reporting-bugs>`."
 
 #: ../../documentation/start-documenting.rst:30
 msgid "Introduction"
-msgstr ""
+msgstr "Introdução"
 
 #: ../../documentation/start-documenting.rst:32
 msgid ""
@@ -59,6 +74,12 @@ msgid ""
 "continuing involvement of the user community in providing assistance for "
 "creating and maintaining documentation."
 msgstr ""
+"A documentação do Python há muito é considerada boa para uma linguagem de "
+"programação livre. Há uma série de razões para isso, sendo a mais importante "
+"o compromisso inicial do criador do Python, Guido van Rossum, em fornecer "
+"documentação sobre a linguagem e suas bibliotecas, e o envolvimento contínuo "
+"da comunidade de usuários no fornecimento de assistência para a criação e "
+"manutenção de documentação."
 
 #: ../../documentation/start-documenting.rst:39
 msgid ""
@@ -66,6 +87,9 @@ msgid ""
 "reports to just plain complaining when the documentation could be more "
 "complete or easier to use."
 msgstr ""
+"O envolvimento da comunidade assume muitas formas, desde a criação de "
+"relatórios de bugs até simplesmente reclamar quando a documentação poderia "
+"ser mais completa ou mais fácil de usar."
 
 #: ../../documentation/start-documenting.rst:43
 msgid ""
@@ -76,6 +100,12 @@ msgid ""
 "the Python documentation tools for topics other than Python, and less useful "
 "still for authors not using the tools at all."
 msgstr ""
+"Esta seção é destinada a autores e potenciais autores de documentação para "
+"Python. Mais especificamente, destina-se a pessoas que contribuem para a "
+"documentação padrão e desenvolvem documentos adicionais utilizando as mesmas "
+"ferramentas dos documentos padrão. Este guia será menos útil para autores "
+"que usam as ferramentas de documentação do Python para tópicos diferentes do "
+"Python, e menos útil ainda para autores que não usam as ferramentas."
 
 #: ../../documentation/start-documenting.rst:50
 msgid ""
@@ -88,10 +118,19 @@ msgid ""
 "with the markup for you. Please don't let the material in this section stand "
 "between the documentation and your desire to help out!"
 msgstr ""
+"Se o seu interesse é contribuir para a documentação do Python, mas você não "
+"tem tempo ou disposição para aprender reStructuredText e as estruturas de "
+"marcação documentadas aqui, há um lugar acolhedor para você entre os "
+"contribuidores do Python também. Sempre que você achar que pode esclarecer a "
+"documentação existente ou fornecer a documentação que está faltando, a "
+"equipe de documentação existente terá prazer em trabalhar com você para "
+"integrar seu texto, lidando com a marcação para você. Por favor, não deixe "
+"que o material desta seção se interponha entre a documentação e o seu desejo "
+"de ajudar!"
 
 #: ../../documentation/start-documenting.rst:63
 msgid "Building the documentation"
-msgstr ""
+msgstr "Construindo a documentação"
 
 #: ../../documentation/start-documenting.rst:67
 msgid ""
@@ -99,6 +138,9 @@ msgid ""
 "You can view the documentation after building the HTML by opening the file :"
 "file:`Doc/build/html/index.html` in a web browser."
 msgstr ""
+"Para construir a documentação, siga as etapas em uma das seções abaixo. Você "
+"pode visualizar a documentação após construir o HTML abrindo o arquivo :file:"
+"`Doc/build/html/index.html` em um navegador web."
 
 #: ../../documentation/start-documenting.rst:73
 msgid ""
@@ -106,10 +148,13 @@ msgid ""
 "``Doc`` subdirectory in your :ref:`CPython repository clone <checkout>`. "
 "Make sure to switch to it with ``cd Doc`` if necessary."
 msgstr ""
+"Todas as instruções a seguir assumem que seu diretório de trabalho atual é o "
+"subdiretório Doc em seu :ref:`clone do repositório CPython <checkout>`. "
+"Certifique-se de mudar para ele com ``cd Doc``, se necessário."
 
 #: ../../documentation/start-documenting.rst:81
 msgid "Create a virtual environment"
-msgstr ""
+msgstr "Criar um ambiente virtual"
 
 #: ../../documentation/start-documenting.rst:85
 msgid ""
@@ -117,12 +162,17 @@ msgid ""
 "and BSD), you can create a new :mod:`venv` with the required dependencies "
 "using::"
 msgstr ""
+"**Em plataformas Unix** compatíveis com :program:`make` (incluindo Linux, "
+"macOS e BSD), você pode criar um novo :mod:`venv` com as dependências "
+"necessárias usando::"
 
 #: ../../documentation/start-documenting.rst:91
 msgid ""
 "Building the docs with :program:`make` will automatically use this "
 "environment without you having to activate it."
 msgstr ""
+"Construir os documentos com :program:`make` usará automaticamente este "
+"ambiente sem que você precise ativá-lo."
 
 #: ../../documentation/start-documenting.rst:96
 msgid ""
@@ -130,10 +180,13 @@ msgid ""
 "environment <venv-create_>`__ manually. Always be sure to `activate this "
 "environment <venv-activate_>`__ before building the documentation."
 msgstr ""
+"**No Windows**, ou se não estiver usando :program:`make`, `crie um novo "
+"ambiente virtual <venv-create_>`__ manualmente. Certifique-se sempre de "
+"`ativar este ambiente <venv-activate_>`__ antes de construir a documentação."
 
 #: ../../documentation/start-documenting.rst:107
 msgid "Build using make / make.bat"
-msgstr ""
+msgstr "Construir usando make / make.bat"
 
 #: ../../documentation/start-documenting.rst:109
 msgid ""
@@ -141,6 +194,9 @@ msgid ""
 "file:`Doc/make.bat` batch file for Windows that attempts to emulate it as "
 "closely as practical."
 msgstr ""
+"Um ``Makefile`` de Unix é fornecido, :cpy-file:`Doc/Makefile`, junto com um "
+"arquivo em lote (ou \"batch\") :cpy-file:`Doc/make.bat` para Windows que "
+"tenta emulá-lo o mais próximo possível."
 
 #: ../../documentation/start-documenting.rst:115
 msgid ""
@@ -150,16 +206,23 @@ msgid ""
 "environment you :ref:`created above <doc-create-venv-windows>` is `activated "
 "<venv-activate_>`__ before running ``make.bat``."
 msgstr ""
+"O arquivo em lote ``make.bat`` do Windows não possui um alvo ``make venv``. "
+"Em vez disso, ele instala automaticamente quaisquer dependências ausentes no "
+"ambiente atualmente ativado (ou no Python base, se não houver). Certifique-"
+"se de que o ambiente que você :ref:`criou acima <doc-create-venv-windows>` "
+"esteja `ativado <venv-activate_>`__ antes de executar ``make.bat``."
 
 #: ../../documentation/start-documenting.rst:121
 msgid "To build the docs as HTML, run::"
-msgstr ""
+msgstr "Para construir a documentação como HTML, execute::"
 
 #: ../../documentation/start-documenting.rst:125
 msgid ""
 "Replace ``html`` with ``htmlview`` to open the docs in a web browser once "
 "the build completes."
 msgstr ""
+"Substitua ``html`` com ``htmlview`` para abrir a documentação em um "
+"navegador web assim que a compilação concluir."
 
 #: ../../documentation/start-documenting.rst:127
 msgid ""
@@ -167,30 +230,37 @@ msgid ""
 "server, and automatically reload the page in your browser when you make "
 "changes to reST files (Unix only)."
 msgstr ""
+"Substitua ``html`` com ``htmllive`` para recompilar a documentação, iniciar "
+"um servidor local e automaticamente recarregar a página em seu navegador "
+"quando você fizer alterações aos arquivos reST (Unix apenas)."
 
 #: ../../documentation/start-documenting.rst:131
 msgid ""
 "To check the docs for common errors with `Sphinx Lint`_ (which is run on "
 "all :ref:`pull requests <pullrequest>`), use::"
 msgstr ""
+"Para verificar os documentos em busca de erros comuns com o `Sphinx Lint`_ "
+"(que é executado em todas as :ref:`pull requests <pullrequest>`), use::"
 
 #: ../../documentation/start-documenting.rst:136
 msgid "To list other supported :program:`make` targets, run::"
-msgstr ""
+msgstr "Para listar outros alvos suportados do :program:`make`, execute:"
 
 #: ../../documentation/start-documenting.rst:140
 msgid "See :cpy-file:`Doc/README.rst` for more information."
-msgstr ""
+msgstr "Consulte :cpy-file:`Doc/README.rst` para obter mais informações."
 
 #: ../../documentation/start-documenting.rst:147
 msgid "Build using Sphinx directly"
-msgstr ""
+msgstr "Construa usando o Sphinx diretamente"
 
 #: ../../documentation/start-documenting.rst:149
 msgid ""
 "Advanced users may want to invoke Sphinx directly, to pass specialized "
 "options or to handle specific use cases."
 msgstr ""
+"Usuários avançados podem querer invocar o Sphinx diretamente, para passar "
+"opções especializadas ou para lidar com casos de uso específicos."
 
 #: ../../documentation/start-documenting.rst:152
 msgid ""
@@ -198,25 +268,29 @@ msgid ""
 "is `activated <venv-activate_>`__. Then, install the documentation "
 "requirements, :cpy-file:`Doc/requirements.txt`. Using pip::"
 msgstr ""
+"Certifique-se de que o ambiente que você :ref:`criou acima <doc-create-venv-"
+"windows>` esteja `ativado <venv-activate_>`_. Em seguida, instale os "
+"requisitos d documentação, :cpy-file:`Doc/requirements.txt`. Usando pip::"
 
 #: ../../documentation/start-documenting.rst:159
 msgid "Finally, directly invoke Sphinx with::"
-msgstr ""
+msgstr "Finalmente, invoque diretamente o Sphinx com::"
 
 #: ../../documentation/start-documenting.rst:163
 msgid ""
 "To use a different `Sphinx builder`_, replace ``html`` above with the "
 "desired builder ``name``."
 msgstr ""
+"Para usar um `construtor Sphinx`_ diferente, substitua o html acima pelo "
+"nome (``name``) do construtor desejado."
 
 #: ../../documentation/start-documenting.rst:176
-#, fuzzy
 msgid "Style guide"
 msgstr "Guia de estilo"
 
 #: ../../documentation/start-documenting.rst:178
 msgid "Moved to :doc:`style-guide`."
-msgstr ""
+msgstr "Movido para :doc:`style-guide`."
 
 #: ../../documentation/start-documenting.rst:182
 msgid "Translating"
@@ -224,4 +298,4 @@ msgstr "Tradução"
 
 #: ../../documentation/start-documenting.rst:184
 msgid "Moved to :doc:`translating`."
-msgstr ""
+msgstr "Movido para :doc:`translating`."
