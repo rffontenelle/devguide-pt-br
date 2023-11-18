@@ -10,8 +10,8 @@ build:
   commands:
     - rm -rf ../devguide/
     - git clone https://github.com/python/devguide ../devguide
-    - mkdir -p ../devguide/locales/pt_BR/LC_MESSAGES/
-    - cp -R ./ ../devguide/locales/pt_BR/LC_MESSAGES/
-    - pip install -U pip
-    - pip install -U -r ../devguide/requirements.txt
-    - sphinx-build -c ../devguide/ -Dlanguage=pt_BR -Dgettext_compact=0 ../devguide/ _readthedocs/html
+    - mkdir -p ../devguide/locales/pt_BR/
+    - ln -s ./ ../devguide/locales/pt_BR/LC_MESSAGES
+    - make -C ../devguide/ dirhtml BUILDDIR=_readthedocs SPHINXOPTS="-Dlanguage=pt_BR -Dgettext_compact=0"
+    - mkdir _readthedocs
+    - mv ../devguide/_readthedocs/dirhtml _readthedocs/html
