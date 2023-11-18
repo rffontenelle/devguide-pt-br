@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Check Gettext errors in PO files, and wrap their contents
+pofiles=$(git diff --cached --name-only HEAD ./*.po ./**/*.po)
+if [ -n "$pofiles" ]; then
+    for po in $pofiles; do
+        msgfmt -co /dev/null "$po"
+    done
+    powrap -m -q
+fi
+
+# Lint for reST errors in .po and .rst files
+rest_files=$(git diff --cached --name-only HEAD ./*.rst)
+if [ -n "${rest_files}${pofiles}" ]; then
+    sphinx-lint ${rest_files} ${pofiles}
+fi
