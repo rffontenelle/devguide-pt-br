@@ -11,7 +11,7 @@ build:
     - rm -rf ../devguide/
     - git clone https://github.com/python/devguide ../devguide
     - mkdir -p ../devguide/locales/pt_BR/
-    - ln -s ./ ../devguide/locales/pt_BR/LC_MESSAGES/
+    - ln -s ./ ../devguide/locales/pt_BR/LC_MESSAGES
     - make -C ../devguide/ dirhtml BUILDDIR=_readthedocs SPHINXOPTS="-Dlanguage=pt_BR -Dgettext_compact=0"
     - mkdir _readthedocs
     - mv ../devguide/_readthedocs/dirhtml _readthedocs/html
