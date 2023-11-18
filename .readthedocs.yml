@@ -13,4 +13,4 @@ build:
     - mkdir -p ../devguide/locales/pt_BR/LC_MESSAGES/
     - cp -R ./ ../devguide/locales/pt_BR/LC_MESSAGES/
     - make -C ../devguide/ dirhtml BUILDDIR=_readthedocs SPHINXOPTS="-Dlanguage=pt_BR -Dgettext_compact=0"
-    - mv _readthedocs/dirhtml _readthedocs/html
+    - mv ../devguide/_readthedocs/dirhtml _readthedocs/html
