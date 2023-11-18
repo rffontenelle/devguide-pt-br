@@ -2,22 +2,23 @@
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-17 11:38-0300\n"
-"PO-Revision-Date: 2023-03-18 09:09-0300\n"
+"PO-Revision-Date: 2023-11-17 16:13-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
 "Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
+"X-Generator: Gtranslator 45.2\n"
 
 #: ../../documentation/translating.rst:5
 msgid "Translating"
@@ -128,11 +129,12 @@ msgid "Japanese (ja)"
 msgstr "Japonês (ja)"
 
 #: ../../documentation/translating.rst:38
-#, fuzzy
 msgid ""
 "`Kinebuchi Tomohiko (@cocoatomo) <gh_cocoatomo_>`_, `Atsuo Ishimoto "
 "(@atsuoishimoto) <gh_atsuoishimoto_>`_"
-msgstr "`Kinebuchi Tomohiko (@cocoatomo) <gh_cocoatomo_>`_"
+msgstr ""
+"`Kinebuchi Tomohiko (@cocoatomo) <gh_cocoatomo_>`_, `Atsuo Ishimoto "
+"(@atsuoishimoto) <gh_atsuoishimoto_>`_"
 
 #: ../../documentation/translating.rst:38
 msgid "`GitHub <github_ja_>`_ `Doc <doc_ja_>`_"
@@ -231,9 +233,8 @@ msgid "Simplified Chinese (zh-cn)"
 msgstr "Chinês simplificado (zh-cn)"
 
 #: ../../documentation/translating.rst:70
-#, fuzzy
 msgid "`Shengjing Zhu <gh_zhsj_>`_, `Du, Meng <gh_dumeng_>`_"
-msgstr "`Shengjing Zhu <gh_zhsj_>`_"
+msgstr "`Shengjing Zhu <gh_zhsj_>`_, `Du, Meng <gh_dumeng_>`_"
 
 #: ../../documentation/translating.rst:70
 msgid "`Transifex <tx_zh_cn_>`_ `GitHub <github_zh_cn_>`_ `Doc <doc_zh_cn_>`_"
@@ -272,9 +273,8 @@ msgid "`Ege Akman (@egeakman) <gh_egeakman_>`_"
 msgstr "`Ege Akman (@egeakman) <gh_egeakman_>`_"
 
 #: ../../documentation/translating.rst:80
-#, fuzzy
 msgid "`GitHub <github_tr_>`_ `RTD <rtd_tr_>`_ `Doc <doc_tr_>`_"
-msgstr "`GitHub <github_tr_>`_ `GH-Pages <gh_pages_tr_>`_ `Doc <doc_tr_>`_"
+msgstr "`GitHub <github_tr_>`_ `RTD <rtd_tr_>`_ `Doc <doc_tr_>`_"
 
 #: ../../documentation/translating.rst:84
 msgid "Ukrainian (uk)"
@@ -328,14 +328,13 @@ msgstr ""
 "Reúna pessoas para ajudá-lo a traduzir. Você não pode fazer isso sozinho."
 
 #: ../../documentation/translating.rst:154
-#, fuzzy
 msgid ""
 "You can use any tool to translate, as long as you can synchronize with Git. "
 "Some use Transifex, and some use only GitHub. You can choose another way if "
 "you like; it's up to you."
 msgstr ""
 "Você pode usar qualquer ferramenta para traduzir, desde que possa "
-"sincronizar com o git. Alguns usam Transifex e alguns usam apenas GitHub. "
+"sincronizar com o Git. Alguns usam Transifex e alguns usam apenas GitHub. "
 "Você pode escolher outra forma, se quiser; você decide."
 
 #: ../../documentation/translating.rst:157
@@ -460,14 +459,13 @@ msgstr ""
 "digitação em arquivos ``.po``."
 
 #: ../../documentation/translating.rst:213
-#, fuzzy
 msgid ""
 "`powrap <https://pypi.org/project/powrap/>`__ to rewrap the ``.po`` files "
 "before committing. This helps keep Git diffs short."
 msgstr ""
 "`powrap <https://pypi.org/project/powrap/>`__ para fazer a quebra de linhas "
-"dos arquivos ``.po`` antes de fazer commit. Isso ajuda a manter as "
-"diferenças do git curtas."
+"dos arquivos ``.po`` antes de fazer commit. Isso ajuda a reduzir as "
+"diferenças do Git."
 
 #: ../../documentation/translating.rst:215
 msgid ""
@@ -547,9 +545,8 @@ msgstr ""
 "um PR no `devguide <https://github.com/python/devguide/>`__."
 
 #: ../../documentation/translating.rst:244
-#, fuzzy
 msgid "I have a translation, but it's not in Git. What should I do?"
-msgstr "Eu tenho uma tradução, mas não está no git. O que devo fazer?"
+msgstr "Eu tenho uma tradução, mas não está no Git. O que devo fazer?"
 
 #: ../../documentation/translating.rst:246
 msgid ""
@@ -562,9 +559,8 @@ msgstr ""
 "apropriado. Você ainda pode usar ferramentas como Transifex, se quiser."
 
 #: ../../documentation/translating.rst:252
-#, fuzzy
 msgid "My Git hierarchy does not match yours. Can I keep it?"
-msgstr "Minha hierarquia git não corresponde à sua. Posso ficar com isso?"
+msgstr "Minha hierarquia Git não corresponde à sua. Posso ficar com isso?"
 
 #: ../../documentation/translating.rst:254
 msgid ""
