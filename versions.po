@@ -2,48 +2,45 @@
 # Copyright (C) 2011-2022, Python Software Foundation
 # This file is distributed under the same license as the Python Developer's
 # Guide package.
-# Rafael Fontenelle <rffontenelle@gmail.com>, 2022.
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Python Developer's Guide\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-17 11:38-0300\n"
-"PO-Revision-Date: 2022-12-09 07:29-0300\n"
+"PO-Revision-Date: 2023-11-18 11:29-0300\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>\n"
 "Language: pt_BR\n"
 "Language-Team: Brazilian Portuguese <https://t.me/pybr_i18n>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
+"X-Generator: Gtranslator 45.2\n"
 
 #: ../../versions.rst:6
-#, fuzzy
 msgid "Status of Python versions"
 msgstr "Status das versões do Python"
 
 #: ../../versions.rst:8
-#, fuzzy
 msgid ""
 "The ``main`` branch is currently the future Python 3.13, and is the only "
 "branch that accepts new features.  The latest release for each Python "
 "version can be found on the `download page <https://www.python.org/downloads/"
 ">`_."
 msgstr ""
-"O branch principal é atualmente o futuro Python 3.12, e é o único branch que "
+"O branch ``main`` é atualmente o futuro Python 3.13 e é o único branch que "
 "aceita novos recursos. O lançamento mais recente para cada versão do Python "
 "pode ser encontrado na `página de download <https://www.python.org/downloads/"
 ">`_."
 
 #: ../../versions.rst:14
-#, fuzzy
 msgid "Python release cycle"
 msgstr "Ciclo de lançamentos do Python"
 
 #: ../../versions.rst:20
-#, fuzzy
 msgid "Supported versions"
 msgstr "Versões suportadas"
 
@@ -52,12 +49,10 @@ msgid "Dates shown in *italic* are scheduled and can be adjusted."
 msgstr "As datas mostradas em *itálico* são agendadas e podem ser ajustadas."
 
 #: ../../versions.rst:33
-#, fuzzy
 msgid "Unsupported versions"
 msgstr "Versões não suportadas"
 
 #: ../../versions.rst:42
-#, fuzzy
 msgid "Status key"
 msgstr "Chave do status"
 
@@ -117,12 +112,12 @@ msgstr ""
 "enviada para ela."
 
 #: ../../versions.rst:53
-#, fuzzy
 msgid ""
 "See also the :ref:`devcycle` page for more information about branches and "
 "backporting."
 msgstr ""
-"Veja também a página :ref:`devcycle` para mais informações sobre branches."
+"Veja também a página :ref:`devcycle` para mais informações sobre branches e "
+"sobre fazer backports."
 
 #: ../../versions.rst:55
 msgid ""
