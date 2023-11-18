@@ -3,12 +3,6 @@ Translation Stats
 
 .. code-block::
     
-    # devguide-pt-br (81.67% done)
-    
-    - index.po                        86 / 101 ( 85.0% translated), 13 fuzzy.
-    - versions.po                     12 /  19 ( 63.0% translated), 7 fuzzy.
-    
-    
     # core-developers (84.65% done)
     
     - become-core-developer.po         2 /  19 ( 10.0% translated), 12 fuzzy.
@@ -42,13 +36,9 @@ Translation Stats
     - index.po                         0 /   1 (  0.0% translated).
     
     
-    # documentation (32.30% done)
+    # documentation (0.67% done)
     
-    - help-documenting.po             18 /  21 ( 85.0% translated), 3 fuzzy.
     - markup.po                        2 / 299 (  0.0% translated), 1 fuzzy.
-    - start-documenting.po             1 /  34 (  2.0% translated), 2 fuzzy.
-    - style-guide.po                  49 /  57 ( 85.0% translated), 8 fuzzy.
-    - translating.po                  96 / 103 ( 93.0% translated), 7 fuzzy.
     
     
     # getting-started (25.92% done)
@@ -91,6 +81,6 @@ Translation Stats
     - triaging.po                      0 /  40 (  0.0% translated).
     
     
-    # TOTAL (33.25% done)
+    # TOTAL (29.40% done)
     
     
